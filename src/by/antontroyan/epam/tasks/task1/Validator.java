@@ -33,9 +33,6 @@ public class Validator {
         } catch (NumberFormatException e){
             log.error("NumberFormatException: " + analized);
             return false;
-        } catch (NullPointerException e){
-            log.error("NullPointerException: " + analized);
-            return false;
         }
 
     }

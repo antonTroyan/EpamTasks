@@ -179,3 +179,30 @@
 2017-10-09 17:34:33 ERROR FileDownloader:29 - NotFullData: -5 6.0 7.0
 2017-10-09 17:34:33 INFO  FileDownloader:17 - Try to validate: 5.0 6.0
 2017-10-09 17:34:33 ERROR FileDownloader:25 - IncorrectRadius: 5.0
+2017-10-09 18:14:11 INFO  FileDownloader:17 - Try to validate: 5.0 6.0 7.0
+2017-10-09 18:14:11 INFO  FileDownloader:17 - Try to validate: 5.f0 6.0 7.0
+2017-10-09 18:14:11 ERROR FileDownloader:34 - NumberFormatException: 5.f0 6.0 7.0
+2017-10-09 18:14:11 INFO  FileDownloader:17 - Try to validate: 5 6.0 7.0
+2017-10-09 18:14:11 INFO  FileDownloader:17 - Try to validate: -5 6.0 7.0
+2017-10-09 18:14:11 ERROR FileDownloader:29 - NotFullData: -5 6.0 7.0
+2017-10-09 18:14:11 INFO  FileDownloader:17 - Try to validate: 5.0 6.0
+2017-10-09 18:14:11 ERROR FileDownloader:25 - IncorrectRadius: 5.0
+2017-10-09 18:14:15 INFO  FileDownloader:17 - File was successfully opened
+2017-10-09 18:14:15 INFO  FileDownloader:17 - Try to validate: g5.0 2.0 3.0
+2017-10-09 18:14:15 ERROR FileDownloader:34 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 18:14:15 INFO  FileDownloader:17 - Try to validate: -1.0 2.0 3.0
+2017-10-09 18:14:15 ERROR FileDownloader:29 - NotFullData: -1.0 2.0 3.0
+2017-10-09 18:14:15 INFO  FileDownloader:17 - Try to validate: 1.0 2.0
+2017-10-09 18:14:15 ERROR FileDownloader:25 - IncorrectRadius: 1.0
+2017-10-09 18:14:15 INFO  FileDownloader:17 - Try to validate: 5.0 3.0 2.0
+2017-10-09 18:14:15 INFO  FileDownloader:24 - Line was successfully read
+2017-10-09 18:14:24 INFO  FileDownloader:17 - File was successfully opened
+2017-10-09 18:14:24 INFO  FileDownloader:17 - Try to validate: g5.0 2.0 3.0
+2017-10-09 18:14:24 ERROR FileDownloader:34 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 18:14:24 INFO  FileDownloader:17 - Try to validate: -1.0 2.0 3.0
+2017-10-09 18:14:24 ERROR FileDownloader:29 - NotFullData: -1.0 2.0 3.0
+2017-10-09 18:14:24 INFO  FileDownloader:17 - Try to validate: 1.0 2.0
+2017-10-09 18:14:24 ERROR FileDownloader:25 - IncorrectRadius: 1.0
+2017-10-09 18:14:24 INFO  FileDownloader:17 - Try to validate: 5f.0 3.0 2.0
+2017-10-09 18:14:24 ERROR FileDownloader:34 - NumberFormatException: 5f.0 3.0 2.0
+2017-10-09 18:14:24 FATAL FileDownloader:13 - NoValidData ShapesException{detail='Was not founded valid data in the file: data.txt'}
