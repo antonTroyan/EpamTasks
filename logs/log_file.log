@@ -1,0 +1,181 @@
+2017-10-09 14:21:39 INFO  FileDownloader:18 - File was successfully opened
+2017-10-09 14:21:39 INFO  FileDownloader:17 - Try to validate: g5.0 2.0 3.0
+2017-10-09 14:21:39 ERROR FileDownloader:29 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 14:21:39 INFO  FileDownloader:17 - Try to validate: -1.0 2.0 3.0
+2017-10-09 14:21:39 ERROR FileDownloader:32 - IncorrectRadiusException: -1.0
+2017-10-09 14:21:39 INFO  FileDownloader:17 - Try to validate: 1.0 2.0
+2017-10-09 14:21:39 ERROR FileDownloader:35 - NotFullDataException: 1.0 2.0
+2017-10-09 14:21:39 INFO  FileDownloader:17 - Try to validate: 5.0 3.0 2.п0
+2017-10-09 14:21:39 ERROR FileDownloader:29 - NumberFormatException: 5.0 3.0 2.п0
+2017-10-09 14:21:39 INFO  FileDownloader:17 - Try to validate: null
+2017-10-09 15:11:00 INFO  FileDownloader:18 - File was successfully opened
+2017-10-09 15:11:00 INFO  FileDownloader:17 - Try to validate: g5.0 2.0 3.0
+2017-10-09 15:11:00 ERROR FileDownloader:29 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 15:11:00 INFO  FileDownloader:17 - Try to validate: -1.0 2.0 3.0
+2017-10-09 15:11:00 ERROR FileDownloader:32 - IncorrectRadiusException: -1.0
+2017-10-09 15:11:00 INFO  FileDownloader:17 - Try to validate: 1.0 2.0
+2017-10-09 15:11:00 ERROR FileDownloader:35 - NotFullDataException: 1.0 2.0
+2017-10-09 15:11:00 INFO  FileDownloader:17 - Try to validate: 5.0 3.0 2.0
+2017-10-09 15:11:00 INFO  FileDownloader:22 - Line was successfully read
+2017-10-09 15:23:46 INFO  FileDownloader:18 - File was successfully opened
+2017-10-09 15:23:46 INFO  FileDownloader:17 - Try to validate: g5.0 2.0 3.0
+2017-10-09 15:23:46 ERROR FileDownloader:29 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 15:23:46 INFO  FileDownloader:17 - Try to validate: -1.0 2.0 3.0
+2017-10-09 15:23:46 ERROR FileDownloader:32 - IncorrectRadiusException: -1.0
+2017-10-09 15:23:46 INFO  FileDownloader:17 - Try to validate: 1.0 2.0
+2017-10-09 15:23:46 ERROR FileDownloader:35 - NotFullDataException: 1.0 2.0
+2017-10-09 15:23:46 INFO  FileDownloader:17 - Try to validate: 5.0 3.0 2.0
+2017-10-09 15:23:46 INFO  FileDownloader:22 - Line was successfully read
+2017-10-09 15:23:58 INFO  FileDownloader:18 - File was successfully opened
+2017-10-09 15:23:58 INFO  FileDownloader:17 - Try to validate: g5.0 2.0 3.0
+2017-10-09 15:23:58 ERROR FileDownloader:29 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 15:23:58 INFO  FileDownloader:17 - Try to validate: -1.0 2.0 3.0
+2017-10-09 15:23:58 ERROR FileDownloader:32 - IncorrectRadiusException: -1.0
+2017-10-09 15:23:58 INFO  FileDownloader:17 - Try to validate: 1.0 2.0
+2017-10-09 15:23:58 ERROR FileDownloader:35 - NotFullDataException: 1.0 2.0
+2017-10-09 15:23:58 INFO  FileDownloader:17 - Try to validate: 2.0 3.0 2.0
+2017-10-09 15:23:58 INFO  FileDownloader:22 - Line was successfully read
+2017-10-09 16:29:03 INFO  FileDownloader:18 - File was successfully opened
+2017-10-09 16:29:03 INFO  FileDownloader:18 - Try to validate: g5.0 2.0 3.0
+2017-10-09 16:29:03 ERROR FileDownloader:30 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 16:29:03 INFO  FileDownloader:18 - Try to validate: -1.0 2.0 3.0
+2017-10-09 16:29:03 ERROR FileDownloader:27 - NotFullData: -1.0 2.0 3.0
+2017-10-09 16:29:03 INFO  FileDownloader:26 - Line was successfully read
+2017-10-09 16:30:16 INFO  FileDownloader:18 - File was successfully opened
+2017-10-09 16:30:16 INFO  FileDownloader:18 - Try to validate: g5.0 2.0 3.0
+2017-10-09 16:30:16 ERROR FileDownloader:36 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 16:30:16 INFO  FileDownloader:18 - Try to validate: -1.0 2.0 3.0
+2017-10-09 16:30:16 ERROR FileDownloader:31 - NotFullData: -1.0 2.0 3.0
+2017-10-09 16:30:16 INFO  FileDownloader:18 - Try to validate: 1.0 2.0
+2017-10-09 16:30:16 ERROR FileDownloader:27 - IncorrectRadius: 1.0
+2017-10-09 16:30:16 INFO  FileDownloader:18 - Try to validate: 5.0 3.0 2.0
+2017-10-09 16:30:16 INFO  FileDownloader:26 - Line was successfully read
+2017-10-09 16:31:37 INFO  FileDownloader:17 - File was successfully opened
+2017-10-09 16:31:37 INFO  FileDownloader:18 - Try to validate: g5.0 2.0 3.0
+2017-10-09 16:31:37 ERROR FileDownloader:36 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 16:31:37 INFO  FileDownloader:18 - Try to validate: -1.0 2.0 3.0
+2017-10-09 16:31:37 ERROR FileDownloader:31 - NotFullData: -1.0 2.0 3.0
+2017-10-09 16:31:37 INFO  FileDownloader:18 - Try to validate: 1.0 2.0
+2017-10-09 16:31:37 ERROR FileDownloader:27 - IncorrectRadius: 1.0
+2017-10-09 16:31:37 INFO  FileDownloader:18 - Try to validate: 5f.0 3.0 2.0
+2017-10-09 16:31:37 ERROR FileDownloader:36 - NumberFormatException: 5f.0 3.0 2.0
+2017-10-09 16:31:37 INFO  FileDownloader:18 - Try to validate: null
+2017-10-09 16:31:51 INFO  FileDownloader:17 - File was successfully opened
+2017-10-09 16:31:51 INFO  FileDownloader:18 - Try to validate: g5.0 2.0 3.0
+2017-10-09 16:31:51 ERROR FileDownloader:36 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 16:31:51 INFO  FileDownloader:18 - Try to validate: -1.0 2.0 3.0
+2017-10-09 16:31:51 ERROR FileDownloader:31 - NotFullData: -1.0 2.0 3.0
+2017-10-09 16:31:51 INFO  FileDownloader:18 - Try to validate: 1.0 2.0
+2017-10-09 16:31:51 ERROR FileDownloader:27 - IncorrectRadius: 1.0
+2017-10-09 16:31:51 INFO  FileDownloader:18 - Try to validate: 5.0 3.0 2.0
+2017-10-09 16:31:51 INFO  FileDownloader:25 - Line was successfully read
+2017-10-09 16:32:47 FATAL FileDownloader:28 - File not found
+2017-10-09 16:37:50 FATAL FileDownloader:28 - File not found
+2017-10-09 16:37:55 INFO  FileDownloader:17 - File was successfully opened
+2017-10-09 16:37:55 INFO  FileDownloader:18 - Try to validate: g5.0 2.0 3.0
+2017-10-09 16:37:55 ERROR FileDownloader:36 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 16:37:55 INFO  FileDownloader:18 - Try to validate: -1.0 2.0 3.0
+2017-10-09 16:37:55 ERROR FileDownloader:31 - NotFullData: -1.0 2.0 3.0
+2017-10-09 16:37:55 INFO  FileDownloader:18 - Try to validate: 1.0 2.0
+2017-10-09 16:37:55 ERROR FileDownloader:27 - IncorrectRadius: 1.0
+2017-10-09 16:37:55 INFO  FileDownloader:18 - Try to validate: 5.0 3.0 2.0
+2017-10-09 16:37:55 INFO  FileDownloader:25 - Line was successfully read
+2017-10-09 16:38:01 INFO  FileDownloader:17 - File was successfully opened
+2017-10-09 16:38:01 INFO  FileDownloader:18 - Try to validate: g5.0 2.0 3.0
+2017-10-09 16:38:01 ERROR FileDownloader:36 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 16:38:01 INFO  FileDownloader:18 - Try to validate: -1.0 2.0 3.0
+2017-10-09 16:38:01 ERROR FileDownloader:31 - NotFullData: -1.0 2.0 3.0
+2017-10-09 16:38:01 INFO  FileDownloader:18 - Try to validate: 1.0 2.0
+2017-10-09 16:38:01 ERROR FileDownloader:27 - IncorrectRadius: 1.0
+2017-10-09 16:38:01 INFO  FileDownloader:18 - Try to validate: 5c.0 3.0 2.0
+2017-10-09 16:38:01 ERROR FileDownloader:36 - NumberFormatException: 5c.0 3.0 2.0
+2017-10-09 16:38:01 INFO  FileDownloader:18 - Try to validate: null
+2017-10-09 16:38:42 INFO  FileDownloader:17 - File was successfully opened
+2017-10-09 16:38:42 INFO  FileDownloader:18 - Try to validate: g5.0 2.0 3.0
+2017-10-09 16:38:42 ERROR FileDownloader:36 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 16:38:42 INFO  FileDownloader:18 - Try to validate: -1.0 2.0 3.0
+2017-10-09 16:38:42 ERROR FileDownloader:31 - NotFullData: -1.0 2.0 3.0
+2017-10-09 16:38:42 INFO  FileDownloader:18 - Try to validate: 1.0 2.0
+2017-10-09 16:38:42 ERROR FileDownloader:27 - IncorrectRadius: 1.0
+2017-10-09 16:38:42 INFO  FileDownloader:18 - Try to validate: 5c.0 3.0 2.0
+2017-10-09 16:38:42 ERROR FileDownloader:36 - NumberFormatException: 5c.0 3.0 2.0
+2017-10-09 16:38:42 INFO  FileDownloader:18 - Try to validate: null
+2017-10-09 16:42:46 INFO  FileDownloader:17 - File was successfully opened
+2017-10-09 16:42:46 INFO  FileDownloader:18 - Try to validate: g5.0 2.0 3.0
+2017-10-09 16:42:46 ERROR FileDownloader:36 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 16:42:46 INFO  FileDownloader:18 - Try to validate: -1.0 2.0 3.0
+2017-10-09 16:42:46 ERROR FileDownloader:31 - NotFullData: -1.0 2.0 3.0
+2017-10-09 16:42:46 INFO  FileDownloader:18 - Try to validate: 1.0 2.0
+2017-10-09 16:42:46 ERROR FileDownloader:27 - IncorrectRadius: 1.0
+2017-10-09 16:42:46 INFO  FileDownloader:18 - Try to validate: 5c.0 3.0 2.0
+2017-10-09 16:42:46 ERROR FileDownloader:36 - NumberFormatException: 5c.0 3.0 2.0
+2017-10-09 16:51:21 INFO  FileDownloader:17 - File was successfully opened
+2017-10-09 16:51:21 INFO  FileDownloader:18 - Try to validate: g5.0 2.0 3.0
+2017-10-09 16:51:21 ERROR FileDownloader:36 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 16:51:21 INFO  FileDownloader:18 - Try to validate: -1.0 2.0 3.0
+2017-10-09 16:51:21 ERROR FileDownloader:31 - NotFullData: -1.0 2.0 3.0
+2017-10-09 16:51:21 INFO  FileDownloader:18 - Try to validate: 1.0 2.0
+2017-10-09 16:51:21 ERROR FileDownloader:27 - IncorrectRadius: 1.0
+2017-10-09 16:51:21 INFO  FileDownloader:18 - Try to validate: 5c.0 3.0 2.0
+2017-10-09 16:51:21 ERROR FileDownloader:36 - NumberFormatException: 5c.0 3.0 2.0
+2017-10-09 16:51:21 FATAL FileDownloader:13 - NoValidDataException ShapesException{detail='Was not founded valid data in the file: data.txt'}
+2017-10-09 17:15:03 INFO  FileDownloader:17 - File was successfully opened
+2017-10-09 17:15:03 INFO  FileDownloader:17 - Try to validate: g5.0 2.0 3.0
+2017-10-09 17:15:03 ERROR FileDownloader:34 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 17:15:03 INFO  FileDownloader:17 - Try to validate: -1.0 2.0 3.0
+2017-10-09 17:15:03 ERROR FileDownloader:29 - NotFullData: -1.0 2.0 3.0
+2017-10-09 17:15:03 INFO  FileDownloader:17 - Try to validate: 1.0 2.0
+2017-10-09 17:15:03 ERROR FileDownloader:25 - IncorrectRadius: 1.0
+2017-10-09 17:15:03 INFO  FileDownloader:17 - Try to validate: 5c.0 3.0 2.0
+2017-10-09 17:15:03 ERROR FileDownloader:34 - NumberFormatException: 5c.0 3.0 2.0
+2017-10-09 17:15:03 FATAL FileDownloader:13 - NoValidDataException ShapesException{detail='Was not founded valid data in the file: data.txt'}
+2017-10-09 17:17:09 INFO  FileDownloader:17 - File was successfully opened
+2017-10-09 17:17:09 INFO  FileDownloader:17 - Try to validate: g5.0 2.0 3.0
+2017-10-09 17:17:09 ERROR FileDownloader:34 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 17:17:09 INFO  FileDownloader:17 - Try to validate: -1.0 2.0 3.0
+2017-10-09 17:17:09 ERROR FileDownloader:29 - NotFullData: -1.0 2.0 3.0
+2017-10-09 17:17:09 INFO  FileDownloader:17 - Try to validate: 1.0 2.0
+2017-10-09 17:17:09 ERROR FileDownloader:25 - IncorrectRadius: 1.0
+2017-10-09 17:17:09 INFO  FileDownloader:17 - Try to validate: 5.0 3.0 2.0
+2017-10-09 17:17:09 INFO  FileDownloader:25 - Line was successfully read
+2017-10-09 17:18:42 INFO  FileDownloader:17 - File was successfully opened
+2017-10-09 17:18:42 INFO  FileDownloader:17 - Try to validate: g5.0 2.0 3.0
+2017-10-09 17:18:42 ERROR FileDownloader:34 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 17:18:42 INFO  FileDownloader:17 - Try to validate: -1.0 2.0 3.0
+2017-10-09 17:18:42 ERROR FileDownloader:29 - NotFullData: -1.0 2.0 3.0
+2017-10-09 17:18:42 INFO  FileDownloader:17 - Try to validate: 1.0 2.0
+2017-10-09 17:18:42 ERROR FileDownloader:25 - IncorrectRadius: 1.0
+2017-10-09 17:18:42 INFO  FileDownloader:17 - Try to validate: 5.0 3.0 2.0
+2017-10-09 17:18:42 INFO  FileDownloader:25 - Line was successfully read
+2017-10-09 17:20:00 INFO  FileDownloader:17 - File was successfully opened
+2017-10-09 17:20:00 INFO  FileDownloader:17 - Try to validate: g5.0 2.0 3.0
+2017-10-09 17:20:00 ERROR FileDownloader:34 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 17:20:00 INFO  FileDownloader:17 - Try to validate: -1.0 2.0 3.0
+2017-10-09 17:20:00 ERROR FileDownloader:29 - NotFullData: -1.0 2.0 3.0
+2017-10-09 17:20:00 INFO  FileDownloader:17 - Try to validate: 1.0 2.0
+2017-10-09 17:20:00 ERROR FileDownloader:25 - IncorrectRadius: 1.0
+2017-10-09 17:20:00 INFO  FileDownloader:17 - Try to validate: 5.0 3.0 2.0
+2017-10-09 17:20:00 INFO  FileDownloader:25 - Line was successfully read
+2017-10-09 17:20:41 INFO  FileDownloader:17 - File was successfully opened
+2017-10-09 17:20:41 INFO  FileDownloader:17 - Try to validate: g5.0 2.0 3.0
+2017-10-09 17:20:41 ERROR FileDownloader:34 - NumberFormatException: g5.0 2.0 3.0
+2017-10-09 17:20:41 INFO  FileDownloader:17 - Try to validate: -1.0 2.0 3.0
+2017-10-09 17:20:41 ERROR FileDownloader:29 - NotFullData: -1.0 2.0 3.0
+2017-10-09 17:20:41 INFO  FileDownloader:17 - Try to validate: 1.0 2.0
+2017-10-09 17:20:41 ERROR FileDownloader:25 - IncorrectRadius: 1.0
+2017-10-09 17:20:41 INFO  FileDownloader:17 - Try to validate: f5.0 3.0 2.0
+2017-10-09 17:20:41 ERROR FileDownloader:34 - NumberFormatException: f5.0 3.0 2.0
+2017-10-09 17:33:42 INFO  FileDownloader:17 - Try to validate: 5.0 6.0 7.0
+2017-10-09 17:33:42 INFO  FileDownloader:17 - Try to validate: 5.f0 6.0 7.0
+2017-10-09 17:33:42 ERROR FileDownloader:34 - NumberFormatException: 5.f0 6.0 7.0
+2017-10-09 17:33:42 INFO  FileDownloader:17 - Try to validate: 5 6.0 7.0
+2017-10-09 17:33:42 INFO  FileDownloader:17 - Try to validate: -5 6.0 7.0
+2017-10-09 17:33:42 ERROR FileDownloader:29 - NotFullData: -5 6.0 7.0
+2017-10-09 17:34:33 INFO  FileDownloader:17 - Try to validate: 5.0 6.0 7.0
+2017-10-09 17:34:33 INFO  FileDownloader:17 - Try to validate: 5.f0 6.0 7.0
+2017-10-09 17:34:33 ERROR FileDownloader:34 - NumberFormatException: 5.f0 6.0 7.0
+2017-10-09 17:34:33 INFO  FileDownloader:17 - Try to validate: 5 6.0 7.0
+2017-10-09 17:34:33 INFO  FileDownloader:17 - Try to validate: -5 6.0 7.0
+2017-10-09 17:34:33 ERROR FileDownloader:29 - NotFullData: -5 6.0 7.0
+2017-10-09 17:34:33 INFO  FileDownloader:17 - Try to validate: 5.0 6.0
+2017-10-09 17:34:33 ERROR FileDownloader:25 - IncorrectRadius: 5.0
