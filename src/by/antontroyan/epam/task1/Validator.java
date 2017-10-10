@@ -1,4 +1,4 @@
-package by.antontroyan.epam.tasks.task1;
+package by.antontroyan.epam.task1;
 
 
 import org.apache.log4j.Logger;

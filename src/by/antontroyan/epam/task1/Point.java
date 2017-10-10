@@ -1,19 +1,12 @@
-package by.antontroyan.epam.tasks.task1;
+package by.antontroyan.epam.task1;
 
-public class Sphere {
-
-    private double radius;
+public class Point {
     private double xCoordinate;
     private double yCoordinate;
 
-    public Sphere(double radius, double xCoordinate, double yCoordinate) {
-        this.radius = radius;
+    public Point(double xCoordinate, double yCoordinate) {
         this.xCoordinate = xCoordinate;
         this.yCoordinate = yCoordinate;
-    }
-
-    public double getRadius() {
-        return radius;
     }
 
     public double getXCoordinate() {
@@ -29,21 +22,18 @@ public class Sphere {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Sphere sphere = (Sphere) o;
+        Point point = (Point) o;
 
-        if (Double.compare(sphere.radius, radius) != 0) return false;
-        if (Double.compare(sphere.xCoordinate, xCoordinate) != 0) return false;
-        return Double.compare(sphere.yCoordinate, yCoordinate) == 0;
+        if (Double.compare(point.xCoordinate, xCoordinate) != 0) return false;
+        return Double.compare(point.yCoordinate, yCoordinate) == 0;
     }
 
     @Override
     public int hashCode() {
         int result;
         long temp;
-        temp = Double.doubleToLongBits(radius);
-        result = (int) (temp ^ (temp >>> 32));
         temp = Double.doubleToLongBits(xCoordinate);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = (int) (temp ^ (temp >>> 32));
         temp = Double.doubleToLongBits(yCoordinate);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
@@ -51,9 +41,8 @@ public class Sphere {
 
     @Override
     public String toString() {
-        return "Sphere{" +
-                "radius=" + radius +
-                ", xCoordinate=" + xCoordinate +
+        return "Point{" +
+                "xCoordinate=" + xCoordinate +
                 ", yCoordinate=" + yCoordinate +
                 '}';
     }

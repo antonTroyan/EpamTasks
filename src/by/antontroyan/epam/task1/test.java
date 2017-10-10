@@ -1,4 +1,4 @@
-package by.antontroyan.epam.tasks.task1;
+package by.antontroyan.epam.task1;
 
 import org.apache.log4j.Logger;
 
@@ -17,5 +17,9 @@ public class test {
         System.out.println(sphere);
         System.out.println(Spheres.calcSphereArea(sphere));
         System.out.println(Spheres.isTouch(sphere));
+        System.out.println(Spheres.calcSphereVolume(sphere));
+        System.out.println(Spheres.calcSphereVolumesCutting(sphere));
+        System.out.println(Spheres.isSphere(sphere));
+
     }
 }

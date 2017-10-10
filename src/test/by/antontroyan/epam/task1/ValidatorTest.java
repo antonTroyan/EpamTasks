@@ -1,6 +1,6 @@
-package test.by.antontroyan.epam.tasks.task1;
+package test.by.antontroyan.epam.task1;
 
-import by.antontroyan.epam.tasks.task1.Validator;
+import by.antontroyan.epam.task1.Validator;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
