@@ -26,7 +26,9 @@ public class FileDataDownloaderTest {
         fdd.getLines(" ");
     }
 
-
-
+    @Test
+    public void testGetNormalMode() throws Exception {
+        fdd.getLines("triangleData.txt");
+    }
 
 }
