@@ -1,37 +1,27 @@
 package test.by.antontroyan.epam.task1;
 
 import by.antontroyan.epam.task1.Validator;
-import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ValidatorTest {
 
+    Validator v = new Validator();
+    List<String> testList = new ArrayList<>();
+
 
     @Test
-    public void testIsRight() throws Exception {
-        String test = "5.0 6.0 7.0";
-        Assert.assertEquals(Validator.isRight(test), true);
-    }
-    @Test
-    public void testIsRightIncorrectDataAddChar() throws Exception {
-        String test = "5.f0 6.0 7.0";
-        Assert.assertEquals(Validator.isRight(test), false);
-    }
-    @Test
-    public void testIsRightIncorrectDataNotDouble() throws Exception {
-        String test = "5 6.0 7.0";
-        Assert.assertEquals(Validator.isRight(test), true);
-    }
-    @Test
-    public void testIsRightIncorrectRadius() throws Exception {
-        String test = "-5 6.0 7.0";
-        Assert.assertEquals(Validator.isRight(test), false);
-    }
-    @Test
-    public void testIsRightNotFullData() throws Exception {
-        String test = "5.0 6.0";
-        Assert.assertEquals(Validator.isRight(test), false);
+    public void testValidateIncorrectCharacter() throws Exception {
+        testList.add("2f 2 3 4 1 5");
+        v.validate(testList);
     }
 
+    @Test
+    public void testValidateMoreCharacters() throws Exception {
+        testList.add("2f 2 3 4 1 5");
+        v.validate(testList);
+    }
 
 }
