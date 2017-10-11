@@ -17,7 +17,6 @@ public class TriangleParser {
                     result.add(Integer.parseInt(analized[r]));
                 }
             }
-
         }
         return result;
     }

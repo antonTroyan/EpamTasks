@@ -7,14 +7,16 @@ import by.troyan.epam.task1.entity.Point;
 import by.troyan.epam.task1.entity.Triangle;
 import by.troyan.epam.task1.parser.TriangleParser;
 import by.troyan.epam.task1.trianglereader.FileDataDownloader;
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 
 public class Creator {
     private static ArrayList<Triangle> triangleList = new ArrayList<>();
     private static ArrayList<Point> pointList = new ArrayList<>();
-    private static Logger log = Logger.getLogger("Creator");
+    private static Logger log = LogManager.getLogger("Creator");
 
     FileDataDownloader fileDataDownloader = new FileDataDownloader();
     TriangleParser triangleParser = new TriangleParser();

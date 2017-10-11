@@ -12,5 +12,6 @@ public class test {
         creator.fillTriangleList();
         System.out.println(creator.getTriangleByIndex(0));
 
+
     }
 }

@@ -3,7 +3,10 @@ package by.troyan.epam.task1.validator;
 import by.troyan.epam.task1.exception.FileCanNotBeFoundedException;
 import by.troyan.epam.task1.exception.FileIsEmptyException;
 import by.troyan.epam.task1.exception.NoFileNameException;
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -11,7 +14,7 @@ import java.io.IOException;
 
 
 public class Validator {
-    private static Logger log = Logger.getLogger("Validator");
+    private static Logger log = LogManager.getLogger("Validator");
     private final int COLUMN_AMOUNT = 6;
 
     public boolean validateString(String input) {
