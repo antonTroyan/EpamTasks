@@ -1,23 +1,27 @@
-package test.by.antontroyan.epam.task1;
+package test.by.troyan.epam.task1.action;
 
-import by.antontroyan.epam.task1.Triangle;
-import by.antontroyan.epam.task1.Triangles;
+import by.troyan.epam.task1.action.Triangles;
+import by.troyan.epam.task1.entity.Point;
+import by.troyan.epam.task1.entity.Triangle;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.*;
 
 public class TrianglesTest {
 
-    Triangle triangle = new Triangle(5,2,4,3,1,2);
+    Triangle triangle = new Triangle(new Point(100, 2)
+            , new Point(5, 6)
+            , new Point(12, 60));
+
+
     @Test
     public void testCalculateSquare() throws Exception {
-        Assert.assertEquals(Triangles.calculateSquare(triangle),2);
+        Assert.assertEquals(Triangles.calculateSquare(triangle),2561);
     }
 
     @Test
     public void testCalculatePerimeter() throws Exception {
-        Assert.assertEquals(Triangles.calculatePerimeter(triangle),8);
+        Assert.assertEquals(Triangles.calculatePerimeter(triangle),254);
     }
 
     @Test

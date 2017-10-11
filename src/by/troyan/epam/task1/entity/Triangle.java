@@ -1,4 +1,4 @@
-package by.troyan.epam.task1v2.entity;
+package by.troyan.epam.task1.entity;
 
 public class Triangle {
     private Point A;

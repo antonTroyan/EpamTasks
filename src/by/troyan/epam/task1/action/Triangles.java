@@ -1,5 +1,5 @@
-package by.troyan.epam.task1v2.action;
-import by.troyan.epam.task1v2.entity.Triangle;
+package by.troyan.epam.task1.action;
+import by.troyan.epam.task1.entity.Triangle;
 
 import static java.lang.Math.*;
 

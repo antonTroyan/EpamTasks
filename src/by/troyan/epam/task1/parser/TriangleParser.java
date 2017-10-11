@@ -1,7 +1,6 @@
-package by.troyan.epam.task1v2.parser;
+package by.troyan.epam.task1.parser;
 
-import by.troyan.epam.task1v2.validator.Validator;
-import org.apache.log4j.Logger;
+import by.troyan.epam.task1.validator.Validator;
 
 import java.util.ArrayList;
 import java.util.List;
