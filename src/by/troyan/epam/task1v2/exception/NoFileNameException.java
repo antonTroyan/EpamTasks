@@ -1,6 +1,6 @@
-package by.antontroyan.epam.task1;
+package by.troyan.epam.task1v2.exception;
 
-public class NoFileNameException extends ShapesException{
+public class NoFileNameException extends ShapesException {
 
     public NoFileNameException(String detail) {
         super(detail);

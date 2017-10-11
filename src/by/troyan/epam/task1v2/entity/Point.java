@@ -1,21 +1,23 @@
-package by.antontroyan.epam.task1;
+package by.troyan.epam.task1v2.entity;
 
 public class Point {
-    private double xCoordinate;
-    private double yCoordinate;
+    private int xCoordinate;
+    private int yCoordinate;
 
-    public Point(double xCoordinate, double yCoordinate) {
+    public Point(int xCoordinate, int yCoordinate) {
         this.xCoordinate = xCoordinate;
         this.yCoordinate = yCoordinate;
     }
 
-    public double getXCoordinate() {
+    public double getxCoordinate() {
         return xCoordinate;
     }
 
-    public double getYCoordinate() {
+
+    public double getyCoordinate() {
         return yCoordinate;
     }
+
 
     @Override
     public boolean equals(Object o) {
@@ -24,18 +26,14 @@ public class Point {
 
         Point point = (Point) o;
 
-        if (Double.compare(point.xCoordinate, xCoordinate) != 0) return false;
-        return Double.compare(point.yCoordinate, yCoordinate) == 0;
+        if (xCoordinate != point.xCoordinate) return false;
+        return yCoordinate == point.yCoordinate;
     }
 
     @Override
     public int hashCode() {
-        int result;
-        long temp;
-        temp = Double.doubleToLongBits(xCoordinate);
-        result = (int) (temp ^ (temp >>> 32));
-        temp = Double.doubleToLongBits(yCoordinate);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        int result = xCoordinate;
+        result = 31 * result + yCoordinate;
         return result;
     }
 

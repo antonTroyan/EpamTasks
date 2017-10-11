@@ -1,4 +1,4 @@
-package by.antontroyan.epam.task1;
+package by.troyan.epam.task1v2.exception;
 
 public class FileIsEmptyException extends ShapesException {
     public FileIsEmptyException(String detail) {

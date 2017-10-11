@@ -1,4 +1,4 @@
-package by.antontroyan.epam.task1;
+package by.troyan.epam.task1v2.exception;
 
 
 public class ShapesException extends Exception {
