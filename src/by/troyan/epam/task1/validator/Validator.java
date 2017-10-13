@@ -1,16 +1,13 @@
 package by.troyan.epam.task1.validator;
 
-import by.troyan.epam.task1.exception.FileCanNotBeFoundedException;
 import by.troyan.epam.task1.exception.FileIsEmptyException;
+import by.troyan.epam.task1.exception.FileNotExistExeption;
 import by.troyan.epam.task1.exception.NoFileNameException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 
 public class Validator {
@@ -31,32 +28,33 @@ public class Validator {
             }
             log.info("String " + input + " was validated successfully");
             return true;
-
         } catch (NumberFormatException e) {
             log.error("Wrong Format " + e);
-            // возможно тут стоит выбросить свое исключение
             return false;
         } catch (ArrayIndexOutOfBoundsException e) {
             log.error("Wrong parameters amount " + e);
             return false;
         }
-
     }
 
-    public boolean validateFile(String filename) throws NoFileNameException, FileIsEmptyException, FileCanNotBeFoundedException {
-
-        if (filename == " ") throw new NoFileNameException("Parameter file name is empty");
+    public boolean validateFile(String filename) throws NoFileNameException, FileIsEmptyException, FileNotExistExeption {
+        File file = new File(filename);
+        if (filename == " "){
+            log.fatal("Fatal! Parameter filename is empty " );
+            throw new NoFileNameException("Parameter filename is empty");
+        }
+        if (!file.exists()){
+            log.fatal("Fatal! File is not exist " );
+            throw new FileNotExistExeption("File is not exist");
+        }
         try(BufferedReader reader = new BufferedReader(new FileReader(filename))){
             if (reader.readLine() == null) {
                 log.fatal("Fatal! File is empty " );
                 throw new FileIsEmptyException("File is empty, or can`t be read");
             }
-        }  catch (FileNotFoundException e) {
-            log.fatal("Fatal! File cannot be founded  " + e);
-            throw new FileCanNotBeFoundedException("It is impossible to find the file " + e);
         } catch (IOException e) {
             log.fatal("Fatal!  " + e);
-            return false;
+            throw new RuntimeException();
         }
         return true;
     }

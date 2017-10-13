@@ -1,9 +1,14 @@
 package by.troyan.epam.task1.action;
+import by.troyan.epam.task1.entity.Point;
 import by.troyan.epam.task1.entity.Triangle;
-
 import static java.lang.Math.*;
 
 public class Triangles {
+
+    public static int calculateSideLength (Point fst, Point sec){
+        return (int)abs(hypot(sec.getxCoordinate()-fst.getxCoordinate()
+                , sec.getyCoordinate() - fst.getyCoordinate()));
+    }
 
 
     public static int calculateSquare(Triangle triangle) {
@@ -13,14 +18,13 @@ public class Triangles {
                 * (triangle.getB().getyCoordinate()  - triangle.getA().getyCoordinate())))) / 2);
     }
 
-    public static int calculatePerimeter(Triangle triangle) {
-        return (int) ((abs(sqrt(pow(triangle.getB().getxCoordinate() - triangle.getA().getxCoordinate(), 2)
-                + pow(triangle.getB().getyCoordinate() - triangle.getA().getyCoordinate(), 2))))
-                + (abs(sqrt(pow(triangle.getC().getxCoordinate() - triangle.getA().getxCoordinate(), 2)
-                + pow(triangle.getC().getyCoordinate() - triangle.getA().getyCoordinate(), 2))))
-                + (abs(sqrt(pow(triangle.getC().getxCoordinate() - triangle.getB().getxCoordinate(), 2)
-                + pow(triangle.getC().getyCoordinate() - triangle.getB().getyCoordinate(), 2)))));
 
+
+    public static int calculatePerimeter(Triangle triangle) {
+        int sideAB = calculateSideLength(triangle.getA(),triangle.getB());
+        int sideBC = calculateSideLength(triangle.getB(),triangle.getC());
+        int sideCA = calculateSideLength(triangle.getC(),triangle.getA());
+        return sideAB + sideBC + sideCA;
     }
 
     public static boolean isOnStraightLine(Triangle triangle) {
@@ -34,12 +38,9 @@ public class Triangles {
     }
 
     public static boolean isRectangular(Triangle triangle){
-        int sideAB = (int) abs(sqrt(pow(triangle.getB().getxCoordinate() - triangle.getA().getxCoordinate(), 2)
-                + pow(triangle.getB().getyCoordinate() - triangle.getA().getyCoordinate(), 2)));
-        int sideBC = (int) abs(sqrt(pow(triangle.getC().getxCoordinate() - triangle.getA().getxCoordinate(), 2)
-                + pow(triangle.getC().getyCoordinate() - triangle.getA().getyCoordinate(), 2)));
-        int sideCA = (int) abs(sqrt(pow(triangle.getC().getxCoordinate() - triangle.getB().getxCoordinate(), 2)
-                + pow(triangle.getC().getyCoordinate() - triangle.getB().getyCoordinate(), 2)));
+        int sideAB = calculateSideLength(triangle.getA(),triangle.getB());
+        int sideBC = calculateSideLength(triangle.getB(),triangle.getC());
+        int sideCA = calculateSideLength(triangle.getC(),triangle.getA());
 
         int sideABSecDegree = sideAB*sideAB;
         int sideBCSecDegree = sideBC*sideBC;

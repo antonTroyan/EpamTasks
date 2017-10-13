@@ -1,13 +1,14 @@
 package by.troyan.epam.task1.trianglereader;
 
 
-import by.troyan.epam.task1.exception.FileCanNotBeFoundedException;
 import by.troyan.epam.task1.exception.FileIsEmptyException;
+import by.troyan.epam.task1.exception.FileNotExistExeption;
 import by.troyan.epam.task1.exception.NoFileNameException;
 import by.troyan.epam.task1.validator.Validator;
 
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -20,7 +21,7 @@ public class FileDataDownloader {
 
     private static Logger log = LogManager.getLogger("FileDownloaderT");
 
-    public List<String> readLines (String filename) throws NoFileNameException, FileIsEmptyException, FileCanNotBeFoundedException {
+    public List<String> readLines (String filename) throws NoFileNameException, FileIsEmptyException, FileNotExistExeption {
         Validator validator = new Validator();
         List<String> lines = new ArrayList<>();
 
@@ -33,9 +34,9 @@ public class FileDataDownloader {
                     lines.add(line);
                 }
             } catch (IOException e) {
-                throw new FileCanNotBeFoundedException("It is impossible to find the file " + e);
-            }
+                log.fatal("Fatal!  " + e);
+                throw new RuntimeException();
         }
-        return lines;
-    }
+    }   return lines;
+}
 }

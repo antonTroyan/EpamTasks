@@ -4,12 +4,36 @@ import by.troyan.epam.task1.exception.FileIsEmptyException;
 import by.troyan.epam.task1.exception.NoFileNameException;
 import by.troyan.epam.task1.validator.Validator;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import java.io.File;
+import java.io.IOException;
 
-import static org.testng.Assert.*;
 
 public class ValidatorTest {
+
     Validator validator = new Validator();
+
+    @BeforeClass
+    public void prepareFile (){
+        File filePath = new File("data");
+        filePath.mkdir();
+        File file = new File(filePath + "\\test.txt");
+        try {
+            file.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @AfterClass
+    public void deleteFile (){
+        File filePath = new File("data");
+        filePath.mkdir();
+        new File(filePath + "\\test.txt").delete();
+    }
+
     @Test
     public void testValidateStringNotInteger() throws Exception {
         Assert.assertEquals(validator.validateString("1f 2 3 4 5 6"), false);
@@ -28,7 +52,7 @@ public class ValidatorTest {
 
     @Test (expectedExceptions = FileIsEmptyException.class)
     public void testValidateFileIsEmpty() throws Exception {
-        validator.validateFile("empty.txt");
+        validator.validateFile("data\\test.txt");
     }
 
 

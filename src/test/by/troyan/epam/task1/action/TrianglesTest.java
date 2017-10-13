@@ -9,19 +9,19 @@ import org.testng.annotations.Test;
 
 public class TrianglesTest {
 
-    Triangle triangle = new Triangle(new Point(100, 2)
-            , new Point(5, 6)
-            , new Point(12, 60));
+    Triangle triangle = new Triangle(new Point(10, 2)
+            , new Point(-5, -6)
+            , new Point(5, 20));
 
 
     @Test
     public void testCalculateSquare() throws Exception {
-        Assert.assertEquals(Triangles.calculateSquare(triangle),2561);
+        Assert.assertEquals(Triangles.calculateSquare(triangle),177);
     }
 
     @Test
     public void testCalculatePerimeter() throws Exception {
-        Assert.assertEquals(Triangles.calculatePerimeter(triangle),254);
+        Assert.assertEquals(Triangles.calculatePerimeter(triangle),62);
     }
 
     @Test
