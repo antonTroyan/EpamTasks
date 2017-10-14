@@ -16,12 +16,12 @@ public class TrianglesTest {
 
     @Test
     public void testCalculateSquare() throws Exception {
-        Assert.assertEquals(Triangles.calculateSquare(triangle),177);
+        Assert.assertEquals(Triangles.calculateSquare(triangle),177, 0.01);
     }
 
     @Test
     public void testCalculatePerimeter() throws Exception {
-        Assert.assertEquals(Triangles.calculatePerimeter(triangle),62);
+        Assert.assertEquals(Triangles.calculatePerimeter(triangle),62, 0.01);
     }
 
     @Test

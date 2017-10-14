@@ -39,7 +39,7 @@ public class Validator {
 
     public boolean validateFile(String filename) throws NoFileNameException, FileIsEmptyException, FileNotExistExeption {
         File file = new File(filename);
-        if (filename == " "){
+        if (filename.isEmpty()){
             log.fatal("Fatal! Parameter filename is empty " );
             throw new NoFileNameException("Parameter filename is empty");
         }

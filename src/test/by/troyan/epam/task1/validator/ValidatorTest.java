@@ -16,7 +16,7 @@ public class ValidatorTest {
     Validator validator = new Validator();
 
     @BeforeClass
-    public void prepareFile (){
+    public static void prepareFile (){
         File filePath = new File("data");
         filePath.mkdir();
         File file = new File(filePath + "\\test.txt");
@@ -28,7 +28,7 @@ public class ValidatorTest {
     }
 
     @AfterClass
-    public void deleteFile (){
+    public static void deleteFile (){
         File filePath = new File("data");
         filePath.mkdir();
         new File(filePath + "\\test.txt").delete();
@@ -47,7 +47,7 @@ public class ValidatorTest {
 
     @Test (expectedExceptions = NoFileNameException.class)
     public void testValidateFileNoName() throws Exception {
-        validator.validateFile(" ");
+        validator.validateFile("");
     }
 
     @Test (expectedExceptions = FileIsEmptyException.class)

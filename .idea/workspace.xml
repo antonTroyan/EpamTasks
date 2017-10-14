@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="147e29f8-8836-4365-a1bd-678a21bfbc31" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/error.log" afterPath="$PROJECT_DIR$/logs/error.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/troyan/epam/task1/validator/Validator.java" afterPath="$PROJECT_DIR$/src/by/troyan/epam/task1/validator/Validator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/by/troyan/epam/task1/action/TrianglesTest.java" afterPath="$PROJECT_DIR$/src/test/by/troyan/epam/task1/action/TrianglesTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/by/troyan/epam/task1/validator/ValidatorTest.java" afterPath="$PROJECT_DIR$/src/test/by/troyan/epam/task1/validator/ValidatorTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +29,8 @@
       <file leaf-file-name="Validator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/validator/Validator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1024">
-              <caret line="39" column="19" lean-forward="false" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+            <state relative-caret-position="184">
+              <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -35,8 +39,8 @@
       <file leaf-file-name="TrianglesTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/by/troyan/epam/task1/action/TrianglesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="440">
+              <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -45,14 +49,14 @@
       <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/entity/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
+            <state relative-caret-position="384">
               <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Triangle.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Triangle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/entity/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
@@ -75,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ValidatorTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ValidatorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/by/troyan/epam/task1/validator/ValidatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="440">
+              <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -191,14 +195,14 @@
         <option value="$PROJECT_DIR$/src/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/by/troyan/epam/task1/exception/FileNotExistExeption.java" />
         <option value="$PROJECT_DIR$/src/by/troyan/epam/task1/trianglereader/FileDataDownloader.java" />
-        <option value="$PROJECT_DIR$/src/by/troyan/epam/task1/validator/Validator.java" />
         <option value="$PROJECT_DIR$/src/by/troyan/epam/task1/parser/TriangleParser.java" />
-        <option value="$PROJECT_DIR$/src/test/by/troyan/epam/task1/action/TrianglesTest.java" />
         <option value="$PROJECT_DIR$/src/by/troyan/epam/task1/action/Triangles.java" />
         <option value="$PROJECT_DIR$/src/by/troyan/epam/task1/creator/Creator.java" />
         <option value="$PROJECT_DIR$/src/by/troyan/epam/task1/creator/EntityCreator.java" />
-        <option value="$PROJECT_DIR$/src/test/by/troyan/epam/task1/validator/ValidatorTest.java" />
         <option value="$PROJECT_DIR$/src/by/troyan/epam/task1/test.java" />
+        <option value="$PROJECT_DIR$/src/by/troyan/epam/task1/validator/Validator.java" />
+        <option value="$PROJECT_DIR$/src/test/by/troyan/epam/task1/action/TrianglesTest.java" />
+        <option value="$PROJECT_DIR$/src/test/by/troyan/epam/task1/validator/ValidatorTest.java" />
       </list>
     </option>
   </component>
@@ -226,7 +230,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,48 +252,6 @@
               <item name="EpamTasks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="task1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EpamTasks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EpamTasks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="task1" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EpamTasks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EpamTasks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="task1" type="462c0819:PsiDirectoryNode" />
-              <item name="creator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EpamTasks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EpamTasks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="task1" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EpamTasks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EpamTasks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="task1" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EpamTasks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EpamTasks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="task1" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EpamTasks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EpamTasks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="task1" type="462c0819:PsiDirectoryNode" />
-              <item name="trianglereader" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EpamTasks" type="b2602c69:ProjectViewProjectNode" />
@@ -325,6 +286,7 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -635,8 +597,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="TestNG.ValidatorTest (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.test" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.TrianglesTest (1)" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.TrianglesTest (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Application.test" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.TrianglesTest" />
         <item index="4" class="java.lang.String" itemvalue="TestNG.FileDataDownloaderTest" />
       </list>
@@ -656,20 +618,8 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ValidatorTest_(1) - 2017.10.13 at 13h 56m 38s.xml">
-      <configuration name="ValidatorTest (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ValidatorTest_(1) - 2017.10.13 at 13h 57m 53s.xml">
-      <configuration name="ValidatorTest (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ValidatorTest_(1) - 2017.10.13 at 14h 02m 02s.xml">
-      <configuration name="ValidatorTest (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ValidatorTest_(1) - 2017.10.13 at 14h 03m 13s.xml">
-      <configuration name="ValidatorTest (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ValidatorTest_(1) - 2017.10.13 at 14h 05m 16s.xml">
-      <configuration name="ValidatorTest (1)" configurationId="TestNG" />
+    <history-entry file="TrianglesTest_(1) - 2017.10.14 at 15h 54m 48s.xml">
+      <configuration name="TrianglesTest (1)" configurationId="TestNG" />
     </history-entry>
     <history-entry file="ValidatorTest_(1) - 2017.10.13 at 14h 06m 02s.xml">
       <configuration name="ValidatorTest (1)" configurationId="TestNG" />
@@ -686,12 +636,25 @@
     <history-entry file="ValidatorTest_(1) - 2017.10.13 at 14h 07m 48s.xml">
       <configuration name="ValidatorTest (1)" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="ValidatorTest_(1) - 2017.10.14 at 15h 53m 57s.xml">
+      <configuration name="ValidatorTest (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ValidatorTest_(1) - 2017.10.14 at 15h 56m 26s.xml">
+      <configuration name="ValidatorTest (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ValidatorTest_(1) - 2017.10.14 at 15h 57m 09s.xml">
+      <configuration name="ValidatorTest (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ValidatorTest_(1) - 2017.10.14 at 15h 59m 08s.xml">
+      <configuration name="ValidatorTest (1)" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1408" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -705,7 +668,6 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27014217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -882,14 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/validator/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1024">
-          <caret line="39" column="19" lean-forward="false" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/test.txt" />
     <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/test.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -901,33 +855,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/by/troyan/epam/task1/validator/ValidatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/by/troyan/epam/task1/action/TrianglesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/entity/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="384">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
@@ -937,6 +867,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/validator/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/by/troyan/epam/task1/action/TrianglesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/by/troyan/epam/task1/validator/ValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding />
         </state>
       </provider>
