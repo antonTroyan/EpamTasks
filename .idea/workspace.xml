@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="147e29f8-8836-4365-a1bd-678a21bfbc31" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/error.log" afterPath="$PROJECT_DIR$/logs/error.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/troyan/epam/task1/validator/Validator.java" afterPath="$PROJECT_DIR$/src/by/troyan/epam/task1/validator/Validator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/by/troyan/epam/task1/action/TrianglesTest.java" afterPath="$PROJECT_DIR$/src/test/by/troyan/epam/task1/action/TrianglesTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/by/troyan/epam/task1/validator/ValidatorTest.java" afterPath="$PROJECT_DIR$/src/test/by/troyan/epam/task1/validator/ValidatorTest.java" />
-    </list>
+    <list default="true" id="147e29f8-8836-4365-a1bd-678a21bfbc31" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -606,6 +600,9 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
