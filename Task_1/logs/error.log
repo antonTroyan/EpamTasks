@@ -1,0 +1,14 @@
+2017-10-16T14:59:18,677 [INFO ] (FileDataDownloader.java:31) - File opened successfully
+2017-10-16T14:59:18,678 [INFO ] (FileDataDownloader.java:33) - Line was downloaded successfully 2f 2 3 4 1 5
+2017-10-16T14:59:18,679 [INFO ] (FileDataDownloader.java:33) - Line was downloaded successfully 4 2 7 9 1 3
+2017-10-16T14:59:18,679 [INFO ] (FileDataDownloader.java:33) - Line was downloaded successfully 4 2 7 9 1
+2017-10-16T14:59:18,679 [INFO ] (Validator.java:18) - Validating string 2f 2 3 4 1 5
+2017-10-16T14:59:18,680 [ERROR] (Validator.java:32) - Wrong Format java.lang.NumberFormatException: For input string: "2f"
+2017-10-16T14:59:18,680 [INFO ] (Validator.java:18) - Validating string 4 2 7 9 1 3
+2017-10-16T14:59:18,680 [INFO ] (Validator.java:29) - String 4 2 7 9 1 3 was validated successfully
+2017-10-16T14:59:18,681 [INFO ] (Validator.java:18) - Validating string 4 2 7 9 1
+2017-10-16T14:59:18,681 [ERROR] (Validator.java:35) - Wrong parameters amount java.lang.ArrayIndexOutOfBoundsException: 5
+2017-10-16T14:59:18,687 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=4, yCoordinate=2}
+2017-10-16T14:59:18,687 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=7, yCoordinate=9}
+2017-10-16T14:59:18,687 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=1, yCoordinate=3}
+2017-10-16T14:59:18,708 [INFO ] (EntityCreator.java:34) - Triangle was created Triangle{A=Point{xCoordinate=4, yCoordinate=2}, B=Point{xCoordinate=7, yCoordinate=9}, C=Point{xCoordinate=1, yCoordinate=3}}
