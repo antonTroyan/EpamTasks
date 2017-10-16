@@ -11,6 +11,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		// Класс предок всех девайсов
+
+
 		Appliance appliance;
 
 		// Дай экземпляр фабрики
@@ -20,10 +22,14 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
+        // Создать объект критерий
 		Criteria<Oven> criteriaOven = new Criteria<Oven>();
+		// Задать тип с которым будет работать объект в дальнейшем
 		criteriaOven.setApplianceType("Oven");
+		// Установить критерии. Тип и значение
 		criteriaOven.add(Oven.CAPACITY, 3);
 
+		// Выполнить поиск по критериям
 		appliance = service.find(criteriaOven);
 		
 		if(appliance.getClass() == by.tc.task01.entity.Oven.class) {}
