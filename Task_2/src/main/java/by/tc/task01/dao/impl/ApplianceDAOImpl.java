@@ -6,7 +6,7 @@ import by.tc.task01.entity.criteria.Criteria;
 
 public class ApplianceDAOImpl implements ApplianceDAO{
 
-	@Override
+
 	public <E> Appliance find(Criteria<E> criteria) {
 		// you may add your own code here
 		

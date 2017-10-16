@@ -9,7 +9,7 @@ import by.tc.task01.service.validation.Validator;
 
 public class ApplianceServiceImpl implements ApplianceService{
 
-	@Override
+
 	public <E> Appliance find(Criteria<E> criteria) {
 		if (!Validator.criteriaValidator(criteria)) {
 			return null;

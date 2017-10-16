@@ -10,9 +10,12 @@ import by.tc.task01.service.ServiceFactory;
 public class Main {
 
 	public static void main(String[] args) {
+		// Класс предок всех девайсов
 		Appliance appliance;
 
+		// Дай экземпляр фабрики
 		ServiceFactory factory = ServiceFactory.getInstance();
+		// Дай экземпляр имплементации общего для всех интерфейса ApplianceService
 		ApplianceService service = factory.getApplianceService();
 
 		//////////////////////////////////////////////////////////////////
