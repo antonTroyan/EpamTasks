@@ -39,17 +39,17 @@ public class Validator {
 
     public boolean validateFile(String filename) throws NoFileNameException, FileIsEmptyException, FileNotExistExeption {
         File file = new File(filename);
-        if (filename.isEmpty()){
-            log.fatal("Fatal! Parameter filename is empty " );
+        if (filename.isEmpty()) {
+            log.fatal("Fatal! Parameter filename is empty ");
             throw new NoFileNameException("Parameter filename is empty");
         }
-        if (!file.exists()){
-            log.fatal("Fatal! File is not exist " );
+        if (!file.exists()) {
+            log.fatal("Fatal! File is not exist ");
             throw new FileNotExistExeption("File is not exist");
         }
-        try(BufferedReader reader = new BufferedReader(new FileReader(filename))){
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             if (reader.readLine() == null) {
-                log.fatal("Fatal! File is empty " );
+                log.fatal("Fatal! File is empty ");
                 throw new FileIsEmptyException("File is empty, or can`t be read");
             }
         } catch (IOException e) {

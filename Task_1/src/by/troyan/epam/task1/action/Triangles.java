@@ -21,9 +21,9 @@ public class Triangles {
 
 
     public static int calculatePerimeter(Triangle triangle) {
-        int sideAB = calculateSideLength(triangle.getA(),triangle.getB());
-        int sideBC = calculateSideLength(triangle.getB(),triangle.getC());
-        int sideCA = calculateSideLength(triangle.getC(),triangle.getA());
+        int sideAB = calculateSideLength(triangle.getA(), triangle.getB());
+        int sideBC = calculateSideLength(triangle.getB(), triangle.getC());
+        int sideCA = calculateSideLength(triangle.getC(), triangle.getA());
         return sideAB + sideBC + sideCA;
     }
 
@@ -38,9 +38,9 @@ public class Triangles {
     }
 
     public static boolean isRectangular(Triangle triangle){
-        int sideAB = calculateSideLength(triangle.getA(),triangle.getB());
-        int sideBC = calculateSideLength(triangle.getB(),triangle.getC());
-        int sideCA = calculateSideLength(triangle.getC(),triangle.getA());
+        int sideAB = calculateSideLength(triangle.getA(), triangle.getB());
+        int sideBC = calculateSideLength(triangle.getB(), triangle.getC());
+        int sideCA = calculateSideLength(triangle.getC(), triangle.getA());
 
         int sideABSecDegree = sideAB*sideAB;
         int sideBCSecDegree = sideBC*sideBC;

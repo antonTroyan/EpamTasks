@@ -5,7 +5,7 @@ import by.tc.task01.entity.Appliance;
 public class PrintApplianceInfo {
 	
 	public static void print(Appliance appliance) {
-		// you may add your own code here
+		System.out.println(appliance);
 
 	}
 	

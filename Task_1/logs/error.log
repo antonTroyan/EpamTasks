@@ -12,3 +12,9 @@
 2017-10-16T14:59:18,687 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=7, yCoordinate=9}
 2017-10-16T14:59:18,687 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=1, yCoordinate=3}
 2017-10-16T14:59:18,708 [INFO ] (EntityCreator.java:34) - Triangle was created Triangle{A=Point{xCoordinate=4, yCoordinate=2}, B=Point{xCoordinate=7, yCoordinate=9}, C=Point{xCoordinate=1, yCoordinate=3}}
+2017-10-16T20:16:29,489 [FATAL] (Validator.java:52) - Fatal! File is empty 
+2017-10-16T20:16:29,494 [FATAL] (Validator.java:43) - Fatal! Parameter filename is empty 
+2017-10-16T20:16:29,496 [INFO ] (Validator.java:18) - Validating string 1 2 3 4 
+2017-10-16T20:16:29,497 [ERROR] (Validator.java:35) - Wrong parameters amount java.lang.ArrayIndexOutOfBoundsException: 4
+2017-10-16T20:16:29,499 [INFO ] (Validator.java:18) - Validating string 1f 2 3 4 5 6
+2017-10-16T20:16:29,499 [ERROR] (Validator.java:32) - Wrong Format java.lang.NumberFormatException: For input string: "1f"

@@ -10,9 +10,8 @@ import by.tc.task01.service.ServiceFactory;
 public class Main {
 
 	public static void main(String[] args) {
+
 		// Класс предок всех девайсов
-
-
 		Appliance appliance;
 
 		// Дай экземпляр фабрики
