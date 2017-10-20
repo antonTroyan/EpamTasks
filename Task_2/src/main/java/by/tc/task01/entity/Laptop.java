@@ -2,14 +2,14 @@ package by.tc.task01.entity;
 
 public class Laptop extends Appliance{
 
-	private int batteryCapacity;
-    private int os;
-    private int memoryRom;
-    private int systemMemory;
-    private int cpu;
-    private int displayInches;
+	private double batteryCapacity;
+    private String os;
+    private double memoryRom;
+    private double systemMemory;
+    private double cpu;
+    private double displayInches;
 
-    public Laptop(int batteryCapacity, int os, int memoryRom, int systemMemory, int cpu, int displayInches) {
+    public Laptop(double batteryCapacity, String os, double memoryRom, double systemMemory, double cpu, double displayInches) {
         this.batteryCapacity = batteryCapacity;
         this.os = os;
         this.memoryRom = memoryRom;
@@ -18,27 +18,27 @@ public class Laptop extends Appliance{
         this.displayInches = displayInches;
     }
 
-    public int getBatteryCapacity() {
+    public double getBatteryCapacity() {
         return batteryCapacity;
     }
 
-    public int getOs() {
+    public String getOs() {
         return os;
     }
 
-    public int getMemoryRom() {
+    public double getMemoryRom() {
         return memoryRom;
     }
 
-    public int getSystemMemory() {
+    public double getSystemMemory() {
         return systemMemory;
     }
 
-    public int getCpu() {
+    public double getCpu() {
         return cpu;
     }
 
-    public int getDisplayInches() {
+    public double getDisplayInches() {
         return displayInches;
     }
 
@@ -49,22 +49,29 @@ public class Laptop extends Appliance{
 
         Laptop laptop = (Laptop) o;
 
-        if (batteryCapacity != laptop.batteryCapacity) return false;
-        if (os != laptop.os) return false;
-        if (memoryRom != laptop.memoryRom) return false;
-        if (systemMemory != laptop.systemMemory) return false;
-        if (cpu != laptop.cpu) return false;
-        return displayInches == laptop.displayInches;
+        if (Double.compare(laptop.batteryCapacity, batteryCapacity) != 0) return false;
+        if (Double.compare(laptop.memoryRom, memoryRom) != 0) return false;
+        if (Double.compare(laptop.systemMemory, systemMemory) != 0) return false;
+        if (Double.compare(laptop.cpu, cpu) != 0) return false;
+        if (Double.compare(laptop.displayInches, displayInches) != 0) return false;
+        return os != null ? os.equals(laptop.os) : laptop.os == null;
     }
 
     @Override
     public int hashCode() {
-        int result = batteryCapacity;
-        result = 31 * result + os;
-        result = 31 * result + memoryRom;
-        result = 31 * result + systemMemory;
-        result = 31 * result + cpu;
-        result = 31 * result + displayInches;
+        int result;
+        long temp;
+        temp = Double.doubleToLongBits(batteryCapacity);
+        result = (int) (temp ^ (temp >>> 32));
+        result = 31 * result + (os != null ? os.hashCode() : 0);
+        temp = Double.doubleToLongBits(memoryRom);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(systemMemory);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(cpu);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(displayInches);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
     }
 
@@ -72,7 +79,7 @@ public class Laptop extends Appliance{
     public String toString() {
         return "Laptop{" +
                 "batteryCapacity=" + batteryCapacity +
-                ", os=" + os +
+                ", os='" + os + '\'' +
                 ", memoryRom=" + memoryRom +
                 ", systemMemory=" + systemMemory +
                 ", cpu=" + cpu +

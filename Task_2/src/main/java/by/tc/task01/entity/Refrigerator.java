@@ -2,14 +2,14 @@ package by.tc.task01.entity;
 
 public class Refrigerator extends Appliance{
 
-    private int powerConsumption;
-    private int weight;
-    private int freezerCapacity;
-    private int overalCapacity;
-    private int height;
-    private int width;
+    private double powerConsumption;
+    private double weight;
+    private double freezerCapacity;
+    private double overalCapacity;
+    private double height;
+    private double width;
 
-    public Refrigerator(int powerConsumption, int weight, int freezerCapacity, int overalCapacity, int height, int width) {
+    public Refrigerator(double powerConsumption, double weight, double freezerCapacity, double overalCapacity, double height, double width) {
         this.powerConsumption = powerConsumption;
         this.weight = weight;
         this.freezerCapacity = freezerCapacity;
@@ -18,27 +18,27 @@ public class Refrigerator extends Appliance{
         this.width = width;
     }
 
-    public int getPowerConsumption() {
+    public double getPowerConsumption() {
         return powerConsumption;
     }
 
-    public int getWeight() {
+    public double getWeight() {
         return weight;
     }
 
-    public int getFreezerCapacity() {
+    public double getFreezerCapacity() {
         return freezerCapacity;
     }
 
-    public int getOveralCapacity() {
+    public double getOveralCapacity() {
         return overalCapacity;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public int getWidth() {
+    public double getWidth() {
         return width;
     }
 
@@ -49,22 +49,30 @@ public class Refrigerator extends Appliance{
 
         Refrigerator that = (Refrigerator) o;
 
-        if (powerConsumption != that.powerConsumption) return false;
-        if (weight != that.weight) return false;
-        if (freezerCapacity != that.freezerCapacity) return false;
-        if (overalCapacity != that.overalCapacity) return false;
-        if (height != that.height) return false;
-        return width == that.width;
+        if (Double.compare(that.powerConsumption, powerConsumption) != 0) return false;
+        if (Double.compare(that.weight, weight) != 0) return false;
+        if (Double.compare(that.freezerCapacity, freezerCapacity) != 0) return false;
+        if (Double.compare(that.overalCapacity, overalCapacity) != 0) return false;
+        if (Double.compare(that.height, height) != 0) return false;
+        return Double.compare(that.width, width) == 0;
     }
 
     @Override
     public int hashCode() {
-        int result = powerConsumption;
-        result = 31 * result + weight;
-        result = 31 * result + freezerCapacity;
-        result = 31 * result + overalCapacity;
-        result = 31 * result + height;
-        result = 31 * result + width;
+        int result;
+        long temp;
+        temp = Double.doubleToLongBits(powerConsumption);
+        result = (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(weight);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(freezerCapacity);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(overalCapacity);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(height);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(width);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
     }
 

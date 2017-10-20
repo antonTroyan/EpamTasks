@@ -42,7 +42,6 @@ public class Main {
 		criteriaOven = new Criteria<Oven>();
 		criteriaOven.add(Oven.HEIGHT, 200);
 		criteriaOven.add(Oven.DEPTH, 300);
-
 		appliance = service.find(criteriaOven);
 
 		PrintApplianceInfo.print(appliance);

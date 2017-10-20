@@ -17,7 +17,8 @@ public class Validator {
 		try {
 			scanner = new Scanner(new FileReader("data//applianceData.txt"));
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			System.err.println(e);
+			scanner.close();
 		}
 
 
@@ -28,29 +29,61 @@ public class Validator {
 		System.out.println("valueList" + valueList);
 
 
-		while (scanner.hasNext()){
-			String str = scanner.next();
-			if(str.equals(criteria.getApplianceType())) {
-				System.out.println("Founded " + criteria.getApplianceType());
-				System.out.println("!!!!!!!!!!!!!"
-						+ scanner.findInLine(keyList.get(0)
-						+ "=" + valueList.get(0) + ","));
+
+		boolean founded = false;
+		while(scanner.hasNext()){
+			String str = scanner.nextLine();
+			Scanner sc = new Scanner(str);
+
+			if (sc.findInLine(criteria.getApplianceType()) != null){
+				System.out.println(criteria.getApplianceType() + " - founded ");
+				int counter = 0;
+				for(int i = 0; i < keyList.size(); i++){
+					if(sc.findInLine(keyList.get(i) + "=" + valueList.get(i) + ",") != null){
+						founded = true;
+						System.out.println("criteria matches!");
+						counter++;
+						if(counter == keyList.size()) {
+							System.out.println("All ok!!!!!");
+							return founded;
+						}
+					} else {
+						counter = 0;
+						System.out.println("criteria don`t matches");
+					}
+				}
+			} else {
+				System.out.println(criteria.getApplianceType() + " not founded !!!");
+				founded = false;
 			}
-		}
+		} return founded;
+
+
+
+
+
+//		boolean founded = false;
+//		while (scanner.hasNext()){
+//			String str = scanner.next();
+//			if(str.equals(criteria.getApplianceType())) {
+//				if(scanner.findInLine(keyList.get(0) + "=" + valueList.get(0) + ",") != null) {
+//						return founded = true;
+//					}
+//				}
+//				else founded = false;
+//			}
+//		return founded;
+//	}
 
 		// you may add your own code here
 
-		return true;
+
 	}
+}
 
 	// you may add your own code here
 
 
 
-
-
-
-
-}
 
 // you may add your own new classes

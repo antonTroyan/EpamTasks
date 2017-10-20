@@ -2,14 +2,14 @@ package by.tc.task01.entity;
 
 public class VacuumCleaner extends Appliance{
 
-    private int powerConsumption;
-    private int filterType;
-    private int bagType;
-    private int wandType;
-    private int motorSpeedRegulation;
-    private int cleaningWidth;
+    private double powerConsumption;
+    private String filterType;
+    private String bagType;
+    private String wandType;
+    private double motorSpeedRegulation;
+    private double cleaningWidth;
 
-    public VacuumCleaner(int powerConsumption, int filterType, int bagType, int wandType, int motorSpeedRegulation, int cleaningWidth) {
+    public VacuumCleaner(double powerConsumption, String filterType, String bagType, String wandType, double motorSpeedRegulation, double cleaningWidth) {
         this.powerConsumption = powerConsumption;
         this.filterType = filterType;
         this.bagType = bagType;
@@ -18,27 +18,27 @@ public class VacuumCleaner extends Appliance{
         this.cleaningWidth = cleaningWidth;
     }
 
-    public int getPowerConsumption() {
+    public double getPowerConsumption() {
         return powerConsumption;
     }
 
-    public int getFilterType() {
+    public String getFilterType() {
         return filterType;
     }
 
-    public int getBagType() {
+    public String getBagType() {
         return bagType;
     }
 
-    public int getWandType() {
+    public String getWandType() {
         return wandType;
     }
 
-    public int getMotorSpeedRegulation() {
+    public double getMotorSpeedRegulation() {
         return motorSpeedRegulation;
     }
 
-    public int getCleaningWidth() {
+    public double getCleaningWidth() {
         return cleaningWidth;
     }
 
@@ -49,22 +49,27 @@ public class VacuumCleaner extends Appliance{
 
         VacuumCleaner that = (VacuumCleaner) o;
 
-        if (powerConsumption != that.powerConsumption) return false;
-        if (filterType != that.filterType) return false;
-        if (bagType != that.bagType) return false;
-        if (wandType != that.wandType) return false;
-        if (motorSpeedRegulation != that.motorSpeedRegulation) return false;
-        return cleaningWidth == that.cleaningWidth;
+        if (Double.compare(that.powerConsumption, powerConsumption) != 0) return false;
+        if (Double.compare(that.motorSpeedRegulation, motorSpeedRegulation) != 0) return false;
+        if (Double.compare(that.cleaningWidth, cleaningWidth) != 0) return false;
+        if (filterType != null ? !filterType.equals(that.filterType) : that.filterType != null) return false;
+        if (bagType != null ? !bagType.equals(that.bagType) : that.bagType != null) return false;
+        return wandType != null ? wandType.equals(that.wandType) : that.wandType == null;
     }
 
     @Override
     public int hashCode() {
-        int result = powerConsumption;
-        result = 31 * result + filterType;
-        result = 31 * result + bagType;
-        result = 31 * result + wandType;
-        result = 31 * result + motorSpeedRegulation;
-        result = 31 * result + cleaningWidth;
+        int result;
+        long temp;
+        temp = Double.doubleToLongBits(powerConsumption);
+        result = (int) (temp ^ (temp >>> 32));
+        result = 31 * result + (filterType != null ? filterType.hashCode() : 0);
+        result = 31 * result + (bagType != null ? bagType.hashCode() : 0);
+        result = 31 * result + (wandType != null ? wandType.hashCode() : 0);
+        temp = Double.doubleToLongBits(motorSpeedRegulation);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(cleaningWidth);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
     }
 
@@ -72,9 +77,9 @@ public class VacuumCleaner extends Appliance{
     public String toString() {
         return "VacuumCleaner{" +
                 "powerConsumption=" + powerConsumption +
-                ", filterType=" + filterType +
-                ", bagType=" + bagType +
-                ", wandType=" + wandType +
+                ", filterType='" + filterType + '\'' +
+                ", bagType='" + bagType + '\'' +
+                ", wandType='" + wandType + '\'' +
                 ", motorSpeedRegulation=" + motorSpeedRegulation +
                 ", cleaningWidth=" + cleaningWidth +
                 '}';

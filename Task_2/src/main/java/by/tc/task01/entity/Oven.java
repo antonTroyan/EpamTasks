@@ -2,14 +2,14 @@ package by.tc.task01.entity;
 
 public class Oven extends Appliance{
 
-    private int powerConsumption;
-    private int weight;
-    private int capacity;
-    private int depth;
-    private int height;
-    private int width;
+    private double powerConsumption;
+    private double weight;
+    private double capacity;
+    private double depth;
+    private double height;
+    private double width;
 
-    public Oven(int powerConsumption, int weight, int capacity, int depth, int height, int width) {
+    public Oven(double powerConsumption, double weight, double capacity, double depth, double height, double width) {
         this.powerConsumption = powerConsumption;
         this.weight = weight;
         this.capacity = capacity;
@@ -18,27 +18,27 @@ public class Oven extends Appliance{
         this.width = width;
     }
 
-    public int getPowerConsumption() {
+    public double getPowerConsumption() {
         return powerConsumption;
     }
 
-    public int getWeight() {
+    public double getWeight() {
         return weight;
     }
 
-    public int getCapacity() {
+    public double getCapacity() {
         return capacity;
     }
 
-    public int getDepth() {
+    public double getDepth() {
         return depth;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public int getWidth() {
+    public double getWidth() {
         return width;
     }
 
@@ -49,22 +49,30 @@ public class Oven extends Appliance{
 
         Oven oven = (Oven) o;
 
-        if (powerConsumption != oven.powerConsumption) return false;
-        if (weight != oven.weight) return false;
-        if (capacity != oven.capacity) return false;
-        if (depth != oven.depth) return false;
-        if (height != oven.height) return false;
-        return width == oven.width;
+        if (Double.compare(oven.powerConsumption, powerConsumption) != 0) return false;
+        if (Double.compare(oven.weight, weight) != 0) return false;
+        if (Double.compare(oven.capacity, capacity) != 0) return false;
+        if (Double.compare(oven.depth, depth) != 0) return false;
+        if (Double.compare(oven.height, height) != 0) return false;
+        return Double.compare(oven.width, width) == 0;
     }
 
     @Override
     public int hashCode() {
-        int result = powerConsumption;
-        result = 31 * result + weight;
-        result = 31 * result + capacity;
-        result = 31 * result + depth;
-        result = 31 * result + height;
-        result = 31 * result + width;
+        int result;
+        long temp;
+        temp = Double.doubleToLongBits(powerConsumption);
+        result = (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(weight);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(capacity);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(depth);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(height);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(width);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
     }
 
