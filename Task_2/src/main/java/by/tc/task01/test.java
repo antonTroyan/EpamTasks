@@ -27,7 +27,7 @@ public class test {
         ApplianceService service = factory.getApplianceService();
         Criteria<SearchCriteria.Oven> criteriaOven = new Criteria<>();
         criteriaOven.setApplianceType("Oven");
-        criteriaOven.add(SearchCriteria.Oven.CAPACITY, 32);
+        criteriaOven.add(SearchCriteria.Oven.CAPACITY, 33);
 
 
         System.out.println(criteriaOven.getCriteria().keySet());

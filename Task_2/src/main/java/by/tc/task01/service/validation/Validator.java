@@ -12,7 +12,6 @@ public class Validator {
 
 		criteria.getApplianceType();
 
-
 		Scanner scanner = null;
 
 		try {
@@ -22,15 +21,11 @@ public class Validator {
 		}
 
 
-
-
-
 		List keyList = new ArrayList(criteria.getCriteria().keySet());
 		System.out.println("keyList" + keyList);
 
 		List valueList = new ArrayList(criteria.getCriteria().values());
 		System.out.println("valueList" + valueList);
-
 
 
 		while (scanner.hasNext()){
