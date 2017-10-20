@@ -29,19 +29,19 @@ public class Validator {
 		System.out.println("valueList" + valueList);
 
 
-
 		boolean founded = false;
 		while(scanner.hasNext()){
 			String str = scanner.nextLine();
-			Scanner sc = new Scanner(str);
+			Scanner scannerForTitle = new Scanner(str);
 
-			if (sc.findInLine(criteria.getApplianceType()) != null){
+			if (scannerForTitle.findInLine(criteria.getApplianceType()) != null){
 				System.out.println(criteria.getApplianceType() + " - founded ");
 				int counter = 0;
 				for(int i = 0; i < keyList.size(); i++){
-					if(sc.findInLine(keyList.get(i) + "=" + valueList.get(i) + ",") != null){
+					Scanner scannerForString = new Scanner(str);
+					if(scannerForString.findInLine(keyList.get(i) + "=" + valueList.get(i) + ",") != null){
 						founded = true;
-						System.out.println("criteria matches!");
+						System.out.println("criteria matches!!!!!!!!!!!!!!!");
 						counter++;
 						if(counter == keyList.size()) {
 							System.out.println("All ok!!!!!");
@@ -53,27 +53,13 @@ public class Validator {
 					}
 				}
 			} else {
-				System.out.println(criteria.getApplianceType() + " not founded !!!");
+				System.out.println(criteria.getApplianceType() + " not founded !");
 				founded = false;
 			}
 		} return founded;
 
 
-
-
-
-//		boolean founded = false;
-//		while (scanner.hasNext()){
-//			String str = scanner.next();
-//			if(str.equals(criteria.getApplianceType())) {
-//				if(scanner.findInLine(keyList.get(0) + "=" + valueList.get(0) + ",") != null) {
-//						return founded = true;
-//					}
-//				}
-//				else founded = false;
-//			}
-//		return founded;
-//	}
+		
 
 		// you may add your own code here
 

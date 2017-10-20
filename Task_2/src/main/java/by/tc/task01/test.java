@@ -25,6 +25,8 @@ public class test {
         criteriaOven.setApplianceType("Oven");
         criteriaOven.add(SearchCriteria.Oven.WEIGHT, 12);
         criteriaOven.add(SearchCriteria.Oven.DEPTH, 60);
+        criteriaOven.add(SearchCriteria.Oven.CAPACITY, 33);
+        criteriaOven.add(SearchCriteria.Oven.HEIGHT, 45);
 
         System.out.println(criteriaOven.getCriteria().keySet());
 
