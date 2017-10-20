@@ -21,16 +21,27 @@ public class test {
         Appliance appliance;
         ServiceFactory factory = ServiceFactory.getInstance();
         ApplianceService service = factory.getApplianceService();
-        Criteria<SearchCriteria.Oven> criteriaOven = new Criteria<>();
-        criteriaOven.setApplianceType("Oven");
-        criteriaOven.add(SearchCriteria.Oven.WEIGHT, 12);
-        criteriaOven.add(SearchCriteria.Oven.DEPTH, 60);
-        criteriaOven.add(SearchCriteria.Oven.CAPACITY, 33);
-        criteriaOven.add(SearchCriteria.Oven.HEIGHT, 45);
+//        Criteria<SearchCriteria.Oven> criteriaOven = new Criteria<>();
+//        criteriaOven.setApplianceType("Oven");
+//        criteriaOven.add(SearchCriteria.Oven.WEIGHT, 12);
+//        criteriaOven.add(SearchCriteria.Oven.DEPTH, 60);
+//        criteriaOven.add(SearchCriteria.Oven.CAPACITY, 33);
+//        criteriaOven.add(SearchCriteria.Oven.HEIGHT, 45);
+//
+//        System.out.println(Validator.criteriaValidator(criteriaOven));
+//
+//        appliance = service.find(criteriaOven);
+//        System.out.println(appliance);
 
-        System.out.println(criteriaOven.getCriteria().keySet());
 
-        System.out.println(Validator.criteriaValidator(criteriaOven));
+        Criteria<SearchCriteria.Laptop> criteriaLaptop =  new Criteria<>();
+        criteriaLaptop.setApplianceType("Laptop");
+        criteriaLaptop.add(SearchCriteria.Laptop.CPU, 1.2);
+
+        appliance = service.find(criteriaLaptop);
+        System.out.println(appliance);
+
+
 
 
 //        Scanner scanner = new Scanner(new FileReader("data//applianceData.txt"));

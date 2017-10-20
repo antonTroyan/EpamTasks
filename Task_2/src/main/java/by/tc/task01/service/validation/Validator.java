@@ -10,8 +10,6 @@ public class Validator {
 
 	public static <E> boolean criteriaValidator(Criteria<E> criteria) {
 
-		criteria.getApplianceType();
-
 		Scanner scanner = null;
 
 		try {
@@ -30,22 +28,23 @@ public class Validator {
 
 
 		boolean founded = false;
-		while(scanner.hasNext()){
+		while (scanner.hasNext()) {
 			String str = scanner.nextLine();
 			Scanner scannerForTitle = new Scanner(str);
 
-			if (scannerForTitle.findInLine(criteria.getApplianceType()) != null){
+			if (scannerForTitle.findInLine(criteria.getApplianceType()) != null) {
 				System.out.println(criteria.getApplianceType() + " - founded ");
 				int counter = 0;
-				for(int i = 0; i < keyList.size(); i++){
+				for (int i = 0; i < keyList.size(); i++) {
 					Scanner scannerForString = new Scanner(str);
-					if(scannerForString.findInLine(keyList.get(i) + "=" + valueList.get(i) + ",") != null){
+					if (scannerForString.findInLine(keyList.get(i) + "=" + valueList.get(i) + ",") != null) {
 						founded = true;
-						System.out.println("criteria matches!!!!!!!!!!!!!!!");
+						System.out.println("criteria matches! - " + counter);
 						counter++;
-						if(counter == keyList.size()) {
+						if (counter == keyList.size()) {
 							System.out.println("All ok!!!!!");
 							return founded;
+
 						}
 					} else {
 						counter = 0;
@@ -56,10 +55,11 @@ public class Validator {
 				System.out.println(criteria.getApplianceType() + " not founded !");
 				founded = false;
 			}
-		} return founded;
+		}
+		return founded;
 
 
-		
+
 
 		// you may add your own code here
 
