@@ -18,25 +18,20 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 	public <E> Appliance find(Criteria<E> criteria) {
 		List keyList = new ArrayList(criteria.getCriteria().keySet());
 		List valueList = new ArrayList(criteria.getCriteria().values());
-		Scanner scanner = null;
+
 		ArrayList<Object> data = new ArrayList<>();
 
-		try {
-			scanner = new Scanner(new FileReader("data//applianceData.txt"));
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
+		try (Scanner fileScanner = new Scanner(new FileReader("data//applianceData.txt"))) {
 
+		while (fileScanner.hasNext()) {
+			String analized = fileScanner.nextLine();
+			Scanner titleScanner = new Scanner(analized);
 
-		while (scanner.hasNext()) {
-			String analized = scanner.nextLine();
-			Scanner scannerForTitle = new Scanner(analized);
-
-			if (scannerForTitle.findInLine(criteria.getApplianceType()) != null) {
+			if (titleScanner.findInLine(criteria.getApplianceType()) != null) {
 				int counter = 0;
 				for (int i = 0; i < keyList.size(); i++) {
-					Scanner scannerForString = new Scanner(analized);
-					if (scannerForString.findInLine(keyList.get(i) + "="
+					Scanner stringScanner = new Scanner(analized);
+					if (stringScanner.findInLine(keyList.get(i) + "="
 							+ valueList.get(i).toString().toLowerCase()) != null) {
 						counter++;
 						if (counter == keyList.size()) {
@@ -54,14 +49,18 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 					} else {
 						counter = 0;
 					}
+					titleScanner.close();
+					stringScanner.close();
 				}
 			}
-		}
 
+		}
+		} catch (FileNotFoundException e) {
+			System.err.println("File not found " + e);
+		}
 
 		return createAppliance(criteria, data);
 	}
-
 
 
 
@@ -120,10 +119,6 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 		return result;
 
 	}
-
-
-
-
 
 	}
 	// you may add your own code here
