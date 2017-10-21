@@ -45,6 +45,7 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 									break;
 								}
 							}
+							scannerParser.close();
 						}
 					} else {
 						counter = 0;
