@@ -26,11 +26,11 @@ public class Main {
 		// Задать тип с которым будет работать объект в дальнейшем
 		criteriaOven.setApplianceType("Oven");
 		// Установить критерии. Тип и значение
-		criteriaOven.add(Oven.CAPACITY, 3);
+		criteriaOven.add(Oven.CAPACITY, 33);
 
 		// Выполнить поиск по критериям
 		appliance = service.find(criteriaOven);
-		
+
 		if(appliance.getClass() == by.tc.task01.entity.Oven.class) {}
 		by.tc.task01.entity.Oven oven = (by.tc.task01.entity.Oven) appliance;
 		//if(oven.getCapacity() == 3) {}
@@ -40,8 +40,11 @@ public class Main {
 		//////////////////////////////////////////////////////////////////
 
 		criteriaOven = new Criteria<Oven>();
-		criteriaOven.add(Oven.HEIGHT, 200);
-		criteriaOven.add(Oven.DEPTH, 300);
+
+        criteriaOven.setApplianceType("Oven");
+
+		criteriaOven.add(Oven.HEIGHT, 40);
+		criteriaOven.add(Oven.DEPTH, 60);
 		appliance = service.find(criteriaOven);
 
 		PrintApplianceInfo.print(appliance);
@@ -49,11 +52,12 @@ public class Main {
 		//////////////////////////////////////////////////////////////////
 		
 		Criteria<TabletPC> criteriaTabletPC = new Criteria<TabletPC>();
+        criteriaTabletPC.setApplianceType("TabletPC");
 		criteriaTabletPC.add(TabletPC.COLOR, "BLUE");
 		criteriaTabletPC.add(TabletPC.DISPLAY_INCHES, 14);
-		criteriaTabletPC.add(TabletPC.MEMORY_ROM, 4);
+		criteriaTabletPC.add(TabletPC.MEMORY_ROM, 8000);
 
-		appliance = service.find(criteriaOven);
+		appliance = service.find(criteriaTabletPC);
 
 		PrintApplianceInfo.print(appliance);
 

@@ -21,46 +21,24 @@ public class test {
         Appliance appliance;
         ServiceFactory factory = ServiceFactory.getInstance();
         ApplianceService service = factory.getApplianceService();
-//        Criteria<SearchCriteria.Oven> criteriaOven = new Criteria<>();
-//        criteriaOven.setApplianceType("Oven");
-//        criteriaOven.add(SearchCriteria.Oven.WEIGHT, 12);
-//        criteriaOven.add(SearchCriteria.Oven.DEPTH, 60);
-//        criteriaOven.add(SearchCriteria.Oven.CAPACITY, 33);
-//        criteriaOven.add(SearchCriteria.Oven.HEIGHT, 45);
-//
-//        System.out.println(Validator.criteriaValidator(criteriaOven));
-//
-//        appliance = service.find(criteriaOven);
-//        System.out.println(appliance);
 
+        ////////////////////////////////////////////////////////////////
 
-        Criteria<SearchCriteria.Laptop> criteriaLaptop =  new Criteria<>();
-        criteriaLaptop.setApplianceType("Laptop");
-        criteriaLaptop.add(SearchCriteria.Laptop.CPU, 1.2);
+        Criteria<SearchCriteria.TabletPC> criteriaTabletPC = new Criteria<SearchCriteria.TabletPC>();
+        criteriaTabletPC.setApplianceType("TabletPC");
+        criteriaTabletPC.add(SearchCriteria.TabletPC.COLOR, "RED");
+        criteriaTabletPC.add(SearchCriteria.TabletPC.BATTERY_CAPACITY, 4);
+        appliance = service.find(criteriaTabletPC);
+        PrintApplianceInfo.print(appliance);
 
-        appliance = service.find(criteriaLaptop);
-        System.out.println(appliance);
+        ///////////////////////////////////////////////////////////////
 
-
-
-
-//        Scanner scanner = new Scanner(new FileReader("data//applianceData.txt"));
-//        scanner.useDelimiter(",|;|=");
-//
-//        while(scanner.hasNext()){
-//            if(scanner.findInLine("=") != null){
-//                System.out.println(scanner.next());
-//            }
-//            else{
-//                System.out.println();
-//                scanner.next();
-//            }
-//        }
-
-
-
-//
-//    scanner.close();
+        Criteria<SearchCriteria.Speakers> speakersCriteria = new Criteria<>();
+        speakersCriteria.setApplianceType("Speakers");
+        speakersCriteria.add(SearchCriteria.Speakers.FREQUENCY_RANGE, "2-4");
+        speakersCriteria.add(SearchCriteria.Speakers.CORD_LENGTH, 2);
+        appliance = service.find(speakersCriteria);
+        PrintApplianceInfo.print(appliance);
 
 }
 }

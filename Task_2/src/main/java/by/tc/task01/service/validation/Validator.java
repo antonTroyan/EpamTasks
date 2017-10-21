@@ -19,13 +19,10 @@ public class Validator {
 			scanner.close();
 		}
 
-
 		List keyList = new ArrayList(criteria.getCriteria().keySet());
 		System.out.println("keyList" + keyList);
-
 		List valueList = new ArrayList(criteria.getCriteria().values());
 		System.out.println("valueList" + valueList);
-
 
 		boolean founded = false;
 		while (scanner.hasNext()) {
@@ -37,7 +34,8 @@ public class Validator {
 				int counter = 0;
 				for (int i = 0; i < keyList.size(); i++) {
 					Scanner scannerForString = new Scanner(str);
-					if (scannerForString.findInLine(keyList.get(i) + "=" + valueList.get(i) + ",") != null) {
+					if (scannerForString.findInLine(keyList.get(i) + "="
+							+ valueList.get(i).toString().toLowerCase()) != null) {
 						founded = true;
 						System.out.println("criteria matches! - " + counter);
 						counter++;
@@ -52,24 +50,14 @@ public class Validator {
 					}
 				}
 			} else {
-				System.out.println(criteria.getApplianceType() + " not founded !");
 				founded = false;
 			}
 		}
 		return founded;
-
-
-
-
-		// you may add your own code here
-
-
 	}
 }
 
-	// you may add your own code here
 
 
 
 
-// you may add your own new classes
