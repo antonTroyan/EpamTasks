@@ -17,28 +17,17 @@ import java.util.Scanner;
 public class test {
     public static void main(String[] args)  {
 
-
         Appliance appliance;
+
         ServiceFactory factory = ServiceFactory.getInstance();
         ApplianceService service = factory.getApplianceService();
 
-        ////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////
 
-        Criteria<SearchCriteria.TabletPC> criteriaTabletPC = new Criteria<>();
-        criteriaTabletPC.setApplianceType("TabletPC");
-        criteriaTabletPC.add(SearchCriteria.TabletPC.COLOR, "RED");
-        criteriaTabletPC.add(SearchCriteria.TabletPC.BATTERY_CAPACITY, 4);
-        appliance = service.find(criteriaTabletPC);
-        PrintApplianceInfo.print(appliance);
-
-        ///////////////////////////////////////////////////////////////
-
-        Criteria<SearchCriteria.Speakers> speakersCriteria = new Criteria<>();
-        speakersCriteria.setApplianceType("Speakers");
-        speakersCriteria.add(SearchCriteria.Speakers.FREQUENCY_RANGE, "2-4");
-        speakersCriteria.add(SearchCriteria.Speakers.CORD_LENGTH, 2);
-        appliance = service.find(speakersCriteria);
-        PrintApplianceInfo.print(appliance);
+        Criteria<SearchCriteria.Oven> criteriaOven = new Criteria<SearchCriteria.Oven>();
+        criteriaOven.setApplianceType("Oven");
+        criteriaOven.add(SearchCriteria.Oven.CAPACITY, 32);
+        System.out.println(Validator.criteriaValidator(criteriaOven));
 
 }
 }

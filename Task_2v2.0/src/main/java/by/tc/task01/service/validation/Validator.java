@@ -29,7 +29,6 @@ public class Validator {
 		boolean founded = false;
 
 		if(criteria.getApplianceType() != null){
-			System.out.println("Criteria != null. Validator");
 			while (scanner.hasNext()) {
 				String analized = scanner.nextLine();
 				Scanner scannerForTitle = new Scanner(analized);
@@ -38,11 +37,10 @@ public class Validator {
 					for (int i = 0; i < keyList.size(); i++) {
 						Scanner scannerForString = new Scanner(analized);
 						if (scannerForString.findInLine(keyList.get(i) + "="
-								+ valueList.get(i).toString().toLowerCase()) != null) {
+								+ valueList.get(i).toString().toLowerCase() + "[,;]") != null) {
 							founded = true;
 							counter++;
 							if (counter == keyList.size()) {
-								System.out.println("Founded " + founded + "Criteria != null. Validator");
 								return founded;
 							}
 						} else {
@@ -54,18 +52,16 @@ public class Validator {
 				}
 			}
 		} else {
-			System.out.println("Criteria == null. Validator");
 			while (scanner.hasNext()){
 				String analized = scanner.nextLine();
 				int counter = 0;
 				for (int i = 0; i < keyList.size(); i++) {
 					Scanner scannerForString = new Scanner(analized);
 					if (scannerForString.findInLine(keyList.get(i) + "="
-							+ valueList.get(i).toString().toLowerCase()) != null) {
+							+ valueList.get(i).toString().toLowerCase() + "[,;]") != null) {
 						founded = true;
 						counter++;
 						if (counter == keyList.size()) {
-							System.out.println("Founded " + founded + "Criteria == null. Validator");
 							return founded;
 						}
 					} else {

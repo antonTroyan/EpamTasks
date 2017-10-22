@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6a28d57-93cd-474e-b1a7-cd9ab36b8434" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/dao/impl/ApplianceDAOImpl.class" afterPath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/dao/impl/ApplianceDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/criteria/Criteria.class" afterPath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/criteria/Criteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/main/Main.class" afterPath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/main/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/test.class" afterPath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java" afterPath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/main/Main.java" afterPath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/main/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/test.java" afterPath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/dao/impl/ApplianceDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/dao/impl/ApplianceDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/main/Main.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/main/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/service/validation/Validator.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/service/validation/Validator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/test.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/main/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/service/validation/Validator.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/service/validation/Validator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/test.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,9 +30,11 @@
       <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="512">
+              <caret line="28" column="57" lean-forward="false" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+              <folding>
+                <element signature="e#878#899#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -39,9 +42,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-              <folding />
+            <state relative-caret-position="192">
+              <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+              <folding>
+                <element signature="e#1371#1381#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,8 +64,8 @@
       <file leaf-file-name="ApplianceDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="896">
-              <caret line="108" column="51" lean-forward="false" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
+            <state relative-caret-position="128">
+              <caret line="66" column="83" lean-forward="false" selection-start-line="66" selection-start-column="83" selection-end-line="66" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -69,8 +74,8 @@
       <file leaf-file-name="applianceData.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/applianceData.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="16" column="62" lean-forward="true" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+            <state relative-caret-position="32">
+              <caret line="1" column="53" lean-forward="true" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -79,8 +84,8 @@
       <file leaf-file-name="Validator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/service/validation/Validator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+            <state relative-caret-position="288">
+              <caret line="39" column="96" lean-forward="false" selection-start-line="39" selection-start-column="96" selection-end-line="39" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,10 +162,10 @@
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/TabletPC.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Speakers.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/service/FileFiller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/criteria/Criteria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/service/validation/Validator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/service/validation/Validator.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/main/Main.java" />
       </list>
     </option>
@@ -172,7 +177,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1098" />
     <option name="y" value="148" />
     <option name="width" value="1400" />
@@ -457,14 +462,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="2578" height="1408" extended-state="7" />
+    <frame x="-9" y="-9" width="2578" height="1408" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5015625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32938388" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -521,7 +527,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="864">
           <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#1371#1381#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -595,7 +603,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="864">
           <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#1371#1381#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -610,7 +620,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
           <caret line="50" column="35" lean-forward="false" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
-          <folding />
+          <folding>
+            <element signature="e#1371#1381#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -802,14 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/entity/criteria/Criteria.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -828,35 +832,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="108" column="51" lean-forward="false" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
+        <state relative-caret-position="128">
+          <caret line="66" column="83" lean-forward="false" selection-start-line="66" selection-start-column="83" selection-end-line="66" selection-end-column="83" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/applianceData.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="1" column="53" lean-forward="true" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="28" column="57" lean-forward="false" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+          <folding>
+            <element signature="e#878#899#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/service/validation/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        <state relative-caret-position="288">
+          <caret line="39" column="96" lean-forward="false" selection-start-line="39" selection-start-column="96" selection-end-line="39" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/applianceData.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="16" column="62" lean-forward="true" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="192">
+          <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+          <folding>
+            <element signature="e#1371#1381#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

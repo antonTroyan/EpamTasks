@@ -23,7 +23,6 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 		try (Scanner fileScanner = new Scanner(new FileReader("data//applianceData.txt"))) {
 			if (criteria.getApplianceType() != null) {
 				data = new ArrayList<>();
-				System.out.println("Enter Parser. ApplianceType != null ");
 				while (fileScanner.hasNext()) {
 					String analized = fileScanner.nextLine();
 					Scanner titleScanner = new Scanner(analized);
@@ -32,7 +31,7 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 						for (int i = 0; i < keyList.size(); i++) {
 							Scanner stringScanner = new Scanner(analized);
 							if (stringScanner.findInLine(keyList.get(i) + "="
-									+ valueList.get(i).toString().toLowerCase()) != null) {
+									+ valueList.get(i).toString().toLowerCase()+ "[,;]") != null) {
 								counter++;
 								if (counter == keyList.size()) {
 									Scanner scannerParser = new Scanner(analized);
@@ -41,7 +40,6 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 										scannerParser.useDelimiter(",|;|=");
 										if (scannerParser.findInLine("=") != null) {
 											data.add(scannerParser.next());
-
 										} else {
 											break;
 										}
@@ -58,7 +56,6 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 					}
 				}
 			} else {
-				System.out.println("Enter Parser. ApplianceType == null ");
 				data = new ArrayList<>();
 				while (fileScanner.hasNext()) {
 					String analized = fileScanner.nextLine();
@@ -67,8 +64,7 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 					for (int i = 0; i < keyList.size(); i++) {
 						Scanner stringScanner = new Scanner(analized);
 						if (stringScanner.findInLine(keyList.get(i) + "="
-								+ valueList.get(i).toString().toLowerCase()) != null) {
-							System.out.println(" Criteria matches. ApplianceType == null");
+								+ valueList.get(i).toString().toLowerCase()+ "[,;]") != null) {
 							counter++;
 							if (counter == keyList.size()) {
 								Scanner scannerParser = new Scanner(analized);
@@ -79,7 +75,6 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 										data.add(scannerParser.next());
 										Scanner appType = new Scanner(analized);
 										applianceType = appType.next();
-										System.out.println(applianceType + "!!!!!!!!!");
 										appType.close();
 									} else {
 										break;
