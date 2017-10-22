@@ -19,15 +19,19 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-
 		Criteria<Oven> criteriaOven = new Criteria<Oven>();
 		criteriaOven.setApplianceType("Oven");
 		criteriaOven.add(Oven.CAPACITY, 33);
+
+
+
+		System.out.println(criteriaOven.getClass().getName());
 
 		appliance = service.find(criteriaOven);
 
 		if(appliance.getClass() == by.tc.task01.entity.Oven.class) {}
 		by.tc.task01.entity.Oven oven = (by.tc.task01.entity.Oven) appliance;
+
 		//if(oven.getCapacity() == 3) {}
 
 		PrintApplianceInfo.print(appliance);
@@ -35,19 +39,16 @@ public class Main {
 		//////////////////////////////////////////////////////////////////
 
 		criteriaOven = new Criteria<Oven>();
-
-//        criteriaOven.setApplianceType("Oven");
-
-		criteriaOven.add(Oven.HEIGHT, 40);
+		criteriaOven.add(Oven.HEIGHT, 45);
 		criteriaOven.add(Oven.DEPTH, 60);
+
 		appliance = service.find(criteriaOven);
 
 		PrintApplianceInfo.print(appliance);
 
 		//////////////////////////////////////////////////////////////////
-		
+
 		Criteria<TabletPC> criteriaTabletPC = new Criteria<TabletPC>();
-        criteriaTabletPC.setApplianceType("TabletPC");
 		criteriaTabletPC.add(TabletPC.COLOR, "BLUE");
 		criteriaTabletPC.add(TabletPC.DISPLAY_INCHES, 14);
 		criteriaTabletPC.add(TabletPC.MEMORY_ROM, 8000);

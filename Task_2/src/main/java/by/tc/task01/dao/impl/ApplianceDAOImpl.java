@@ -13,20 +13,16 @@ import java.util.Scanner;
 public class ApplianceDAOImpl implements ApplianceDAO {
 
 
-
-
 	public <E> Appliance find(Criteria<E> criteria) {
+
 		List keyList = new ArrayList(criteria.getCriteria().keySet());
 		List valueList = new ArrayList(criteria.getCriteria().values());
-
 		ArrayList<Object> data = new ArrayList<>();
 
 		try (Scanner fileScanner = new Scanner(new FileReader("data//applianceData.txt"))) {
-
 		while (fileScanner.hasNext()) {
 			String analized = fileScanner.nextLine();
 			Scanner titleScanner = new Scanner(analized);
-
 			if (titleScanner.findInLine(criteria.getApplianceType()) != null) {
 				int counter = 0;
 				for (int i = 0; i < keyList.size(); i++) {
@@ -65,7 +61,7 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 
 
 
-	public <E> Appliance createAppliance (Criteria<E> criteria, ArrayList<Object> data){
+	private <E> Appliance createAppliance (Criteria<E> criteria, ArrayList<Object> data){
 		Appliance result;
 		switch (criteria.getApplianceType()) {
 			case "Laptop":
