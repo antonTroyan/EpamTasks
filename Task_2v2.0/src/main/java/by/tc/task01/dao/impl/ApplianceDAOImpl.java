@@ -18,7 +18,6 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 		List keyList = new ArrayList(criteria.getCriteria().keySet());
 		List valueList = new ArrayList(criteria.getCriteria().values());
 		ArrayList<Object> data;
-
 		try (Scanner fileScanner = new Scanner(new FileReader("data//applianceData.txt"))) {
 			if (criteria.getApplianceType() != null) {
 				data = new ArrayList<>();
