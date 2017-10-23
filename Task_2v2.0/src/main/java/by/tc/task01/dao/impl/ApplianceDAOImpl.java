@@ -18,7 +18,6 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 		List keyList = new ArrayList(criteria.getCriteria().keySet());
 		List valueList = new ArrayList(criteria.getCriteria().values());
 		ArrayList<Object> data;
-		
 
 		try (Scanner fileScanner = new Scanner(new FileReader("data//applianceData.txt"))) {
 			if (criteria.getApplianceType() != null) {
@@ -81,7 +80,6 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 									}
 								}
 								scannerParser.close();
-
 								return createAppliance(data, applianceType);
 							}
 						} else {
@@ -99,9 +97,7 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 		return null;
 	}
 
-
-
-	private <E> Appliance createAppliance (ArrayList<Object> data, String applianceType ){
+	private Appliance createAppliance (ArrayList<Object> data, String applianceType ){
 		Appliance result;
 		switch (applianceType) {
 			case "Laptop":
@@ -210,6 +206,7 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 		return result;
 
 	}
+
 
 	}
 	// you may add your own code here
