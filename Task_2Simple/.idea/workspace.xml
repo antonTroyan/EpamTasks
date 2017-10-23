@@ -2,129 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6a28d57-93cd-474e-b1a7-cd9ab36b8434" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../2_OOP_TroyanAnton.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/CodeWars/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/CodeWars/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/CodeWars/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/CodeWars/CodeWars.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/CodeWars/out/production/CodeWars/Kata8/Num.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/CodeWars/src/Kata8/Num.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/data/applianceData.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/jwd-task01-template.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/dao/ApplianceDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/dao/DAOFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/entity/Appliance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/entity/Laptop.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/entity/Oven.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/entity/Refrigerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/entity/Speakers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/entity/TabletPC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/entity/VacuumCleaner.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/entity/criteria/Criteria.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/entity/criteria/SearchCriteria.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/main/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/main/PrintApplianceInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/service/ApplianceService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/service/FileFiller.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/service/ServiceFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/service/impl/ApplianceServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/service/validation/Validator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/java/by/tc/task01/test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/src/main/resources/appliances_db.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/appliances_db.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/dao/ApplianceDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/dao/DAOFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/dao/impl/ApplianceDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/Appliance.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/Laptop.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/Oven.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/Refrigerator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/Speakers.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/TabletPC.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/VacuumCleaner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/criteria/Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/criteria/SearchCriteria$Laptop.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/criteria/SearchCriteria$Oven.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/criteria/SearchCriteria$Refrigerator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/criteria/SearchCriteria$Speakers.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/criteria/SearchCriteria$TabletPC.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/criteria/SearchCriteria$VacuumCleaner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/entity/criteria/SearchCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/main/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/main/PrintApplianceInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/service/ApplianceService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/service/FileFiller.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/service/ServiceFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/service/impl/ApplianceServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/service/validation/Validator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2/target/classes/by/tc/task01/test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/data/applianceData.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/jwd-task01-template.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/dao/ApplianceDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/dao/DAOFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/entity/Appliance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/entity/Laptop.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/entity/Oven.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/entity/Refrigerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/entity/Speakers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/entity/TabletPC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/entity/VacuumCleaner.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/entity/criteria/Criteria.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/entity/criteria/SearchCriteria.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/main/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/main/PrintApplianceInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/service/ApplianceService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/service/FileFiller.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/service/ServiceFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/service/impl/ApplianceServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/java/by/tc/task01/service/validation/Validator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/src/main/resources/appliances_db.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/appliances_db.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/dao/ApplianceDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/dao/DAOFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/dao/impl/ApplianceDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/entity/Appliance.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/entity/Laptop.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/entity/Oven.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/entity/Refrigerator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/entity/Speakers.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/entity/TabletPC.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/entity/VacuumCleaner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/entity/criteria/Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/entity/criteria/SearchCriteria$Laptop.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/entity/criteria/SearchCriteria$Oven.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/entity/criteria/SearchCriteria$Refrigerator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/entity/criteria/SearchCriteria$Speakers.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/entity/criteria/SearchCriteria$TabletPC.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/entity/criteria/SearchCriteria$VacuumCleaner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/entity/criteria/SearchCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/main/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/main/PrintApplianceInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/service/ApplianceService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/service/FileFiller.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/service/ServiceFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/service/impl/ApplianceServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2v2.0/target/classes/by/tc/task01/service/validation/Validator.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/dao/impl/ApplianceDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/dao/impl/ApplianceDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/main/Main.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/main/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/service/validation/Validator.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/service/validation/Validator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/service/validation/Validator.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/service/validation/Validator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -141,31 +24,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1344">
-              <caret line="48" column="54" lean-forward="false" selection-start-line="48" selection-start-column="54" selection-end-line="48" selection-end-column="54" />
+            <state relative-caret-position="344">
+              <caret line="51" column="52" lean-forward="false" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VacuumCleaner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/entity/VacuumCleaner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2048">
-              <caret line="76" column="18" lean-forward="false" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplianceDAOImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ApplianceDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1440">
-              <caret line="53" column="17" lean-forward="false" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+            <state relative-caret-position="-704">
+              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplianceService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/service/ApplianceService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -174,8 +57,8 @@
       <file leaf-file-name="Validator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/service/validation/Validator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="800">
+              <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -275,9 +158,9 @@
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/service/FileFiller.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/criteria/Criteria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/service/validation/Validator.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/service/validation/Validator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/tc/task01/main/Main.java" />
       </list>
     </option>
   </component>
@@ -313,6 +196,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -372,6 +256,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="task01" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Task_2Simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Task_2Simple" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="task01" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -389,7 +282,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -563,6 +455,7 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5015625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -576,7 +469,6 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39968404" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="91" y="91" width="2378" height="1208" />
@@ -841,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/service/ApplianceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/service/impl/ApplianceServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -921,26 +806,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/main/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/service/ApplianceService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="48" column="54" lean-forward="false" selection-start-line="48" selection-start-column="54" selection-end-line="48" selection-end-column="54" />
+        <state relative-caret-position="192">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/service/validation/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="800">
+          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="53" column="17" lean-forward="false" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+        <state relative-caret-position="-704">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="51" column="52" lean-forward="false" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
           <folding />
         </state>
       </provider>

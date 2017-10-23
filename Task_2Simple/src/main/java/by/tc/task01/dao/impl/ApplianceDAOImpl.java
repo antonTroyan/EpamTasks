@@ -12,7 +12,6 @@ import java.util.Scanner;
 
 public class ApplianceDAOImpl implements ApplianceDAO {
 
-
 	public <E> Appliance find(Criteria<E> criteria) {
 
 		List keyList = new ArrayList(criteria.getCriteria().keySet());
