@@ -14,13 +14,10 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 
 public class EntityCreator {
+    private static Logger log = LogManager.getLogger("EntityCreator");
     private static ArrayList<Triangle> triangleList = new ArrayList<>();
     private static ArrayList<Point> pointList = new ArrayList<>();
-    private static Logger log = LogManager.getLogger("EntityCreator");
     private String filename;
-
-    FileDataDownloader fileDataDownloader = new FileDataDownloader();
-    TriangleParser triangleParser = new TriangleParser();
 
     public EntityCreator(String filename) {
         this.filename = filename;
@@ -36,7 +33,8 @@ public class EntityCreator {
     }
 
     public void fillPointList () throws FileIsEmptyException, NoFileNameException, FileNotExistExeption {
-
+        FileDataDownloader fileDataDownloader = new FileDataDownloader();
+        TriangleParser triangleParser = new TriangleParser();
         ArrayList <Integer> dataArray = triangleParser.parse(fileDataDownloader
                                                       .readLines(filename), " ");
 

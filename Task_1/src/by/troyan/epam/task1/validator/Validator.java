@@ -9,7 +9,6 @@ import org.apache.logging.log4j.Logger;
 
 import java.io.*;
 
-
 public class Validator {
     private static Logger log = LogManager.getLogger("Validator");
     private final int COLUMN_AMOUNT = 6;
@@ -18,7 +17,6 @@ public class Validator {
         log.info("Validating string " + input);
         if (input.length() == 0) {
             log.info("Length 0 " + input.length());
-            return false;
         }
         try {
             String stringTest[] = input.split(" ");
@@ -30,11 +28,10 @@ public class Validator {
             return true;
         } catch (NumberFormatException e) {
             log.error("Wrong Format " + e);
-            return false;
         } catch (ArrayIndexOutOfBoundsException e) {
             log.error("Wrong parameters amount " + e);
-            return false;
         }
+        return false;
     }
 
     public boolean validateFile(String filename) throws NoFileNameException, FileIsEmptyException, FileNotExistExeption {

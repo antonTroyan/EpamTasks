@@ -13,11 +13,9 @@ public class Point {
         return xCoordinate;
     }
 
-
     public double getyCoordinate() {
         return yCoordinate;
     }
-
 
     @Override
     public boolean equals(Object o) {

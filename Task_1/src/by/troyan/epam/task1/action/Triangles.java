@@ -10,15 +10,12 @@ public class Triangles {
                 , sec.getyCoordinate() - fst.getyCoordinate()));
     }
 
-
     public static int calculateSquare(Triangle triangle) {
         return (int) (abs(((triangle.getB().getxCoordinate() - triangle.getA().getxCoordinate())
                 * (triangle.getC().getyCoordinate() - triangle.getA().getyCoordinate()))
                         - ((triangle.getC().getxCoordinate() - triangle.getA().getxCoordinate()
                 * (triangle.getB().getyCoordinate()  - triangle.getA().getyCoordinate())))) / 2);
     }
-
-
 
     public static int calculatePerimeter(Triangle triangle) {
         int sideAB = calculateSideLength(triangle.getA(), triangle.getB());
@@ -28,13 +25,11 @@ public class Triangles {
     }
 
     public static boolean isOnStraightLine(Triangle triangle) {
-        if ((triangle.getA().getyCoordinate() == triangle.getB().getyCoordinate() && triangle.getB().getyCoordinate()
+
+        return ((triangle.getA().getyCoordinate() == triangle.getB().getyCoordinate() && triangle.getB().getyCoordinate()
                 == triangle.getC().getyCoordinate()) || (triangle.getA().getxCoordinate()
                 == triangle.getB().getxCoordinate() && triangle.getB().getxCoordinate()
-                == triangle.getC().getxCoordinate())) {
-            return true;
-        }
-        return false;
+                == triangle.getC().getxCoordinate()));
     }
 
     public static boolean isRectangular(Triangle triangle){
@@ -46,13 +41,8 @@ public class Triangles {
         int sideBCSecDegree = sideBC*sideBC;
         int sideCASecDegree = sideCA*sideCA;
 
-        if ((sideABSecDegree == sideBC+sideCA)
+        return ((sideABSecDegree == sideBC+sideCA)
                 || (sideBCSecDegree == sideAB+sideCA)
-                || (sideCASecDegree == sideAB + sideBC)){
-            return true;
-        }
-        return false;
-
+                || (sideCASecDegree == sideAB + sideBC));
     }
-
 }

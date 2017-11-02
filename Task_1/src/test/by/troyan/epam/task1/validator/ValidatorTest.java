@@ -54,7 +54,4 @@ public class ValidatorTest {
     public void testValidateFileIsEmpty() throws Exception {
         validator.validateFile("data\\test.txt");
     }
-
-
-
 }

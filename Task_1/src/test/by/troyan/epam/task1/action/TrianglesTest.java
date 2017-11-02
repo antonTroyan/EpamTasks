@@ -10,9 +10,8 @@ import org.testng.annotations.Test;
 public class TrianglesTest {
 
     Triangle triangle = new Triangle(new Point(10, 2)
-            , new Point(-5, -6)
-            , new Point(5, 20));
-
+                                   , new Point(-5, -6)
+                                   , new Point(5, 20));
 
     @Test
     public void testCalculateSquare() throws Exception {
@@ -33,5 +32,4 @@ public class TrianglesTest {
     public void testIsRectangular() throws Exception {
         Assert.assertEquals(Triangles.isRectangular(triangle),false);
     }
-
 }
