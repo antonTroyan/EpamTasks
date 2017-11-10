@@ -40,9 +40,9 @@ public class EntityCreator {
     }
 
     private void fillPointList() throws FileIsEmptyException, NoFileNameException, FileNotExistExeption {
-        FileDataDownloader fileDataDownloader = new FileDataDownloader();
-        TriangleParser triangleParser = new TriangleParser();
-        ArrayList<Integer> dataArray = triangleParser.parse(fileDataDownloader.readLines(filename), " ");
+        ArrayList<Integer> dataArray = new TriangleParser()
+                .parse(new FileDataDownloader()
+                .readLines(filename), " ");
         for (int i = 0; i < dataArray.size(); i++) {
             Point p = new Point(dataArray.get(i), dataArray.get(++i));
             pointList.add(p);
