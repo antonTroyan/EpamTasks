@@ -14,7 +14,6 @@ public class OnStraightLine implements OperationObserver {
                 == triangle.getC().getyCoordinate()) || (triangle.getA().getxCoordinate()
                 == triangle.getB().getxCoordinate() && triangle.getB().getxCoordinate()
                 == triangle.getC().getxCoordinate()));
-
     }
 
     public boolean isOnStraightLine() {

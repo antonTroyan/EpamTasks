@@ -22,32 +22,32 @@ public class EntityCreator {
         this.filename = filename;
     }
 
-    public void fillTriangleList () throws FileIsEmptyException, NoFileNameException, FileNotExistExeption {
+    public ArrayList<Triangle> getTriangleArrayList() throws NoFileNameException, FileNotExistExeption, FileIsEmptyException {
+        fillTriangleList();
+        return TriangleSingleton.getInstance();
+    }
+
+    private void fillTriangleList() throws FileIsEmptyException, NoFileNameException, FileNotExistExeption {
         fillPointList();
-        for (int i = 0; i < 3; ){
-            Triangle t = new Triangle(pointList.get(i++),pointList.get(i++),pointList.get(i++));
-            Singleton.getInstance().add(t);
+        int counter = 0;
+        while (counter < pointList.size()) {
+            Triangle t = new Triangle(pointList.get(counter++)
+                    , pointList.get(counter++)
+                    , pointList.get(counter++));
+            TriangleSingleton.getInstance().add(t);
             log.info("Triangle was created " + t);
         }
     }
 
-    public void fillPointList () throws FileIsEmptyException, NoFileNameException, FileNotExistExeption {
+    private void fillPointList() throws FileIsEmptyException, NoFileNameException, FileNotExistExeption {
         FileDataDownloader fileDataDownloader = new FileDataDownloader();
         TriangleParser triangleParser = new TriangleParser();
-        ArrayList <Integer> dataArray = triangleParser.parse(fileDataDownloader.readLines(filename), " ");
-
-        for (int i = 0; i < dataArray.size(); i++){
-            Point p = new Point(dataArray.get(i),dataArray.get(++i));
+        ArrayList<Integer> dataArray = triangleParser.parse(fileDataDownloader.readLines(filename), " ");
+        for (int i = 0; i < dataArray.size(); i++) {
+            Point p = new Point(dataArray.get(i), dataArray.get(++i));
             pointList.add(p);
             log.info("Point was created " + p);
         }
     }
 
-    public Triangle getTriangleByIndex(int index) {
-        return Singleton.getInstance().get(index);
-    }
-
-    public Point getPointByIndex(int index) {
-        return pointList.get(index);
-    }
 }

@@ -4,13 +4,13 @@ import by.troyan.epam.task1.entity.Triangle;
 
 import java.util.ArrayList;
 
-class Singleton {
+class TriangleSingleton {
     private static ArrayList<Triangle> triangleArrayList;
 
-    private Singleton() {
+    private TriangleSingleton() {
     }
 
-    public static synchronized ArrayList<Triangle> getInstance(){
+    static synchronized ArrayList<Triangle> getInstance(){
         if(triangleArrayList == null){
             triangleArrayList = new ArrayList();
         }

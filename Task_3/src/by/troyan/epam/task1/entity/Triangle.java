@@ -11,7 +11,8 @@ public class Triangle {
     private Point B;
     private Point C;
 
-    private static int id;
+    private static long idCounter = 0;
+    private long triangleID;
 
     private ArrayList<OperationObserver> observerList = new ArrayList<>();
 
@@ -19,11 +20,17 @@ public class Triangle {
         A = a;
         B = b;
         C = c;
-        id += 1;
+        triangleID = createID();
     }
 
     public void addObserver(OperationObserver observer) {
         observerList.add(observer);
+        observer.valueChanged(this);
+    }
+
+    public static synchronized long createID()
+    {
+        return idCounter++;
     }
 
     public Point getA() {
@@ -83,7 +90,7 @@ public class Triangle {
     }
 
     public String toString() {
-        String result = "Triangle id = " + id + "\n";
+        String result = "Triangle. id = " + triangleID + "\n";
         Iterator it = observerList.iterator();
         while (it.hasNext()) {
             result = result + (it.next()).toString() + '\n';

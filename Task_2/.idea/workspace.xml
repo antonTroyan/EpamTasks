@@ -2,70 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6a28d57-93cd-474e-b1a7-cd9ab36b8434" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_64.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/test/SmokeTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/data/applianceData.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/jwd-task01-template.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/dao/ApplianceDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/dao/DAOFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/entity/Appliance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/entity/Laptop.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/entity/Oven.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/entity/Refrigerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/entity/Speakers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/entity/TabletPC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/entity/VacuumCleaner.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/entity/criteria/Criteria.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/entity/criteria/SearchCriteria.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/main/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/main/PrintApplianceInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/service/ApplianceService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/service/FileFiller.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/service/ServiceFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/service/impl/ApplianceServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/java/by/tc/task01/service/validation/Validator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/src/main/resources/appliances_db.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/appliances_db.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/dao/ApplianceDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/dao/DAOFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/dao/impl/ApplianceDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/entity/Appliance.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/entity/Laptop.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/entity/Oven.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/entity/Refrigerator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/entity/Speakers.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/entity/TabletPC.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/entity/VacuumCleaner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/entity/criteria/Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/entity/criteria/SearchCriteria$Laptop.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/entity/criteria/SearchCriteria$Oven.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/entity/criteria/SearchCriteria$Refrigerator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/entity/criteria/SearchCriteria$Speakers.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/entity/criteria/SearchCriteria$TabletPC.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/entity/criteria/SearchCriteria$VacuumCleaner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/entity/criteria/SearchCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/main/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/main/PrintApplianceInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/service/ApplianceService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/service/FileFiller.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/service/ServiceFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/service/impl/ApplianceServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_2Simple/target/classes/by/tc/task01/service/validation/Validator.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_3/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -107,16 +44,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchCriteria.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/entity/criteria/SearchCriteria.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Criteria.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/entity/criteria/Criteria.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -147,21 +74,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrintApplianceInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/main/PrintApplianceInfo.java">
+      <file leaf-file-name="appliances_db.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/appliances_db.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="92" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileFiller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/service/FileFiller.java">
+      <file leaf-file-name="jwd-task01-template.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jwd-task01-template.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrintApplianceInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/main/PrintApplianceInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -257,8 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -266,6 +201,11 @@
             <path>
               <item name="Task_2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Task_2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Task_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Task_2" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Task_2" type="b2602c69:ProjectViewProjectNode" />
@@ -343,6 +283,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="task01" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Task_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Task_2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="task01" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="validation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -353,14 +303,23 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Task_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Task_2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Codewars" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Task_1" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -610,15 +569,15 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5015625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15859374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15859374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39968404" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39968404" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -640,13 +599,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/entity/criteria/SearchCriteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="864">
@@ -832,13 +784,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/test.java" />
     <entry file="file://$USER_HOME$/Downloads/JWD_Task01_OOP-masterFinal/JWD_Task01_OOP-master/jwd-task01-template/src/main/java/by/tc/task01/service/validation/Validator.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/appliances_db.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/service/ServiceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -906,7 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -942,16 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/SmokeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
@@ -984,6 +918,32 @@
         <state relative-caret-position="1120">
           <caret line="43" column="41" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/appliances_db.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwd-task01-template.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/SmokeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
