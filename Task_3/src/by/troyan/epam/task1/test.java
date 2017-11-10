@@ -17,14 +17,16 @@ public class test {
         EntityCreator entityCreator = new EntityCreator("data//triangleData.txt");
         ArrayList<Triangle> arrayListTriangle = entityCreator.getTriangleArrayList();
 
+
         for(Triangle triangle: arrayListTriangle){
             System.out.println(triangle);
         }
 
         Triangle triangle = arrayListTriangle.get(0);
         triangle.addObserver(new Square());
-
         System.out.println(triangle);
+        triangle.setC(new Point(3,5));
+        System.out.println("new " + triangle);
 
     }
 }

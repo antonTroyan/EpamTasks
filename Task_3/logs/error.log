@@ -21759,3 +21759,34 @@
 2017-11-10T21:58:30,841 [INFO ] (EntityCreator.java:38) - Triangle was created Triangle. id = 2
 
 2017-11-10T22:02:35,145 [FATAL] (Validator.java:44) - Fatal! File is not exist 
+2017-11-10T22:08:14,591 [INFO ] (FileDataDownloader.java:30) - File opened successfully
+2017-11-10T22:08:14,592 [INFO ] (FileDataDownloader.java:32) - Line was downloaded successfully 2f 2 3 4 1 5
+2017-11-10T22:08:14,592 [INFO ] (FileDataDownloader.java:32) - Line was downloaded successfully 4 2 7 9 1 3
+2017-11-10T22:08:14,593 [INFO ] (FileDataDownloader.java:32) - Line was downloaded successfully 4 2 7 9 1
+2017-11-10T22:08:14,593 [INFO ] (FileDataDownloader.java:32) - Line was downloaded successfully 6 3 7 9 4 8
+2017-11-10T22:08:14,593 [INFO ] (FileDataDownloader.java:32) - Line was downloaded successfully 6 8 9 1 7 12
+2017-11-10T22:08:14,593 [INFO ] (Validator.java:17) - Validating string 2f 2 3 4 1 5
+2017-11-10T22:08:14,593 [ERROR] (Validator.java:30) - Wrong Format java.lang.NumberFormatException: For input string: "2f"
+2017-11-10T22:08:14,593 [INFO ] (Validator.java:17) - Validating string 4 2 7 9 1 3
+2017-11-10T22:08:14,593 [INFO ] (Validator.java:27) - String 4 2 7 9 1 3 was validated successfully
+2017-11-10T22:08:14,593 [INFO ] (Validator.java:17) - Validating string 4 2 7 9 1
+2017-11-10T22:08:14,593 [ERROR] (Validator.java:32) - Wrong parameters amount java.lang.ArrayIndexOutOfBoundsException: 5
+2017-11-10T22:08:14,593 [INFO ] (Validator.java:17) - Validating string 6 3 7 9 4 8
+2017-11-10T22:08:14,593 [INFO ] (Validator.java:27) - String 6 3 7 9 4 8 was validated successfully
+2017-11-10T22:08:14,593 [INFO ] (Validator.java:17) - Validating string 6 8 9 1 7 12
+2017-11-10T22:08:14,593 [INFO ] (Validator.java:27) - String 6 8 9 1 7 12 was validated successfully
+2017-11-10T22:08:14,593 [INFO ] (EntityCreator.java:49) - Point was created Point{xCoordinate=4.0, yCoordinate=2.0}
+2017-11-10T22:08:14,593 [INFO ] (EntityCreator.java:49) - Point was created Point{xCoordinate=7.0, yCoordinate=9.0}
+2017-11-10T22:08:14,593 [INFO ] (EntityCreator.java:49) - Point was created Point{xCoordinate=1.0, yCoordinate=3.0}
+2017-11-10T22:08:14,593 [INFO ] (EntityCreator.java:49) - Point was created Point{xCoordinate=6.0, yCoordinate=3.0}
+2017-11-10T22:08:14,593 [INFO ] (EntityCreator.java:49) - Point was created Point{xCoordinate=7.0, yCoordinate=9.0}
+2017-11-10T22:08:14,593 [INFO ] (EntityCreator.java:49) - Point was created Point{xCoordinate=4.0, yCoordinate=8.0}
+2017-11-10T22:08:14,593 [INFO ] (EntityCreator.java:49) - Point was created Point{xCoordinate=6.0, yCoordinate=8.0}
+2017-11-10T22:08:14,593 [INFO ] (EntityCreator.java:49) - Point was created Point{xCoordinate=9.0, yCoordinate=1.0}
+2017-11-10T22:08:14,593 [INFO ] (EntityCreator.java:49) - Point was created Point{xCoordinate=7.0, yCoordinate=12.0}
+2017-11-10T22:08:14,608 [INFO ] (EntityCreator.java:38) - Triangle was created Triangle. id = 0
+
+2017-11-10T22:08:14,608 [INFO ] (EntityCreator.java:38) - Triangle was created Triangle. id = 1
+
+2017-11-10T22:08:14,608 [INFO ] (EntityCreator.java:38) - Triangle was created Triangle. id = 2
+
