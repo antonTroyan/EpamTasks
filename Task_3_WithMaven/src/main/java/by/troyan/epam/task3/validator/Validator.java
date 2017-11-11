@@ -1,13 +1,15 @@
-package by.troyan.epam.task1.validator;
+package by.troyan.epam.task3.validator;
 
-import by.troyan.epam.task1.exception.FileIsEmptyException;
-import by.troyan.epam.task1.exception.FileNotExistExeption;
-import by.troyan.epam.task1.exception.NoFileNameException;
-
+import by.troyan.epam.task3.exception.FileIsEmptyException;
+import by.troyan.epam.task3.exception.FileNotExistExeption;
+import by.troyan.epam.task3.exception.NoFileNameException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class Validator {
     private static Logger log = LogManager.getLogger("Validator");
@@ -37,7 +39,6 @@ public class Validator {
         } catch (NumberFormatException e) {
             log.error("Wrong Format " + e);
         }
-
         return false;
     }
 
