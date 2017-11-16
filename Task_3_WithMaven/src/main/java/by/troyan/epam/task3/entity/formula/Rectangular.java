@@ -9,6 +9,10 @@ public class Rectangular implements OperationObserver {
 
     @Override
     public void valueChanged(Triangle triangle) {
+        isRectangular = checkIsRectangular(triangle);
+    }
+
+    private boolean checkIsRectangular (Triangle triangle){
         double sideAB = SideLength.calculateSideLength(triangle.getA(), triangle.getB());
         double sideBC = SideLength.calculateSideLength(triangle.getB(), triangle.getC());
         double sideCA = SideLength.calculateSideLength(triangle.getC(), triangle.getA());
@@ -17,10 +21,11 @@ public class Rectangular implements OperationObserver {
         double sideBCSecDegree = sideBC*sideBC;
         double sideCASecDegree = sideCA*sideCA;
 
-        isRectangular = ((sideABSecDegree == sideBC+sideCA)
+        return ((sideABSecDegree == sideBC+sideCA)
                 || (sideBCSecDegree == sideAB+sideCA)
                 || (sideCASecDegree == sideAB + sideBC));
     }
+
 
     public boolean isRectangular() {
         return isRectangular;

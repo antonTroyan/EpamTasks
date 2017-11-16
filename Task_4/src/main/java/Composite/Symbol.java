@@ -2,9 +2,18 @@ package Composite;
 
 public class Symbol implements Component{
     private String enteringData;
+    private static long idCounter = 0;
+    private long symbolID;
+
+
+    public static synchronized long createID()
+    {
+        return idCounter++;
+    }
 
     public Symbol(String enteringData) {
         this.enteringData = enteringData;
+        symbolID = createID();
     }
 
     public void operation() {
@@ -43,7 +52,7 @@ public class Symbol implements Component{
 
     @Override
     public String toString() {
-        return "Symbol{" +
+        return "\tSymbol " +"id=" + symbolID + " {" +
                 "enteringData='" + enteringData + '\'' +
                 '}';
     }

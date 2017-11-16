@@ -9,7 +9,11 @@ public class OnStraightLine implements OperationObserver {
 
     @Override
     public void valueChanged(Triangle triangle) {
-        isOnStraightLine = ((triangle.getA().getyCoordinate()
+        isOnStraightLine = checkIsOnStraightLine(triangle);
+    }
+
+    private boolean checkIsOnStraightLine(Triangle triangle){
+        return  ((triangle.getA().getyCoordinate()
                 == triangle.getB().getyCoordinate() && triangle.getB().getyCoordinate()
                 == triangle.getC().getyCoordinate()) || (triangle.getA().getxCoordinate()
                 == triangle.getB().getxCoordinate() && triangle.getB().getxCoordinate()
@@ -39,6 +43,4 @@ public class OnStraightLine implements OperationObserver {
     public String toString() {
         return "Is on straight line? = " + isOnStraightLine;
     }
-
-
 }

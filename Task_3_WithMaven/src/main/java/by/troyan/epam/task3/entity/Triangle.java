@@ -6,9 +6,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Triangle {
-    private Point A;
-    private Point B;
-    private Point C;
+    private Point a;
+    private Point b;
+    private Point c;
 
     private static long idCounter = 0;
     private long triangleID;
@@ -16,9 +16,9 @@ public class Triangle {
     private ArrayList<OperationObserver> observerList = new ArrayList<>();
 
     public Triangle(Point a, Point b, Point c) {
-        A = a;
-        B = b;
-        C = c;
+        this.a = a;
+        this.b = b;
+        this.c = c;
         triangleID = createID();
     }
 
@@ -33,29 +33,29 @@ public class Triangle {
     }
 
     public Point getA() {
-        return A;
+        return a;
     }
 
     public Point getB() {
-        return B;
+        return b;
     }
 
     public Point getC() {
-        return C;
+        return c;
     }
 
     public void setA(Point a) {
-        A = a;
+        this.a = a;
         notifyObservers();
     }
 
     public void setB(Point b) {
-        B = b;
+        this.b = b;
         notifyObservers();
     }
 
     public void setC(Point c) {
-        C = c;
+        this.c = c;
         notifyObservers();
     }
 
@@ -73,17 +73,19 @@ public class Triangle {
 
         Triangle triangle = (Triangle) o;
 
-        if (A != null ? !A.equals(triangle.A) : triangle.A != null) return false;
-        if (B != null ? !B.equals(triangle.B) : triangle.B != null) return false;
-        if (C != null ? !C.equals(triangle.C) : triangle.C != null) return false;
+        if (triangleID != triangle.triangleID) return false;
+        if (a != null ? !a.equals(triangle.a) : triangle.a != null) return false;
+        if (b != null ? !b.equals(triangle.b) : triangle.b != null) return false;
+        if (c != null ? !c.equals(triangle.c) : triangle.c != null) return false;
         return observerList != null ? observerList.equals(triangle.observerList) : triangle.observerList == null;
     }
 
     @Override
     public int hashCode() {
-        int result = A != null ? A.hashCode() : 0;
-        result = 31 * result + (B != null ? B.hashCode() : 0);
-        result = 31 * result + (C != null ? C.hashCode() : 0);
+        int result = a != null ? a.hashCode() : 0;
+        result = 31 * result + (b != null ? b.hashCode() : 0);
+        result = 31 * result + (c != null ? c.hashCode() : 0);
+        result = 31 * result + (int) (triangleID ^ (triangleID >>> 32));
         result = 31 * result + (observerList != null ? observerList.hashCode() : 0);
         return result;
     }

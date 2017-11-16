@@ -11,7 +11,11 @@ public class Square implements OperationObserver {
 
     @Override
     public void valueChanged(Triangle triangle) {
-        square = (abs(((triangle.getB().getxCoordinate() - triangle.getA().getxCoordinate())
+        square = calculateSquare(triangle);
+    }
+
+    private double calculateSquare(Triangle triangle){
+        return (abs(((triangle.getB().getxCoordinate() - triangle.getA().getxCoordinate())
                 * (triangle.getC().getyCoordinate() - triangle.getA().getyCoordinate()))
                 - ((triangle.getC().getxCoordinate() - triangle.getA().getxCoordinate()
                 * (triangle.getB().getyCoordinate() - triangle.getA().getyCoordinate())))) / 2);

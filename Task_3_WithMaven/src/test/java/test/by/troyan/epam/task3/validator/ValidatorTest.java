@@ -1,8 +1,7 @@
 package test.by.troyan.epam.task3.validator;
 
 
-import by.troyan.epam.task3.exception.FileIsEmptyException;
-import by.troyan.epam.task3.exception.NoFileNameException;
+import by.troyan.epam.task3.exception.DataReadException;
 import by.troyan.epam.task3.validator.Validator;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -47,13 +46,8 @@ public class ValidatorTest {
     }
 
 
-    @Test(expectedExceptions = NoFileNameException.class)
+    @Test(expectedExceptions = DataReadException.class)
     public void testValidateFileNoName() throws Exception {
         validator.validateFile("");
-    }
-
-    @Test(expectedExceptions = FileIsEmptyException.class)
-    public void testValidateFileIsEmpty() throws Exception {
-        validator.validateFile("data\\test.txt");
     }
 }

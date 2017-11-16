@@ -10,10 +10,14 @@ public class Perimeter implements OperationObserver {
 
     @Override
     public void valueChanged(Triangle triangle) {
+        perimeter = calculatePerimeter(triangle);
+    }
+
+    private double calculatePerimeter (Triangle triangle){
         double sideAB = SideLength.calculateSideLength(triangle.getA(), triangle.getB());
         double sideBC = SideLength.calculateSideLength(triangle.getB(), triangle.getC());
         double sideCA = SideLength.calculateSideLength(triangle.getC(), triangle.getA());
-        perimeter = sideAB + sideBC + sideCA;
+        return sideAB + sideBC + sideCA;
     }
 
     public double getPerimeter() {

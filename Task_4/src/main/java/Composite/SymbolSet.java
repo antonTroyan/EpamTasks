@@ -5,6 +5,18 @@ import java.util.ArrayList;
 public class SymbolSet implements Component{
     private ArrayList<Component> components = new ArrayList<>();
 
+    private static long idCounter = 0;
+    private long symbolSetID;
+
+    public SymbolSet() {
+        symbolSetID = createID();
+    }
+
+    public static synchronized long createID()
+    {
+        return idCounter++;
+    }
+
     public void operation() {
         System.out.println("SymbolSet -> Call children operations");
         int size = components.size();
@@ -14,7 +26,6 @@ public class SymbolSet implements Component{
     }
 
     public void add(Component component) {
-  //      System.out.println("SymbolSet -> Adding component " + component);
         components.add(component);
     }
 
@@ -47,8 +58,12 @@ public class SymbolSet implements Component{
 
     @Override
     public String toString() {
-        return "SymbolSet{" +
-                "components=" + components +
-                '}';
+        String result = "Компонент id=" + symbolSetID + "[";
+        for (int i = 0; i < components.size(); i++){
+
+            System.out.println();
+            result += "\n\t"+components.get(i);
+        }
+        return result + "]";
     }
 }

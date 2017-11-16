@@ -11,14 +11,14 @@ import static Chain.RegularExpressions.*;
 
 public class SymbolSetCreator {
 
-    public SymbolSet create (String filename) {
+    public SymbolSet createSymbolSet (String filename) {
         System.out.println("Try to create");
         SymbolSet result = new SymbolSet();
         result = parseToParagraph(result, downloadText(filename));
         return result;
     }
 
-    private String downloadText(String filename) {
+    public String downloadText(String filename) {
         System.out.println("Initializtion");
         String allText = "";
         try {
@@ -35,7 +35,7 @@ public class SymbolSetCreator {
         return allText;
     }
 
-    private SymbolSet parseToParagraph(SymbolSet allText, String text) {
+    public SymbolSet parseToParagraph(SymbolSet result, String text) {
 
         Matcher matcher = Pattern.compile(REGEX_NEW_PARAGRAPH).matcher(text);
         SymbolSet paragraph;
@@ -43,12 +43,12 @@ public class SymbolSetCreator {
         while(matcher.find()){
             paragraphText = matcher.group();
             paragraph = new SymbolSet();
-            allText.add(parseToSentense(paragraph, paragraphText));
+            result.add(parseToSentence(paragraph, paragraphText));
         }
-        return allText;
+        return result;
     }
 
-    private SymbolSet parseToSentense(SymbolSet paragraph, String text) {
+    public SymbolSet parseToSentence(SymbolSet paragraph, String text) {
         Matcher matcher = Pattern.compile(REGEX_SENTENCE).matcher(text);
         SymbolSet sentence;
         String sentenceText;
@@ -56,47 +56,51 @@ public class SymbolSetCreator {
         while(matcher.find()){
             sentenceText = matcher.group();
             sentence = new SymbolSet();
-            sentence.add(parseToWord(sentence, sentenceText));
-            paragraph.add(sentence);
+            paragraph.add(parseToWord(sentence, sentenceText));
         }
         return paragraph;
     }
 
-    private SymbolSet parseToWord(SymbolSet sentence, String text) {
-        Matcher matcher = Pattern.compile(REGEX_WORD).matcher(text);
+    public SymbolSet parseToWord(SymbolSet sentence, String text) {
+
+        String [] splitted = text.split("([^a-zA-Z']+)'*\\1*");
+
+
+
+
+        Matcher matcher = Pattern.compile("([^a-zA-Z']+)'*\\1*").matcher(text);
         SymbolSet word;
         String wordText;
 
         while(matcher.find()){
             wordText = matcher.group();
             word = new SymbolSet();
-            word.add(parseToSignAndWord(word, wordText));
-            sentence.add(word);
+            sentence.add(parseToSymbol(word, wordText));
         }
         return sentence;
     }
 
-    private SymbolSet parseToSignAndWord(SymbolSet word, String text) {
-        Matcher matcher = Pattern.compile(REGEX_WORD_AND_SIGN).matcher(text);
-        SymbolSet signAndWord;
-        String signAndWordText;
+//    public SymbolSet parseToSignAndWord(SymbolSet word, String text) {
 
-        while(matcher.find()){
-            signAndWordText = matcher.group();
-            signAndWord = new SymbolSet();
-            signAndWord.add(parseToSymbol(signAndWord, signAndWordText));
-            word.add(signAndWord);
-        }
-        return word;
-    }
+//        Matcher matcher = Pattern.compile(REGEX_WORD_AND_SIGN).matcher(text);
+//        SymbolSet signAndWord;
+//        String signAndWordText;
+//
+//        while(matcher.find()){
+//            signAndWordText = matcher.group();
+//            System.out.println(signAndWordText + " signAndWordText");
+//            signAndWord = new SymbolSet();
+//            word.add(parseToSymbol(signAndWord, signAndWordText));
+//        }
+//        return word;
+//    }
 
-    private SymbolSet parseToSymbol(SymbolSet signAndWord, String text) {
+    public SymbolSet parseToSymbol(SymbolSet word, String text) {
         Matcher matcher = Pattern.compile(REGEX_SYMBOL).matcher(text);
 
         while(matcher.find()){
-            Symbol symbol = new Symbol(matcher.group());
-            signAndWord.add(symbol);
+            word.add(new Symbol(matcher.group()));
         }
-        return signAndWord;
+        return word;
     }
 }

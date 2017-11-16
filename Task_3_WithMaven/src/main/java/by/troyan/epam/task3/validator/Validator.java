@@ -1,19 +1,14 @@
 package by.troyan.epam.task3.validator;
 
-import by.troyan.epam.task3.exception.FileIsEmptyException;
-import by.troyan.epam.task3.exception.FileNotExistExeption;
-import by.troyan.epam.task3.exception.NoFileNameException;
+import by.troyan.epam.task3.exception.DataReadException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
 
 public class Validator {
     private static Logger log = LogManager.getLogger("Validator");
-    private final int COLUMN_AMOUNT = 6;
+    public static final int COLUMN_AMOUNT = 6;
 
     public boolean validateString(String input) {
         log.info("Validating string " + input);
@@ -40,24 +35,10 @@ public class Validator {
         return false;
     }
 
-    public boolean validateFile(String filename) throws NoFileNameException, FileIsEmptyException, FileNotExistExeption {
-
-        if (filename.isEmpty()) {
-            log.fatal("Fatal! Parameter filename is empty ");
-            throw new NoFileNameException("Parameter filename is empty");
-        }
-        if (!new File(filename).exists()) {
-            log.fatal("Fatal! File is not exist ");
-            throw new FileNotExistExeption("File is not exist");
-        }
-        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
-            if (reader.readLine() == null) {
-                log.fatal("Fatal! File is empty ");
-                throw new FileIsEmptyException("File is empty, or can`t be read");
-            }
-        } catch (IOException e) {
-            log.fatal("Fatal!  " + e);
-            throw new RuntimeException();
+    public boolean validateFile(String filename) throws DataReadException {
+        if(filename.isEmpty() || !new File(filename).exists()){
+            log.fatal("Fatal! Impossible to read data");
+            throw new DataReadException("Impossible to read data");
         }
         return true;
     }

@@ -7,8 +7,9 @@ import static java.lang.Math.hypot;
 
 class SideLength {
 
-    static double calculateSideLength (Point fst, Point sec){
-        return abs(hypot(sec.getxCoordinate()-fst.getxCoordinate()
-                , sec.getyCoordinate() - fst.getyCoordinate()));
+    static double calculateSideLength (Point first, Point second){
+        return abs(hypot(second.getxCoordinate()-first.getxCoordinate()
+                , second.getyCoordinate() - first.getyCoordinate()));
     }
 }
+

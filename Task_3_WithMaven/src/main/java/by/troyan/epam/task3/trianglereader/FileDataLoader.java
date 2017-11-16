@@ -1,8 +1,6 @@
 package by.troyan.epam.task3.trianglereader;
 
-import by.troyan.epam.task3.exception.FileIsEmptyException;
-import by.troyan.epam.task3.exception.FileNotExistExeption;
-import by.troyan.epam.task3.exception.NoFileNameException;
+import by.troyan.epam.task3.exception.DataReadException;
 import by.troyan.epam.task3.validator.Validator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,11 +12,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class FileDataDownloader {
+public class FileDataLoader {
 
     private static Logger log = LogManager.getLogger("FileDownloaderT");
 
-    public List<String> readLines (String filename) throws NoFileNameException, FileIsEmptyException, FileNotExistExeption {
+    public List<String> readLines (String filename) throws DataReadException {
         Validator validator = new Validator();
         List<String> result = new ArrayList<>();
         if(validator.validateFile(filename)){

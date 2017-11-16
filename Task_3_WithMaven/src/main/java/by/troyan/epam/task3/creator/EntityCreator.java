@@ -2,11 +2,9 @@ package by.troyan.epam.task3.creator;
 
 import by.troyan.epam.task3.entity.Point;
 import by.troyan.epam.task3.entity.Triangle;
-import by.troyan.epam.task3.exception.FileIsEmptyException;
-import by.troyan.epam.task3.exception.FileNotExistExeption;
-import by.troyan.epam.task3.exception.NoFileNameException;
+import by.troyan.epam.task3.exception.DataReadException;
 import by.troyan.epam.task3.parser.TriangleParser;
-import by.troyan.epam.task3.trianglereader.FileDataDownloader;
+import by.troyan.epam.task3.trianglereader.FileDataLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
@@ -14,19 +12,14 @@ import java.util.ArrayList;
 public class EntityCreator {
     private static Logger log = LogManager.getLogger("EntityCreator");
     private static ArrayList<Point> pointList = new ArrayList<>();
-    private String filename;
 
-    public EntityCreator(String filename) {
-        this.filename = filename;
-    }
-
-    public ArrayList<Triangle> getTriangleArrayList() throws NoFileNameException, FileNotExistExeption, FileIsEmptyException {
-        fillTriangleList();
+    public ArrayList<Triangle> getTriangleArrayList(String filename) throws DataReadException {
+        fillTriangleList(filename);
         return TriangleSingleton.getInstance();
     }
 
-    private void fillTriangleList() throws FileIsEmptyException, NoFileNameException, FileNotExistExeption {
-        fillPointList();
+    private void fillTriangleList(String filename) throws DataReadException {
+        fillPointList(filename);
         int counter = 0;
         while (counter < pointList.size()) {
             Triangle triangle = new Triangle(pointList.get(counter++)
@@ -37,9 +30,9 @@ public class EntityCreator {
         }
     }
 
-    private void fillPointList() throws FileIsEmptyException, NoFileNameException, FileNotExistExeption {
+    private void fillPointList(String filename) throws DataReadException {
         ArrayList<Integer> dataArray = new TriangleParser()
-                .parse(new FileDataDownloader()
+                .parse(new FileDataLoader()
                 .readLines(filename), " ");
         for (int i = 0; i < dataArray.size(); i++) {
             Point point = new Point(dataArray.get(i), dataArray.get(++i));
@@ -47,5 +40,4 @@ public class EntityCreator {
             log.info("Point was created " + point);
         }
     }
-
 }
