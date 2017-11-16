@@ -77,7 +77,6 @@ public class SymbolSetCreator {
     }
 
     private SymbolSet parseToSignAndWord(SymbolSet word, String text) {
-
         Matcher matcher = Pattern.compile(REGEX_WORD_AND_SIGN).matcher(text);
         SymbolSet signAndWord;
         String signAndWordText;
@@ -92,7 +91,6 @@ public class SymbolSetCreator {
     }
 
     private SymbolSet parseToSymbol(SymbolSet signAndWord, String text) {
-
         Matcher matcher = Pattern.compile(REGEX_SYMBOL).matcher(text);
 
         while(matcher.find()){

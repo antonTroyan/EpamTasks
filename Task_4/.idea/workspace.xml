@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff77765-f2f2-4224-8860-69ca0c822281" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Chain/BaseInterface.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Chain/RegularExpressions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Chain/SymbolSetCreator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Chain/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Composite/Component.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Composite/Symbol.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Composite/SymbolSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3_WithMaven/target/classes/by/troyan/epam/task3/creator/EntityCreator.class" afterPath="$PROJECT_DIR$/../Task_3_WithMaven/target/classes/by/troyan/epam/task3/creator/EntityCreator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3_WithMaven/target/classes/by/troyan/epam/task3/entity/formula/OnStraightLine.class" afterPath="$PROJECT_DIR$/../Task_3_WithMaven/target/classes/by/troyan/epam/task3/entity/formula/OnStraightLine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3_WithMaven/target/classes/by/troyan/epam/task3/entity/formula/Rectangular.class" afterPath="$PROJECT_DIR$/../Task_3_WithMaven/target/classes/by/troyan/epam/task3/entity/formula/Rectangular.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3_WithMaven/target/classes/by/troyan/epam/task3/entity/formula/Square.class" afterPath="$PROJECT_DIR$/../Task_3_WithMaven/target/classes/by/troyan/epam/task3/entity/formula/Square.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_2/jwd-task01-template.iml" afterPath="$PROJECT_DIR$/../Task_2/jwd-task01-template.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_3/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3/src/by/troyan/epam/task1/validator/Validator.java" afterPath="$PROJECT_DIR$/../Task_3/src/by/troyan/epam/task1/validator/Validator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3_WithMaven/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_3_WithMaven/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3_WithMaven/logs/error.log" afterPath="$PROJECT_DIR$/../Task_3_WithMaven/logs/error.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3_WithMaven/src/main/java/by/troyan/epam/task3/creator/EntityCreator.java" afterPath="$PROJECT_DIR$/../Task_3_WithMaven/src/main/java/by/troyan/epam/task3/creator/EntityCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3_WithMaven/src/main/java/by/troyan/epam/task3/entity/formula/OnStraightLine.java" afterPath="$PROJECT_DIR$/../Task_3_WithMaven/src/main/java/by/troyan/epam/task3/entity/formula/OnStraightLine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3_WithMaven/src/main/java/by/troyan/epam/task3/entity/formula/Rectangular.java" afterPath="$PROJECT_DIR$/../Task_3_WithMaven/src/main/java/by/troyan/epam/task3/entity/formula/Rectangular.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3_WithMaven/src/main/java/by/troyan/epam/task3/entity/formula/Square.java" afterPath="$PROJECT_DIR$/../Task_3_WithMaven/src/main/java/by/troyan/epam/task3/entity/formula/Square.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3_WithMaven/src/main/java/by/troyan/epam/task3/entity/formula/observer/OperationObserver.java" afterPath="$PROJECT_DIR$/../Task_3_WithMaven/src/main/java/by/troyan/epam/task3/entity/formula/observer/OperationObserver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3_WithMaven/src/main/java/by/troyan/epam/task3/validator/Validator.java" afterPath="$PROJECT_DIR$/../Task_3_WithMaven/src/main/java/by/troyan/epam/task3/validator/Validator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_0_1.xml" afterPath="$PROJECT_DIR$/../Task_2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_0_2.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_2/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_0_1.xml" afterPath="$PROJECT_DIR$/../Task_2/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Chain/SymbolSetCreator.java" afterPath="$PROJECT_DIR$/src/main/java/Chain/SymbolSetCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Chain/Test.java" afterPath="$PROJECT_DIR$/src/main/java/Chain/Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -85,17 +59,10 @@
       <file leaf-file-name="SymbolSetCreator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Chain/SymbolSetCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="93" column="72" lean-forward="false" selection-start-line="93" selection-start-column="72" selection-end-line="93" selection-end-column="72" />
+            <state relative-caret-position="238">
+              <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#create#0;class#SymbolSetCreator#0" expanded="false" />
-                <element signature="method#downloadText#0;class#SymbolSetCreator#0" expanded="false" />
-                <element signature="method#parseToParagraph#0;class#SymbolSetCreator#0" expanded="false" />
-                <element signature="method#parseToSentense#0;class#SymbolSetCreator#0" expanded="false" />
-                <element signature="method#parseToWord#0;class#SymbolSetCreator#0" expanded="false" />
-                <element signature="method#parseToSignAndWord#0;class#SymbolSetCreator#0" expanded="false" />
-                <element signature="method#parseToSymbol#0;class#SymbolSetCreator#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -104,8 +71,8 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Chain/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="28" column="56" lean-forward="true" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+            <state relative-caret-position="257">
+              <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -180,8 +147,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Composite/SymbolSet.java" />
         <option value="$PROJECT_DIR$/data/data.txt" />
         <option value="$PROJECT_DIR$/src/main/java/Chain/RegularExpressions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Chain/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/Chain/SymbolSetCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Chain/Test.java" />
       </list>
     </option>
   </component>
@@ -454,12 +421,12 @@
       <workItem from="1510660031725" duration="10828000" />
       <workItem from="1510743885757" duration="317000" />
       <workItem from="1510744259643" duration="14462000" />
-      <workItem from="1510823531315" duration="10286000" />
+      <workItem from="1510823531315" duration="10484000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40910000" />
+    <option name="totallyTimeSpent" value="41108000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -481,7 +448,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26378897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -518,13 +485,6 @@
           <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#create#0;class#SymbolSetCreator#0" expanded="false" />
-            <element signature="method#downloadText#0;class#SymbolSetCreator#0" expanded="false" />
-            <element signature="method#parseToParagraph#0;class#SymbolSetCreator#0" expanded="false" />
-            <element signature="method#parseToSentense#0;class#SymbolSetCreator#0" expanded="false" />
-            <element signature="method#parseToWord#0;class#SymbolSetCreator#0" expanded="false" />
-            <element signature="method#parseToSignAndWord#0;class#SymbolSetCreator#0" expanded="false" />
-            <element signature="method#parseToSymbol#0;class#SymbolSetCreator#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -669,8 +629,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Chain/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="28" column="56" lean-forward="true" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+        <state relative-caret-position="257">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -685,17 +645,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Chain/SymbolSetCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="93" column="72" lean-forward="false" selection-start-line="93" selection-start-column="72" selection-end-line="93" selection-end-column="72" />
+        <state relative-caret-position="238">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#create#0;class#SymbolSetCreator#0" expanded="false" />
-            <element signature="method#downloadText#0;class#SymbolSetCreator#0" expanded="false" />
-            <element signature="method#parseToParagraph#0;class#SymbolSetCreator#0" expanded="false" />
-            <element signature="method#parseToSentense#0;class#SymbolSetCreator#0" expanded="false" />
-            <element signature="method#parseToWord#0;class#SymbolSetCreator#0" expanded="false" />
-            <element signature="method#parseToSignAndWord#0;class#SymbolSetCreator#0" expanded="false" />
-            <element signature="method#parseToSymbol#0;class#SymbolSetCreator#0" expanded="false" />
           </folding>
         </state>
       </provider>
