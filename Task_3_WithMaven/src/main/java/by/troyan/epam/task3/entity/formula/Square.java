@@ -1,7 +1,5 @@
 package by.troyan.epam.task3.entity.formula;
 
-
-
 import by.troyan.epam.task3.entity.Triangle;
 import by.troyan.epam.task3.entity.formula.observer.OperationObserver;
 

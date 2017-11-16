@@ -56,3 +56,61 @@
 2017-11-11T12:36:17,399 [ERROR] (Validator.java:28) - Wrong parameters amount. Need 6, but founded: 4
 2017-11-11T12:36:17,401 [INFO ] (Validator.java:19) - Validating string 1f 2 3 4 5 6
 2017-11-11T12:36:17,402 [ERROR] (Validator.java:40) - Wrong Format java.lang.NumberFormatException: For input string: "1f"
+2017-11-11T13:20:16,920 [FATAL] (Validator.java:57) - Fatal! File is empty 
+2017-11-11T13:20:16,929 [FATAL] (Validator.java:48) - Fatal! Parameter filename is empty 
+2017-11-11T13:20:16,933 [INFO ] (Validator.java:19) - Validating string 1 2 3 4 
+2017-11-11T13:20:16,934 [ERROR] (Validator.java:28) - Wrong parameters amount. Need 6, but founded: 4
+2017-11-11T13:20:16,937 [INFO ] (Validator.java:19) - Validating string 1f 2 3 4 5 6
+2017-11-11T13:20:16,939 [ERROR] (Validator.java:40) - Wrong Format java.lang.NumberFormatException: For input string: "1f"
+2017-11-11T13:20:26,485 [INFO ] (FileDataDownloader.java:27) - File opened successfully
+2017-11-11T13:20:26,489 [INFO ] (FileDataDownloader.java:29) - Line was downloaded successfully 2f 2 3 4 1 5
+2017-11-11T13:20:26,489 [INFO ] (FileDataDownloader.java:29) - Line was downloaded successfully 4 2 7 9 1 3
+2017-11-11T13:20:26,489 [INFO ] (FileDataDownloader.java:29) - Line was downloaded successfully 4 2 7 9 1
+2017-11-11T13:20:26,490 [INFO ] (FileDataDownloader.java:29) - Line was downloaded successfully 6 3 7 9 4 8
+2017-11-11T13:20:26,490 [INFO ] (FileDataDownloader.java:29) - Line was downloaded successfully 6 8 9 1 7 12 6
+2017-11-11T13:20:26,491 [INFO ] (Validator.java:19) - Validating string 2f 2 3 4 1 5
+2017-11-11T13:20:26,492 [ERROR] (Validator.java:40) - Wrong Format java.lang.NumberFormatException: For input string: "2f"
+2017-11-11T13:20:26,492 [INFO ] (Validator.java:19) - Validating string 4 2 7 9 1 3
+2017-11-11T13:20:26,493 [INFO ] (Validator.java:37) - String 4 2 7 9 1 3 was validated successfully
+2017-11-11T13:20:26,493 [INFO ] (Validator.java:19) - Validating string 4 2 7 9 1
+2017-11-11T13:20:26,493 [ERROR] (Validator.java:28) - Wrong parameters amount. Need 6, but founded: 5
+2017-11-11T13:20:26,494 [INFO ] (Validator.java:19) - Validating string 6 3 7 9 4 8
+2017-11-11T13:20:26,494 [INFO ] (Validator.java:37) - String 6 3 7 9 4 8 was validated successfully
+2017-11-11T13:20:26,494 [INFO ] (Validator.java:19) - Validating string 6 8 9 1 7 12 6
+2017-11-11T13:20:26,494 [ERROR] (Validator.java:28) - Wrong parameters amount. Need 6, but founded: 7
+2017-11-11T13:20:26,503 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=4.0, yCoordinate=2.0}
+2017-11-11T13:20:26,503 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=7.0, yCoordinate=9.0}
+2017-11-11T13:20:26,503 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=1.0, yCoordinate=3.0}
+2017-11-11T13:20:26,503 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=6.0, yCoordinate=3.0}
+2017-11-11T13:20:26,504 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=7.0, yCoordinate=9.0}
+2017-11-11T13:20:26,504 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=4.0, yCoordinate=8.0}
+2017-11-11T13:20:26,528 [INFO ] (EntityCreator.java:36) - Triangle was created Triangle. id = 0
+
+2017-11-11T13:20:26,528 [INFO ] (EntityCreator.java:36) - Triangle was created Triangle. id = 1
+
+2017-11-12T19:18:58,039 [INFO ] (FileDataDownloader.java:27) - File opened successfully
+2017-11-12T19:18:58,039 [INFO ] (FileDataDownloader.java:29) - Line was downloaded successfully 2f 2 3 4 1 5
+2017-11-12T19:18:58,055 [INFO ] (FileDataDownloader.java:29) - Line was downloaded successfully 4 2 7 9 1 3
+2017-11-12T19:18:58,055 [INFO ] (FileDataDownloader.java:29) - Line was downloaded successfully 4 2 7 9 1
+2017-11-12T19:18:58,055 [INFO ] (FileDataDownloader.java:29) - Line was downloaded successfully 6 3 7 9 4 8
+2017-11-12T19:18:58,055 [INFO ] (FileDataDownloader.java:29) - Line was downloaded successfully 6 8 9 1 7 12 6
+2017-11-12T19:18:58,055 [INFO ] (Validator.java:19) - Validating string 2f 2 3 4 1 5
+2017-11-12T19:18:58,055 [ERROR] (Validator.java:40) - Wrong Format java.lang.NumberFormatException: For input string: "2f"
+2017-11-12T19:18:58,055 [INFO ] (Validator.java:19) - Validating string 4 2 7 9 1 3
+2017-11-12T19:18:58,055 [INFO ] (Validator.java:37) - String 4 2 7 9 1 3 was validated successfully
+2017-11-12T19:18:58,055 [INFO ] (Validator.java:19) - Validating string 4 2 7 9 1
+2017-11-12T19:18:58,055 [ERROR] (Validator.java:28) - Wrong parameters amount. Need 6, but founded: 5
+2017-11-12T19:18:58,055 [INFO ] (Validator.java:19) - Validating string 6 3 7 9 4 8
+2017-11-12T19:18:58,055 [INFO ] (Validator.java:37) - String 6 3 7 9 4 8 was validated successfully
+2017-11-12T19:18:58,055 [INFO ] (Validator.java:19) - Validating string 6 8 9 1 7 12 6
+2017-11-12T19:18:58,055 [ERROR] (Validator.java:28) - Wrong parameters amount. Need 6, but founded: 7
+2017-11-12T19:18:58,055 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=4.0, yCoordinate=2.0}
+2017-11-12T19:18:58,055 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=7.0, yCoordinate=9.0}
+2017-11-12T19:18:58,055 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=1.0, yCoordinate=3.0}
+2017-11-12T19:18:58,055 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=6.0, yCoordinate=3.0}
+2017-11-12T19:18:58,055 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=7.0, yCoordinate=9.0}
+2017-11-12T19:18:58,055 [INFO ] (EntityCreator.java:47) - Point was created Point{xCoordinate=4.0, yCoordinate=8.0}
+2017-11-12T19:18:58,090 [INFO ] (EntityCreator.java:36) - Triangle was created Triangle. id = 0
+
+2017-11-12T19:18:58,090 [INFO ] (EntityCreator.java:36) - Triangle was created Triangle. id = 1
+

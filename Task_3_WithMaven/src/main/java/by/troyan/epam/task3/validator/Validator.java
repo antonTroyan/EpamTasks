@@ -23,12 +23,10 @@ public class Validator {
             log.error("Length = 0 ");
             return false;
         }
-
         if(stringTest.length != 6) {
             log.error("Wrong parameters amount. Need 6, but founded: " + stringTest.length);
             return false;
         }
-
         try {
             int intTest[] = new int[COLUMN_AMOUNT];
             for (int i = 0; i < COLUMN_AMOUNT; i++) {

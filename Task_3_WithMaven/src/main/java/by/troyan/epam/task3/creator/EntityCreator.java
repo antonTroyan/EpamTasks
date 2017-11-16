@@ -1,6 +1,5 @@
 package by.troyan.epam.task3.creator;
 
-
 import by.troyan.epam.task3.entity.Point;
 import by.troyan.epam.task3.entity.Triangle;
 import by.troyan.epam.task3.exception.FileIsEmptyException;
@@ -30,11 +29,11 @@ public class EntityCreator {
         fillPointList();
         int counter = 0;
         while (counter < pointList.size()) {
-            Triangle t = new Triangle(pointList.get(counter++)
+            Triangle triangle = new Triangle(pointList.get(counter++)
                     , pointList.get(counter++)
                     , pointList.get(counter++));
-            TriangleSingleton.getInstance().add(t);
-            log.info("Triangle was created " + t);
+            TriangleSingleton.getInstance().add(triangle);
+            log.info("Triangle was created " + triangle);
         }
     }
 
@@ -43,9 +42,9 @@ public class EntityCreator {
                 .parse(new FileDataDownloader()
                 .readLines(filename), " ");
         for (int i = 0; i < dataArray.size(); i++) {
-            Point p = new Point(dataArray.get(i), dataArray.get(++i));
-            pointList.add(p);
-            log.info("Point was created " + p);
+            Point point = new Point(dataArray.get(i), dataArray.get(++i));
+            pointList.add(point);
+            log.info("Point was created " + point);
         }
     }
 

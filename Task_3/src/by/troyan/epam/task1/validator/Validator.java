@@ -37,7 +37,6 @@ public class Validator {
         } catch (NumberFormatException e) {
             log.error("Wrong Format " + e);
         }
-
         return false;
     }
 
