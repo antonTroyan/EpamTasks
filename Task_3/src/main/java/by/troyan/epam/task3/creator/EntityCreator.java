@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 
 public class EntityCreator {
-    private static Logger log = LogManager.getLogger("EntityCreator");
+    private final static Logger LOG = LogManager.getLogger("EntityCreator");
     private static ArrayList<Point> pointList = new ArrayList<>();
 
     public ArrayList<Triangle> getTriangleArrayList(String filename) throws DataReadException {
@@ -26,7 +26,7 @@ public class EntityCreator {
                     , pointList.get(counter++)
                     , pointList.get(counter++));
             TriangleSingleton.getInstance().add(triangle);
-            log.info("Triangle was created " + triangle);
+            LOG.info("Triangle was created " + triangle);
         }
     }
 
@@ -37,7 +37,7 @@ public class EntityCreator {
         for (int i = 0; i < dataArray.size(); i++) {
             Point point = new Point(dataArray.get(i), dataArray.get(++i));
             pointList.add(point);
-            log.info("Point was created " + point);
+            LOG.info("Point was created " + point);
         }
     }
 }

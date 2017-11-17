@@ -14,7 +14,7 @@ import java.util.List;
 
 public class FileDataLoader {
 
-    private static Logger log = LogManager.getLogger("FileDownloaderT");
+    private final static Logger LOG = LogManager.getLogger("FileDownloaderT");
 
     public List<String> readLines (String filename) throws DataReadException {
         Validator validator = new Validator();
@@ -22,13 +22,13 @@ public class FileDataLoader {
         if(validator.validateFile(filename)){
             try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
                 String line;
-                log.info("File opened successfully");
+                LOG.info("File opened successfully");
                 while ((line = reader.readLine()) != null) {
-                    log.info("Line was downloaded successfully " + line);
+                    LOG.info("Line was downloaded successfully " + line);
                     result.add(line);
                 }
             } catch (IOException e) {
-                log.fatal("Fatal!  " + e);
+                LOG.fatal("Fatal!  " + e);
                 throw new RuntimeException();
         }
     }   return result;
