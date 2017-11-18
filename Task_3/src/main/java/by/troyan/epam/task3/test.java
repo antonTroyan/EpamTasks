@@ -15,6 +15,5 @@ public class test {
         triangle.addObserver(new Perimeter());
         triangle.addObserver(new OnStraightLineCheck());
         System.out.println(triangle);
-
     }
 }

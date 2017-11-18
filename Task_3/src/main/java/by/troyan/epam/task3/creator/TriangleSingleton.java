@@ -5,7 +5,7 @@ import by.troyan.epam.task3.entity.Triangle;
 
 import java.util.ArrayList;
 
-// Singleton demonstration
+
 class TriangleSingleton {
     private static ArrayList<Triangle> triangleArrayList;
 
