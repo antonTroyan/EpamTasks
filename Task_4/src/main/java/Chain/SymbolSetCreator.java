@@ -65,9 +65,6 @@ public class SymbolSetCreator {
 
         String [] splitted = text.split("([^a-zA-Z']+)'*\\1*");
 
-
-
-
         Matcher matcher = Pattern.compile("([^a-zA-Z']+)'*\\1*").matcher(text);
         SymbolSet word;
         String wordText;

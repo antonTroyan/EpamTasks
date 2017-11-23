@@ -11,12 +11,12 @@ public class Test {
         SymbolSetCreator symbolSetCreator = new SymbolSetCreator();
 
 //        // работает
-//        System.out.println(symbolSetCreator.parseToSymbol(new SymbolSet(), "Hello ddd"));
+        System.out.println(symbolSetCreator.parseToSymbol(new SymbolSet(), "Hello dear anton"));
 
         //  работает но создает лишние объекты. Ошибка в паттерне
-        System.out.println(symbolSetCreator.parseToWord(new SymbolSet(), "Hello dear anton!"));
+ //       System.out.println(symbolSetCreator.parseToWord(new SymbolSet(), "Hello dear anton!"));
 
-//       System.out.println(symbolSetCreator.parseToSentence(new SymbolSet(), "Hello dear anton. Hi!"));
+ //      System.out.println(symbolSetCreator.parseToSentence(new SymbolSet(), "Hello dear anton. Hi!"));
 
 
 
