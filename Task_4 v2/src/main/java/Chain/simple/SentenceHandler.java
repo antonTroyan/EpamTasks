@@ -15,7 +15,6 @@ public class SentenceHandler implements ParserInterface {
 
     @Override
     public Component chain(Component result, String text) {
-        System.out.println("SentenceHandler");
         Matcher matcher = Pattern.compile(RegularExpressions.REGEX_SENTENCE).matcher(text);
         SymbolSet sentence;
         String sentenceText;

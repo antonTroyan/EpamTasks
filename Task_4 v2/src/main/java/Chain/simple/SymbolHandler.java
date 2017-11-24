@@ -12,11 +12,13 @@ public class SymbolHandler implements ParserInterface {
 
     @Override
     public Component chain(Component result, String text) {
-        System.out.println("SymbolHandler");
         Matcher matcher = Pattern.compile(RegularExpressions.REGEX_SYMBOL).matcher(text);
+        String symbol;
 
         while(matcher.find()){
-            result.add(new Symbol(matcher.group()));
+            symbol = matcher.group();
+            System.out.println("Symbol " + symbol);
+            result.add(new Symbol(symbol));
         }
         return result;
     }

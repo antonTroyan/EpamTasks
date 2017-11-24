@@ -16,7 +16,6 @@ public class ParagraphHandler implements ParserInterface {
 
     @Override
     public Component chain(Component result, String text) {
-        System.out.println("ParagraphHandler");
         Matcher matcher = Pattern.compile(RegularExpressions.REGEX_NEW_PARAGRAPH).matcher(text);
         SymbolSet paragraph;
         String paragraphText;
