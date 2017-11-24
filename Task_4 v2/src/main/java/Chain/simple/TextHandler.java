@@ -16,8 +16,11 @@ public class TextHandler implements ParserInterface {
 
     @Override
     public Component chain(Component result, String text) {
+        System.out.println("TextHandler");
+
         SymbolSet core = new SymbolSet();
-        core = (SymbolSet) successor.chain(core, loadFile("data.txt"));
+
+        core = (SymbolSet) successor.chain(core, loadFile("data//data.txt"));
         return core;
     }
 

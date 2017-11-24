@@ -16,12 +16,14 @@ public class WordHandler implements ParserInterface {
 
     @Override
     public Component chain(Component result, String text) {
-        Matcher matcher = Pattern.compile("([^a-zA-Z']+)'*\\1*").matcher(text);
+        System.out.println("WordHandler");
+        Matcher matcher = Pattern.compile(RegularExpressions.REGEX_WORD).matcher(text);
         SymbolSet word;
         String wordText;
 
         while(matcher.find()){
             wordText = matcher.group();
+            System.out.println("Word " + wordText);
             word = new SymbolSet();
             result.add(successor.chain(word, wordText));
         }

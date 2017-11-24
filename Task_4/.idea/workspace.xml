@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ff77765-f2f2-4224-8860-69ca0c822281" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/ParagraphHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/ParserInterface.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/SentenceHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/SymbolHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/TextHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/WordHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/text/AbstractHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/text/LexemHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/text/ParagraphHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/text/RegularExpressions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/text/SentenceHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/text/SymbolHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/text/TextHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/text/WordHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/text/test.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_3/src/main/java/by/troyan/epam/task3/test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_3/target/classes/by/troyan/epam/task3/test.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Chain/SymbolSetCreator.class" afterPath="$PROJECT_DIR$/target/classes/Chain/SymbolSetCreator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Chain/Test.class" afterPath="$PROJECT_DIR$/target/classes/Chain/Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_3/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Chain/SymbolSetCreator.java" afterPath="$PROJECT_DIR$/src/main/java/Chain/SymbolSetCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Chain/Test.java" afterPath="$PROJECT_DIR$/src/main/java/Chain/Test.java" />
-    </list>
+    <list default="true" id="8ff77765-f2f2-4224-8860-69ca0c822281" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,8 +56,8 @@
       <file leaf-file-name="SymbolSetCreator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Chain/SymbolSetCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="95" column="4" lean-forward="true" selection-start-line="95" selection-start-column="4" selection-end-line="100" selection-end-column="20" />
+            <state relative-caret-position="680">
+              <caret line="94" column="44" lean-forward="false" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,7 +68,7 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Chain/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="340">
               <caret line="13" column="92" lean-forward="false" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -214,6 +189,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -271,7 +247,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -455,11 +430,12 @@
       <workItem from="1511433554397" duration="59000" />
       <workItem from="1511443360248" duration="883000" />
       <workItem from="1511450079608" duration="3388000" />
+      <workItem from="1511458517963" duration="12000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55896000" />
+    <option name="totallyTimeSpent" value="55908000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -483,7 +459,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15747403" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15907274" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -670,7 +646,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Chain/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="340">
           <caret line="13" column="92" lean-forward="false" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -680,8 +656,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Chain/SymbolSetCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="95" column="4" lean-forward="true" selection-start-line="95" selection-start-column="4" selection-end-line="100" selection-end-column="20" />
+        <state relative-caret-position="680">
+          <caret line="94" column="44" lean-forward="false" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

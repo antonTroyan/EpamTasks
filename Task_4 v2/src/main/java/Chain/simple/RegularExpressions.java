@@ -1,4 +1,4 @@
-package text;
+package Chain.simple;
 
 public class RegularExpressions {
 
@@ -11,7 +11,7 @@ public class RegularExpressions {
     public static final String REGEX_WORD_AND_SIGN = "([\\.,!\\?:;@]{1})|([^\\.,!\\?:;@]*)";
     public static final String REGEX_EMPTY = ".]*";
 
-    public static final String REGEX_NEW_PARAGRAPH = "(?m)(?=^\\s{4})";
+    public static final String REGEX_NEW_PARAGRAPH = "(?s)(.*?[^\\:\\-\\,])(?:$|\\n{2,})";
     public static final String REGEX_NEW_SENTENCE = "([a-zA-Z]*\\\\()|(<[a-zA-Z]*>)|(\\\\))";
 
 
