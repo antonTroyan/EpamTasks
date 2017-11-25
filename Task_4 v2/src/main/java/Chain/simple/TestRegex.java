@@ -27,7 +27,7 @@ public class TestRegex {
                 "Твою любовную печаль.";
 
 
-        // параграфы норм
+
         Matcher matcher = Pattern.compile("(?s)(.*?[^\\:\\-\\,])(?:$|\\n{2,})").matcher(input);
         String result;
         while(matcher.find()){

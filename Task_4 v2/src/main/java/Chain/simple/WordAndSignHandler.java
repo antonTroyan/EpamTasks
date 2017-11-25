@@ -13,12 +13,12 @@ public class WordAndSignHandler implements ParserInterface {
     public WordAndSignHandler(ParserInterface successor) {
         this.successor = successor;
     }
-
+    
     @Override
     public Component chain(Component result, String text) {
 
-        // скорее word and sign
         Matcher matcher = Pattern.compile(RegularExpressions.REGEX_WORD).matcher(text);
+
         SymbolSet word;
         String wordText;
 

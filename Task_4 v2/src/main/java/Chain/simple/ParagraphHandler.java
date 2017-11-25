@@ -13,10 +13,9 @@ public class ParagraphHandler implements ParserInterface {
         this.successor = successor;
     }
 
-
     @Override
     public Component chain(Component result, String text) {
-        Matcher matcher = Pattern.compile(RegularExpressions.REGEX_NEW_PARAGRAPH).matcher(text);
+        Matcher matcher = Pattern.compile(RegularExpressions.REGEX_PARAGRAPH).matcher(text);
         SymbolSet paragraph;
         String paragraphText;
         while(matcher.find()){

@@ -10,7 +10,6 @@ public class Test {
         ParagraphHandler paragraphHandler = new ParagraphHandler(sentenceHandler);
         TextHandler textHandler = new TextHandler(paragraphHandler);
 
-
         System.out.println(textHandler.chain(new SymbolSet(), "Hello"));
 
     }

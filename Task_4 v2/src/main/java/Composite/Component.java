@@ -9,4 +9,7 @@ public interface Component {
     void remove(Component c);
 
     Object getChild(int index);
+
+    int getComponentsSize ();
+
 }

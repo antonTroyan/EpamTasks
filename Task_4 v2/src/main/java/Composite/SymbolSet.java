@@ -1,9 +1,10 @@
 package Composite;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class SymbolSet implements Component{
-    private ArrayList<Component> components = new ArrayList<>();
+    private List<Component> components = new ArrayList<>();
 
     private static long idCounter = 0;
     private long symbolSetID;
@@ -18,12 +19,17 @@ public class SymbolSet implements Component{
     }
 
     public void operation() {
-        System.out.println("SymbolSet -> Call children operations");
         int size = components.size();
         for (int i = 0; i < size; i++) {
             components.get(i).operation();
         }
     }
+
+    public int getComponentsSize (){
+        return components.size();
+    }
+
+
 
     public void add(Component component) {
         components.add(component);
@@ -31,12 +37,10 @@ public class SymbolSet implements Component{
 
 
     public void remove(Component component) {
-        System.out.println("SymbolSet -> Removing component");
         components.remove(component);
     }
 
     public Object getChild(int index) {
-        System.out.println("SymbolSet -> Getting component");
         return components.get(index);
     }
 
@@ -56,14 +60,23 @@ public class SymbolSet implements Component{
         return components != null ? components.hashCode() : 0;
     }
 
+//    @Override
+//    public String toString() {
+//        String result = "Компонент id=" + symbolSetID + "[";
+//        for (int i = 0; i < components.size(); i++){
+//
+//            System.out.println();
+//            result += "\n\t"+components.get(i);
+//        }
+//        return result + "]";
+//    }
     @Override
     public String toString() {
-        String result = "Компонент id=" + symbolSetID + "[";
+        String result = " ";
         for (int i = 0; i < components.size(); i++){
-
-            System.out.println();
-            result += "\n\t"+components.get(i);
+            result += components.get(i);
         }
-        return result + "]";
+        return result;
     }
+
 }

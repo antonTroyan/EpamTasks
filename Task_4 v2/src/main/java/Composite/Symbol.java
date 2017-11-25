@@ -1,7 +1,7 @@
 package Composite;
 
 public class Symbol implements Component{
-    private String enteringData;
+    private String content;
     private static long idCounter = 0;
     private long symbolID;
 
@@ -12,9 +12,10 @@ public class Symbol implements Component{
     }
 
     public Symbol(String enteringData) {
-        this.enteringData = enteringData;
+        this.content = enteringData;
         symbolID = createID();
     }
+
 
     public void operation() {
         System.out.println("Leaf -> Performing operation");
@@ -32,6 +33,11 @@ public class Symbol implements Component{
         throw new UnsupportedOperationException();
     }
 
+    @Override
+    public int getComponentsSize() {
+        return 0;
+    }
+
 
     @Override
     public boolean equals(Object o) {
@@ -40,20 +46,26 @@ public class Symbol implements Component{
 
         Symbol symbol = (Symbol) o;
 
-        return enteringData != null ? enteringData.equals(symbol.enteringData) : symbol.enteringData == null;
+        return content != null ? content.equals(symbol.content) : symbol.content == null;
     }
 
     @Override
     public int hashCode() {
-        return enteringData != null ? enteringData.hashCode() : 0;
+        return content != null ? content.hashCode() : 0;
     }
 
 
+
+//    @Override
+//    public String toString() {
+//        return "\tSymbol " +"id=" + symbolID + " {" +
+//                "content='" + content + '\'' +
+//                '}';
+//    }
 
     @Override
     public String toString() {
-        return "\tSymbol " +"id=" + symbolID + " {" +
-                "enteringData='" + enteringData + '\'' +
-                '}';
+        return content;
     }
+
 }

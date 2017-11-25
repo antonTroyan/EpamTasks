@@ -21,14 +21,11 @@ public class TextHandler implements ParserInterface {
         return core;
     }
 
-
     public String loadFile(String filename) {
         String allText = "";
         try {
             Scanner scanner = new Scanner(new FileReader(filename));
-            while (scanner.hasNext()){
-                allText += scanner.nextLine() + "\n";
-            }
+            while (scanner.hasNext()) allText += scanner.nextLine() + "\n";
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
