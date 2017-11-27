@@ -2,12 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6a28d57-93cd-474e-b1a7-cd9ab36b8434" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_3/src/main/java/by/troyan/epam/task3/test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_3/target/classes/by/troyan/epam/task3/test.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/target/classes/Chain/SymbolSetCreator.class" afterPath="$PROJECT_DIR$/../Task_4/target/classes/Chain/SymbolSetCreator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/counter/Calculator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v3/src/main/java/action/TextConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v3/src/main/java/counter/ExpressionUtils.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/ParagraphHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/ParserInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/RegularExpressions.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/SentenceHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/SymbolHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/TestRegex.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/TextHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/WordAndSignHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Composite/Component.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Composite/Symbol.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Composite/SymbolSet.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/service/TextAnalizer$1.class" afterPath="$PROJECT_DIR$/../Task_4 v2/target/classes/service/TextAnalizer$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/service/TextAnalizer.class" afterPath="$PROJECT_DIR$/../Task_4 v2/target/classes/service/TextAnalizer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/service/TextCreator.class" afterPath="$PROJECT_DIR$/../Task_4 v2/target/classes/service/TextCreator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_3/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_4/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4 v2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_4 v2/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/service/TextAnalizer.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/service/TextAnalizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/service/TextCreator.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/service/TextCreator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/ParagraphHandler.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/ParagraphHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/ParserInterface.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/ParserInterface.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/RegularExpressions.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/RegularExpressions.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/SentenceHandler.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/SentenceHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/SymbolHandler.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/SymbolHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/Test.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/Test.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/TestRegex.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/TestRegex.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/TextHandler.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/TextHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/WordAndSignHandler.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/WordAndSignHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Composite/Component.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сomposite/Component.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Composite/Symbol.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сomposite/Symbol.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Composite/SymbolSet.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сomposite/SymbolSet.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +90,8 @@
       <file leaf-file-name="ApplianceDAOImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            <state relative-caret-position="476">
+              <caret line="31" column="52" lean-forward="false" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -205,6 +233,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,12 +272,11 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Task_3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -477,6 +505,7 @@
       <workItem from="1510669542128" duration="117000" />
       <workItem from="1511088926704" duration="578000" />
       <workItem from="1511203410741" duration="621000" />
+      <workItem from="1511802847064" duration="616000" />
     </task>
     <servers />
   </component>
@@ -498,27 +527,28 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2115000" />
+    <option name="totallyTimeSpent" value="2731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1408" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5015625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16506794" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39968404" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39968404" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -891,8 +921,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/dao/impl/ApplianceDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="476">
+          <caret line="31" column="52" lean-forward="false" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
           <folding />
         </state>
       </provider>

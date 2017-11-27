@@ -1,8 +1,8 @@
-package service;
+package action;
 
-import сhain.*;
-import сomposite.Component;
-import сomposite.SymbolSet;
+import creator.*;
+import entity.component.Component;
+import entity.SymbolSet;
 import java.util.*;
 
 public class TextAnalizer {

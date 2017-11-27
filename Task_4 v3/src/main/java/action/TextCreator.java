@@ -1,6 +1,6 @@
-package service;
+package action;
 
-import сomposite.Component;
+import entity.component.Component;
 
 public class TextCreator {
 
