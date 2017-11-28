@@ -5,14 +5,14 @@ import entity.component.Component;
 import entity.SymbolSet;
 import java.util.*;
 
-public class TextAnalizer {
+public class TextWorker {
     public static void main(String[] args) {
         SymbolHandler symbolHandler = new SymbolHandler();
         WordAndSignHandler wordHandler = new WordAndSignHandler(symbolHandler);
         SentenceHandler sentenceHandler = new SentenceHandler(wordHandler);
         ParagraphHandler paragraphHandler = new ParagraphHandler(sentenceHandler);
         TextHandler textHandler = new TextHandler(paragraphHandler);
-        TextAnalizer textAnalizer = new TextAnalizer();
+        TextWorker textAnalizer = new TextWorker();
         textAnalizer.countSentenciesWithSimilarWords(textHandler.chain(new SymbolSet(), "Hello"));
    //     textAnalizer.printSortedSentenciesByLexemsAmmount(textHandler.chain(new SymbolSet(), "Hello"));
   //      textAnalizer.printLexemsInAlphobeticOrder(textHandler.chain(new SymbolSet(), "Hello"));
@@ -53,12 +53,7 @@ public class TextAnalizer {
         return sentence.split("[\\p{Punct}\\s]+").length;
     }
 
-    private static final Comparator<String> STRING_COMPARATOR = new Comparator<String>() {
-        @Override
-        public int compare(String o1, String o2) {
-            return getNumberOfWords(o1) - getNumberOfWords(o2);
-        }
-    };
+    private static final Comparator<String> STRING_COMPARATOR = (o1, o2) -> getNumberOfWords(o1) - getNumberOfWords(o2);
 
     private static <T> void sort(final T[] array, final Comparator<T> comparator) {
         for (int i = 0; i < array.length - 1; ++i) {

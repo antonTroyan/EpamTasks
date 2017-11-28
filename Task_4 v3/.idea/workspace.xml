@@ -2,41 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff77765-f2f2-4224-8860-69ca0c822281" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/counter/Calculator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/action/TextConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/counter/ExpressionUtils.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/ParagraphHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/ParserInterface.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/RegularExpressions.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/SentenceHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/SymbolHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/TestRegex.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/TextHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Chain/simple/WordAndSignHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Composite/Component.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Composite/Symbol.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/Composite/SymbolSet.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/service/TextAnalizer$1.class" afterPath="$PROJECT_DIR$/../Task_4 v2/target/classes/service/TextAnalizer$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/service/TextAnalizer.class" afterPath="$PROJECT_DIR$/../Task_4 v2/target/classes/service/TextAnalizer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/service/TextCreator.class" afterPath="$PROJECT_DIR$/../Task_4 v2/target/classes/service/TextCreator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_3/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4 v2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_4 v2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/service/TextAnalizer.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/service/TextAnalizer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/service/TextCreator.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/service/TextCreator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/ParagraphHandler.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/ParagraphHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/ParserInterface.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/ParserInterface.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/RegularExpressions.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/RegularExpressions.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/SentenceHandler.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/SentenceHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/SymbolHandler.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/SymbolHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/Test.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/Test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/TestRegex.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/TestRegex.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/TextHandler.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/TextHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Chain/simple/WordAndSignHandler.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/WordAndSignHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Composite/Component.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сomposite/Component.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Composite/Symbol.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сomposite/Symbol.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/Composite/SymbolSet.java" afterPath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сomposite/SymbolSet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/action/ParametersTextFiller.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/action/TextFormulasCalculator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/counter/PolishFormConverter.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/action/TextConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/action/TextCreator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/counter/Calculator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/counter/ExpressionUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/action/TextAnalizer$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/action/TextAnalizer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/action/TextConverter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/action/TextCreator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/counter/Calculator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/counter/ExpressionUtils.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/creator/RegularExpressions.class" afterPath="$PROJECT_DIR$/target/classes/creator/RegularExpressions.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/creator/Test.class" afterPath="$PROJECT_DIR$/target/classes/creator/Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/creator/RegularExpressions.java" afterPath="$PROJECT_DIR$/src/main/java/creator/RegularExpressions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/creator/Test.java" afterPath="$PROJECT_DIR$/src/main/java/creator/Test.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/action/TextAnalizer.java" afterPath="$PROJECT_DIR$/src/main/java/action/TextWorker.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,90 +33,84 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ParagraphHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/creator/ParagraphHandler.java">
+      <file leaf-file-name="TextWorker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/action/TextWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="26" column="22" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="26" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextAnalizer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/action/TextAnalizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1224">
-              <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="34">
+              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#countSentenciesWithSimilarWords#0;class#TextAnalizer#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TextConverter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/action/TextConverter.java">
+      <file leaf-file-name="TextFormulasCalculator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/action/TextFormulasCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="788">
-              <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegularExpressions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/creator/RegularExpressions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SentenceHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/creator/SentenceHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="27" column="22" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="27" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/counter/Calculator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/data1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExpressionUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/counter/ExpressionUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="187" column="0" lean-forward="true" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+            <state relative-caret-position="398">
+              <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2400#2408#0" expanded="true" />
-                <element signature="e#2477#2485#0" expanded="true" />
-                <element signature="e#2713#2721#0" expanded="true" />
-                <element signature="e#7429#7441#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TerminalExpressionMinus.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/counter/interpreter/TerminalExpressionMinus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="e#207#208#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Context.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/counter/interpreter/Context.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#224#225#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractMathExpression.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/counter/interpreter/AbstractMathExpression.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayDeque.java" pinned="false" current-in-tab="false">
+        <entry file="jar://E:/SupportingTools/jdk-9/lib/src.zip!/java.base/java/util/ArrayDeque.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10846">
+              <caret line="358" column="0" lean-forward="false" selection-start-line="358" selection-start-column="0" selection-end-line="358" selection-end-column="0" />
+              <folding>
+                <element signature="e#19136#19137#0" expanded="true" />
+                <element signature="e#19172#19173#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/creator/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="22" column="52" lean-forward="false" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,11 +126,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TextCreator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/action/TextCreator.java">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/counter/interpreter/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1496">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data1.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/data1.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -180,19 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Chain/BaseInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Chain/LexemeHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Composite/Component1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/text/parser/TextParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Composite/CompositeRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Chain/TextParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Chain/RegularExpressions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Chain/SymbolSetCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Chain/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Chain/ParagraphHAndler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Chain/test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Chain/SentenceHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Chain/SymbolHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Chain/WordHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Chain/AbstractHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Chain/LexemHandler.java" />
@@ -225,12 +200,25 @@
         <option value="$PROJECT_DIR$/src/main/java/counter/Calculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/TextAnalizer.java" />
         <option value="$PROJECT_DIR$/src/main/java/creator/parser/ParserInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/creator/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/component/Component.java" />
-        <option value="$PROJECT_DIR$/src/main/java/action/TextAnalizer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/counter/ExpressionUtils.java" />
         <option value="$PROJECT_DIR$/data/data1.txt" />
         <option value="$PROJECT_DIR$/src/main/java/action/TextConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/action/IandJTextFiller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/interpreter/InterpreterRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/interpreter/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/action/IAndJTextFiller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/action/TextFiller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/action/ParametersTextFiller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/counter/TerminalExpressionPlus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/counter/ExpressionUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/counter/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/counter/interpreter/TerminalExpressionPlus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/action/TextAnalizer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/action/TextWorker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/counter/PolishFormConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/creator/RegularExpressions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/creator/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/action/TextFormulasCalculator.java" />
       </list>
     </option>
   </component>
@@ -271,6 +259,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -316,22 +306,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="counter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Task_4 v3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Task_4 v3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="creator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,14 +324,15 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Programming\IdeaProjects\EpamTasks\Task_4 v2\src\main\java\counter" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Programming\IdeaProjects\EpamTasks\Task_4\data" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Chain" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Programming\IdeaProjects\EpamTasks\Task_4\data" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Programming\IdeaProjects\EpamTasks\Task_4 v3\src\main\java" />
+      <recent name="E:\Programming\IdeaProjects\EpamTasks\Task_4 v2\src\main\java\counter" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -366,7 +347,64 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TextConverter">
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="InterpreterRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="counter.interpreter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="interpreter.InterpreterRunner" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Task_4" />
+      <envs />
+    </configuration>
+    <configuration name="ParametersTextFiller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="action.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="action.ParametersTextFiller" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Task_4" />
+      <envs />
+    </configuration>
+    <configuration name="PolishFormConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="counter.interpreter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="counter.PolishFormConverter" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Task_4" />
+      <envs />
+    </configuration>
     <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -389,11 +427,11 @@
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Chain.simple.*" />
+          <option name="PATTERN" value="creator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Chain.simple.Test" />
+      <option name="MAIN_CLASS_NAME" value="creator.Test" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -405,52 +443,14 @@
       <module name="Task_4" />
       <envs />
     </configuration>
-    <configuration name="TestRegex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Chain.simple.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Chain.simple.TestRegex" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Task_4" />
-      <envs />
-    </configuration>
-    <configuration name="TextAnalizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TextWorker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="action.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="action.TextAnalizer" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Task_4" />
-      <envs />
-    </configuration>
-    <configuration name="TextConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="action.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="action.TextConverter" />
+      <option name="MAIN_CLASS_NAME" value="action.TextWorker" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -543,39 +543,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Chain.simple.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="text.test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Task_4" />
-      <envs />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.test" />
-      <item index="1" class="java.lang.String" itemvalue="Application.TestRegex" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Test (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Application.TextAnalizer" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TextConverter" />
+      <item index="0" class="java.lang.String" itemvalue="Application.TextWorker" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ParametersTextFiller" />
+      <item index="2" class="java.lang.String" itemvalue="Application.PolishFormConverter" />
+      <item index="3" class="java.lang.String" itemvalue="Application.InterpreterRunner" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TextConverter" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TextAnalizer" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Test (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Application.TestRegex" />
-        <item index="4" class="java.lang.String" itemvalue="Application.test" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="1" class="java.lang.String" itemvalue="Application.PolishFormConverter" />
+        <item index="2" class="java.lang.String" itemvalue="Application.InterpreterRunner" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ParametersTextFiller" />
+        <item index="4" class="java.lang.String" itemvalue="Application.TextWorker" />
       </list>
     </recent_temporary>
   </component>
@@ -618,11 +599,16 @@
       <workItem from="1511717147083" duration="639000" />
       <workItem from="1511796655738" duration="1179000" />
       <workItem from="1511797884019" duration="16902000" />
+      <workItem from="1511815747711" duration="54000" />
+      <workItem from="1511816183123" duration="744000" />
+      <workItem from="1511864664814" duration="6401000" />
+      <workItem from="1511874921158" duration="6683000" />
+      <workItem from="1511887789100" duration="1006000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109826000" />
+    <option name="totallyTimeSpent" value="124714000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -640,13 +626,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.50319743" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.49680257" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.121502794" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.127498" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -669,34 +655,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/creator/RegularExpressions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/SymbolSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Chain/BaseInterface.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/text/TextHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/text/ParagraphHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Chain/LexemeHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/text/WordHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/text/SymbolHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Chain/PunctuationMarks.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Composite/CompositeRunner.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/text/SentenceHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Composite/Component1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Chain/LexemeHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/text/parser/TextParser.java" />
@@ -727,7 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,7 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -750,7 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,9 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1870">
           <caret line="71" column="7" lean-forward="false" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -768,7 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="20" column="69" lean-forward="false" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,7 +732,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/component/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/creator/SentenceHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="27" column="22" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="27" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interpreter/InterpreterRunner.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/counter/Calculator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/action/TextCreator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/counter/interpreter/NonterminalExpressionNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/counter/interpreter/TerminalExpressionDivide.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/counter/interpreter/TerminalExpressionMultiply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/counter/interpreter/TerminalExpressionPlus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/creator/ParagraphHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="26" column="22" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="26" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/creator/RegularExpressions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="10" column="91" lean-forward="false" selection-start-line="10" selection-start-column="91" selection-end-line="10" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/action/ParametersTextFiller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -788,84 +815,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/creator/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/counter/PolishFormConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/component/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/action/TextCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/action/TextAnalizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1224">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        <state relative-caret-position="223">
+          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#countSentenciesWithSimilarWords#0;class#TextAnalizer#0" expanded="false" />
+            <element signature="e#958#966#0" expanded="true" />
+            <element signature="e#1010#1018#0" expanded="true" />
+            <element signature="e#1124#1132#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/creator/ParagraphHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="26" column="22" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="26" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/creator/RegularExpressions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/creator/SentenceHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="27" column="22" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="27" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/counter/ExpressionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="187" column="0" lean-forward="true" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2400#2408#0" expanded="true" />
-            <element signature="e#2477#2485#0" expanded="true" />
-            <element signature="e#2713#2721#0" expanded="true" />
-            <element signature="e#7429#7441#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/counter/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,17 +838,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/data1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="408">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/action/TextConverter.java">
+    <entry file="jar://E:/SupportingTools/jdk-9/lib/src.zip!/java.base/java/util/ArrayDeque.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+        <state relative-caret-position="10846">
+          <caret line="358" column="0" lean-forward="false" selection-start-line="358" selection-start-column="0" selection-end-line="358" selection-end-column="0" />
+          <folding>
+            <element signature="e#19136#19137#0" expanded="true" />
+            <element signature="e#19172#19173#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/counter/interpreter/AbstractMathExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/counter/interpreter/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/counter/interpreter/TerminalExpressionMinus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#207#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/counter/interpreter/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#224#225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/creator/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="22" column="52" lean-forward="false" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/action/TextWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/action/TextFormulasCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
