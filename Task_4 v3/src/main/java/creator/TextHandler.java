@@ -1,6 +1,6 @@
 package creator;
 
-import creator.parser.ParserInterface;
+import creator.handler.HandlerInterface;
 import entity.component.Component;
 import entity.SymbolSet;
 
@@ -8,10 +8,11 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
 
-public class TextHandler implements ParserInterface {
-    ParserInterface successor;
+public class TextHandler implements HandlerInterface {
 
-    public TextHandler(ParserInterface successor) {
+    private HandlerInterface successor;
+
+    public TextHandler(HandlerInterface successor) {
         this.successor = successor;
     }
 

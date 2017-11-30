@@ -7,7 +7,6 @@ import java.util.List;
 
 public class SymbolSet implements Component {
     private List<Component> components = new ArrayList<>();
-
     private static long idCounter = 0;
     private long symbolSetID;
 
@@ -15,7 +14,7 @@ public class SymbolSet implements Component {
         symbolSetID = createID();
     }
 
-    public static synchronized long createID()
+    private static synchronized long createID()
     {
         return idCounter++;
     }
@@ -31,12 +30,9 @@ public class SymbolSet implements Component {
         return components.size();
     }
 
-
-
     public void add(Component component) {
         components.add(component);
     }
-
 
     public void remove(Component component) {
         components.remove(component);
@@ -45,7 +41,6 @@ public class SymbolSet implements Component {
     public Object getChild(int index) {
         return components.get(index);
     }
-
 
     @Override
     public boolean equals(Object o) {
@@ -62,16 +57,6 @@ public class SymbolSet implements Component {
         return components != null ? components.hashCode() : 0;
     }
 
-//    @Override
-//    public String toString() {
-//        String result = "Компонент id=" + symbolSetID + "[";
-//        for (int i = 0; i < components.size(); i++){
-//
-//            System.out.println();
-//            result += "\n\t"+components.get(i);
-//        }
-//        return result + "]";
-//    }
     @Override
     public String toString() {
         String result = " ";
@@ -80,5 +65,4 @@ public class SymbolSet implements Component {
         }
         return result;
     }
-
 }

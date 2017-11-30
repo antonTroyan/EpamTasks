@@ -7,9 +7,7 @@ public class Symbol implements Component {
     private static long idCounter = 0;
     private long symbolID;
 
-
-    public static synchronized long createID()
-    {
+    public static synchronized long createID() {
         return idCounter++;
     }
 
@@ -18,17 +16,16 @@ public class Symbol implements Component {
         symbolID = createID();
     }
 
-
     public void operation() {
-        System.out.println("Leaf -> Performing operation");
+        throw new UnsupportedOperationException();
     }
 
     public void add(Component c) {
-        throw new UnsupportedOperationException(); // генерация исключения и return false (если метод не void)
+        throw new UnsupportedOperationException();
     }
 
     public void remove(Component c) {
-        throw new UnsupportedOperationException(); // генерация исключения и return false (если метод не void)
+        throw new UnsupportedOperationException();
     }
 
     public Object getChild(int index) {
@@ -39,7 +36,6 @@ public class Symbol implements Component {
     public int getComponentsSize() {
         return 0;
     }
-
 
     @Override
     public boolean equals(Object o) {
@@ -55,15 +51,6 @@ public class Symbol implements Component {
     public int hashCode() {
         return content != null ? content.hashCode() : 0;
     }
-
-
-
-//    @Override
-//    public String toString() {
-//        return "\tSymbol " +"id=" + symbolID + " {" +
-//                "content='" + content + '\'' +
-//                '}';
-//    }
 
     @Override
     public String toString() {

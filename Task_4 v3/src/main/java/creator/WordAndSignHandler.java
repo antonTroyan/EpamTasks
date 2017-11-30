@@ -1,25 +1,24 @@
 package creator;
 
-import creator.parser.ParserInterface;
+import creator.handler.HandlerInterface;
 import entity.component.Component;
 import entity.SymbolSet;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class WordAndSignHandler implements ParserInterface {
+public class WordAndSignHandler implements HandlerInterface {
 
-    ParserInterface successor;
+    private HandlerInterface successor;
 
-    public WordAndSignHandler(ParserInterface successor) {
+    public WordAndSignHandler(HandlerInterface successor) {
         this.successor = successor;
     }
     
     @Override
     public Component chain(Component result, String text) {
 
-        Matcher matcher = Pattern.compile(RegularExpressions.REGEX_WORD).matcher(text);
-
+        Matcher matcher = Pattern.compile(RegularExpression.REGEX_WORD).matcher(text);
         SymbolSet word;
         String wordText;
 

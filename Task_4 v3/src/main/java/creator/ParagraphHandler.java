@@ -1,22 +1,22 @@
 package creator;
 
-import creator.parser.ParserInterface;
+import creator.handler.HandlerInterface;
 import entity.component.Component;
 import entity.SymbolSet;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ParagraphHandler implements ParserInterface {
-    ParserInterface successor;
+public class ParagraphHandler implements HandlerInterface {
+    private HandlerInterface successor;
 
-    public ParagraphHandler(ParserInterface successor) {
+    public ParagraphHandler(HandlerInterface successor) {
         this.successor = successor;
     }
 
     @Override
     public Component chain(Component result, String text) {
-        Matcher matcher = Pattern.compile(RegularExpressions.REGEX_PARAGRAPH).matcher(text);
+        Matcher matcher = Pattern.compile(RegularExpression.REGEX_PARAGRAPH).matcher(text);
         SymbolSet paragraph;
         String paragraphText;
         while(matcher.find()){
@@ -26,5 +26,4 @@ public class ParagraphHandler implements ParserInterface {
         }
         return result;
     }
-
 }

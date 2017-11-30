@@ -1,6 +1,6 @@
-package counter.interpreter;
+package counting.counter;
 
-import creator.RegularExpressions;
+import creator.RegularExpression;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -14,7 +14,7 @@ public class Client {
     }
 
     private void parse(String expression) {
-        for (String lexeme : expression.split(RegularExpressions.REGEX_SPLIT_EXPRESSION)) {
+        for (String lexeme : expression.split(RegularExpression.REGEX_SPLIT_EXPRESSION)) {
             if (lexeme.isEmpty()) {
                 continue;
             }

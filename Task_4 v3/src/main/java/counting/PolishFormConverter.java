@@ -1,6 +1,4 @@
-package counter;
-
-import counter.interpreter.Client;
+package counting;
 
 import java.util.*;
 
@@ -9,7 +7,7 @@ public class PolishFormConverter {
     public static final Map<String, Integer> MAIN_MATH_OPERATIONS;
 
     static {
-        MAIN_MATH_OPERATIONS = new HashMap<String, Integer>();
+        MAIN_MATH_OPERATIONS = new HashMap<>();
         MAIN_MATH_OPERATIONS.put("*", 1);
         MAIN_MATH_OPERATIONS.put("/", 1);
         MAIN_MATH_OPERATIONS.put("+", 2);
@@ -58,8 +56,7 @@ public class PolishFormConverter {
                 }
                 if (nextOperation.equals(leftBracket)) {
                     stack.push(nextOperation);
-                }
-                else if (nextOperation.equals(rightBracket)) {
+                } else if (nextOperation.equals(rightBracket)) {
                     while (!stack.peek().equals(leftBracket)) {
                         out.add(stack.pop());
                         if (stack.empty()) {
@@ -67,8 +64,7 @@ public class PolishFormConverter {
                         }
                     }
                     stack.pop();
-                }
-                else {
+                } else {
                     while (!stack.empty() && !stack.peek().equals(leftBracket) &&
                             (operations.get(nextOperation) >= operations.get(stack.peek()))) {
                         out.add(stack.pop());
@@ -95,16 +91,5 @@ public class PolishFormConverter {
 
     public static String sortingStation(String expression, Map<String, Integer> operations) {
         return sortingStation(expression, operations, "(", ")");
-    }
-
-
-    public static void main(String[] args) {
-        String standardExpression = "3 + 4 * 2 / (1 - 5) + 2";
-        System.out.println("Инфиксная нотация:         " + standardExpression);
-        System.out.println("\tРезультат 3");
-        String polishForm = sortingStation(standardExpression, MAIN_MATH_OPERATIONS);
-        System.out.println("Обратная польская нотация: " + polishForm);
-        Client interpreter = new Client(polishForm);
-        System.out.println("[ " + polishForm + " ] = " + interpreter.calculate());
     }
 }

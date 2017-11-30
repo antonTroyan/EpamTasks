@@ -1,6 +1,6 @@
 package action;
 
-import creator.RegularExpressions;
+import creator.RegularExpression;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ public class ParametersTextFiller {
             while (lineScanner.hasNext()){
                 String nextLine = lineScanner.nextLine();
                 parametersScanner = new Scanner(nextLine);
-                String founded = parametersScanner.findInLine(RegularExpressions.REGEX_IANDJ);
+                String founded = parametersScanner.findInLine(RegularExpression.REGEX_IANDJ);
                 if (founded != null){
                     switch(founded){
                         case "++i":

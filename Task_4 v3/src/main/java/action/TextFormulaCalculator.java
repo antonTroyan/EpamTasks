@@ -1,20 +1,18 @@
 package action;
 
-import counter.PolishFormConverter;
-import counter.interpreter.Client;
-import creator.RegularExpressions;
-
+import counting.PolishFormConverter;
+import counting.counter.Client;
+import creator.RegularExpression;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class TextFormulasCalculator {
+public class TextFormulaCalculator {
 
     public String calculateTextFormulas (String text, int i, int j){
-        String result = text;
         ParametersTextFiller parametersFiller = new ParametersTextFiller();
-        result = parametersFiller.fillTextByParameters(text, i, j);
+        String result = parametersFiller.fillTextByParameters(text, i, j);
         Matcher matcher = Pattern
-                .compile(RegularExpressions.REGEX_MATH_EXPRESSIONS)
+                .compile(RegularExpression.REGEX_MATH_EXPRESSIONS)
                 .matcher(result);
 
         String foundedExpression = "";
@@ -23,13 +21,10 @@ public class TextFormulasCalculator {
 
         while(matcher.find()){
             foundedExpression = matcher.group();
-
             polishFormExpression = PolishFormConverter.sortingStation(foundedExpression,
                     PolishFormConverter.MAIN_MATH_OPERATIONS);
             Client interpreter = new Client(polishFormExpression);
             answer = interpreter.calculate().toString();
-            System.out.println("Founded " + foundedExpression);
-            System.out.println("Answer " + answer);
             result = result.replace(foundedExpression, answer);
         }
         return result;

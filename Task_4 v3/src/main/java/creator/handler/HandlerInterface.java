@@ -1,7 +1,7 @@
-package creator.parser;
+package creator.handler;
 
 import entity.component.Component;
 
-public interface ParserInterface {
+public interface HandlerInterface {
     Component chain (Component result, String text);
 }

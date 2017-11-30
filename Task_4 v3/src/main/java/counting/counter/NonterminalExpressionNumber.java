@@ -1,4 +1,4 @@
-package counter.interpreter;
+package counting.counter;
 
 public class NonterminalExpressionNumber extends AbstractMathExpression {
 

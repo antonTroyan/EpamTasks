@@ -1,4 +1,4 @@
-package counter.interpreter;
+package counting.counter;
 
 import java.util.ArrayDeque;
 
