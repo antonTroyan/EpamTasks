@@ -1,6 +1,6 @@
 package by.troyan.task4.calculating.counter;
 
-import by.troyan.task4.structurecreator.RegularExpression;
+import by.troyan.task4.creator.RegularExpression;
 
 import java.util.ArrayList;
 import java.util.Scanner;

@@ -2,138 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b03b7bf2-2345-4720-a05a-e70f362655ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/ConstantTestValues.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/action/ParametersTextFillerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/action/TextFormulaCalculatorTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/action/TextTreeCreatorTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/calculating/PolishFormConverterTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/calculating/counter/ClientTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/.idea/libraries/Maven__com_beust_jcommander_1_64.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_9_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_9_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/.idea/libraries/Maven__org_testng_testng_6_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/Task_4.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/data/data.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/data/data1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/counter/Calculator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/service/TextAnalizer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/service/TextCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/ParagraphHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/ParserInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/RegularExpressions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/SentenceHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/SymbolHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/Test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/TestRegex.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/TextHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сhain/WordAndSignHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сomposite/Component.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сomposite/Symbol.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/src/main/java/сomposite/SymbolSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/counter/Calculator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/service/TextAnalizer$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/service/TextAnalizer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/service/TextCreator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/сhain/ParagraphHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/сhain/ParserInterface.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/сhain/RegularExpressions.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/сhain/SentenceHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/сhain/SymbolHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/сhain/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/сhain/TestRegex.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/сhain/TextHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/сhain/WordAndSignHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/сomposite/Component.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/сomposite/Symbol.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v2/target/classes/сomposite/SymbolSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/.idea/libraries/Maven__com_beust_jcommander_1_64.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_9_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_9_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/.idea/libraries/Maven__org_testng_testng_6_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/Task_4.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/data/data.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/action/ParametersTextFiller.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/action/TextFormulaCalculator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/action/TextWorker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/calculating/PolishFormConverter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/calculating/counter/AbstractMathExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/calculating/counter/Client.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/calculating/counter/Context.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/calculating/counter/NonterminalExpressionNumber.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/calculating/counter/TerminalExpressionDivide.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/calculating/counter/TerminalExpressionMinus.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/calculating/counter/TerminalExpressionMultiply.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/calculating/counter/TerminalExpressionPlus.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/creator/ParagraphHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/creator/RegularExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/creator/SentenceHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/creator/SymbolHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/creator/WordAndSignHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/creator/handler/HandlerInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/entity/Symbol.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/entity/SymbolSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/by/troyan/task4/entity/component/Component.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/src/main/java/creator/TextHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/action/ParametersTextFiller.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/action/TextFormulasCalculator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/action/TextWorker.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/counter/PolishFormConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/counter/interpreter/AbstractMathExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/counter/interpreter/Client.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/counter/interpreter/Context.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/counter/interpreter/NonterminalExpressionNumber.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/counter/interpreter/TerminalExpressionDivide.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/counter/interpreter/TerminalExpressionMinus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/counter/interpreter/TerminalExpressionMultiply.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/counter/interpreter/TerminalExpressionPlus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/creator/ParagraphHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/creator/RegularExpressions.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/creator/SentenceHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/creator/SymbolHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/creator/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/creator/TestRegex.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/creator/TextHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/creator/WordAndSignHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/creator/parser/ParserInterface.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/entity/Symbol.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/entity/SymbolSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4 v3/target/classes/entity/component/Component.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/Chain/BaseInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/Chain/RegularExpressions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/Chain/SymbolSetCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/Chain/Test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/Composite/Component.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/Composite/Symbol.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/Composite/SymbolSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/target/classes/Chain/BaseInterface.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/target/classes/Chain/RegularExpressions.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/target/classes/Chain/SymbolSetCreator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/target/classes/Chain/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/target/classes/Composite/Component.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/target/classes/Composite/Symbol.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/target/classes/Composite/SymbolSet.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4/src/main/resources/log4j2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/action/TextWorkerTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/action/Test.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/src/main/resources/data.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/calculating/counter/ClientTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/target/classes/by/troyan/task4/action/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/target/classes/data.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/target/test-classes/by/troyan/task4/calculating/counter/ClientTest.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/target/classes/by/troyan/task4/action/ParametersTextFiller.class" afterPath="$PROJECT_DIR$/../Task_4/target/classes/by/troyan/task4/action/ParametersTextFiller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/target/classes/by/troyan/task4/action/TextFormulaCalculator.class" afterPath="$PROJECT_DIR$/../Task_4/target/classes/by/troyan/task4/action/TextFormulaCalculator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/target/classes/by/troyan/task4/action/TextTreeCreator.class" afterPath="$PROJECT_DIR$/../Task_4/target/classes/by/troyan/task4/action/TextTreeCreator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/target/classes/by/troyan/task4/action/TextWorker.class" afterPath="$PROJECT_DIR$/../Task_4/target/classes/by/troyan/task4/action/TextWorker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/target/classes/by/troyan/task4/calculating/counter/Client.class" afterPath="$PROJECT_DIR$/../Task_4/target/classes/by/troyan/task4/calculating/counter/Client.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/target/test-classes/by/troyan/task4/ConstantTestValues.class" afterPath="$PROJECT_DIR$/../Task_4/target/test-classes/by/troyan/task4/ConstantTestValues.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/target/test-classes/by/troyan/task4/action/ParametersTextFillerTest.class" afterPath="$PROJECT_DIR$/../Task_4/target/test-classes/by/troyan/task4/action/ParametersTextFillerTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/target/test-classes/by/troyan/task4/action/TextFormulaCalculatorTest.class" afterPath="$PROJECT_DIR$/../Task_4/target/test-classes/by/troyan/task4/action/TextFormulaCalculatorTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/target/test-classes/by/troyan/task4/action/TextTreeCreatorTest.class" afterPath="$PROJECT_DIR$/../Task_4/target/test-classes/by/troyan/task4/action/TextTreeCreatorTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_1/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../Task_4/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_4/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/Task_4.iml" afterPath="$PROJECT_DIR$/../Task_4/Task_4.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/data/data.txt" afterPath="$PROJECT_DIR$/../Task_4/data/data.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/pom.xml" afterPath="$PROJECT_DIR$/../Task_4/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/action/ParametersTextFiller.java" afterPath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/action/ParametersTextFiller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/action/TextFormulaCalculator.java" afterPath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/action/TextFormulaCalculator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/action/TextTreeCreator.java" afterPath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/action/TextTreeCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/action/TextWorker.java" afterPath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/action/TextWorker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/calculating/counter/Client.java" afterPath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/calculating/counter/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/ConstantTestValues.java" afterPath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/ConstantTestValues.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/action/ParametersTextFillerTest.java" afterPath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/action/ParametersTextFillerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/action/TextFormulaCalculatorTest.java" afterPath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/action/TextFormulaCalculatorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/action/TextTreeCreatorTest.java" afterPath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/action/TextTreeCreatorTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/structurecreator/ParagraphHandler.java" afterPath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/creator/ParagraphHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/structurecreator/RegularExpression.java" afterPath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/creator/RegularExpression.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/structurecreator/SentenceHandler.java" afterPath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/creator/SentenceHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/structurecreator/SymbolHandler.java" afterPath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/creator/SymbolHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/structurecreator/TextHandler.java" afterPath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/creator/TextHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/structurecreator/WordAndSignHandler.java" afterPath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/creator/WordAndSignHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/structurecreator/handler/HandlerInterface.java" afterPath="$PROJECT_DIR$/../Task_4/src/main/java/by/troyan/task4/creator/handler/HandlerInterface.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -146,11 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="FileDataLoader.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FileDataLoader.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/trianglereader/FileDataLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="30" column="16" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="42" />
+            <state relative-caret-position="238">
+              <caret line="16" column="78" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -166,10 +70,30 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DataReadException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/exception/DataReadException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TriangleParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/parser/TriangleParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/entity/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
+            <state relative-caret-position="1112">
               <caret line="56" column="1" lean-forward="false" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
               <folding />
             </state>
@@ -211,26 +135,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
               <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidatorTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test/by/troyan/epam/task3/validator/ValidatorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Validator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/validator/Validator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="12" column="49" lean-forward="false" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -456,6 +360,13 @@
               <item name="Task_3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Task_3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Task_3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Task_3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -515,7 +426,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/test/by/troyan/epam/task3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Task_1" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
   </component>
   <component name="RecentsManager">
@@ -847,7 +758,7 @@
       <workItem from="1512210189396" duration="332000" />
       <workItem from="1512210535444" duration="11000" />
       <workItem from="1512211271653" duration="927000" />
-      <workItem from="1512213970285" duration="1860000" />
+      <workItem from="1512213970285" duration="3122000" />
     </task>
     <servers />
   </component>
@@ -884,11 +795,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22475000" />
+    <option name="totallyTimeSpent" value="23737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1408" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -899,7 +809,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11350919" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11350919" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1087,13 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/parser/TriangleParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/creator/TriangleSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1109,50 +1012,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/exception/DataReadException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/validator/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="30" />
+        <state relative-caret-position="272">
+          <caret line="12" column="49" lean-forward="false" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/entity/Triangle.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/by/troyan/epam/task3/validator/ValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/entity/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="56" column="1" lean-forward="false" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/by/troyan/epam/task3/entity/formula/OnStraightLineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="16" column="86" lean-forward="false" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/by/troyan/epam/task3/entity/formula/PerimeterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="18" column="77" lean-forward="false" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/by/troyan/epam/task3/entity/formula/RectangularTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state relative-caret-position="58">
+          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1173,26 +1044,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/validator/Validator.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/by/troyan/epam/task3/entity/formula/RectangularTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="12" column="49" lean-forward="false" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+        <state relative-caret-position="510">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/by/troyan/epam/task3/entity/formula/PerimeterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="18" column="77" lean-forward="false" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/by/troyan/epam/task3/entity/formula/OnStraightLineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="16" column="86" lean-forward="false" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/entity/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1112">
+          <caret line="56" column="1" lean-forward="false" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/entity/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/exception/DataReadException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/parser/TriangleParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/epam/task3/trianglereader/FileDataLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="30" column="16" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/by/troyan/epam/task3/validator/ValidatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="238">
+          <caret line="16" column="78" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="78" />
           <folding />
         </state>
       </provider>

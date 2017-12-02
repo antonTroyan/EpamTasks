@@ -7,17 +7,6 @@ import java.util.List;
 
 public class SymbolSet implements Component {
     private List<Component> components = new ArrayList<>();
-    private static long idCounter = 0;
-    private long symbolSetID;
-
-    public SymbolSet() {
-        symbolSetID = createID();
-    }
-
-    private static synchronized long createID()
-    {
-        return idCounter++;
-    }
 
     public void operation() {
         int size = components.size();

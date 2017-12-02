@@ -1,4 +1,4 @@
-package by.troyan.task4.structurecreator.handler;
+package by.troyan.task4.creator.handler;
 
 import by.troyan.task4.entity.component.Component;
 

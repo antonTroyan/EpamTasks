@@ -1,6 +1,6 @@
-package by.troyan.task4.structurecreator;
+package by.troyan.task4.creator;
 
-import by.troyan.task4.structurecreator.handler.HandlerInterface;
+import by.troyan.task4.creator.handler.HandlerInterface;
 import by.troyan.task4.entity.component.Component;
 import by.troyan.task4.entity.SymbolSet;
 

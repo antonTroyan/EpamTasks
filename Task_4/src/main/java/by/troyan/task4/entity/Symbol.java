@@ -4,16 +4,9 @@ import by.troyan.task4.entity.component.Component;
 
 public class Symbol implements Component {
     private String content;
-    private static long idCounter = 0;
-    private long symbolID;
-
-    public static synchronized long createID() {
-        return idCounter++;
-    }
 
     public Symbol(String enteringData) {
         this.content = enteringData;
-        symbolID = createID();
     }
 
     public void operation() {

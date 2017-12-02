@@ -1,10 +1,13 @@
 package by.troyan.task4.action;
 
-import by.troyan.task4.structurecreator.RegularExpression;
+import by.troyan.task4.creator.RegularExpression;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Scanner;
 
 public class ParametersTextFiller {
+    private final static Logger LOG = LogManager.getLogger("ParametersTextFiller");
 
     public String fillTextByParameters(String text, int i, int j){
 
@@ -19,6 +22,7 @@ public class ParametersTextFiller {
                 String nextLine = lineScanner.nextLine();
                 parametersScanner = new Scanner(nextLine);
                 String founded = parametersScanner.findInLine(RegularExpression.REGEX_IANDJ);
+                LOG.info("Line with I or J founded " + founded);
                 if (founded != null){
                     switch(founded){
                         case "++i":
