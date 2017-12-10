@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="war" name="sport.totalizator:war">
-    <output-path>$PROJECT_DIR$/Java.EE.Totalizator-master/target</output-path>
+    <output-path>$PROJECT_DIR$/totalizer/target</output-path>
     <root id="archive" name="sport.totalizator-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="sport.totalizator:war exploded" />
     </root>

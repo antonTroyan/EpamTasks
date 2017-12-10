@@ -4,7 +4,7 @@
 <fmt:setBundle basename="locale" var="loc" />
 <header>
     <div class="head-panel">
-            <form class="search-form">
+            <form class="search-form" >
                 <input type="text" name="what-search" />
                 <button class="search-btn" type="submit"><fmt:message bundle="${loc}" key="btn.search" /></button>
             </form>

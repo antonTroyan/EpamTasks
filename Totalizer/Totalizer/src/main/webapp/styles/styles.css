@@ -260,15 +260,13 @@ header nav a {
 }
 
 .search-form {
+	float: right;
 	background: rgba(180, 180, 180, 0.5);
 	padding: 5px;
 	height: 20px;
 	border-radius: 5px;
 	display: inline-block;
 	margin: 5px;
-	position: relative;
-	top: 0px;
-	right: 0px;
 }
 
 .rounded {
