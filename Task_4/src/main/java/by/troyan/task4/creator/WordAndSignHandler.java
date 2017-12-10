@@ -8,7 +8,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class WordAndSignHandler implements HandlerInterface {
-
     private HandlerInterface successor;
 
     public WordAndSignHandler(HandlerInterface successor) {

@@ -27,14 +27,14 @@ public class TextTreeCreator {
 
 
     public String downloadTextFromFile(String filename) {
-        String allText = "";
+        String result = "";
         try {
             Scanner scanner = new Scanner(new FileReader(filename));
-            while (scanner.hasNext()) allText += scanner.nextLine() + "\n";
+            while (scanner.hasNext()) result += scanner.nextLine() + "\n";
         } catch (FileNotFoundException e) {
             LOG.fatal("File not found " + filename);
             throw new RuntimeException(e);
         }
-        return allText;
+        return result;
     }
 }

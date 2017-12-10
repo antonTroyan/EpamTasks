@@ -8,13 +8,6 @@ import java.util.List;
 public class SymbolSet implements Component {
     private List<Component> components = new ArrayList<>();
 
-    public void operation() {
-        int size = components.size();
-        for (int i = 0; i < size; i++) {
-            components.get(i).operation();
-        }
-    }
-
     public int getComponentsSize (){
         return components.size();
     }

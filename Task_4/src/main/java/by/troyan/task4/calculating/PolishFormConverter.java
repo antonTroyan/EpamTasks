@@ -3,7 +3,6 @@ package by.troyan.task4.calculating;
 import java.util.*;
 
 public class PolishFormConverter {
-
     public static final Map<String, Integer> MAIN_MATH_OPERATIONS;
 
     static {
@@ -25,9 +24,7 @@ public class PolishFormConverter {
             throw new IllegalStateException("Operations aren't specified.");
 
         List<String> out = new ArrayList<String>();
-
         Stack<String> stack = new Stack<String>();
-
         expression = expression.replace(" ", "");
 
         Set<String> operationSymbols = new HashSet<String>(operations.keySet());

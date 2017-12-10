@@ -15,6 +15,7 @@ public class TextFormulaCalculator {
     private final static Logger LOG = LogManager.getLogger("ParametersTextFiller");
 
     public String calculateTextFormulas(String text, int i, int j){
+
         ParametersTextFiller parametersFiller = new ParametersTextFiller();
         String result = parametersFiller.fillTextByParameters(text, i, j);
         Matcher matcher = Pattern
@@ -28,12 +29,15 @@ public class TextFormulaCalculator {
         while(matcher.find()){
             foundedExpression = matcher.group();
             LOG.info("Math expression founded " + foundedExpression);
+
             polishFormExpression = PolishFormConverter.sortingStation(foundedExpression,
                     PolishFormConverter.MAIN_MATH_OPERATIONS);
             LOG.info("Math expression converted to polish form " + foundedExpression);
+
             Client interpreter = new Client(polishFormExpression);
             answer = interpreter.calculate().toString();
             LOG.info("Math expression was calculated " + answer);
+
             result = result.replace(foundedExpression, answer);
         }
         return result;

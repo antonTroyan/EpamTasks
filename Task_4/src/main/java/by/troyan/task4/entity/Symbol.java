@@ -9,10 +9,6 @@ public class Symbol implements Component {
         this.content = enteringData;
     }
 
-    public void operation() {
-        throw new UnsupportedOperationException();
-    }
-
     public void add(Component c) {
         throw new UnsupportedOperationException();
     }

@@ -3,9 +3,7 @@ package by.troyan.task4.action;
 import by.troyan.task4.ConstantTestValues;
 import by.troyan.task4.entity.SymbolSet;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.*;
 
@@ -13,7 +11,7 @@ public class TextTreeCreatorTest {
 
     private TextTreeCreator textTreeCreator = new TextTreeCreator();
 
-    @BeforeClass
+    @BeforeTest
     public static void loadFile() {
         try (PrintStream out = new PrintStream(new FileOutputStream("data//testFile.txt"))) {
             out.print(ConstantTestValues.TEST_TEXT);
@@ -22,7 +20,7 @@ public class TextTreeCreatorTest {
         }
     }
 
-    @AfterClass
+    @AfterTest
     public static void deleteFile() {
         File filePath = new File("data");
         filePath.mkdir();

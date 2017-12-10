@@ -3,9 +3,7 @@ package by.troyan.task4.action;
 import by.troyan.task4.ConstantTestValues;
 import by.troyan.task4.entity.component.Component;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -16,6 +14,15 @@ public class TextWorkerTest {
     private TextWorker textWorker = new TextWorker();
     private static Component TEST_COMPONENT;
 
+    @BeforeTest
+    public static void loadFile() {
+        try (PrintStream out = new PrintStream(new FileOutputStream("data//testFile.txt"))) {
+            out.print(ConstantTestValues.TEST_TEXT);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
     @BeforeClass
     public static void init(){
         TextTreeCreator textTreeCreator = new TextTreeCreator();
@@ -25,16 +32,7 @@ public class TextWorkerTest {
     }
 
 
-    @BeforeClass
-    public static void loadFile() {
-        try (PrintStream out = new PrintStream(new FileOutputStream("data//testFile.txt"))) {
-            out.print(ConstantTestValues.TEST_TEXT);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @AfterClass
+    @AfterTest
     public static void deleteFile() {
         File filePath = new File("data");
         filePath.mkdir();
