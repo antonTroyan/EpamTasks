@@ -2,26 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff77765-f2f2-4224-8860-69ca0c822281" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/troyan/task4/action/TextFormulaCalculator.class" afterPath="$PROJECT_DIR$/target/classes/by/troyan/task4/action/TextFormulaCalculator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/troyan/task4/action/TextTreeCreator.class" afterPath="$PROJECT_DIR$/target/classes/by/troyan/task4/action/TextTreeCreator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/troyan/task4/action/TextWorker.class" afterPath="$PROJECT_DIR$/target/classes/by/troyan/task4/action/TextWorker.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/troyan/task4/entity/Symbol.class" afterPath="$PROJECT_DIR$/target/classes/by/troyan/task4/entity/Symbol.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/troyan/task4/entity/SymbolSet.class" afterPath="$PROJECT_DIR$/target/classes/by/troyan/task4/entity/SymbolSet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/troyan/task4/entity/component/Component.class" afterPath="$PROJECT_DIR$/target/classes/by/troyan/task4/entity/component/Component.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/by/troyan/task4/action/TextTreeCreatorTest.class" afterPath="$PROJECT_DIR$/target/test-classes/by/troyan/task4/action/TextTreeCreatorTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/by/troyan/task4/action/TextWorkerTest.class" afterPath="$PROJECT_DIR$/target/test-classes/by/troyan/task4/action/TextWorkerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/error.log" afterPath="$PROJECT_DIR$/logs/error.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/troyan/task4/action/TextFormulaCalculator.java" afterPath="$PROJECT_DIR$/src/main/java/by/troyan/task4/action/TextFormulaCalculator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/troyan/task4/action/TextTreeCreator.java" afterPath="$PROJECT_DIR$/src/main/java/by/troyan/task4/action/TextTreeCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/troyan/task4/calculating/PolishFormConverter.java" afterPath="$PROJECT_DIR$/src/main/java/by/troyan/task4/calculating/PolishFormConverter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/troyan/task4/creator/WordAndSignHandler.java" afterPath="$PROJECT_DIR$/src/main/java/by/troyan/task4/creator/WordAndSignHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/troyan/task4/entity/Symbol.java" afterPath="$PROJECT_DIR$/src/main/java/by/troyan/task4/entity/Symbol.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/troyan/task4/entity/SymbolSet.java" afterPath="$PROJECT_DIR$/src/main/java/by/troyan/task4/entity/SymbolSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/troyan/task4/entity/component/Component.java" afterPath="$PROJECT_DIR$/src/main/java/by/troyan/task4/entity/component/Component.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/by/troyan/task4/ConstantTestValues.java" afterPath="$PROJECT_DIR$/src/test/java/by/troyan/task4/ConstantTestValues.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/by/troyan/task4/action/TextTreeCreatorTest.java" afterPath="$PROJECT_DIR$/src/test/java/by/troyan/task4/action/TextTreeCreatorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/by/troyan/task4/action/TextWorkerTest.java" afterPath="$PROJECT_DIR$/src/test/java/by/troyan/task4/action/TextWorkerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Totalizer/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/command/CommandEnum.java" afterPath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/command/CommandEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/command/ICommand.java" afterPath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/command/ICommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/command/impl/AddEventCommand.java" afterPath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/command/impl/AddEventCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/command/impl/AddEventResultCommand.java" afterPath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/command/impl/AddEventResultCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/command/impl/LoginCommand.java" afterPath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/command/impl/LoginCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/controller/MainController.java" afterPath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/controller/MainController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/entity/Category.java" afterPath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/entity/Category.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/entity/Event.java" afterPath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/entity/Event.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/entity/EventResult.java" afterPath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/entity/EventResult.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/entity/League.java" afterPath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/entity/League.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/entity/Member.java" afterPath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/entity/Member.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/entity/Operation.java" afterPath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/entity/Operation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/entity/Rate.java" afterPath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/entity/Rate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/entity/User.java" afterPath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/entity/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/filter/LocaleFilter.java" afterPath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/java/sport/totalizator/filter/LocaleFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/webapp/parts/footer.jsp" afterPath="$PROJECT_DIR$/../Totalizer/Totalizer/src/main/webapp/parts/footer.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -97,7 +94,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="908">
+            <state relative-caret-position="1292">
               <caret line="38" column="21" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="38" selection-end-column="21" />
               <folding />
             </state>
@@ -114,7 +111,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParametersTextFiller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ParametersTextFiller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/task4/action/ParametersTextFiller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -126,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegularExpression.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/task4/creator/RegularExpression.java">
+      <file leaf-file-name="TextFormulaCalculator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/task4/action/TextFormulaCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+            <state relative-caret-position="238">
+              <caret line="14" column="83" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -250,6 +247,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -305,7 +303,6 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -704,6 +701,7 @@
       <workItem from="1512481228848" duration="94000" />
       <workItem from="1512817115282" duration="15000" />
       <workItem from="1512901290038" duration="751000" />
+      <workItem from="1513003033481" duration="9000" />
     </task>
     <servers />
   </component>
@@ -740,7 +738,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151124000" />
+    <option name="totallyTimeSpent" value="151133000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -764,7 +762,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.49680257" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15107913" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15267786" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -900,13 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/task4/action/TextFormulaCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/task4/action/TextTreeCreator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
@@ -981,7 +972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,7 +1041,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="908">
+        <state relative-caret-position="1292">
           <caret line="38" column="21" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="38" selection-end-column="21" />
           <folding />
         </state>
@@ -1064,6 +1054,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/task4/action/TextFormulaCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="83" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="83" />
+          <folding />
         </state>
       </provider>
     </entry>
