@@ -1,5 +1,13 @@
 package sport.totalizator.command;
 
+
+/**
+ * Перечень всех команд.
+ * Есть методы получения объекта команды по стрингу
+ * @author  Anton Troyan
+ */
+
+
 public enum CommandEnum {
     SHOW_MAIN_PAGE("showMainPage"),
     SHOW_ERROR_PAGE("showErrorPage"),

@@ -1,6 +1,7 @@
 package sport.totalizator.command.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.command.ICommand;
 import sport.totalizator.command.exception.CommandException;
 import sport.totalizator.entity.User;
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ChangeRoleCommand implements ICommand {
-    private static final Logger log = Logger.getLogger(BanCommand.class);
+    private final static Logger LOG = LogManager.getLogger("ChangeRoleCommand");
     private UserService userService = ServiceFactory.getInstance().getUserService();
 
     @Override
@@ -32,7 +33,7 @@ public class ChangeRoleCommand implements ICommand {
         try{
             userService.changeRoleForUsers(idList, role);
         } catch (ServiceException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new CommandException(exc);
         }
     }

@@ -138,4 +138,66 @@ public class Rate {
     public void setMember2Name(String member2Name) {
         this.member2Name = member2Name;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Rate rate = (Rate) o;
+
+        if (eventId != rate.eventId) return false;
+        if (userId != rate.userId) return false;
+        if (member1Id != rate.member1Id) return false;
+        if (member2Id != rate.member2Id) return false;
+        if (member1Score != rate.member1Score) return false;
+        if (member2Score != rate.member2Score) return false;
+        if (rateId != rate.rateId) return false;
+        if (eventName != null ? !eventName.equals(rate.eventName) : rate.eventName != null) return false;
+        if (sum != null ? !sum.equals(rate.sum) : rate.sum != null) return false;
+        if (win != null ? !win.equals(rate.win) : rate.win != null) return false;
+        if (username != null ? !username.equals(rate.username) : rate.username != null) return false;
+        if (type != null ? !type.equals(rate.type) : rate.type != null) return false;
+        if (member1Name != null ? !member1Name.equals(rate.member1Name) : rate.member1Name != null) return false;
+        return member2Name != null ? member2Name.equals(rate.member2Name) : rate.member2Name == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = eventName != null ? eventName.hashCode() : 0;
+        result = 31 * result + eventId;
+        result = 31 * result + (sum != null ? sum.hashCode() : 0);
+        result = 31 * result + (win != null ? win.hashCode() : 0);
+        result = 31 * result + (username != null ? username.hashCode() : 0);
+        result = 31 * result + userId;
+        result = 31 * result + (type != null ? type.hashCode() : 0);
+        result = 31 * result + member1Id;
+        result = 31 * result + member2Id;
+        result = 31 * result + member1Score;
+        result = 31 * result + member2Score;
+        result = 31 * result + (member1Name != null ? member1Name.hashCode() : 0);
+        result = 31 * result + (member2Name != null ? member2Name.hashCode() : 0);
+        result = 31 * result + rateId;
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Rate{" +
+                "eventName='" + eventName + '\'' +
+                ", eventId=" + eventId +
+                ", sum=" + sum +
+                ", win=" + win +
+                ", username='" + username + '\'' +
+                ", userId=" + userId +
+                ", type='" + type + '\'' +
+                ", member1Id=" + member1Id +
+                ", member2Id=" + member2Id +
+                ", member1Score=" + member1Score +
+                ", member2Score=" + member2Score +
+                ", member1Name='" + member1Name + '\'' +
+                ", member2Name='" + member2Name + '\'' +
+                ", rateId=" + rateId +
+                '}';
+    }
 }

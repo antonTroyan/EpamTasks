@@ -1,6 +1,7 @@
 package sport.totalizator.service.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.dao.OperationDAO;
 import sport.totalizator.dao.UserDAO;
 import sport.totalizator.dao.exception.DAOException;
@@ -15,7 +16,7 @@ import java.math.BigDecimal;
 
 public class PaySystemServiceImpl implements PaySystemService {
     private static final PaySystemServiceImpl instance = new PaySystemServiceImpl();
-    private static final Logger log = Logger.getLogger(PaySystemServiceImpl.class);
+    private final static Logger LOG = LogManager.getLogger("PaySystemServiceImpl");
 
     private OperationDAO operationDAO;
     private UserDAO userDAO;
@@ -65,7 +66,7 @@ public class PaySystemServiceImpl implements PaySystemService {
             userDAO.fillUpBalanceForUser(operation.getUserId(), operation.getAmount());
             operationDAO.addOperation(operation);
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
         return operation;
@@ -103,7 +104,7 @@ public class PaySystemServiceImpl implements PaySystemService {
             userDAO.withdrawMoneyFromUser(operation.getUserId(), operation.getAmount());
             operationDAO.addOperation(operation);
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
         return operation;

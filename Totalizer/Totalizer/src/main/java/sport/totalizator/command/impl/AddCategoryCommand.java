@@ -1,6 +1,8 @@
 package sport.totalizator.command.impl;
 
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.command.CommandEnum;
 import sport.totalizator.command.ICommand;
 import sport.totalizator.command.exception.CommandException;
@@ -21,7 +23,7 @@ import java.io.IOException;
 import static sport.totalizator.entity.User.Role.MODERATOR;
 
 public class AddCategoryCommand implements ICommand {
-    private static final Logger log = Logger.getLogger(AddCategoryCommand.class);
+    private final static Logger LOG = LogManager.getLogger("AddCategoryCommand");
     private final CategoryService categoryService = ServiceFactory.getInstance().getCategoryService();
 
     @Override
@@ -31,11 +33,11 @@ public class AddCategoryCommand implements ICommand {
             categoryService.addCategory((String)req.getParameter("name"));
         }
         catch(ServiceException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new CommandException(exc);
         }
         catch (CategoryException exc){
-            log.error(exc);
+            LOG.error(exc);
             req.setAttribute("error", MessageLocalizer.getLocalizedForCurrentLocaleMessage(exc.getErrorMessageList(), req));
             req.setAttribute("category", exc.getCategory());
             CommandFactory.getFactory().createCommand(CommandEnum.SHOW_ADD_CATEGORY_PAGE).execute(req, resp);

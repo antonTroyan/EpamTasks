@@ -4,8 +4,6 @@ import sport.totalizator.command.CommandEnum;
 import sport.totalizator.command.ICommand;
 import sport.totalizator.command.exception.CommandException;
 import sport.totalizator.command.factory.CommandFactory;
-import sport.totalizator.dao.exception.DAOException;
-import sport.totalizator.dao.impl.CategoryDAOImpl;
 import sport.totalizator.exception.UnauthorizedException;
 
 import javax.servlet.ServletException;

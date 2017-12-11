@@ -1,6 +1,7 @@
 package sport.totalizator.command.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.command.CommandEnum;
 import sport.totalizator.command.ICommand;
 import sport.totalizator.command.exception.CommandException;
@@ -19,7 +20,7 @@ import java.io.IOException;
 import static sport.totalizator.entity.User.Role.MODERATOR;
 
 public class ShowAddEventResultPageCommand implements ICommand {
-    private static final Logger log = Logger.getLogger(ShowAddEventResultPageCommand.class);
+    private final static Logger LOG = LogManager.getLogger("ShowAddEventResultPageCommand");
     private MemberService memberService = ServiceFactory.getInstance().getMemberService();
 
     @Override
@@ -35,7 +36,7 @@ public class ShowAddEventResultPageCommand implements ICommand {
             req.setAttribute("members", memberService.getMembersByEvent(intEventId));
             req.setAttribute("eventId", eventId);
         } catch (ServiceException | NumberFormatException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new CommandException(exc);
         }
         req.getRequestDispatcher("add_result_page.jsp").forward(req, resp);

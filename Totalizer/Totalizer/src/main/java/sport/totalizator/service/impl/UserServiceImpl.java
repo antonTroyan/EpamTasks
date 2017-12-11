@@ -1,6 +1,7 @@
 package sport.totalizator.service.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.dao.RateDAO;
 import sport.totalizator.dao.UserDAO;
 import sport.totalizator.dao.exception.DAOException;
@@ -10,12 +11,12 @@ import sport.totalizator.exception.UserException;
 import sport.totalizator.service.UserService;
 import sport.totalizator.service.exception.ServiceException;
 import sport.totalizator.util.MD5Converter;
-import sport.totalizator.util.PaginationObject;
+
 
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
-    private static final Logger log = Logger.getLogger(UserServiceImpl.class);
+    private final static Logger LOG = LogManager.getLogger("UserServiceImpl");
     private static final UserServiceImpl instance = new UserServiceImpl();
     private UserDAO userDAO;
     private RateDAO rateDAO;
@@ -49,7 +50,7 @@ public class UserServiceImpl implements UserService {
             user = userDAO.createUser(user);
         }
         catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
         return user;
@@ -71,7 +72,7 @@ public class UserServiceImpl implements UserService {
             }
             return user;
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }
@@ -84,7 +85,7 @@ public class UserServiceImpl implements UserService {
             user.setFinishedRates(rateDAO.getFinishedRatesForUser(user.getUserId()));
             return user;
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }
@@ -94,7 +95,7 @@ public class UserServiceImpl implements UserService {
         try{
             return userDAO.getAllUsers();
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }
@@ -104,7 +105,7 @@ public class UserServiceImpl implements UserService {
         try{
             userDAO.banUsers(idList);
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }
@@ -114,7 +115,7 @@ public class UserServiceImpl implements UserService {
         try{
             userDAO.unbanUsers(idList);
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }
@@ -124,7 +125,7 @@ public class UserServiceImpl implements UserService {
         try{
             userDAO.changeRoleForUsers(idList, role);
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }

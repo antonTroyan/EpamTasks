@@ -1,6 +1,7 @@
 package sport.totalizator.command.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.command.CommandEnum;
 import sport.totalizator.command.ICommand;
 import sport.totalizator.command.exception.CommandException;
@@ -23,7 +24,7 @@ import static sport.totalizator.entity.User.Role.MODERATOR;
 import static sport.totalizator.entity.User.Role.USER;
 
 public class WithdrawMoneyCommand implements ICommand {
-    private static final Logger log = Logger.getLogger(WithdrawMoneyCommand.class);
+    private final static Logger LOG = LogManager.getLogger("WithdrawMoneyCommand");
     private PaySystemService paySystemService = ServiceFactory.getInstance().getPaySystemService();
 
     @Override
@@ -36,11 +37,11 @@ public class WithdrawMoneyCommand implements ICommand {
             paySystemService.withdrawMoney((String)req.getSession().getAttribute("username"), cardNumber, validityDate, amount);
         }
         catch(ServiceException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new CommandException(exc);
         }
         catch (OperationException exc){
-            log.error(exc);
+            LOG.error(exc);
             req.setAttribute("error", MessageLocalizer.getLocalizedForCurrentLocaleMessage(exc.getErrorMessageList(), req));
             req.setAttribute("operation", exc.getOperation());
             CommandFactory.getFactory().createCommand(CommandEnum.SHOW_WITHDRAW_MONEY_PAGE).execute(req, resp);

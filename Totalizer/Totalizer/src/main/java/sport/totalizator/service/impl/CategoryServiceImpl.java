@@ -1,6 +1,7 @@
 package sport.totalizator.service.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.dao.CategoryDAO;
 import sport.totalizator.dao.exception.DAOException;
 import sport.totalizator.dao.factory.DAOFactory;
@@ -11,7 +12,7 @@ import sport.totalizator.service.exception.ServiceException;
 
 public class CategoryServiceImpl implements CategoryService {
     private static final CategoryServiceImpl instance = new CategoryServiceImpl();
-    private static final Logger log = Logger.getLogger(CategoryServiceImpl.class);
+    private final static Logger LOG = LogManager.getLogger("CategoryServiceImpl");
 
     private CategoryDAO categoryDAO;
 
@@ -37,7 +38,7 @@ public class CategoryServiceImpl implements CategoryService {
         try {
             return categoryDAO.addCategory(category);
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }

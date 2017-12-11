@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <footer>
     <div class="footer">
-    <p>&copy; Anton Troyan "Play with us" 2018</p>
+    <p>&copy; Anton Troyan "Win with us" 2018</p>
     </div>
     <div class="locale-div">
         <a href="<c:url value="main?command=changeLocale&locale=en" />"><img src="<c:url value="images/flags/united-states.png" />"></a>

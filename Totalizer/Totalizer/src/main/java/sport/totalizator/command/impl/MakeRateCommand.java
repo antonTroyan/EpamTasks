@@ -1,6 +1,7 @@
 package sport.totalizator.command.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.command.CommandEnum;
 import sport.totalizator.command.ICommand;
 import sport.totalizator.command.exception.CommandException;
@@ -24,7 +25,7 @@ import static sport.totalizator.entity.User.Role.MODERATOR;
 import static sport.totalizator.entity.User.Role.USER;
 
 public class MakeRateCommand implements ICommand{
-    private static final Logger log = Logger.getLogger(MakeRateCommand.class);
+    private final static Logger LOG = LogManager.getLogger("MakeRateCommand");
     private RateService rateService = ServiceFactory.getInstance().getRateService();
 
     @Override
@@ -43,11 +44,11 @@ public class MakeRateCommand implements ICommand{
             rate = rateService.makeRate(type, eventId, username, money, member1Id, member1Score, member2Id, member2Score);
         }
         catch(ServiceException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new CommandException(exc);
         }
         catch (RateException exc){
-            log.error(exc);
+            LOG.error(exc);
             req.setAttribute("error", MessageLocalizer.getLocalizedForCurrentLocaleMessage(exc.getErrorMessageList(), req));
             req.setAttribute("rate", exc.getRate());
             CommandFactory.getFactory().createCommand(CommandEnum.SHOW_MAKE_RATE_PAGE).execute(req, resp);

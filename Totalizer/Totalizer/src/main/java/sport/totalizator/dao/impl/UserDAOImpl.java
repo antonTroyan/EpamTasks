@@ -1,6 +1,7 @@
 package sport.totalizator.dao.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.dao.UserDAO;
 import sport.totalizator.dao.exception.DAOException;
 import sport.totalizator.db.jdbc.ConnectionPool;
@@ -16,7 +17,7 @@ import java.util.List;
 
 public class UserDAOImpl implements UserDAO {
     private static final UserDAOImpl instance = new UserDAOImpl();
-    private static final Logger log = Logger.getLogger(UserDAOImpl.class);
+    private final static Logger LOG = LogManager.getLogger("UserDAOImpl");
     private final ConnectionPool pool = ConnectionPool.getConnectionPool();
     private static final String SQL_FOR_GET_ALL_USERS = "SELECT * FROM `user`";
     private static final String SQL_FOR_CREATE_USER = "INSERT INTO `user`(`login`, `pass_hash`, `email`) VALUES (?, ?, ?);";
@@ -77,7 +78,7 @@ public class UserDAOImpl implements UserDAO {
             }
         }
         catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
         }
         finally {
             pool.returnConnectionToPool(connection);
@@ -85,13 +86,13 @@ public class UserDAOImpl implements UserDAO {
                 resultSet.close();
             }
             catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
             }
             try {
                 statement.close();
             }
             catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
             }
         }
         return result;
@@ -113,7 +114,7 @@ public class UserDAOImpl implements UserDAO {
                 statement.executeUpdate();
             } catch (SQLException exc) {
                 connection.rollback(savepoint);
-                log.error(exc);
+                LOG.error(exc);
                 if (exc.getErrorCode() == 1062) {
                     throw new UserException("err.user-exists", user);
                 } else {
@@ -126,7 +127,7 @@ public class UserDAOImpl implements UserDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -157,7 +158,7 @@ public class UserDAOImpl implements UserDAO {
                         user.setBanned(resultSet.getBoolean("banned"));
                     }
                 } catch (SQLException exc){
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc);
                 } finally {
                     if(resultSet != null){
@@ -165,7 +166,7 @@ public class UserDAOImpl implements UserDAO {
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -173,7 +174,7 @@ public class UserDAOImpl implements UserDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -206,7 +207,7 @@ public class UserDAOImpl implements UserDAO {
                         user.setRole(User.Role.valueOf(resultSet.getString("role").toUpperCase()));
                     }
                 } catch (SQLException exc){
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc);
                 } finally {
                     if(resultSet != null){
@@ -214,7 +215,7 @@ public class UserDAOImpl implements UserDAO {
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -222,7 +223,7 @@ public class UserDAOImpl implements UserDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -249,7 +250,7 @@ public class UserDAOImpl implements UserDAO {
                         userId = resultSet.getInt("user_id");
                     }
                 } catch (SQLException exc){
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc);
                 } finally {
                     if(resultSet != null){
@@ -257,7 +258,7 @@ public class UserDAOImpl implements UserDAO {
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -265,7 +266,7 @@ public class UserDAOImpl implements UserDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -290,7 +291,7 @@ public class UserDAOImpl implements UserDAO {
                 statement.executeUpdate();
             } catch (SQLException exc) {
                 connection.rollback(savepoint);
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 connection.setAutoCommit(true);
@@ -299,7 +300,7 @@ public class UserDAOImpl implements UserDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -323,7 +324,7 @@ public class UserDAOImpl implements UserDAO {
                 statement.executeUpdate();
             } catch (SQLException exc) {
                 connection.rollback(savepoint);
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 connection.setAutoCommit(true);
@@ -332,7 +333,7 @@ public class UserDAOImpl implements UserDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -369,7 +370,7 @@ public class UserDAOImpl implements UserDAO {
                         result = resultSet.getBoolean("flag");
                     }
                 } catch (SQLException exc){
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc);
                 } finally {
                     if(resultSet != null){
@@ -377,7 +378,7 @@ public class UserDAOImpl implements UserDAO {
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -385,7 +386,7 @@ public class UserDAOImpl implements UserDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -406,7 +407,7 @@ public class UserDAOImpl implements UserDAO {
                 statement = connection.prepareStatement(insertListToQuery(SQL_FOR_BAN_USERS, idList));
                 statement.executeUpdate();
             } catch (SQLException exc) {
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -414,7 +415,7 @@ public class UserDAOImpl implements UserDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -434,7 +435,7 @@ public class UserDAOImpl implements UserDAO {
                 statement = connection.prepareStatement(insertListToQuery(SQL_FOR_UNBAN_USERS, idList));
                 statement.executeUpdate();
             } catch (SQLException exc) {
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -442,7 +443,7 @@ public class UserDAOImpl implements UserDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -474,7 +475,7 @@ public class UserDAOImpl implements UserDAO {
                 }
                 statement.executeUpdate();
             } catch (SQLException exc) {
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -482,7 +483,7 @@ public class UserDAOImpl implements UserDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){

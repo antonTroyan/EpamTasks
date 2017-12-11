@@ -1,6 +1,7 @@
 package sport.totalizator.command.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.command.CommandEnum;
 import sport.totalizator.command.ICommand;
 import sport.totalizator.command.exception.CommandException;
@@ -17,14 +18,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
 import static sport.totalizator.entity.User.Role.ADMINISTRATOR;
 import static sport.totalizator.entity.User.Role.MODERATOR;
 import static sport.totalizator.entity.User.Role.USER;
 
 public class FillUpBalanceCommand implements ICommand {
-    private static final Logger log = Logger.getLogger(FillUpBalanceCommand.class);
+    private final static Logger LOG = LogManager.getLogger("FillUpBalanceCommand");
     private PaySystemService paySystemService = ServiceFactory.getInstance().getPaySystemService();
 
     @Override
@@ -38,11 +38,11 @@ public class FillUpBalanceCommand implements ICommand {
             paySystemService.fillUpBalance((String)req.getSession().getAttribute("username"), cardNumber, validityDate, cardCode, amount);
         }
         catch(ServiceException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new CommandException(exc);
         }
         catch (OperationException exc){
-            log.error(exc);
+            LOG.error(exc);
             req.setAttribute("error", MessageLocalizer.getLocalizedForCurrentLocaleMessage(exc.getErrorMessageList(), req));
             req.setAttribute("operation", exc.getOperation());
             CommandFactory.getFactory().createCommand(CommandEnum.SHOW_FILL_UP_BALANCE_PAGE).execute(req, resp);

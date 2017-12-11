@@ -43,4 +43,36 @@ public class Member {
     public void setLeagueId(int leagueId) {
         this.leagueId = leagueId;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Member member = (Member) o;
+
+        if (id != member.id) return false;
+        if (categoryId != member.categoryId) return false;
+        if (leagueId != member.leagueId) return false;
+        return name != null ? name.equals(member.name) : member.name == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id;
+        result = 31 * result + (name != null ? name.hashCode() : 0);
+        result = 31 * result + categoryId;
+        result = 31 * result + leagueId;
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Member{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", categoryId=" + categoryId +
+                ", leagueId=" + leagueId +
+                '}';
+    }
 }

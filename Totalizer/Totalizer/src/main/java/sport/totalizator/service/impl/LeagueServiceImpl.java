@@ -1,6 +1,7 @@
 package sport.totalizator.service.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.dao.LeagueDAO;
 import sport.totalizator.dao.exception.DAOException;
 import sport.totalizator.dao.factory.DAOFactory;
@@ -12,7 +13,7 @@ import sport.totalizator.service.exception.ServiceException;
 import java.util.List;
 
 public class LeagueServiceImpl implements LeagueService {
-    private static final Logger log = Logger.getLogger(LeagueServiceImpl.class);
+    private final static Logger LOG = LogManager.getLogger("LeagueServiceImpl");
     private static final LeagueServiceImpl instance = new LeagueServiceImpl();
     private LeagueDAO leagueDAO;
 
@@ -29,7 +30,7 @@ public class LeagueServiceImpl implements LeagueService {
         try {
             return leagueDAO.getLeaguesByCategory(categoryId);
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }
@@ -46,7 +47,7 @@ public class LeagueServiceImpl implements LeagueService {
         try{
             intCategoryId = Integer.parseInt(categoryId);
         } catch (NumberFormatException exc){
-            log.error(exc);
+            LOG.error(exc);
         }
         league.setCategoryId(intCategoryId);
         if(leagueException.getErrorMessageList().size() > 0){
@@ -55,7 +56,7 @@ public class LeagueServiceImpl implements LeagueService {
         try {
             return leagueDAO.addLeague(league);
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }

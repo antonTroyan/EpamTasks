@@ -9,6 +9,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+
+/**
+ * 1 метод дефолтный - система проверки прав доступа. Требует ЕНАМ и запрос.
+ * Из запроса достает который является ролью. Если все в порядке, то ок.
+ * Иначе выбрасывает исключение <p>
+ * 2 метод абстрактный
+ * @author  Anton Troyan
+ */
+
 public interface ICommand {
     default void checkRoots(HttpServletRequest req, User.Role[] needLevels)
             throws ServletException, IOException, CommandException, UnauthorizedException{
@@ -24,5 +33,6 @@ public interface ICommand {
         throw new UnauthorizedException("Not enough permissions for this operation");
     }
 
-    void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException;
+    void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException,
+            CommandException, UnauthorizedException;
 }

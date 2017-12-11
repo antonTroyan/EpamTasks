@@ -1,6 +1,7 @@
 package sport.totalizator.service.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.dao.EventDAO;
 import sport.totalizator.dao.EventResultDAO;
 import sport.totalizator.dao.RateDAO;
@@ -16,7 +17,6 @@ import sport.totalizator.service.exception.ServiceException;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 import static sport.totalizator.entity.Rate.DRAW;
@@ -25,7 +25,7 @@ import static sport.totalizator.entity.Rate.WIN;
 
 public class EventResultServiceImpl implements EventResultService {
     private static final EventResultServiceImpl instance = new EventResultServiceImpl();
-    private static final Logger log = Logger.getLogger(EventResultServiceImpl.class);
+    private final static Logger LOG = LogManager.getLogger("EventResultServiceImpl");
     EventResultDAO eventResultDAO;
     EventDAO eventDAO;
     RateDAO rateDAO;
@@ -70,7 +70,7 @@ public class EventResultServiceImpl implements EventResultService {
             eventDAO.finishEvent(eventResult.getEventId());
             distributePrize(eventResult);
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
         return eventResult;
@@ -101,7 +101,7 @@ public class EventResultServiceImpl implements EventResultService {
                         userDAO.fillUpBalanceForUser(rate.getUserId(), rate.getWin());
                     }
                 } catch (Exception exc){
-                    log.error(exc);
+                    LOG.error(exc);
                 }
             }
         })).run();

@@ -1,6 +1,7 @@
 package sport.totalizator.service.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.dao.EventDAO;
 import sport.totalizator.dao.EventResultDAO;
 import sport.totalizator.dao.MemberDAO;
@@ -19,11 +20,10 @@ import java.text.ParseException;
 import java.time.LocalDate;
 import java.util.List;
 
-import static sport.totalizator.util.PaginationObject.DEFAULT_PAGE;
 
 public class EventServiceImpl implements EventService {
     private static final EventServiceImpl instance = new EventServiceImpl();
-    private static final Logger log = Logger.getLogger(EventServiceImpl.class);
+    private final static Logger LOG = LogManager.getLogger("EventServiceImpl");
 
     private EventDAO eventDAO;
     private MemberDAO memberDAO;
@@ -51,7 +51,7 @@ public class EventServiceImpl implements EventService {
             paginationObject.setElementList(events.subList(start, end));
             return paginationObject;
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }
@@ -68,7 +68,7 @@ public class EventServiceImpl implements EventService {
             paginationObject.setElementList(events.subList(start, end));
             return paginationObject;
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }
@@ -86,7 +86,7 @@ public class EventServiceImpl implements EventService {
             paginationObject.setElementList(events.subList(start, end));
             return paginationObject;
         } catch (DAOException | NumberFormatException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }
@@ -103,7 +103,7 @@ public class EventServiceImpl implements EventService {
             paginationObject.setElementList(events.subList(start, end));
             return paginationObject;
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }
@@ -129,7 +129,7 @@ public class EventServiceImpl implements EventService {
             }
             return event;
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }
@@ -150,7 +150,7 @@ public class EventServiceImpl implements EventService {
                 intLeagueId = Integer.parseInt(leagueId);
             }
             catch (NumberFormatException exc){
-                log.error(exc);
+                LOG.error(exc);
                 intLeagueId = 0;
             }
             event.setLeagueId(intLeagueId);
@@ -168,7 +168,7 @@ public class EventServiceImpl implements EventService {
             memberDAO.attachMembersToEvent(memberIds, event.getEventId());
             return event;
         } catch (DAOException | ParseException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }

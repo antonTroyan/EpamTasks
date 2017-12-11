@@ -1,6 +1,7 @@
 package sport.totalizator.dao.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.dao.MemberDAO;
 import sport.totalizator.dao.exception.DAOException;
 import sport.totalizator.db.jdbc.ConnectionPool;
@@ -30,7 +31,7 @@ public class MemberDAOImpl implements MemberDAO {
             "ON `eventmember`.`member_id` = `event_m2m_eventmember`.`member_id` " +
             "WHERE `event_m2m_eventmember`.`event_id` = ?;";
 
-    private static final Logger log = Logger.getLogger(MemberDAOImpl.class);
+    private final static Logger LOG = LogManager.getLogger("MemberDAOImpl");
     private static final MemberDAOImpl instance = new MemberDAOImpl();
     private static final ConnectionPool pool = ConnectionPool.getConnectionPool();
 
@@ -63,7 +64,7 @@ public class MemberDAOImpl implements MemberDAO {
                         result.add(member);
                     }
                 } catch (SQLException exc){
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc);
                 } finally {
                     if(resultSet != null){
@@ -71,7 +72,7 @@ public class MemberDAOImpl implements MemberDAO {
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -79,7 +80,7 @@ public class MemberDAOImpl implements MemberDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -109,7 +110,7 @@ public class MemberDAOImpl implements MemberDAO {
                 statement.setInt(2, memberId);
                 statement.executeUpdate();
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -117,7 +118,7 @@ public class MemberDAOImpl implements MemberDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -148,7 +149,7 @@ public class MemberDAOImpl implements MemberDAO {
                         result.add(member);
                     }
                 } catch (SQLException exc){
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc);
                 } finally {
                     if(resultSet != null){
@@ -156,7 +157,7 @@ public class MemberDAOImpl implements MemberDAO {
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -164,7 +165,7 @@ public class MemberDAOImpl implements MemberDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -193,7 +194,7 @@ public class MemberDAOImpl implements MemberDAO {
                         result = resultSet.getString("member_name");
                     }
                 } catch (SQLException exc){
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc);
                 } finally {
                     if(resultSet != null){
@@ -201,7 +202,7 @@ public class MemberDAOImpl implements MemberDAO {
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -209,7 +210,7 @@ public class MemberDAOImpl implements MemberDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -232,7 +233,7 @@ public class MemberDAOImpl implements MemberDAO {
                 statement.setString(2, member.getName());
                 statement.executeUpdate();
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -240,7 +241,7 @@ public class MemberDAOImpl implements MemberDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){

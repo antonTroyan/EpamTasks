@@ -113,5 +113,50 @@ public class User {
         this.finishedRates = finishedRates;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
 
+        User user = (User) o;
+
+        if (userId != user.userId) return false;
+        if (banned != user.banned) return false;
+        if (login != null ? !login.equals(user.login) : user.login != null) return false;
+        if (passHash != null ? !passHash.equals(user.passHash) : user.passHash != null) return false;
+        if (email != null ? !email.equals(user.email) : user.email != null) return false;
+        if (balance != null ? !balance.equals(user.balance) : user.balance != null) return false;
+        if (role != user.role) return false;
+        if (activeRates != null ? !activeRates.equals(user.activeRates) : user.activeRates != null) return false;
+        return finishedRates != null ? finishedRates.equals(user.finishedRates) : user.finishedRates == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = userId;
+        result = 31 * result + (login != null ? login.hashCode() : 0);
+        result = 31 * result + (passHash != null ? passHash.hashCode() : 0);
+        result = 31 * result + (email != null ? email.hashCode() : 0);
+        result = 31 * result + (balance != null ? balance.hashCode() : 0);
+        result = 31 * result + (role != null ? role.hashCode() : 0);
+        result = 31 * result + (banned ? 1 : 0);
+        result = 31 * result + (activeRates != null ? activeRates.hashCode() : 0);
+        result = 31 * result + (finishedRates != null ? finishedRates.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", login='" + login + '\'' +
+                ", passHash='" + passHash + '\'' +
+                ", email='" + email + '\'' +
+                ", balance=" + balance +
+                ", role=" + role +
+                ", banned=" + banned +
+                ", activeRates=" + activeRates +
+                ", finishedRates=" + finishedRates +
+                '}';
+    }
 }

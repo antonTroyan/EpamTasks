@@ -1,6 +1,7 @@
 package sport.totalizator.dao.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.dao.LeagueDAO;
 import sport.totalizator.dao.exception.DAOException;
 import sport.totalizator.db.jdbc.ConnectionPool;
@@ -21,7 +22,7 @@ public class LeagueDAOImpl implements LeagueDAO {
             "WHERE `event_category_id` = ?;";
 
 
-    private static final Logger log = Logger.getLogger(LeagueDAOImpl.class);
+    private final static Logger LOG = LogManager.getLogger("LeagueDAOImpl");
     private static final LeagueDAOImpl instance = new LeagueDAOImpl();
     private static final ConnectionPool pool = ConnectionPool.getConnectionPool();
 
@@ -56,7 +57,7 @@ public class LeagueDAOImpl implements LeagueDAO {
                         result.add(createLeague(resultSet));
                     }
                 } catch (SQLException exc){
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc);
                 } finally {
                     if(resultSet != null){
@@ -64,7 +65,7 @@ public class LeagueDAOImpl implements LeagueDAO {
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -72,7 +73,7 @@ public class LeagueDAOImpl implements LeagueDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally{
             if(connection != null){
@@ -94,7 +95,7 @@ public class LeagueDAOImpl implements LeagueDAO {
                 statement.setString(2, league.getName());
                 statement.executeUpdate();
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -102,7 +103,7 @@ public class LeagueDAOImpl implements LeagueDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){

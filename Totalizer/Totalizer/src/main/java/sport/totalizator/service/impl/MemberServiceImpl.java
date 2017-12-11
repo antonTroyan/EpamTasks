@@ -1,7 +1,7 @@
 package sport.totalizator.service.impl;
 
-import org.apache.log4j.Logger;
-import sport.totalizator.dao.LeagueDAO;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.dao.MemberDAO;
 import sport.totalizator.dao.exception.DAOException;
 import sport.totalizator.dao.factory.DAOFactory;
@@ -14,7 +14,7 @@ import java.util.List;
 
 public class MemberServiceImpl  implements MemberService{
 
-    private static final Logger log = Logger.getLogger(MemberServiceImpl.class);
+    private final static Logger LOG = LogManager.getLogger("MemberServiceImpl");
     private static final MemberServiceImpl instance = new MemberServiceImpl();
     private MemberDAO memberDAO;
 
@@ -31,7 +31,7 @@ public class MemberServiceImpl  implements MemberService{
         try{
             return memberDAO.getMembersByLeague(leagueId);
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }
@@ -41,7 +41,7 @@ public class MemberServiceImpl  implements MemberService{
         try{
             return memberDAO.getMembersByEvent(eventId);
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }
@@ -58,14 +58,14 @@ public class MemberServiceImpl  implements MemberService{
         try{
             intCategoryId = Integer.parseInt(categoryId);
         } catch (NumberFormatException exc){
-            log.error(exc);
+            LOG.error(exc);
         }
         member.setCategoryId(intCategoryId);
         int intLeagueId = 0;
         try{
             intLeagueId = Integer.parseInt(leagueId);
         } catch (NumberFormatException exc){
-            log.error(exc);
+            LOG.error(exc);
         }
         member.setLeagueId(intLeagueId);
         if(memberException.getErrorMessageList().size() > 0){
@@ -74,7 +74,7 @@ public class MemberServiceImpl  implements MemberService{
         try {
             return memberDAO.addMember(member);
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
     }

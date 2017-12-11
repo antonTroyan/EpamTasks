@@ -1,6 +1,7 @@
 package sport.totalizator.dao.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.dao.RateDAO;
 import sport.totalizator.dao.exception.DAOException;
 import sport.totalizator.db.jdbc.ConnectionPool;
@@ -52,7 +53,7 @@ public class RateDAOImpl implements RateDAO{
                 "VALUES(?, ?, ?, ?, ?, ?, ?, ?);");
     }
 
-    private static final Logger log = Logger.getLogger(RateDAOImpl.class);
+    private final static Logger LOG = LogManager.getLogger("RateDAOImpl");
     private static final RateDAOImpl instance = new RateDAOImpl();
     private static final ConnectionPool pool = ConnectionPool.getConnectionPool();
 
@@ -86,7 +87,7 @@ public class RateDAOImpl implements RateDAO{
                         result.add(rate);
                     }
                 } catch (SQLException exc){
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc);
                 } finally {
                     if(resultSet != null){
@@ -94,7 +95,7 @@ public class RateDAOImpl implements RateDAO{
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -102,7 +103,7 @@ public class RateDAOImpl implements RateDAO{
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -137,7 +138,7 @@ public class RateDAOImpl implements RateDAO{
                         result.add(rate);
                     }
                 } catch (SQLException exc){
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc);
                 } finally {
                     if(resultSet != null){
@@ -145,7 +146,7 @@ public class RateDAOImpl implements RateDAO{
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -153,7 +154,7 @@ public class RateDAOImpl implements RateDAO{
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -189,7 +190,7 @@ public class RateDAOImpl implements RateDAO{
                 statement.executeUpdate();
             } catch (SQLException exc) {
                 connection.rollback(savepoint);
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 connection.setAutoCommit(true);
@@ -198,7 +199,7 @@ public class RateDAOImpl implements RateDAO{
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -226,7 +227,7 @@ public class RateDAOImpl implements RateDAO{
                         result = resultSet.getBigDecimal("money");
                     }
                 } catch (SQLException exc){
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc);
                 } finally {
                     if(resultSet != null){
@@ -234,7 +235,7 @@ public class RateDAOImpl implements RateDAO{
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -242,7 +243,7 @@ public class RateDAOImpl implements RateDAO{
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -280,7 +281,7 @@ public class RateDAOImpl implements RateDAO{
                         result.add(rate);
                     }
                 } catch (SQLException exc){
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc);
                 } finally {
                     if(resultSet != null){
@@ -288,7 +289,7 @@ public class RateDAOImpl implements RateDAO{
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -296,7 +297,7 @@ public class RateDAOImpl implements RateDAO{
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -321,7 +322,7 @@ public class RateDAOImpl implements RateDAO{
                 statement.executeUpdate();
             } catch (SQLException exc) {
                 connection.rollback(savepoint);
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 connection.setAutoCommit(true);
@@ -330,7 +331,7 @@ public class RateDAOImpl implements RateDAO{
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){

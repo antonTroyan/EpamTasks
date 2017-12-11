@@ -1,6 +1,7 @@
 package sport.totalizator.command.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.command.ICommand;
 import sport.totalizator.command.exception.CommandException;
 import sport.totalizator.entity.Member;
@@ -18,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GetMembersByEventJsonCommand implements ICommand{
-    private static final Logger log = Logger.getLogger(GetMembersByEventJsonCommand.class);
+    private final static Logger LOG = LogManager.getLogger("GetMembersByEventJsonCommand");
     private MemberService memberService = ServiceFactory.getInstance().getMemberService();
 
     @Override
@@ -28,7 +29,7 @@ public class GetMembersByEventJsonCommand implements ICommand{
         try {
             members = memberService.getMembersByEvent(eventId);
         } catch (ServiceException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new CommandException(exc);
         }
         resp.setHeader("Content-type", "json");

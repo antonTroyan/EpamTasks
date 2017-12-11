@@ -1,11 +1,11 @@
 package sport.totalizator.command.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.command.CommandEnum;
 import sport.totalizator.command.ICommand;
 import sport.totalizator.command.exception.CommandException;
 import sport.totalizator.command.factory.CommandFactory;
-import sport.totalizator.entity.EventResult;
 import sport.totalizator.entity.User;
 import sport.totalizator.exception.EventResultException;
 import sport.totalizator.exception.UnauthorizedException;
@@ -20,11 +20,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class AddEventResultCommand implements ICommand {
-    private static final Logger log = Logger.getLogger(AddEventResultCommand.class);
+    private final static Logger LOG = LogManager.getLogger("AddEventResultCommand");
     EventResultService eventResultService = ServiceFactory.getInstance().getEventResultService();
 
     @Override
-    public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException {
+    public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException,
+            CommandException, UnauthorizedException {
         checkRoots(req, new User.Role[]{User.Role.MODERATOR});
         String eventId = req.getParameter("event-id");
         String winnerId = req.getParameter("winner-id");
@@ -34,10 +35,10 @@ public class AddEventResultCommand implements ICommand {
         try{
             eventResultService.addEventResult(eventId, winnerId, loserId, winnerScore, loserScore);
         } catch (ServiceException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new CommandException(exc);
         } catch (EventResultException exc){
-            log.error(exc);
+            LOG.error(exc);
             req.setAttribute("error", MessageLocalizer.getLocalizedForCurrentLocaleMessage(exc.getErrorMessageList(), req));
             req.setAttribute("eventResult", exc.getEventResult());
             req.getRequestDispatcher("add_result_page.jsp").forward(req, resp);

@@ -1,8 +1,7 @@
 package sport.totalizator.db.jdbc;
 
-
-import com.mysql.jdbc.Driver;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,7 +11,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class ConnectionPool {
-    private static final Logger log = Logger.getLogger(ConnectionPool.class);
+    private final static Logger LOG = LogManager.getLogger("ConnectionPool");
     private static final Properties properties = DBPropertiesReader.getDBProperties();
     private static final ConnectionPool connectionPool = new ConnectionPool(properties);
 
@@ -28,7 +27,7 @@ public class ConnectionPool {
             Class.forName("com.mysql.jdbc.Driver");
         }
         catch (ClassNotFoundException exc){
-            log.error(exc);
+            LOG.error(exc);
         }
         int poolSize = Integer.parseInt(properties.getProperty("poolSize"));
         String url = properties.getProperty("url");
@@ -43,7 +42,7 @@ public class ConnectionPool {
                 connections.offer(connection);
             }
             catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
             }
         }
     }
@@ -55,7 +54,7 @@ public class ConnectionPool {
         }
         catch(InterruptedException exc){
             connection = null;
-            log.error(exc);
+            LOG.error(exc);
         }
         return connection;
     }

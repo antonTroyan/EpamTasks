@@ -1,6 +1,5 @@
 package sport.totalizator.command.impl;
 
-import org.apache.log4j.Logger;
 import sport.totalizator.command.CommandEnum;
 import sport.totalizator.command.ICommand;
 import sport.totalizator.command.exception.CommandException;
@@ -18,7 +17,6 @@ import static sport.totalizator.entity.User.Role.MODERATOR;
 import static sport.totalizator.entity.User.Role.USER;
 
 public class ShowMakeRatePageCommand implements ICommand{
-    private final static Logger log = Logger.getLogger(ShowMakeRatePageCommand.class);
 
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException {

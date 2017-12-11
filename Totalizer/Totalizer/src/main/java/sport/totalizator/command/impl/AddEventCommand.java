@@ -1,11 +1,12 @@
 package sport.totalizator.command.impl;
 
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.command.CommandEnum;
 import sport.totalizator.command.ICommand;
 import sport.totalizator.command.exception.CommandException;
 import sport.totalizator.command.factory.CommandFactory;
-import sport.totalizator.entity.Event;
 import sport.totalizator.entity.User;
 import sport.totalizator.exception.EventException;
 import sport.totalizator.exception.UnauthorizedException;
@@ -24,10 +25,11 @@ import java.util.List;
 import static sport.totalizator.entity.User.Role.MODERATOR;
 
 public class AddEventCommand implements ICommand {
-    private static final Logger log = Logger.getLogger(AddEventCommand.class);
+    private final static Logger LOG = LogManager.getLogger("AddEventCommand");
 
     @Override
-    public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException {
+    public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException,
+            CommandException, UnauthorizedException {
         checkRoots(req, new User.Role[]{MODERATOR});
         EventService eventService = ServiceFactory.getInstance().getEventService();
         String name = req.getParameter("name");
@@ -40,11 +42,11 @@ public class AddEventCommand implements ICommand {
             eventService.addEvent(name, leagueId, rateTypes, liveTranslationLink, date, memberIds);
         }
         catch(ServiceException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new CommandException(exc);
         }
         catch (EventException exc){
-            log.error(exc);
+            LOG.error(exc);
             req.setAttribute("error", MessageLocalizer.getLocalizedForCurrentLocaleMessage(exc.getErrorMessageList(), req));
             req.setAttribute("event", exc.getEvent());
             CommandFactory.getFactory().createCommand(CommandEnum.SHOW_ADD_EVENT_PAGE).execute(req, resp);
@@ -89,7 +91,7 @@ public class AddEventCommand implements ICommand {
                 i++;
             }
         } catch (NumberFormatException exc){
-            log.error(exc);
+            LOG.error(exc);
         }
         return memberIds;
     }

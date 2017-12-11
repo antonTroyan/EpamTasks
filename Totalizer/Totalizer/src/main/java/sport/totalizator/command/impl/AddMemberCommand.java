@@ -1,6 +1,7 @@
 package sport.totalizator.command.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.command.CommandEnum;
 import sport.totalizator.command.ICommand;
 import sport.totalizator.command.exception.CommandException;
@@ -8,7 +9,6 @@ import sport.totalizator.command.factory.CommandFactory;
 import sport.totalizator.entity.User;
 import sport.totalizator.exception.MemberException;
 import sport.totalizator.exception.UnauthorizedException;
-import sport.totalizator.service.LeagueService;
 import sport.totalizator.service.MemberService;
 import sport.totalizator.service.exception.ServiceException;
 import sport.totalizator.service.factory.ServiceFactory;
@@ -22,7 +22,7 @@ import java.io.IOException;
 import static sport.totalizator.entity.User.Role.MODERATOR;
 
 public class AddMemberCommand implements ICommand {
-    private static final Logger log = Logger.getLogger(AddMemberCommand.class);
+    private final static Logger LOG = LogManager.getLogger("AddMemberCommand");
     private final MemberService memberService = ServiceFactory.getInstance().getMemberService();
 
     @Override
@@ -33,11 +33,11 @@ public class AddMemberCommand implements ICommand {
                     (String)req.getParameter("category-id"), (String)req.getParameter("league-id"));
         }
         catch(ServiceException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new CommandException(exc);
         }
         catch (MemberException exc){
-            log.error(exc);
+            LOG.error(exc);
             req.setAttribute("error", MessageLocalizer.getLocalizedForCurrentLocaleMessage(exc.getErrorMessageList(), req));
             req.setAttribute("member", exc.getMember());
             CommandFactory.getFactory().createCommand(CommandEnum.SHOW_ADD_MEMBER_PAGE).execute(req, resp);

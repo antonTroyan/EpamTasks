@@ -1,6 +1,7 @@
 package sport.totalizator.command.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.command.CommandEnum;
 import sport.totalizator.command.ICommand;
 import sport.totalizator.command.exception.CommandException;
@@ -17,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class ShowAdminPageCommand implements ICommand {
-    private static final Logger log = Logger.getLogger(ShowAdminPageCommand.class);
+    private final static Logger LOG = LogManager.getLogger("ShowAdminPageCommand");
     private UserService userService = ServiceFactory.getInstance().getUserService();
 
     @Override
@@ -28,7 +29,7 @@ public class ShowAdminPageCommand implements ICommand {
         try{
             req.setAttribute("users", userService.getAllUsers());
         } catch (ServiceException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new CommandException(exc);
         }
         req.getRequestDispatcher("admin_page.jsp").forward(req, resp);

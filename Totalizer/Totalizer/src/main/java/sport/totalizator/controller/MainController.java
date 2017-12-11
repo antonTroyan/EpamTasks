@@ -1,10 +1,9 @@
 package sport.totalizator.controller;
 
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.command.CommandEnum;
 import sport.totalizator.command.ICommand;
-import sport.totalizator.command.exception.CommandException;
 import sport.totalizator.command.factory.CommandFactory;
 import sport.totalizator.exception.UnauthorizedException;
 import sport.totalizator.util.MessageLocalizer;
@@ -18,8 +17,6 @@ import java.io.IOException;
 
 public class MainController extends HttpServlet {
     private static final CommandFactory commandFactory = CommandFactory.getFactory();
-    private final static Logger log = Logger.getLogger(MainController.class);
-
     private final static Logger LOG = LogManager.getLogger("MainController");
 
     @Override
@@ -31,24 +28,15 @@ public class MainController extends HttpServlet {
         ICommand command = null;
         String commandName = req.getParameter("command");
         try {
-
-            LOG.info("In MainController");
-
             CommandEnum commandEnum = CommandEnum.getEnum(commandName);
             command = commandFactory.createCommand(commandEnum);
             command.execute(req, resp);
         } catch (UnauthorizedException exc){
-
-            LOG.error("Ошибка");
-
-            log.error(exc);
+            LOG.error(exc);
             req.setAttribute("message", exc.getMessage());
             req.getRequestDispatcher("error_page.jsp").forward(req, resp);
         } catch (Exception exc){
-
-            LOG.error("Ошибка");
-
-            log.error(exc);
+            LOG.error(exc);
             req.setAttribute("message", MessageLocalizer.getLocalizedForCurrentLocaleMessage("err.smth-error", req));
             req.getRequestDispatcher("error_page.jsp").forward(req, resp);
         }

@@ -1,16 +1,16 @@
 package sport.totalizator.dao.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.dao.OperationDAO;
 import sport.totalizator.dao.exception.DAOException;
 import sport.totalizator.db.jdbc.ConnectionPool;
 import sport.totalizator.entity.Operation;
 import sport.totalizator.exception.OperationException;
-import sport.totalizator.exception.UserException;
+
 
 import java.sql.*;
-import java.sql.Date;
-import java.util.*;
+
 
 public class OperationDAOImpl implements OperationDAO {
     private static final long ONE_DAY = 86_400_000;
@@ -25,7 +25,7 @@ public class OperationDAOImpl implements OperationDAO {
             "DESC " +
             "LIMIT 1;";
 
-    private static final Logger log = Logger.getLogger(OperationDAOImpl.class);
+    private final static Logger LOG = LogManager.getLogger("OperationDAOImpl");
     private static final OperationDAOImpl instance = new OperationDAOImpl();
     private final ConnectionPool pool = ConnectionPool.getConnectionPool();
 
@@ -53,7 +53,7 @@ public class OperationDAOImpl implements OperationDAO {
                 statement.executeUpdate();
             } catch (SQLException exc) {
                 connection.rollback(savepoint);
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 connection.setAutoCommit(true);
@@ -62,7 +62,7 @@ public class OperationDAOImpl implements OperationDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -94,7 +94,7 @@ public class OperationDAOImpl implements OperationDAO {
                         result = true;
                     }
                 } catch (SQLException exc){
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc);
                 } finally {
                     if(resultSet != null){
@@ -102,7 +102,7 @@ public class OperationDAOImpl implements OperationDAO {
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -110,7 +110,7 @@ public class OperationDAOImpl implements OperationDAO {
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){

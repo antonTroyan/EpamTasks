@@ -1,9 +1,7 @@
 package sport.totalizator.util;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.util.List;
-import java.util.Properties;
 import java.util.ResourceBundle;
 
 public class MessageLocalizer {

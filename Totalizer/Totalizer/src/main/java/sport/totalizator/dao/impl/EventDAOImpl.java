@@ -1,7 +1,8 @@
 package sport.totalizator.dao.impl;
 
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.dao.EventDAO;
 import sport.totalizator.dao.exception.DAOException;
 import sport.totalizator.dao.factory.DAOFactory;
@@ -60,7 +61,7 @@ public class EventDAOImpl implements EventDAO{
             "`live_translation_reference`, `event_start_date`) " +
             "VALUES (?, ?, ?, ?, ?);";
 
-    private static final Logger log = Logger.getLogger(EventDAOImpl.class);
+    private final static Logger LOG = LogManager.getLogger("EventDAOImpl");
     private static final EventDAOImpl instance = new EventDAOImpl();
     private static final ConnectionPool pool = ConnectionPool.getConnectionPool();
 
@@ -95,7 +96,7 @@ public class EventDAOImpl implements EventDAO{
                         result.add(event);
                     }
                 } catch (SQLException exc){
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc.getMessage());
                 } finally {
                     if(resultSet != null){
@@ -103,7 +104,7 @@ public class EventDAOImpl implements EventDAO{
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc.getMessage());
             } finally {
                 if(statement != null){
@@ -111,7 +112,7 @@ public class EventDAOImpl implements EventDAO{
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc.getMessage());
         } finally {
             pool.returnConnectionToPool(connection);
@@ -175,7 +176,7 @@ public class EventDAOImpl implements EventDAO{
                         event.setStatus(resultSet.getString("event_status"));
                     }
                 } catch (SQLException exc){
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc);
                 } finally {
                     if(resultSet != null){
@@ -183,7 +184,7 @@ public class EventDAOImpl implements EventDAO{
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -191,7 +192,7 @@ public class EventDAOImpl implements EventDAO{
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -221,7 +222,7 @@ public class EventDAOImpl implements EventDAO{
                     resultSet.next();
                     event.setEventId(resultSet.getInt(1));
                 } catch (SQLException exc){
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc);
                 } finally {
                     if(resultSet != null){
@@ -229,7 +230,7 @@ public class EventDAOImpl implements EventDAO{
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -237,7 +238,7 @@ public class EventDAOImpl implements EventDAO{
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
@@ -258,7 +259,7 @@ public class EventDAOImpl implements EventDAO{
                 statement.setInt(1, eventId);
                 statement.executeUpdate();
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -266,7 +267,7 @@ public class EventDAOImpl implements EventDAO{
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){

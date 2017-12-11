@@ -64,4 +64,45 @@ public class EventResult {
     public void setLoserName(String loserName) {
         this.loserName = loserName;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        EventResult that = (EventResult) o;
+
+        if (eventId != that.eventId) return false;
+        if (winnerId != that.winnerId) return false;
+        if (loserId != that.loserId) return false;
+        if (winnerScore != that.winnerScore) return false;
+        if (loserScore != that.loserScore) return false;
+        if (winnerName != null ? !winnerName.equals(that.winnerName) : that.winnerName != null) return false;
+        return loserName != null ? loserName.equals(that.loserName) : that.loserName == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = eventId;
+        result = 31 * result + winnerId;
+        result = 31 * result + loserId;
+        result = 31 * result + winnerScore;
+        result = 31 * result + loserScore;
+        result = 31 * result + (winnerName != null ? winnerName.hashCode() : 0);
+        result = 31 * result + (loserName != null ? loserName.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "EventResult{" +
+                "eventId=" + eventId +
+                ", winnerId=" + winnerId +
+                ", loserId=" + loserId +
+                ", winnerScore=" + winnerScore +
+                ", loserScore=" + loserScore +
+                ", winnerName='" + winnerName + '\'' +
+                ", loserName='" + loserName + '\'' +
+                '}';
+    }
 }

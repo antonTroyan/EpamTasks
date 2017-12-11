@@ -1,13 +1,14 @@
 package sport.totalizator.util;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class MD5Converter {
-    private static final Logger log = Logger.getLogger(MD5Converter.class);
+    private final static Logger LOG = LogManager.getLogger("MD5Converter");
 
     public static String getHash(String string){
         MessageDigest messageDigest = null;
@@ -18,7 +19,7 @@ public class MD5Converter {
             messageDigest.update(string.getBytes());
             digest = messageDigest.digest();
         } catch (NoSuchAlgorithmException exc) {
-            log.error(exc);
+            LOG.error(exc);
         }
         BigInteger bigInt = new BigInteger(1, digest);
         String md5Hex = bigInt.toString(16);

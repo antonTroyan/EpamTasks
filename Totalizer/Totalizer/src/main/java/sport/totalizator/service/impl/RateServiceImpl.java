@@ -1,6 +1,7 @@
 package sport.totalizator.service.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.dao.RateDAO;
 import sport.totalizator.dao.UserDAO;
 import sport.totalizator.dao.exception.DAOException;
@@ -17,7 +18,7 @@ import static sport.totalizator.entity.Rate.WIN;
 
 public class RateServiceImpl implements RateService {
     private static final RateServiceImpl instance = new RateServiceImpl();
-    private static final Logger log = Logger.getLogger(RateServiceImpl.class);
+    private final static Logger LOG = LogManager.getLogger("RateServiceImpl");
 
     private UserDAO userDAO;
     private RateDAO rateDAO;
@@ -79,7 +80,7 @@ public class RateServiceImpl implements RateService {
             userDAO.withdrawMoneyFromUser(rate.getUserId(), rate.getSum());
             rateDAO.addRate(rate);
         } catch (DAOException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new ServiceException(exc);
         }
         return rate;

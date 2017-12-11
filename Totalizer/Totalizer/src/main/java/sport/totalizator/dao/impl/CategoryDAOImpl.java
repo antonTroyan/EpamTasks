@@ -1,6 +1,7 @@
 package sport.totalizator.dao.impl;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sport.totalizator.dao.CategoryDAO;
 import sport.totalizator.dao.exception.DAOException;
 import sport.totalizator.db.jdbc.ConnectionPool;
@@ -15,7 +16,7 @@ public class CategoryDAOImpl implements CategoryDAO{
     private static final String SQL_FOR_GET_ALL_CATEGORIES = "SELECT * FROM `eventcategory`";
 
     private static final CategoryDAOImpl instance = new CategoryDAOImpl();
-    private static final Logger log = Logger.getLogger(CategoryDAOImpl.class);
+    private final static Logger LOG = LogManager.getLogger("CategoryDAOImpl");
     private final ConnectionPool pool = ConnectionPool.getConnectionPool();
 
     public static CategoryDAOImpl getInstance(){
@@ -38,7 +39,7 @@ public class CategoryDAOImpl implements CategoryDAO{
                         result.add(createCategory(resultSet));
                     }
                 } catch (SQLException exc) {
-                    log.error(exc);
+                    LOG.error(exc);
                     throw new DAOException(exc.getMessage());
                 } finally {
                     if(resultSet != null){
@@ -46,7 +47,7 @@ public class CategoryDAOImpl implements CategoryDAO{
                     }
                 }
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc.getMessage());
             } finally {
                 if(statement != null){
@@ -54,7 +55,7 @@ public class CategoryDAOImpl implements CategoryDAO{
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc.getMessage());
         } finally {
             pool.returnConnectionToPool(connection);
@@ -80,7 +81,7 @@ public class CategoryDAOImpl implements CategoryDAO{
                 statement.setString(1, category.getName());
                 statement.executeUpdate();
             } catch (SQLException exc){
-                log.error(exc);
+                LOG.error(exc);
                 throw new DAOException(exc);
             } finally {
                 if(statement != null){
@@ -88,7 +89,7 @@ public class CategoryDAOImpl implements CategoryDAO{
                 }
             }
         } catch (SQLException exc){
-            log.error(exc);
+            LOG.error(exc);
             throw new DAOException(exc);
         } finally {
             if(connection != null){
