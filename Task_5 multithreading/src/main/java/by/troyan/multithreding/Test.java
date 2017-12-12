@@ -1,14 +1,13 @@
 package by.troyan.multithreding;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
-        Passenger masha = new Passenger();
-        Passenger anna = new Passenger();
-        Passenger donya = new Passenger();
+        Passenger masha = new Passenger("masha");
+        Passenger anna = new Passenger("anna");
+        Passenger donya = new Passenger("donya");
         ArrayList<Passenger> passengersMinsk = new ArrayList<>();
         passengersMinsk.add(masha);
         passengersMinsk.add(anna);
@@ -23,16 +22,21 @@ public class Test {
         busStops.add(london);
         Route route = new Route(busStops);
 
-        List<Passenger> passengerList = new ArrayList<Passenger>();
-        Passenger anton = new Passenger();
-        Passenger vania = new Passenger();
-        Passenger kolia = new Passenger();
+        List<Passenger> passengerList = new ArrayList<>();
+        passengerList.add(new Passenger("anton"));
+        passengerList.add(new Passenger("vania"));
+        passengerList.add(new Passenger("kolia"));
 
-        passengerList.add(anton);
-        passengerList.add(vania);
-        passengerList.add(kolia);
+        List<Passenger> passengerList1 = new ArrayList<>();
+        passengerList1.add(new Passenger("liu"));
+        passengerList1.add(new Passenger("michael"));
+        passengerList1.add(new Passenger("meizu"));
 
         Bus bus = new Bus(route, passengerList);
-        bus.startTrip();
+        Bus bus1 = new Bus(route, passengerList1);
+
+        bus.start();
+        bus1.start();
+
     }
 }
