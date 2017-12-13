@@ -1,8 +1,6 @@
 package by.troyan.multithreding;
 
 import java.util.ArrayList;
-import java.util.ConcurrentModificationException;
-import java.util.Iterator;
 import java.util.List;
 
 public class BusStop {
@@ -22,22 +20,18 @@ public class BusStop {
         return idCounter++;
     }
 
-    public void makeBusWaitersDoSmth(){
+    public void makeBusWaitersDoSmth(Bus bus){
         System.out.println(busStopId + "№ BusStop");
-        try{
             for (Passenger passenger: busStopPassengers){
-                passenger.makeBusWaitersDoSmth(this, passenger);
+                passenger.makeBusWaitersDoSmth(this, passenger, bus);
             }
-        } catch (ConcurrentModificationException e){
-            System.out.println("!");
-        }
     }
 
-    public void comeToBusStop(Bus bus){
+    public void checkInBusStop(Bus bus){
         buses.add(bus);
     }
 
-    public void getAwayFromBusStop(Bus bus){
+    public void checkOutBusStop(Bus bus){
         buses.remove(bus);
     }
 

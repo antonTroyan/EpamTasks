@@ -34,36 +34,28 @@ public class Passenger {
         }
     }
 
-    public void makeBusWaitersDoSmth(BusStop busStop, Passenger passenger) {
+    public void makeBusWaitersDoSmth(BusStop busStop, Passenger passenger, Bus bus) {
         Random random = new Random();
         switch (random.nextInt(2)) {
             case 0:
                 stayInBusStop();
                 break;
             case 1:
-                sitInBus(busStop, passenger);
+                sitInBus(busStop, passenger, bus);
                 break;
-            default:
-                System.out.println("default action");
         }
     }
 
 
-    private synchronized void sitInBus(BusStop busStop, Passenger passenger) {
+    private synchronized void sitInBus(BusStop busStop, Passenger passenger, Bus bus) {
 
-        List<Passenger> busStopPassangers = busStop.getBusStopPassengers();
-        Random random = new Random();
-        int toBus = random.nextInt(busStop.getBuses().size());
-
-        List<Bus> busesOnBusStation = busStop.getBuses();
-        Bus bus = busesOnBusStation.get(toBus);
+        List<Passenger> busStopPassangers = busStop.getBusStopPassengers();;
         bus.getBusPassengers().add(passenger);
 
-        System.out.println("Bus stop passangers before remove " + busStopPassangers);
+        System.out.println("Passenger " + name + " decided to sit in the Bus: " + bus);
+        System.out.println("Bus stop passengers before remove " + busStopPassangers);
         busStopPassangers.remove(passenger);
-        System.out.println("Passenger " + name + " get away from bus Stop " +
-                " and go to the " + bus);
-        System.out.println("Bus stop passangers after remove " + busStopPassangers);
+        System.out.println("Bus stop passengers after remove " + busStopPassangers);
     }
 
     private void stayInBus() {
@@ -79,8 +71,10 @@ public class Passenger {
 
         List<Bus> buses = busStop.getBuses();
         Random random = new Random();
-
-        int toBus = random.nextInt(buses.size());
+        int toBus;
+        do{
+             toBus = random.nextInt(buses.size());
+        } while (toBus == bus.getId());
 
         List<Passenger> passengersFromOriginalBus = bus.getBusPassengers();
         List<Passenger> passengersFromSecond = buses.get(toBus).getBusPassengers();
@@ -88,7 +82,7 @@ public class Passenger {
         passengersFromOriginalBus.remove(passenger);
         passengersFromSecond.add(passenger);
 
-        System.out.println("TPassenger " + name + " get away from bus " + bus +
+        System.out.println("Passenger " + name + " decided to change bus from " + bus +
                 " and go to the " + buses.get(toBus));
     }
 

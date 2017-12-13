@@ -1,14 +1,15 @@
 package by.troyan.multithreding;
 
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.*;
+import java.util.concurrent.Semaphore;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Lock;
 
 public class Bus extends Thread {
     private long busId;
     private static long idCounter = 0;
+    private Semaphore semaphore;
+    private Lock lock;
 
     Route busRoute;
 
@@ -18,10 +19,12 @@ public class Bus extends Thread {
 
     private List<Passenger> busPassengers;
 
-    public Bus(Route busRoute, List busPassengers) {
-        busId = createID();
+    public Bus(Route busRoute, List busPassengers, Semaphore semaphore, Lock lock) {
+        this.semaphore = semaphore;
         this.busRoute = busRoute;
         this.busPassengers = busPassengers;
+        this.lock = lock;
+        busId = createID();
     }
 
     public static synchronized long createID() {
@@ -31,20 +34,46 @@ public class Bus extends Thread {
     public void startTrip(){
         List <BusStop> busStops = busRoute.getBusStopsList();
 
-        for(BusStop tmp: busStops){
-            tmp.comeToBusStop(this);
-            tmp.makeBusWaitersDoSmth();
-//            for (Passenger passenger: busPassengers){
-//                passenger.makePassangersDoSmth(tmp,passenger,this);
-//            }
-            tmp.getAwayFromBusStop(this);
+        try{
+            for(BusStop tmp: busStops){
+                tmp.checkInBusStop(this);
+
+                lock.lock();
+                System.out.println("resource locked");
+
+                tmp.makeBusWaitersDoSmth(this);
+
+                lock.unlock();
+                System.out.println("resource unlocked");
+
+                for (Passenger passenger: busPassengers){
+                    passenger.makePassangersDoSmth(tmp,passenger,this);
+                }
+                TimeUnit.SECONDS.sleep(1);
+                tmp.checkOutBusStop(this);
+            }
+        } catch (ConcurrentModificationException e){
+            System.out.println("!");
+
+        } catch (InterruptedException e){
+            System.out.println("Interrupted!!!!!!!!");
         }
+
         System.out.println("finish trip");
     }
 
     @Override
     public void run() {
-        startTrip();
+        try {
+            System.out.println("Bus waiting permission " + busId);
+            semaphore.acquire();
+            System.out.println("Bus gets permission " + busId);
+            startTrip();
+            System.out.println("Bus release permission");
+            semaphore.release();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

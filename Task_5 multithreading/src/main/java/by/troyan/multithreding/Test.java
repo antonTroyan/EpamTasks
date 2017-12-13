@@ -2,18 +2,18 @@ package by.troyan.multithreding;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Semaphore;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Test {
     public static void main(String[] args) {
-        Passenger masha = new Passenger("masha");
-        Passenger anna = new Passenger("anna");
-        Passenger donya = new Passenger("donya");
+
         ArrayList<Passenger> passengersMinsk = new ArrayList<>();
-        passengersMinsk.add(masha);
-        passengersMinsk.add(anna);
+        passengersMinsk.add(new Passenger("masha"));
+        passengersMinsk.add(new Passenger("anna"));
 
         ArrayList<Passenger> passengersLondon = new ArrayList<>();
-        passengersLondon.add(donya);
+        passengersLondon.add(new Passenger("donya"));
 
         BusStop minsk = new BusStop(passengersMinsk);
         BusStop london = new BusStop(passengersLondon);
@@ -32,11 +32,21 @@ public class Test {
         passengerList1.add(new Passenger("michael"));
         passengerList1.add(new Passenger("meizu"));
 
-        Bus bus = new Bus(route, passengerList);
-        Bus bus1 = new Bus(route, passengerList1);
+        List<Passenger> passengerList2 = new ArrayList<>();
+        passengerList2.add(new Passenger("luk"));
+        passengerList2.add(new Passenger("vader"));
+        passengerList2.add(new Passenger("chewbacca"));
+
+
+        Semaphore semaphore = new Semaphore(2);
+        ReentrantLock lock = new ReentrantLock();
+
+        Bus bus = new Bus(route, passengerList, semaphore, lock);
+        Bus bus1 = new Bus(route, passengerList1, semaphore, lock );
+        Bus bus2 = new Bus (route, passengerList2, semaphore, lock);
 
         bus.start();
         bus1.start();
-
+        bus2.start();
     }
 }
