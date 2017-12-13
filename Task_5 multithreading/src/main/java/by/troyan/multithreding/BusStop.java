@@ -7,6 +7,7 @@ public class BusStop {
     private long busStopId;
     private static long idCounter = 0;
 
+    List<Passenger> passengersWishedToSitInBus = new ArrayList<>();
     private List<Passenger> busStopPassengers;
     private List<Bus> buses;
 
@@ -25,6 +26,25 @@ public class BusStop {
             for (Passenger passenger: busStopPassengers){
                 passenger.makeBusWaitersDoSmth(this, passenger, bus);
             }
+            addPassangers(this, bus);
+    }
+
+
+    public void addPassangers (BusStop busStop, Bus bus){
+
+        if(passengersWishedToSitInBus.size() != 0){
+            for(Passenger tmp: passengersWishedToSitInBus){
+                bus.getBusPassengers().add(tmp);
+            }
+            System.out.println("passengers added to bus " + bus + passengersWishedToSitInBus);
+
+            for(Passenger tmp1: passengersWishedToSitInBus){
+                busStopPassengers.remove(tmp1);
+            }
+            passengersWishedToSitInBus.clear();
+            System.out.println("list of passengers on bus station " + busStopPassengers);
+        }
+
     }
 
     public void checkInBusStop(Bus bus){

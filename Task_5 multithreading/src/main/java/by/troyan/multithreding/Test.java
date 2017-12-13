@@ -37,7 +37,6 @@ public class Test {
         passengerList2.add(new Passenger("vader"));
         passengerList2.add(new Passenger("chewbacca"));
 
-
         Semaphore semaphore = new Semaphore(2);
         ReentrantLock lock = new ReentrantLock();
 

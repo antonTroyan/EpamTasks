@@ -1,5 +1,6 @@
 package by.troyan.multithreding;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -7,6 +8,7 @@ public class Passenger {
     private long passengerId;
     private static long idCounter = 0;
     private String name;
+
 
     public Passenger(String name) {
         passengerId = createID();
@@ -19,18 +21,13 @@ public class Passenger {
 
     public void makePassangersDoSmth(BusStop busStop, Passenger passenger, Bus bus) {
         Random random = new Random();
-        switch (random.nextInt(3)) {
+        switch (random.nextInt(2)) {
             case 0:
                 stayInBus();
                 break;
             case 1:
                 goToAnotherBus(busStop, passenger, bus);
                 break;
-            case 2:
-                stayInBusStop();
-                break;
-            default:
-                System.out.println("default action");
         }
     }
 
@@ -47,15 +44,19 @@ public class Passenger {
     }
 
 
-    private synchronized void sitInBus(BusStop busStop, Passenger passenger, Bus bus) {
 
-        List<Passenger> busStopPassangers = busStop.getBusStopPassengers();;
-        bus.getBusPassengers().add(passenger);
+    private void sitInBus(BusStop busStop, Passenger passenger, Bus bus) {
 
-        System.out.println("Passenger " + name + " decided to sit in the Bus: " + bus);
-        System.out.println("Bus stop passengers before remove " + busStopPassangers);
-        busStopPassangers.remove(passenger);
-        System.out.println("Bus stop passengers after remove " + busStopPassangers);
+          busStop.passengersWishedToSitInBus.add(passenger);
+        System.out.println(passenger + " added to list of passengersWishedToSitInBus");
+
+//        List<Passenger> busStopPassangers = busStop.getBusStopPassengers();
+//        bus.getBusPassengers().add(passenger);
+//
+//        System.out.println("Passenger " + name + " decided to sit in the Bus: " + bus);
+//        System.out.println("Bus stop passengers before remove " + busStopPassangers);
+//        busStopPassangers.remove(passenger);
+//        System.out.println("Bus stop passengers after remove " + busStopPassangers);
     }
 
     private void stayInBus() {

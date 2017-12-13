@@ -39,24 +39,23 @@ public class Bus extends Thread {
                 tmp.checkInBusStop(this);
 
                 lock.lock();
-                System.out.println("resource locked");
-
+                System.out.println("resource locked by bus " + this);
                 tmp.makeBusWaitersDoSmth(this);
-
                 lock.unlock();
-                System.out.println("resource unlocked");
+                System.out.println("resource unlocked by bus " + this);
 
-                for (Passenger passenger: busPassengers){
-                    passenger.makePassangersDoSmth(tmp,passenger,this);
-                }
+//                for (Passenger passenger: busPassengers){
+//                    passenger.makePassangersDoSmth(tmp,passenger,this);
+//                }
                 TimeUnit.SECONDS.sleep(1);
                 tmp.checkOutBusStop(this);
             }
-        } catch (ConcurrentModificationException e){
-            System.out.println("!");
 
         } catch (InterruptedException e){
             System.out.println("Interrupted!!!!!!!!");
+
+        } catch (IllegalMonitorStateException e){
+            System.out.println("!!!");
         }
 
         System.out.println("finish trip");
@@ -65,11 +64,11 @@ public class Bus extends Thread {
     @Override
     public void run() {
         try {
-            System.out.println("Bus waiting permission " + busId);
+            System.out.println(this + " waiting permission ");
             semaphore.acquire();
-            System.out.println("Bus gets permission " + busId);
+            System.out.println(this + " gets permission ");
             startTrip();
-            System.out.println("Bus release permission");
+            System.out.println(this + " release permission ");
             semaphore.release();
         } catch (InterruptedException e) {
             e.printStackTrace();
