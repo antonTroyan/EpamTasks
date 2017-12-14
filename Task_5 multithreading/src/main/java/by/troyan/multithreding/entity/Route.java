@@ -1,4 +1,4 @@
-package by.troyan.multithreding;
+package by.troyan.multithreding.entity;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,0 +1,3 @@
+Passengers: masha anna luisa korvin mike anton ivan dasha benedict jerard luk
+BusesAmount: 3
+BusStopAmount: 3

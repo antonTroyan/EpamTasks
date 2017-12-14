@@ -1,6 +1,5 @@
-package by.troyan.multithreding;
+package by.troyan.multithreding.entity;
 
-import java.util.List;
 import java.util.Random;
 
 public class Passenger {
