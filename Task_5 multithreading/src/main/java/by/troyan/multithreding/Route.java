@@ -1,23 +1,20 @@
 package by.troyan.multithreding;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class Route {
-    private long routeId;
-    private static long idCounter = 0;
+public enum Route {
+    MINSK_LONDON(new ArrayList<BusStop>()){};
 
-    List<BusStop> busStopsList;
+    List<BusStop> busStops = new ArrayList<>();
 
-    public Route (List <BusStop> busStopsList) {
-        this.busStopsList = busStopsList;
-        routeId = createID();
-    }
+    Route(ArrayList<BusStop> busStops) { }
 
-    public static synchronized long createID() {
-        return idCounter++;
+    public void addBusStop (BusStop busStop){
+        busStops.add(busStop);
     }
 
     public List<BusStop> getBusStopsList() {
-        return busStopsList;
+        return busStops;
     }
 }

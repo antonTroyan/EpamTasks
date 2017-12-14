@@ -1,6 +1,5 @@
 package by.troyan.multithreding;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -47,16 +46,9 @@ public class Passenger {
 
     private void sitInBus(BusStop busStop, Passenger passenger, Bus bus) {
 
-          busStop.passengersWishedToSitInBus.add(passenger);
-        System.out.println(passenger + " added to list of passengersWishedToSitInBus");
+        busStop.getPassengersWishedToSitInBus().add(passenger);
+        System.out.println(passenger + " added to list of [passengersWishedToSitInBus]");
 
-//        List<Passenger> busStopPassangers = busStop.getBusStopPassengers();
-//        bus.getBusPassengers().add(passenger);
-//
-//        System.out.println("Passenger " + name + " decided to sit in the Bus: " + bus);
-//        System.out.println("Bus stop passengers before remove " + busStopPassangers);
-//        busStopPassangers.remove(passenger);
-//        System.out.println("Bus stop passengers after remove " + busStopPassangers);
     }
 
     private void stayInBus() {
@@ -70,21 +62,8 @@ public class Passenger {
             return;
         }
 
-        List<Bus> buses = busStop.getBuses();
-        Random random = new Random();
-        int toBus;
-        do{
-             toBus = random.nextInt(buses.size());
-        } while (toBus == bus.getId());
-
-        List<Passenger> passengersFromOriginalBus = bus.getBusPassengers();
-        List<Passenger> passengersFromSecond = buses.get(toBus).getBusPassengers();
-
-        passengersFromOriginalBus.remove(passenger);
-        passengersFromSecond.add(passenger);
-
-        System.out.println("Passenger " + name + " decided to change bus from " + bus +
-                " and go to the " + buses.get(toBus));
+        busStop.getPassengersWishedChangeBus().add(passenger);
+        System.out.println(passenger + " decided to change bus and added to [PassengersWishedChangeBus]");
     }
 
     private void stayInBusStop() {

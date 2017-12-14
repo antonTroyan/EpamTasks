@@ -41,12 +41,14 @@ public class Bus extends Thread {
                 lock.lock();
                 System.out.println("resource locked by bus " + this);
                 tmp.makeBusWaitersDoSmth(this);
+
+                for (Passenger passenger: busPassengers){
+                    passenger.makePassangersDoSmth(tmp,passenger,this);
+                }
+
                 lock.unlock();
                 System.out.println("resource unlocked by bus " + this);
 
-//                for (Passenger passenger: busPassengers){
-//                    passenger.makePassangersDoSmth(tmp,passenger,this);
-//                }
                 TimeUnit.SECONDS.sleep(1);
                 tmp.checkOutBusStop(this);
             }
@@ -73,6 +75,10 @@ public class Bus extends Thread {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    public long getBusId() {
+        return busId;
     }
 
     @Override

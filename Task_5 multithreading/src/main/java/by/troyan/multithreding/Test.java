@@ -2,6 +2,7 @@ package by.troyan.multithreding;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -20,7 +21,9 @@ public class Test {
         ArrayList<BusStop> busStops = new ArrayList<>();
         busStops.add(minsk);
         busStops.add(london);
-        Route route = new Route(busStops);
+        Route.MINSK_LONDON.addBusStop(minsk);
+        Route.MINSK_LONDON.addBusStop(london);
+
 
         List<Passenger> passengerList = new ArrayList<>();
         passengerList.add(new Passenger("anton"));
@@ -40,12 +43,20 @@ public class Test {
         Semaphore semaphore = new Semaphore(2);
         ReentrantLock lock = new ReentrantLock();
 
-        Bus bus = new Bus(route, passengerList, semaphore, lock);
-        Bus bus1 = new Bus(route, passengerList1, semaphore, lock );
-        Bus bus2 = new Bus (route, passengerList2, semaphore, lock);
+        Bus bus = new Bus(Route.MINSK_LONDON, passengerList, semaphore, lock);
+        Bus bus1 = new Bus(Route.MINSK_LONDON, passengerList1, semaphore, lock );
+        Bus bus2 = new Bus (Route.MINSK_LONDON, passengerList2, semaphore, lock);
 
         bus.start();
         bus1.start();
         bus2.start();
+
+
+//        Random random = new Random();
+//        int toBus;
+//        do{
+//            toBus = random.nextInt(3);
+//        } while (toBus == 1);
+//        System.out.println(toBus);
     }
 }

@@ -2,14 +2,17 @@ package by.troyan.multithreding;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class BusStop {
     private long busStopId;
     private static long idCounter = 0;
 
-    List<Passenger> passengersWishedToSitInBus = new ArrayList<>();
+    private List<Passenger> passengersWishedToSitInBus = new ArrayList<>();
     private List<Passenger> busStopPassengers;
     private List<Bus> buses;
+    private List<Passenger> passengersWishedChangeBus =new ArrayList<>();
+
 
     public BusStop (List<Passenger> busStopPassengers) {
         busStopId = createID();
@@ -26,11 +29,12 @@ public class BusStop {
             for (Passenger passenger: busStopPassengers){
                 passenger.makeBusWaitersDoSmth(this, passenger, bus);
             }
-            addPassangers(this, bus);
+            addPassangersToBusFromBusStop(this, bus);
+            addPassengersChangingBus(bus);
     }
 
 
-    public void addPassangers (BusStop busStop, Bus bus){
+    public void addPassangersToBusFromBusStop(BusStop busStop, Bus bus){
 
         if(passengersWishedToSitInBus.size() != 0){
             for(Passenger tmp: passengersWishedToSitInBus){
@@ -44,8 +48,29 @@ public class BusStop {
             passengersWishedToSitInBus.clear();
             System.out.println("list of passengers on bus station " + busStopPassengers);
         }
-
     }
+
+    public void addPassengersChangingBus(Bus fromBus){
+        if (passengersWishedChangeBus.size() != 0){
+            Random random = new Random();
+            int toBus;
+            do {
+                toBus = random.nextInt(buses.size());
+            } while (toBus == (int)fromBus.getBusId());
+
+            for (Passenger passenger: passengersWishedChangeBus){
+                buses.get(toBus).getBusPassengers().add(passenger);
+                System.out.println(passenger + " changed bus and sit in the bus " + buses.get(toBus));
+            }
+
+            for(Passenger passenger: passengersWishedChangeBus){
+                fromBus.getBusPassengers().remove(passenger);
+                System.out.println(passenger + " removed from the bus list " + fromBus);
+            }
+            passengersWishedChangeBus.clear();
+        }
+    }
+
 
     public void checkInBusStop(Bus bus){
         buses.add(bus);
@@ -59,7 +84,11 @@ public class BusStop {
         return buses;
     }
 
-    public  synchronized List<Passenger> getBusStopPassengers() {
-        return busStopPassengers;
+    public List<Passenger> getPassengersWishedToSitInBus() {
+        return passengersWishedToSitInBus;
+    }
+
+    public List<Passenger> getPassengersWishedChangeBus() {
+        return passengersWishedChangeBus;
     }
 }
