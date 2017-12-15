@@ -7,6 +7,7 @@ import by.troyan.multithreding.entity.Route;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -16,7 +17,9 @@ public class Test {
         Initializer initializer = new Initializer();
         initializer.initialize("data//initial.txt");
         initializer.startAllBuses();
-//
+
+
+
 //        ArrayList<Passenger> passengersMinsk = new ArrayList<>();
 //        passengersMinsk.add(new Passenger("masha"));
 //        passengersMinsk.add(new Passenger("anna"));

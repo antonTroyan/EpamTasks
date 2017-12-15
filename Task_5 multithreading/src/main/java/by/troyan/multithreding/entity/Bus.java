@@ -43,7 +43,7 @@ public class Bus extends Thread {
                 tmp.makeBusWaitersDoSmth(this);
 
                 for (Passenger passenger: busPassengers){
-                    passenger.makePassangersDoSmth(tmp,passenger,this);
+                    passenger.makePassengersDoSomething(tmp,passenger,this);
                 }
 
                 lock.unlock();

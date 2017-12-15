@@ -17,7 +17,7 @@ public class Passenger {
         return idCounter++;
     }
 
-    public void makePassangersDoSmth(BusStop busStop, Passenger passenger, Bus bus) {
+    public void makePassengersDoSomething(BusStop busStop, Passenger passenger, Bus bus) {
         Random random = new Random();
         switch (random.nextInt(2)) {
             case 0:
@@ -29,7 +29,7 @@ public class Passenger {
         }
     }
 
-    public void makeBusWaitersDoSmth(BusStop busStop, Passenger passenger, Bus bus) {
+    public void makeBusWaitersDoSomething(BusStop busStop, Passenger passenger, Bus bus) {
         Random random = new Random();
         switch (random.nextInt(2)) {
             case 0:
@@ -62,7 +62,8 @@ public class Passenger {
         }
 
         busStop.getPassengersWishedChangeBus().add(passenger);
-        System.out.println(passenger + " decided to change bus and added to [PassengersWishedChangeBus]");
+        System.out.println(passenger + " decided to change bus from " + bus +
+                "and added to [PassengersWishedChangeBus]");
     }
 
     private void stayInBusStop() {

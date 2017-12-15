@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6a28d57-93cd-474e-b1a7-cd9ab36b8434" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_5 multithreading/data/initial.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/initialize/Initializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/initialize/Parser.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/Bus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/BusStop.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/Passenger.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/Route$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/Route.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/Test.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jwd-task01-template.iml" afterPath="$PROJECT_DIR$/jwd-task01-template.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_3/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_5 multithreading/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/Bus.java" afterPath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/entity/Bus.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/BusStop.java" afterPath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/entity/BusStop.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/Passenger.java" afterPath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/entity/Passenger.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/Route.java" afterPath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/entity/Route.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/Test.java" afterPath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/initialize/Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -217,8 +200,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,11 +246,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Task_5 multithreading" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -501,6 +484,7 @@
       <workItem from="1513263244267" duration="794000" />
       <workItem from="1513264811739" duration="651000" />
       <workItem from="1513266619549" duration="695000" />
+      <workItem from="1513285090601" duration="13000" />
     </task>
     <servers />
   </component>
@@ -522,7 +506,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4871000" />
+    <option name="totallyTimeSpent" value="4884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1408" extended-state="6" />
@@ -536,7 +520,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17146283" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17306155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />

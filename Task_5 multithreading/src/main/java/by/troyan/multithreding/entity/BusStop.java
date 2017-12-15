@@ -27,7 +27,7 @@ public class BusStop {
     public void makeBusWaitersDoSmth(Bus bus){
         System.out.println(busStopId + "№ BusStop");
             for (Passenger passenger: busStopPassengers){
-                passenger.makeBusWaitersDoSmth(this, passenger, bus);
+                passenger.makeBusWaitersDoSomething(this, passenger, bus);
             }
             addPassangersToBusFromBusStop(this, bus);
             addPassengersChangingBus(bus);
@@ -64,9 +64,13 @@ public class BusStop {
             }
 
             for(Passenger passenger: passengersWishedChangeBus){
+                System.out.println(fromBus.getBusPassengers() + "before remove");
                 fromBus.getBusPassengers().remove(passenger);
                 System.out.println(passenger + " removed from the bus list " + fromBus);
+                System.out.println(fromBus.getBusPassengers() + "after remove");
             }
+            System.out.println("From bus passengers " + fromBus.getBusPassengers());
+            System.out.println("Now bus has "+ buses.get(toBus).getBusId() + buses.get(toBus).getBusPassengers());
             passengersWishedChangeBus.clear();
         }
     }
