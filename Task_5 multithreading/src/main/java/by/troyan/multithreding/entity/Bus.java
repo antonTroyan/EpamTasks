@@ -10,14 +10,8 @@ public class Bus extends Thread {
     private static long idCounter = 0;
     private Semaphore semaphore;
     private Lock lock;
-
-    Route busRoute;
-
-    public List<Passenger> getBusPassengers() {
-        return busPassengers;
-    }
-
     private List<Passenger> busPassengers;
+    private Route busRoute;
 
     public Bus(Route busRoute, List busPassengers, Semaphore semaphore, Lock lock) {
         this.semaphore = semaphore;
@@ -27,7 +21,7 @@ public class Bus extends Thread {
         busId = createID();
     }
 
-    public static synchronized long createID() {
+    public static long createID() {
         return idCounter++;
     }
 
@@ -79,6 +73,34 @@ public class Bus extends Thread {
 
     public long getBusId() {
         return busId;
+    }
+
+    public List<Passenger> getBusPassengers() {
+        return busPassengers;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Bus bus = (Bus) o;
+
+        if (busId != bus.busId) return false;
+        if (semaphore != null ? !semaphore.equals(bus.semaphore) : bus.semaphore != null) return false;
+        if (lock != null ? !lock.equals(bus.lock) : bus.lock != null) return false;
+        if (busPassengers != null ? !busPassengers.equals(bus.busPassengers) : bus.busPassengers != null) return false;
+        return busRoute == bus.busRoute;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = (int) (busId ^ (busId >>> 32));
+        result = 31 * result + (semaphore != null ? semaphore.hashCode() : 0);
+        result = 31 * result + (lock != null ? lock.hashCode() : 0);
+        result = 31 * result + (busPassengers != null ? busPassengers.hashCode() : 0);
+        result = 31 * result + (busRoute != null ? busRoute.hashCode() : 0);
+        return result;
     }
 
     @Override

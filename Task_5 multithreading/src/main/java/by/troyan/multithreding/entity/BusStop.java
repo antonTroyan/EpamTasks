@@ -13,16 +13,12 @@ public class BusStop {
     private List<Bus> buses;
     private List<Passenger> passengersWishedChangeBus =new ArrayList<>();
 
-
     public BusStop (List<Passenger> busStopPassengers) {
         busStopId = createID();
         this.busStopPassengers = busStopPassengers;
         buses = new ArrayList<>();
     }
 
-    public static synchronized long createID() {
-        return idCounter++;
-    }
 
     public void makeBusWaitersDoSmth(Bus bus){
         System.out.println(busStopId + "№ BusStop");
@@ -54,12 +50,18 @@ public class BusStop {
         if (passengersWishedChangeBus.size() != 0){
             Random random = new Random();
             int toBus;
+            int fromBusInt = (int) fromBus.getBusId();
             do {
                 toBus = random.nextInt(buses.size());
-            } while (toBus == (int)fromBus.getBusId());
+                System.out.println(toBus + "toBus !!!!!");
+                System.out.println((int)fromBus.getBusId());
+            } while (toBus == fromBusInt);
 
             for (Passenger passenger: passengersWishedChangeBus){
+
+                System.out.println("Before insert passenger in bus " + buses.get(toBus) + buses.get(toBus).getBusPassengers());
                 buses.get(toBus).getBusPassengers().add(passenger);
+                System.out.println("After insert passenger in bus " + buses.get(toBus) + buses.get(toBus).getBusPassengers());
                 System.out.println(passenger + " changed bus and sit in the bus " + buses.get(toBus));
             }
 
@@ -75,6 +77,9 @@ public class BusStop {
         }
     }
 
+    private static long createID() {
+        return idCounter++;
+    }
 
     public void checkInBusStop(Bus bus){
         buses.add(bus);
@@ -84,7 +89,7 @@ public class BusStop {
         buses.remove(bus);
     }
 
-    public  List<Bus> getBuses() {
+    public List<Bus> getBuses() {
         return buses;
     }
 
@@ -94,5 +99,36 @@ public class BusStop {
 
     public List<Passenger> getPassengersWishedChangeBus() {
         return passengersWishedChangeBus;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        BusStop busStop = (BusStop) o;
+
+        if (busStopId != busStop.busStopId) return false;
+        if (passengersWishedToSitInBus != null ? !passengersWishedToSitInBus.equals(busStop.passengersWishedToSitInBus) : busStop.passengersWishedToSitInBus != null)
+            return false;
+        if (busStopPassengers != null ? !busStopPassengers.equals(busStop.busStopPassengers) : busStop.busStopPassengers != null)
+            return false;
+        if (buses != null ? !buses.equals(busStop.buses) : busStop.buses != null) return false;
+        return passengersWishedChangeBus != null ? passengersWishedChangeBus.equals(busStop.passengersWishedChangeBus) : busStop.passengersWishedChangeBus == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = (int) (busStopId ^ (busStopId >>> 32));
+        result = 31 * result + (passengersWishedToSitInBus != null ? passengersWishedToSitInBus.hashCode() : 0);
+        result = 31 * result + (busStopPassengers != null ? busStopPassengers.hashCode() : 0);
+        result = 31 * result + (buses != null ? buses.hashCode() : 0);
+        result = 31 * result + (passengersWishedChangeBus != null ? passengersWishedChangeBus.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "BusStop №" + busStopId ;
     }
 }

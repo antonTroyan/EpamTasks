@@ -13,7 +13,7 @@ public class Passenger {
         this.name = name;
     }
 
-    public static synchronized long createID() {
+    public static long createID() {
         return idCounter++;
     }
 
@@ -36,18 +36,14 @@ public class Passenger {
                 stayInBusStop();
                 break;
             case 1:
-                sitInBus(busStop, passenger, bus);
+                sitInBus(busStop, passenger);
                 break;
         }
     }
 
-
-
-    private void sitInBus(BusStop busStop, Passenger passenger, Bus bus) {
-
+    private void sitInBus(BusStop busStop, Passenger passenger) {
         busStop.getPassengersWishedToSitInBus().add(passenger);
         System.out.println(passenger + " added to list of [passengersWishedToSitInBus]");
-
     }
 
     private void stayInBus() {
@@ -55,12 +51,10 @@ public class Passenger {
     }
 
     private void goToAnotherBus (BusStop busStop, Passenger passenger, Bus bus) {
-
         if(busStop.getBuses().size() <= 1) {
             System.out.println("there only 1 bus on the station");
             return;
         }
-
         busStop.getPassengersWishedChangeBus().add(passenger);
         System.out.println(passenger + " decided to change bus from " + bus +
                 "and added to [PassengersWishedChangeBus]");
@@ -72,7 +66,6 @@ public class Passenger {
 
     @Override
     public String toString() {
-        return "Passenger " +
-                name;
+        return name;
     }
 }
