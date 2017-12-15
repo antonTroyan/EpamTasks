@@ -7,75 +7,52 @@ import by.troyan.multithreding.entity.Route;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.ReentrantLock;
 
 
 public class Initializer {
         private List<Bus> buses;
-        private List<BusStop> busStops;
 
     public void initialize (String filename){
         buses = new ArrayList<>();
-        List<Passenger> passengers = createPassengersList(filename);
-        int maxBusStopsAmount =  checkBusStopsAmount(filename);
-
         Semaphore semaphore = new Semaphore(2);
         ReentrantLock lock = new ReentrantLock();
-        Random random = new Random();
-        int randomToDividePassengers = random.nextInt(passengers.size());
 
-        List passengersMinsk = new ArrayList();
-        passengersMinsk.add(new Passenger("dart mol"));
-        passengersMinsk.add(new Passenger("dart sidius"));
-
-        List passengersLondon = new ArrayList();
-        passengersLondon.add(new Passenger("obi van"));
-        passengersLondon.add(new Passenger("heila"));
-
-        BusStop minsk = new BusStop(passengersMinsk);
-        BusStop london = new BusStop(passengersLondon);
-        ArrayList<BusStop> busStops = new ArrayList<>();
-        busStops.add(minsk);
-        busStops.add(london);
-        Route.MINSK_LONDON.addBusStop(minsk);
-        Route.MINSK_LONDON.addBusStop(london);
-
+        List<BusStop> busStops = new ArrayList<>();
+        int maxBusStopsAmount = checkInfo(filename, "BusStopAmount:");
         for(int i = 0; i < maxBusStopsAmount; i++){
-            List <Passenger> passengerForBus = new ArrayList<>();
-            for(int j = 0; j < randomToDividePassengers; j++){
-                passengerForBus.add(passengers.get(j));
-            }
-            System.out.println(passengerForBus);
-            buses.add(new Bus(Route.MINSK_LONDON, passengerForBus, semaphore, lock));
-            System.out.println(buses.get(0).getBusPassengers() + "Passengers");
+            BusStop busStop = new BusStop(createListOfPassengers(filename, "PassengersForBusStop"+i+":"));
+            busStops.add(busStop);
+            Route.MINSK_LONDON.addBusStop(busStop);
+        }
+
+        int maxBusAmount = checkInfo(filename, "BusesAmount:");
+        for(int i = 0; i < maxBusAmount; i++){
+            List<Passenger> passengerList = createListOfPassengers(filename, "PassengersForBus"+i+":");
+            Bus bus = new Bus(Route.MINSK_LONDON
+                    , passengerList
+                    , semaphore
+                    , lock);
+
+            buses.add(bus);
         }
     }
 
 
-    private int checkBusAmount(String filename){
+    private int checkInfo(String filename, String criteria){
         int result;
         Parser parser = new Parser();
-        List<String> busesAmount = parser.findInformationInFile(filename,"BusesAmount: 3");
+        List<String> busesAmount = parser.findInformationInFile(filename, criteria);
         result = Integer.parseInt(busesAmount.get(0));
 
         return result;
     }
 
-    private int checkBusStopsAmount(String filename){
-        int result;
-        Parser parser = new Parser();
-        List<String> busesAmount = parser.findInformationInFile(filename,"BusStopAmount: 3");
-        result = Integer.parseInt(busesAmount.get(0));
-
-        return result;
-    }
-
-    private List<Passenger> createPassengersList(String filename){
+    private List<Passenger> createListOfPassengers(String filename, String criteria){
         List<Passenger> result = new ArrayList<>();
         Parser parser = new Parser();
-        List<String> passengersNames = parser.findInformationInFile(filename,"Passengers:");
+        List<String> passengersNames = parser.findInformationInFile(filename, criteria);
         for(String name: passengersNames){
             result.add(new Passenger(name));
         }

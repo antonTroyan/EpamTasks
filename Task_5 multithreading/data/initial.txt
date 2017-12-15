@@ -1,4 +1,7 @@
-Passengers: masha anna luisa korvin mike anton ivan dasha benedict jerard luk
+PassengersForBus0: masha anna luisa korvin
+PassengersForBus1: mike anton ivan
+PassengersForBus2: dasha benedict jerard luk
 BusesAmount: 3
-BusStopAmount: 3
-BusStopPassengers: vika vova gleb albert yana diana
+BusStopAmount: 2
+PassengersForBusStop0: vika vova gleb
+PassengersForBusStop1: albert yana diana
