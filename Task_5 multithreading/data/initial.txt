@@ -3,5 +3,6 @@ PassengersForBus1: mike anton ivan
 PassengersForBus2: dasha benedict jerard luk
 BusesAmount: 3
 BusStopAmount: 2
+MaxBusesOnBusStop: 2
 PassengersForBusStop0: vika vova gleb
 PassengersForBusStop1: albert yana diana

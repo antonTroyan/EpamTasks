@@ -12,10 +12,8 @@ class Parser {
 
     List<String> findInformationInFile(String filename, String pattern){
         List<String> resultList = null;
-        Scanner lineScanner;
-        try {
-            lineScanner = new Scanner(new FileReader(filename));
 
+        try (Scanner lineScanner = new Scanner(new FileReader(filename))){
         while(lineScanner.hasNext()){
             String founded = lineScanner.nextLine();
             if(founded.startsWith(pattern)){

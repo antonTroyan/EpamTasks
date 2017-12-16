@@ -28,7 +28,6 @@ public class BusStop {
 
 
     public void addPassengersToBusFromBusStop(Bus bus) {
-
         if (passengersWishedToSitInBus.size() != 0) {
             for (Passenger tmp : passengersWishedToSitInBus) {
                 bus.getBusPassengers().add(tmp);
@@ -52,21 +51,16 @@ public class BusStop {
             } while (toBus == fromBusInt);
 
             for (Passenger passenger : passengersWishedChangeBus) {
-                System.out.println("Before insert passenger in bus " + buses.get(toBus) + buses.get(toBus).getBusPassengers());
                 buses.get(toBus).getBusPassengers().add(passenger);
-                System.out.println("After insert passenger in bus " + buses.get(toBus) + buses.get(toBus).getBusPassengers());
                 System.out.println(passenger + " changed bus and sit in the bus " + buses.get(toBus));
             }
 
             for (Passenger passenger : passengersWishedChangeBus) {
-                System.out.println(fromBus.getBusPassengers() + "before remove");
                 fromBus.getBusPassengers().remove(passenger);
                 System.out.println(passenger + " removed from the bus list " + fromBus);
-                System.out.println(fromBus.getBusPassengers() + "after remove");
             }
-
-            System.out.println("From bus passengers " + fromBus.getBusPassengers());
-            System.out.println("Now bus has " + buses.get(toBus).getBusId() + buses.get(toBus).getBusPassengers());
+            System.out.println("From bus " + fromBus.getBusId() + " has " + fromBus.getBusPassengers());
+            System.out.println("Now bus " + buses.get(toBus).getBusId() +" has " + buses.get(toBus).getBusPassengers());
             passengersWishedChangeBus.clear();
         }
     }

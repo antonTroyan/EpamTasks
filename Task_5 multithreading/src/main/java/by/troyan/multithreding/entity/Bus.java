@@ -5,7 +5,6 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.*;
 import java.util.concurrent.Semaphore;
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 
 public class Bus extends Thread {
@@ -16,7 +15,7 @@ public class Bus extends Thread {
     private List<Passenger> busPassengers;
     private Route busRoute;
 
-    private final static Logger LOG = LogManager.getLogger("Parser");
+    private final static Logger LOG = LogManager.getLogger("Bus");
 
     public Bus(Route busRoute, List busPassengers, Semaphore semaphore, Lock lock) {
         this.semaphore = semaphore;
@@ -42,13 +41,8 @@ public class Bus extends Thread {
                 busStop.addPassengersChangingBus(this);
                 lock.unlock();
                 System.out.println("resource unlocked by bus " + this);
-                TimeUnit.SECONDS.sleep(1);
                 busStop.checkOutBusStop(this);
             }
-
-        } catch (InterruptedException e) {
-            LOG.warn("InterruptedException " + e);
-
         } catch (IllegalMonitorStateException e) {
             LOG.warn("IllegalMonitorStateException " + e);
         }

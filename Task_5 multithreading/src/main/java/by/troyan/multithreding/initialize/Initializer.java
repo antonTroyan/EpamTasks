@@ -16,8 +16,10 @@ public class Initializer {
 
     public void initialize(String filename) {
         buses = new ArrayList<>();
-        Semaphore semaphore = new Semaphore(2);
         ReentrantLock lock = new ReentrantLock();
+
+        int maxBusesOnBusStop = checkInfoFromFile(filename,"MaxBusesOnBusStop:");
+        Semaphore semaphore = new Semaphore(maxBusesOnBusStop);
 
         List<BusStop> busStops = new ArrayList<>();
         int maxBusStopsAmount = checkInfoFromFile(filename, "BusStopAmount:");
