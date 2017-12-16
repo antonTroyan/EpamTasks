@@ -1,12 +1,16 @@
 package by.troyan.multithreding.initialize;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.*;
 
-public class Parser {
+class Parser {
+    private final static Logger LOG = LogManager.getLogger("Parser");
 
-    public List<String> findInformationInFile(String filename, String pattern){
+    List<String> findInformationInFile(String filename, String pattern){
         List<String> resultList = null;
         Scanner lineScanner;
         try {
@@ -19,11 +23,10 @@ public class Parser {
             }
         }
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            LOG.fatal("FileNotFoundException " + e);
             throw new RuntimeException();
         }
         resultList.remove(0);
-        System.out.println(resultList);
         return resultList;
     }
 }

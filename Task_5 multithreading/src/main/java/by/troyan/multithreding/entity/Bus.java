@@ -1,5 +1,8 @@
 package by.troyan.multithreding.entity;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.*;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
@@ -7,11 +10,13 @@ import java.util.concurrent.locks.Lock;
 
 public class Bus extends Thread {
     private long busId;
-    private static long idCounter = 0;
+    private static long idCounter;
     private Semaphore semaphore;
     private Lock lock;
     private List<Passenger> busPassengers;
     private Route busRoute;
+
+    private final static Logger LOG = LogManager.getLogger("Parser");
 
     public Bus(Route busRoute, List busPassengers, Semaphore semaphore, Lock lock) {
         this.semaphore = semaphore;
@@ -21,54 +26,50 @@ public class Bus extends Thread {
         busId = createID();
     }
 
-    public static long createID() {
-        return idCounter++;
-    }
+    private void startTrip() {
+        List<BusStop> busStops = busRoute.getBusStopsList();
+        System.out.println("Bus " + busId + " have " + getBusPassengers());
 
-    public void startTrip(){
-        List <BusStop> busStops = busRoute.getBusStopsList();
-
-        try{
-            for(BusStop tmp: busStops){
-                tmp.checkInBusStop(this);
-
+        try {
+            for (BusStop busStop : busStops) {
+                busStop.checkInBusStop(this);
                 lock.lock();
                 System.out.println("resource locked by bus " + this);
-                tmp.makeBusWaitersDoSmth(this);
-
-                for (Passenger passenger: busPassengers){
-                    passenger.makePassengersDoSomething(tmp,passenger,this);
+                busStop.makeBusWaitingDoRandomAction(this);
+                for (Passenger passenger : busPassengers) {
+                    passenger.makePassengersDoRandomAction(busStop, passenger, this);
                 }
-
+                busStop.addPassengersChangingBus(this);
                 lock.unlock();
                 System.out.println("resource unlocked by bus " + this);
-
                 TimeUnit.SECONDS.sleep(1);
-                tmp.checkOutBusStop(this);
+                busStop.checkOutBusStop(this);
             }
 
-        } catch (InterruptedException e){
-            System.out.println("Interrupted!!!!!!!!");
+        } catch (InterruptedException e) {
+            LOG.warn("InterruptedException " + e);
 
-        } catch (IllegalMonitorStateException e){
-            System.out.println("!!!");
+        } catch (IllegalMonitorStateException e) {
+            LOG.warn("IllegalMonitorStateException " + e);
         }
-
-        System.out.println("finish trip");
     }
 
     @Override
     public void run() {
         try {
-            System.out.println(this + " waiting permission ");
+            System.out.println(this + " waiting semaphore permission.");
             semaphore.acquire();
-            System.out.println(this + " gets permission ");
+            System.out.println(this + " gets semaphore permission.");
             startTrip();
-            System.out.println(this + " release permission ");
+            System.out.println(this + " release semaphore permission.");
             semaphore.release();
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            LOG.warn("InterruptedException " + e);
         }
+    }
+
+    private static long createID() {
+        return idCounter++;
     }
 
     public long getBusId() {

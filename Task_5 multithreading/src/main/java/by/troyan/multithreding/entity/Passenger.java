@@ -3,21 +3,13 @@ package by.troyan.multithreding.entity;
 import java.util.Random;
 
 public class Passenger {
-    private long passengerId;
-    private static long idCounter = 0;
     private String name;
 
-
     public Passenger(String name) {
-        passengerId = createID();
         this.name = name;
     }
 
-    public static long createID() {
-        return idCounter++;
-    }
-
-    public void makePassengersDoSomething(BusStop busStop, Passenger passenger, Bus bus) {
+    public void makePassengersDoRandomAction(BusStop busStop, Passenger passenger, Bus bus) {
         Random random = new Random();
         switch (random.nextInt(2)) {
             case 0:
@@ -47,11 +39,11 @@ public class Passenger {
     }
 
     private void stayInBus() {
-        System.out.println("Passenger " + name + " decided to stay in bus");
+        System.out.println(name + " decided to stay in bus");
     }
 
-    private void goToAnotherBus (BusStop busStop, Passenger passenger, Bus bus) {
-        if(busStop.getBuses().size() <= 1) {
+    private void goToAnotherBus(BusStop busStop, Passenger passenger, Bus bus) {
+        if (busStop.getBuses().size() <= 1) {
             System.out.println("there only 1 bus on the station");
             return;
         }

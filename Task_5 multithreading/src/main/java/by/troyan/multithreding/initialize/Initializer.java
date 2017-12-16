@@ -12,35 +12,38 @@ import java.util.concurrent.locks.ReentrantLock;
 
 
 public class Initializer {
-        private List<Bus> buses;
+    private List<Bus> buses;
 
-    public void initialize (String filename){
+    public void initialize(String filename) {
         buses = new ArrayList<>();
         Semaphore semaphore = new Semaphore(2);
         ReentrantLock lock = new ReentrantLock();
 
         List<BusStop> busStops = new ArrayList<>();
-        int maxBusStopsAmount = checkInfo(filename, "BusStopAmount:");
-        for(int i = 0; i < maxBusStopsAmount; i++){
-            BusStop busStop = new BusStop(createListOfPassengers(filename, "PassengersForBusStop"+i+":"));
+        int maxBusStopsAmount = checkInfoFromFile(filename, "BusStopAmount:");
+        for (int busStopCounter = 0; busStopCounter < maxBusStopsAmount; busStopCounter++) {
+            BusStop busStop = new BusStop(createListOfPassengersFromFile(filename,
+                    "PassengersForBusStop" + busStopCounter + ":"));
+
             busStops.add(busStop);
             Route.MINSK_LONDON.addBusStop(busStop);
         }
 
-        int maxBusAmount = checkInfo(filename, "BusesAmount:");
-        for(int i = 0; i < maxBusAmount; i++){
-            List<Passenger> passengerList = createListOfPassengers(filename, "PassengersForBus"+i+":");
+        int maxBusAmount = checkInfoFromFile(filename, "BusesAmount:");
+        for (int i = 0; i < maxBusAmount; i++) {
+            List<Passenger> passengerList = createListOfPassengersFromFile(filename,
+                    "PassengersForBus" + i + ":");
+
             Bus bus = new Bus(Route.MINSK_LONDON
                     , passengerList
                     , semaphore
                     , lock);
-
             buses.add(bus);
         }
     }
 
 
-    private int checkInfo(String filename, String criteria){
+    private int checkInfoFromFile(String filename, String criteria) {
         int result;
         Parser parser = new Parser();
         List<String> busesAmount = parser.findInformationInFile(filename, criteria);
@@ -49,18 +52,18 @@ public class Initializer {
         return result;
     }
 
-    private List<Passenger> createListOfPassengers(String filename, String criteria){
+    private List<Passenger> createListOfPassengersFromFile(String filename, String criteria) {
         List<Passenger> result = new ArrayList<>();
         Parser parser = new Parser();
         List<String> passengersNames = parser.findInformationInFile(filename, criteria);
-        for(String name: passengersNames){
+        for (String name : passengersNames) {
             result.add(new Passenger(name));
         }
         return result;
     }
 
-    public void startAllBuses (){
-        for(Bus bus: buses){
+    public void startAllBuses() {
+        for (Bus bus : buses) {
             bus.start();
         }
     }

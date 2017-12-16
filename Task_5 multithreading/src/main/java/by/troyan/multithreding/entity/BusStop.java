@@ -6,39 +6,35 @@ import java.util.Random;
 
 public class BusStop {
     private long busStopId;
-    private static long idCounter = 0;
-
+    private static long idCounter;
     private List<Passenger> passengersWishedToSitInBus = new ArrayList<>();
+    private List<Passenger> passengersWishedChangeBus = new ArrayList<>();
     private List<Passenger> busStopPassengers;
     private List<Bus> buses;
-    private List<Passenger> passengersWishedChangeBus =new ArrayList<>();
 
-    public BusStop (List<Passenger> busStopPassengers) {
+    public BusStop(List<Passenger> busStopPassengers) {
         busStopId = createID();
         this.busStopPassengers = busStopPassengers;
         buses = new ArrayList<>();
     }
 
-
-    public void makeBusWaitersDoSmth(Bus bus){
-        System.out.println(busStopId + "№ BusStop");
-            for (Passenger passenger: busStopPassengers){
-                passenger.makeBusWaitersDoSomething(this, passenger, bus);
-            }
-            addPassangersToBusFromBusStop(this, bus);
-            addPassengersChangingBus(bus);
+    public void makeBusWaitingDoRandomAction(Bus bus) {
+        System.out.println("№ BusStop - " + busStopId);
+        for (Passenger passenger : busStopPassengers) {
+            passenger.makeBusWaitersDoSomething(this, passenger, bus);
+        }
+        addPassengersToBusFromBusStop(bus);
     }
 
 
-    public void addPassangersToBusFromBusStop(BusStop busStop, Bus bus){
+    public void addPassengersToBusFromBusStop(Bus bus) {
 
-        if(passengersWishedToSitInBus.size() != 0){
-            for(Passenger tmp: passengersWishedToSitInBus){
+        if (passengersWishedToSitInBus.size() != 0) {
+            for (Passenger tmp : passengersWishedToSitInBus) {
                 bus.getBusPassengers().add(tmp);
             }
             System.out.println("passengers added to bus " + bus + passengersWishedToSitInBus);
-
-            for(Passenger tmp1: passengersWishedToSitInBus){
+            for (Passenger tmp1 : passengersWishedToSitInBus) {
                 busStopPassengers.remove(tmp1);
             }
             passengersWishedToSitInBus.clear();
@@ -46,33 +42,31 @@ public class BusStop {
         }
     }
 
-    public void addPassengersChangingBus(Bus fromBus){
-        if (passengersWishedChangeBus.size() != 0){
+    public void addPassengersChangingBus(Bus fromBus) {
+        if (passengersWishedChangeBus.size() != 0) {
             Random random = new Random();
             int toBus;
-            int fromBusInt = (int) fromBus.getBusId();
+            int fromBusInt = buses.indexOf(fromBus);
             do {
                 toBus = random.nextInt(buses.size());
-                System.out.println(toBus + "toBus !!!!!");
-                System.out.println((int)fromBus.getBusId());
             } while (toBus == fromBusInt);
 
-            for (Passenger passenger: passengersWishedChangeBus){
-
+            for (Passenger passenger : passengersWishedChangeBus) {
                 System.out.println("Before insert passenger in bus " + buses.get(toBus) + buses.get(toBus).getBusPassengers());
                 buses.get(toBus).getBusPassengers().add(passenger);
                 System.out.println("After insert passenger in bus " + buses.get(toBus) + buses.get(toBus).getBusPassengers());
                 System.out.println(passenger + " changed bus and sit in the bus " + buses.get(toBus));
             }
 
-            for(Passenger passenger: passengersWishedChangeBus){
+            for (Passenger passenger : passengersWishedChangeBus) {
                 System.out.println(fromBus.getBusPassengers() + "before remove");
                 fromBus.getBusPassengers().remove(passenger);
                 System.out.println(passenger + " removed from the bus list " + fromBus);
                 System.out.println(fromBus.getBusPassengers() + "after remove");
             }
+
             System.out.println("From bus passengers " + fromBus.getBusPassengers());
-            System.out.println("Now bus has "+ buses.get(toBus).getBusId() + buses.get(toBus).getBusPassengers());
+            System.out.println("Now bus has " + buses.get(toBus).getBusId() + buses.get(toBus).getBusPassengers());
             passengersWishedChangeBus.clear();
         }
     }
@@ -81,11 +75,11 @@ public class BusStop {
         return idCounter++;
     }
 
-    public void checkInBusStop(Bus bus){
+    public void checkInBusStop(Bus bus) {
         buses.add(bus);
     }
 
-    public void checkOutBusStop(Bus bus){
+    public void checkOutBusStop(Bus bus) {
         buses.remove(bus);
     }
 
@@ -129,6 +123,6 @@ public class BusStop {
 
     @Override
     public String toString() {
-        return "BusStop №" + busStopId ;
+        return "BusStop №" + busStopId;
     }
 }
