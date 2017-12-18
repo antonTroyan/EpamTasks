@@ -26,18 +26,16 @@ public class BusStop {
         addPassengersToBusFromBusStop(bus);
     }
 
-
     public void addPassengersToBusFromBusStop(Bus bus) {
         if (passengersWishedToSitInBus.size() != 0) {
-            for (Passenger tmp : passengersWishedToSitInBus) {
-                bus.getBusPassengers().add(tmp);
+            for (Passenger passenger : passengersWishedToSitInBus) {
+                bus.getBusPassengers().add(passenger);
             }
             System.out.println("passengers added to bus " + bus + passengersWishedToSitInBus);
-            for (Passenger tmp1 : passengersWishedToSitInBus) {
-                busStopPassengers.remove(tmp1);
+            for (Passenger passenger : passengersWishedToSitInBus) {
+                busStopPassengers.remove(passenger);
             }
             passengersWishedToSitInBus.clear();
-            System.out.println("list of passengers on bus station " + busStopPassengers);
         }
     }
 
@@ -46,21 +44,22 @@ public class BusStop {
             Random random = new Random();
             int toBus;
             int fromBusInt = buses.indexOf(fromBus);
+
             do {
                 toBus = random.nextInt(buses.size());
             } while (toBus == fromBusInt);
 
             for (Passenger passenger : passengersWishedChangeBus) {
                 buses.get(toBus).getBusPassengers().add(passenger);
-                System.out.println(passenger + " changed bus and sit in the bus " + buses.get(toBus));
+                System.out.println(passenger + " changed bus and sit in the bus "
+                        + buses.get(toBus));
             }
 
             for (Passenger passenger : passengersWishedChangeBus) {
                 fromBus.getBusPassengers().remove(passenger);
                 System.out.println(passenger + " removed from the bus list " + fromBus);
             }
-            System.out.println("From bus " + fromBus.getBusId() + " has " + fromBus.getBusPassengers());
-            System.out.println("Now bus " + buses.get(toBus).getBusId() +" has " + buses.get(toBus).getBusPassengers());
+
             passengersWishedChangeBus.clear();
         }
     }
@@ -97,12 +96,15 @@ public class BusStop {
         BusStop busStop = (BusStop) o;
 
         if (busStopId != busStop.busStopId) return false;
-        if (passengersWishedToSitInBus != null ? !passengersWishedToSitInBus.equals(busStop.passengersWishedToSitInBus) : busStop.passengersWishedToSitInBus != null)
+        if (passengersWishedToSitInBus != null ? !passengersWishedToSitInBus
+                .equals(busStop.passengersWishedToSitInBus) : busStop.passengersWishedToSitInBus != null)
             return false;
-        if (busStopPassengers != null ? !busStopPassengers.equals(busStop.busStopPassengers) : busStop.busStopPassengers != null)
+        if (busStopPassengers != null ? !busStopPassengers
+                .equals(busStop.busStopPassengers) : busStop.busStopPassengers != null)
             return false;
         if (buses != null ? !buses.equals(busStop.buses) : busStop.buses != null) return false;
-        return passengersWishedChangeBus != null ? passengersWishedChangeBus.equals(busStop.passengersWishedChangeBus) : busStop.passengersWishedChangeBus == null;
+        return passengersWishedChangeBus != null ? passengersWishedChangeBus
+                .equals(busStop.passengersWishedChangeBus) : busStop.passengersWishedChangeBus == null;
     }
 
     @Override

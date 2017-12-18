@@ -53,7 +53,7 @@ public class Passenger {
     }
 
     private void stayInBusStop() {
-        System.out.println("Passenger " + name + " decided to stay in bus Stop ");
+        System.out.println("Passenger " + name + " decided to stay in the bus Stop ");
     }
 
     @Override

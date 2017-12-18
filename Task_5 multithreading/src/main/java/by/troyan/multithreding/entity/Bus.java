@@ -29,23 +29,22 @@ public class Bus extends Thread {
         List<BusStop> busStops = busRoute.getBusStopsList();
         System.out.println("Bus " + busId + " have " + getBusPassengers());
 
-        try {
-            for (BusStop busStop : busStops) {
-                busStop.checkInBusStop(this);
-                lock.lock();
-                System.out.println("resource locked by bus " + this);
-                busStop.makeBusWaitingDoRandomAction(this);
-                for (Passenger passenger : busPassengers) {
-                    passenger.makePassengersDoRandomAction(busStop, passenger, this);
-                }
-                busStop.addPassengersChangingBus(this);
-                lock.unlock();
-                System.out.println("resource unlocked by bus " + this);
-                busStop.checkOutBusStop(this);
+        for (BusStop busStop : busStops) {
+            busStop.checkInBusStop(this);
+            lock.lock();
+
+            System.out.println("resource locked by bus " + this);
+            busStop.makeBusWaitingDoRandomAction(this);
+            for (Passenger passenger : busPassengers) {
+                passenger.makePassengersDoRandomAction(busStop, passenger, this);
             }
-        } catch (IllegalMonitorStateException e) {
-            LOG.warn("IllegalMonitorStateException " + e);
+            busStop.addPassengersChangingBus(this);
+
+            lock.unlock();
+            System.out.println("resource unlocked by bus " + this);
+            busStop.checkOutBusStop(this);
         }
+
     }
 
     @Override
