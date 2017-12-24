@@ -3,7 +3,7 @@ package sport.totalizator.db.jdbc;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import sport.totalizator.pool.ConnectionPool;
+import by.troyan.web.pool.ConnectionPool;
 
 import java.sql.Connection;
 

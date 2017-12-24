@@ -4,9 +4,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import sport.totalizator.dao.exception.DAOException;
-import sport.totalizator.dao.implementation.UserDAOImpl;
-import sport.totalizator.entity.User;
+import by.troyan.web.dao.exception.DAOException;
+import by.troyan.web.dao.implementation.UserDAOImpl;
+import by.troyan.web.entity.User;
 import java.util.List;
 
 

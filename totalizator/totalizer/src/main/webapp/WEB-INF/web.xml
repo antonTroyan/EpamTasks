@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>mainController</servlet-name>
-        <servlet-class>sport.totalizator.controller.MainController</servlet-class>
+        <servlet-class>by.troyan.web.controller.MainController</servlet-class>
     </servlet>
 
     <servlet-mapping>

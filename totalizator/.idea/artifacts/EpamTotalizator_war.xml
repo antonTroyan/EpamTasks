@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="EpamTotalizator:war">
+    <output-path>$PROJECT_DIR$/totalizer/target</output-path>
+    <root id="archive" name="sport.totalizator-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="EpamTotalizator:war exploded" />
+    </root>
+  </artifact>
+</component>

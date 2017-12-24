@@ -2,24 +2,117 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b03b7bf2-2345-4720-a05a-e70f362655ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_5 multithreading/data/initial.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/initialize/Initializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/initialize/Parser.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/Bus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/BusStop.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/Passenger.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/Route$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/Route.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/Test.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_2/jwd-task01-template.iml" afterPath="$PROJECT_DIR$/../Task_2/jwd-task01-template.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_5 multithreading/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/Bus.java" afterPath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/entity/Bus.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/BusStop.java" afterPath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/entity/BusStop.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/Passenger.java" afterPath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/entity/Passenger.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/Route.java" afterPath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/entity/Route.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/Test.java" afterPath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/initialize/Test.java" />
+      <change beforePath="$PROJECT_DIR$/Task3.iml" afterPath="$PROJECT_DIR$/Task3.iml" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../totalizator/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../totalizator/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/CommandEnum.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/ICommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/exception/CommandException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/factory/CommandFactory.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/AddCategoriesToRequestCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/AddCategoryCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/AddEventCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/AddEventResultCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/AddLeagueCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/AddMemberCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/BanCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ChangeLocaleCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ChangeRoleCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/FillUpBalanceCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/GetLeaguesByCategoryJsonCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/GetMembersByEventJsonCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/GetMembersByLeagueJsonCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/LoginCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/LogoutCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/MakeRateCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/RegisterCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowAddCategoryPageCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowAddEventPageCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowAddEventResultPageCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowAddLeaguePageCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowAddMemberPageCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowAdminPageCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowCategoryPageCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowEventPageCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowFillUpPageCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowLoginPageCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowMainPageCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowMakeRatePageCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowNearestEventsPageCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowPersonalPageCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowRegistrationPageCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowResultsPageCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/ShowWithdrawMoneyPage.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/UnbanCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/command/implementation/WithdrawMoneyCommand.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/controller/MainController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/CategoryDAO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/EventDAO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/EventResultDAO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/LeagueDAO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/MemberDAO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/OperationDAO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/RateDAO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/UserDAO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/exception/DAOException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/factory/DAOFactory.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/implementation/CategoryDAOImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/implementation/EventDAOImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/implementation/EventResultDAOImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/implementation/LeagueDAOImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/implementation/MemberDAOImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/implementation/OperationDAOImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/implementation/RateDAOImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/dao/implementation/UserDAOImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/entity/Category.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/entity/Event.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/entity/EventResult.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/entity/League.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/entity/Member.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/entity/Operation.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/entity/Rate.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/entity/User.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/exception/CategoryException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/exception/EventException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/exception/EventResultException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/exception/LeagueException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/exception/MemberException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/exception/OperationException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/exception/RateException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/exception/UnauthorizedException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/exception/UserException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/filter/EncodingFilter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/filter/LocaleFilter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/pool/ConnectionPool.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/pool/DBPropertiesReader.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/CategoryService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/EventResultService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/EventService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/LeagueService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/MemberService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/PaySystemService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/RateService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/UserService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/exception/ServiceException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/factory/ServiceFactory.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/implementation/CategoryServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/implementation/EventResultServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/implementation/EventServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/implementation/LeagueServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/implementation/MemberServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/implementation/PaySystemServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/implementation/RateServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/service/implementation/UserServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/util/DateParser.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/util/JsonSerializer.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/util/JspPathes.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/util/MD5Converter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/util/MessageLocalizer.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/java/sport/totalizator/util/PaginationObject.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/../totalizator/totalizer/src/main/webapp/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/test/java/sport/totalizator/dao/SelectRequestTest.java" afterPath="$PROJECT_DIR$/../totalizator/totalizer/src/test/java/sport/totalizator/dao/SelectRequestTest.java" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/test/java/sport/totalizator/dao/UserDAOTest.java" afterPath="$PROJECT_DIR$/../totalizator/totalizer/src/test/java/sport/totalizator/dao/UserDAOTest.java" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/totalizer/src/test/java/sport/totalizator/db/jdbc/ConnectionPoolTest.java" afterPath="$PROJECT_DIR$/../totalizator/totalizer/src/test/java/sport/totalizator/db/jdbc/ConnectionPoolTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -220,7 +313,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1098" />
     <option name="y" value="148" />
     <option name="width" value="1400" />
@@ -244,9 +337,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,6 +428,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -388,6 +481,68 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG.test.by.troyan.epam.task3.entity">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="by.troyan.epam.task3.test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Task3" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
     <configuration name="TriangleTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -420,60 +575,6 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -500,20 +601,6 @@
       <envs />
       <properties />
       <listeners />
-    </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="by.troyan.epam.task3.test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Task3" />
-      <envs />
     </configuration>
     <configuration name="test.by.troyan.epam.task3" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -611,6 +698,12 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.test" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.test.by.troyan.epam.task3.entity.formula" />
@@ -684,6 +777,7 @@
       <workItem from="1513070522615" duration="289000" />
       <workItem from="1513261671709" duration="852000" />
       <workItem from="1513263005483" duration="279000" />
+      <workItem from="1514117435109" duration="18000" />
     </task>
     <servers />
   </component>
@@ -720,27 +814,27 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25828000" />
+    <option name="totallyTimeSpent" value="25846000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1098" y="148" width="1400" height="1000" extended-state="7" />
+    <frame x="-9" y="-9" width="2578" height="1408" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.119335346" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18385291" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39983845" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39983845" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
