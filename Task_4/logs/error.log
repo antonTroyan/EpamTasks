@@ -739,3 +739,39 @@
 2017-12-02T18:03:17,907 [INFO ] (TextFormulaCalculator.java:31) - Math expression founded (5+1/2*(2+5*2- 5))*1200
 2017-12-02T18:03:17,907 [INFO ] (TextFormulaCalculator.java:35) - Math expression converted to polish form (5+1/2*(2+5*2- 5))*1200
 2017-12-02T18:03:17,907 [INFO ] (TextFormulaCalculator.java:39) - Math expression was calculated -10800
+2017-12-22T14:17:35,288 [INFO ] (ParametersTextFiller.java:25) - Line with I or J founded null
+2017-12-22T14:17:35,288 [INFO ] (ParametersTextFiller.java:25) - Line with I or J founded i--
+2017-12-22T14:17:35,288 [INFO ] (ParametersTextFiller.java:25) - Line with I or J founded null
+2017-12-22T14:17:35,288 [INFO ] (ParametersTextFiller.java:25) - Line with I or J founded --j
+2017-12-22T14:17:35,288 [INFO ] (ParametersTextFiller.java:25) - Line with I or J founded null
+2017-12-22T14:17:35,288 [INFO ] (ParametersTextFiller.java:25) - Line with I or J founded null
+2017-12-22T14:17:35,288 [INFO ] (ParametersTextFiller.java:25) - Line with I or J founded null
+2017-12-22T14:17:35,288 [INFO ] (ParametersTextFiller.java:25) - Line with I or J founded null
+2017-12-22T14:17:35,288 [INFO ] (ParametersTextFiller.java:25) - Line with I or J founded i--
+2017-12-22T14:17:35,288 [INFO ] (ParametersTextFiller.java:25) - Line with I or J founded ++i
+2017-12-22T14:17:35,288 [INFO ] (ParametersTextFiller.java:25) - Line with I or J founded null
+2017-12-22T14:17:35,288 [INFO ] (ParametersTextFiller.java:25) - Line with I or J founded null
+2017-12-22T14:17:35,288 [INFO ] (ParametersTextFiller.java:25) - Line with I or J founded --j
+2017-12-22T14:17:35,288 [INFO ] (ParametersTextFiller.java:25) - Line with I or J founded null
+2017-12-22T14:17:35,288 [INFO ] (ParametersTextFiller.java:25) - Line with I or J founded null
+2017-12-22T14:17:35,288 [INFO ] (ParametersTextFiller.java:25) - Line with I or J founded null
+2017-12-22T14:17:35,288 [INFO ] (TextFormulaCalculator.java:31) - Math expression founded 13+ 5
+2017-12-22T14:17:35,288 [INFO ] (TextFormulaCalculator.java:35) - Math expression converted to polish form 13+ 5
+2017-12-22T14:17:35,305 [INFO ] (TextFormulaCalculator.java:39) - Math expression was calculated 18
+2017-12-22T14:17:35,306 [INFO ] (TextFormulaCalculator.java:31) - Math expression founded 3+5
+2017-12-22T14:17:35,306 [INFO ] (TextFormulaCalculator.java:35) - Math expression converted to polish form 3+5
+2017-12-22T14:17:35,307 [INFO ] (TextFormulaCalculator.java:39) - Math expression was calculated 8
+2017-12-22T14:17:35,307 [INFO ] (TextFormulaCalculator.java:31) - Math expression founded 6+9*(3-4)
+2017-12-22T14:17:35,307 [INFO ] (TextFormulaCalculator.java:35) - Math expression converted to polish form 6+9*(3-4)
+2017-12-22T14:17:35,310 [INFO ] (TextFormulaCalculator.java:39) - Math expression was calculated 15
+2017-12-22T14:17:35,310 [INFO ] (TextFormulaCalculator.java:31) - Math expression founded 5*(1*2*(2*(4*(5- 6 + 4)-3)-2)-1)
+2017-12-22T14:17:35,310 [INFO ] (TextFormulaCalculator.java:35) - Math expression converted to polish form 5*(1*2*(2*(4*(5- 6 + 4)-3)-2)-1)
+2017-12-22T14:17:35,310 [INFO ] (TextFormulaCalculator.java:39) - Math expression was calculated -355
+2017-12-22T14:17:35,310 [INFO ] (TextFormulaCalculator.java:31) - Math expression founded (71-(2*4*(3*(2-1/2*2)
+-2)-10/2))*4
+2017-12-22T14:17:35,310 [INFO ] (TextFormulaCalculator.java:35) - Math expression converted to polish form (71-(2*4*(3*(2-1/2*2)
+-2)-10/2))*4
+2017-12-22T14:17:35,310 [INFO ] (TextFormulaCalculator.java:39) - Math expression was calculated -156
+2017-12-22T14:17:35,310 [INFO ] (TextFormulaCalculator.java:31) - Math expression founded (5+1/2*(2+5*2- 5))*1200
+2017-12-22T14:17:35,310 [INFO ] (TextFormulaCalculator.java:35) - Math expression converted to polish form (5+1/2*(2+5*2- 5))*1200
+2017-12-22T14:17:35,310 [INFO ] (TextFormulaCalculator.java:39) - Math expression was calculated -10800

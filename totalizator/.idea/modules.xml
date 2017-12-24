@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/totalizator.iml" filepath="$PROJECT_DIR$/totalizator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.EE.Totalizator-master.iml" filepath="$PROJECT_DIR$/.idea/Java.EE.Totalizator-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/totalizer/sport.totalizator.iml" filepath="$PROJECT_DIR$/totalizer/sport.totalizator.iml" />
     </modules>
   </component>
 </project>
