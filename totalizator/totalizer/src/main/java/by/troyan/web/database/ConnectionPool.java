@@ -1,4 +1,4 @@
-package by.troyan.web.pool;
+package by.troyan.web.database;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

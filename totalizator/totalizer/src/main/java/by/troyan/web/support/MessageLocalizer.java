@@ -1,4 +1,4 @@
-package by.troyan.web.util;
+package by.troyan.web.support;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;

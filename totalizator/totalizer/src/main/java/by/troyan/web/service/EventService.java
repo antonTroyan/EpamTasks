@@ -3,7 +3,7 @@ package by.troyan.web.service;
 import by.troyan.web.entity.Event;
 import by.troyan.web.exception.EventException;
 import by.troyan.web.service.exception.ServiceException;
-import by.troyan.web.util.PaginationObject;
+import by.troyan.web.support.PaginationObject;
 
 import java.util.List;
 

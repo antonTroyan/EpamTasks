@@ -1,4 +1,4 @@
-package by.troyan.web.util;
+package by.troyan.web.support;
 
 import java.util.List;
 

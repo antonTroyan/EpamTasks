@@ -1,4 +1,4 @@
-package by.troyan.web.util;
+package by.troyan.web.support;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

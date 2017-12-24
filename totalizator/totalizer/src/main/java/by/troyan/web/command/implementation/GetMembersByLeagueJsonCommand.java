@@ -6,7 +6,7 @@ import by.troyan.web.entity.Member;
 import by.troyan.web.service.MemberService;
 import by.troyan.web.service.exception.ServiceException;
 import by.troyan.web.service.factory.ServiceFactory;
-import by.troyan.web.util.JsonSerializer;
+import by.troyan.web.support.JsonSerializer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

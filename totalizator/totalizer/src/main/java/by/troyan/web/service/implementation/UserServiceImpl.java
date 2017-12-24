@@ -8,7 +8,7 @@ import by.troyan.web.entity.User;
 import by.troyan.web.exception.UserException;
 import by.troyan.web.service.UserService;
 import by.troyan.web.service.exception.ServiceException;
-import by.troyan.web.util.MD5Converter;
+import by.troyan.web.support.MD5Converter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -3,7 +3,7 @@ package by.troyan.web.dao.implementation;
 import by.troyan.web.dao.RateDAO;
 import by.troyan.web.dao.exception.DAOException;
 import by.troyan.web.entity.Rate;
-import by.troyan.web.pool.ConnectionPool;
+import by.troyan.web.database.ConnectionPool;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

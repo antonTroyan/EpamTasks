@@ -4,7 +4,7 @@ import by.troyan.web.dao.OperationDAO;
 import by.troyan.web.dao.exception.DAOException;
 import by.troyan.web.entity.Operation;
 import by.troyan.web.exception.OperationException;
-import by.troyan.web.pool.ConnectionPool;
+import by.troyan.web.database.ConnectionPool;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

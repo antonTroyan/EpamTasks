@@ -5,7 +5,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import by.troyan.web.pool.ConnectionPool;
+import by.troyan.web.database.ConnectionPool;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

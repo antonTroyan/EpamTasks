@@ -1,4 +1,4 @@
-package by.troyan.web.pool;
+package by.troyan.web.database;
 
 import java.util.Properties;
 import java.util.ResourceBundle;

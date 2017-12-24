@@ -8,7 +8,7 @@ import by.troyan.web.exception.UnauthorizedException;
 import by.troyan.web.service.EventService;
 import by.troyan.web.service.exception.ServiceException;
 import by.troyan.web.service.factory.ServiceFactory;
-import by.troyan.web.util.PaginationObject;
+import by.troyan.web.support.PaginationObject;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

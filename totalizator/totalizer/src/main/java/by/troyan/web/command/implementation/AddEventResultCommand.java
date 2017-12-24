@@ -10,7 +10,7 @@ import by.troyan.web.exception.UnauthorizedException;
 import by.troyan.web.service.EventResultService;
 import by.troyan.web.service.exception.ServiceException;
 import by.troyan.web.service.factory.ServiceFactory;
-import by.troyan.web.util.MessageLocalizer;
+import by.troyan.web.support.MessageLocalizer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
