@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Java.EE.Totalizator-master.iml" filepath="$PROJECT_DIR$/.idea/Java.EE.Totalizator-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/totalizer/sport.totalizator.iml" filepath="$PROJECT_DIR$/totalizer/sport.totalizator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/totalizer/EpamTotalizator.iml" filepath="$PROJECT_DIR$/totalizer/EpamTotalizator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaTotalizator.iml" filepath="$PROJECT_DIR$/.idea/JavaTotalizator.iml" />
     </modules>
   </component>
 </project>
