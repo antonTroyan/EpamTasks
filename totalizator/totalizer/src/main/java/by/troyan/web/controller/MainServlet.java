@@ -33,9 +33,6 @@ public class MainServlet extends HttpServlet {
         String commandName = req.getParameter("command");
 
 
-        System.out.println(commandName + "command name");
-
-
         try {
             CommandEnum commandEnum = CommandEnum.getEnum(commandName);
             command = commandFactory.createCommand(commandEnum);
