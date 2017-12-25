@@ -23,6 +23,18 @@ function unban(){
     return false;
 }
 
+
+
+function deleteUser(){
+    post("/main?command=deleteUser", idList);
+    setTimeout(function(){
+        changeUserListOnFront(false, idList);
+        idList = [];
+    }, 0);
+    resetCheckboxes();
+    return false;
+}
+
 function changeRole(){
     var role = document.getElementById("role").value;
     post("/main?command=changeRole", idList, role);
@@ -32,6 +44,12 @@ function changeRole(){
     }, 0);
     resetCheckboxes();
     return false;
+}
+
+function changeUserListOnFront(role, idList){
+    idList.forEach(function(id){
+        document.getElementById(id).parentElement.nextElementSibling.nextElementSibling.firstElementChild.innerHTML = role;
+    });
 }
 
 function changeRoleOnFront(role, idList){

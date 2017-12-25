@@ -46,7 +46,8 @@ public enum CommandEnum {
     SHOW_ADMIN_PAGE("showAdminPage"),
     BAN("ban"),
     UNBAN("unban"),
-    CHANGE_ROLE("changeRole");
+    CHANGE_ROLE("changeRole"),
+    DELETE_USER("deleteUser");
 
 
     private String value;

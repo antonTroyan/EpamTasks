@@ -48,6 +48,9 @@
                         <button class="admin-btn" onclick="ban()"><fmt:message bundle="${loc}" key="label.ban" /></button>
                         <button class="admin-btn" onclick="unban()"><fmt:message bundle="${loc}" key="label.unban" /></button>
                     </div>
+                    <div class="input-div">
+                        <button class="admin-btn" onclick="deleteUser()"><fmt:message bundle="${loc}" key="label.delete-user" /></button>
+                    </div>
                 </form>
             </div>
         </div>

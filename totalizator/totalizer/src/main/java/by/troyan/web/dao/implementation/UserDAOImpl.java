@@ -496,4 +496,31 @@ public class UserDAOImpl implements UserDAO {
             }
         }
     }
+
+    @Override
+    public void deleteUsers(List<Integer> idList) throws DAOException {
+        Connection connection = null;
+        PreparedStatement statement = null;
+        try{
+            connection = pool.getConnection();
+            try {
+                statement = connection.prepareStatement(insertListToQuery(SQL_FOR_DELETE_USERS, idList));
+                statement.executeUpdate();
+            } catch (SQLException exc) {
+                LOG.error(exc);
+                throw new DAOException(exc);
+            } finally {
+                if(statement != null){
+                    statement.close();
+                }
+            }
+        } catch (SQLException exc){
+            LOG.error(exc);
+            throw new DAOException(exc);
+        } finally {
+            if(connection != null){
+                pool.returnConnectionToPool(connection);
+            }
+        }
+    }
 }

@@ -133,4 +133,14 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    @Override
+    public void deleteUsers(List<Integer> idList) throws ServiceException {
+        try{
+            userDAO.deleteUsers(idList);
+        } catch (DAOException exc){
+            LOG.error(exc);
+            throw new ServiceException(exc);
+        }
+    }
+
 }

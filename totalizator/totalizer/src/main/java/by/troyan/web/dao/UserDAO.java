@@ -35,4 +35,6 @@ public interface UserDAO {
 
     void changeRoleForUsers(List<Integer> idList, String role) throws DAOException;
 
+    void deleteUsers(List<Integer> idList) throws DAOException;
+
 }

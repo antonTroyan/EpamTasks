@@ -25,4 +25,6 @@ public interface UserService {
     void unbanUsers(List<Integer> idList) throws ServiceException;
 
     void changeRoleForUsers(List<Integer> idList, String role) throws ServiceException;
+
+    void deleteUsers(List<Integer> idList) throws ServiceException;
 }
