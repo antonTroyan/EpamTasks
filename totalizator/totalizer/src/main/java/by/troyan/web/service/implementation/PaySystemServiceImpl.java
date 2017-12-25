@@ -19,8 +19,8 @@ import java.math.BigDecimal;
  */
 
 public class PaySystemServiceImpl implements PaySystemService {
+    private final static Logger LOG = LogManager.getLogger(PaySystemServiceImpl.class);
     private static final PaySystemServiceImpl instance = new PaySystemServiceImpl();
-    private final static Logger LOG = LogManager.getLogger("PaySystemServiceImpl");
 
     private OperationDAO operationDAO;
     private UserDAO userDAO;

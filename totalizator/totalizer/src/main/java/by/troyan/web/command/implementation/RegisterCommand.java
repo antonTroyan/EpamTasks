@@ -20,10 +20,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class RegisterCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("RegisterCommand");
+    private final static Logger LOG = LogManager.getLogger(RegisterCommand.class);
 
     @Override
-    public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException {
+    public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException,
+            CommandException, UnauthorizedException {
         UserService userService = ServiceFactory.getInstance().getUserService();
         String login = req.getParameter("login");
         String password = req.getParameter("password");

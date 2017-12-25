@@ -7,7 +7,7 @@
     <link href="<c:url value="styles/styles.css" />" rel="stylesheet" />
     <link rel="stylesheet" href="<c:url value="styles/form.css" />" />
     <link rel="stylesheet" href="<c:url value="styles/admin.css" />" />
-    <script src="js/admin.js"></script>
+    <script src="javascript/admin.js"></script>
     <title>Totalizator</title>
 </head>
 <body>
@@ -21,10 +21,10 @@
                     <div class="input-div">
                         <table class="user-table">
                             <thead>
-                                <th><fmt:message bundle="${loc}" key="label.mark" /></th>
-                                <th><fmt:message bundle="${loc}" key="label.username" /></th>
-                                <th><fmt:message bundle="${loc}" key="label.role" /></th>
-                                <th><fmt:message bundle="${loc}" key="label.block" /></th>
+                            <th><fmt:message bundle="${loc}" key="label.mark" /></th>
+                            <th><fmt:message bundle="${loc}" key="label.username" /></th>
+                            <th><fmt:message bundle="${loc}" key="label.role" /></th>
+                            <th><fmt:message bundle="${loc}" key="label.block" /></th>
                             </thead>
                             <c:forEach items="${users}" var="user">
                                 <tr>
@@ -57,4 +57,5 @@
 </div>
 </body>
 </html>
+
 

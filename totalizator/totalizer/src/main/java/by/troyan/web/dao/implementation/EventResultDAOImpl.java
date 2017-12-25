@@ -2,8 +2,8 @@ package by.troyan.web.dao.implementation;
 
 import by.troyan.web.dao.EventResultDAO;
 import by.troyan.web.dao.exception.DAOException;
-import by.troyan.web.entity.EventResult;
 import by.troyan.web.database.ConnectionPool;
+import by.troyan.web.entity.EventResult;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,6 +18,7 @@ import java.sql.SQLException;
  */
 
 public class EventResultDAOImpl implements EventResultDAO {
+    private final static Logger LOG = LogManager.getLogger(EventResultDAOImpl.class);
     private static final String SQL_FOR_GET_EVENT_RESULT_BY_EVENT = "SELECT `event_id`, `winner_id`, `loser_id`, " +
             "`winner_score`, `loser_score` " +
             "FROM `eventresult` " +
@@ -26,7 +27,7 @@ public class EventResultDAOImpl implements EventResultDAO {
             "`winner_score`, `loser_id`, `loser_score`) " +
             "VALUES(?, ?, ?, ?, ?)";
 
-    private final static Logger LOG = LogManager.getLogger("EventResultDAOImpl");
+
     private static final EventResultDAOImpl instance = new EventResultDAOImpl();
     private static final ConnectionPool pool = ConnectionPool.getConnectionPool();
 

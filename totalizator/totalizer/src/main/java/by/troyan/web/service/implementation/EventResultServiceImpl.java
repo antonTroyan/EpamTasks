@@ -23,8 +23,9 @@ import java.util.List;
  */
 
 public class EventResultServiceImpl implements EventResultService {
+    private final static Logger LOG = LogManager.getLogger(EventResultServiceImpl.class);
     private static final EventResultServiceImpl instance = new EventResultServiceImpl();
-    private final static Logger LOG = LogManager.getLogger("EventResultServiceImpl");
+
     EventResultDAO eventResultDAO;
     EventDAO eventDAO;
     RateDAO rateDAO;

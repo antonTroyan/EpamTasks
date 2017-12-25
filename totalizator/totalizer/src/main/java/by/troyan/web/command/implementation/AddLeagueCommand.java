@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class AddLeagueCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("AddLeagueCommand");
+    private final static Logger LOG = LogManager.getLogger(AddLeagueCommand.class);
     private final LeagueService leagueService = ServiceFactory.getInstance().getLeagueService();
 
     @Override

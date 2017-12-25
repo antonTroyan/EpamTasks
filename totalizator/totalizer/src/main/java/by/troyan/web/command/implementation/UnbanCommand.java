@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UnbanCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("UnbanCommand");
+    private final static Logger LOG = LogManager.getLogger(UnbanCommand.class);
     private UserService userService = ServiceFactory.getInstance().getUserService();
 
     @Override

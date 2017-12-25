@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class AddMemberCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("AddMemberCommand");
+    private final static Logger LOG = LogManager.getLogger(AddMemberCommand.class);
     private final MemberService memberService = ServiceFactory.getInstance().getMemberService();
 
     @Override

@@ -2,8 +2,8 @@ package by.troyan.web.dao.implementation;
 
 import by.troyan.web.dao.LeagueDAO;
 import by.troyan.web.dao.exception.DAOException;
-import by.troyan.web.entity.League;
 import by.troyan.web.database.ConnectionPool;
+import by.troyan.web.entity.League;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,6 +20,7 @@ import java.util.List;
  */
 
 public class LeagueDAOImpl implements LeagueDAO {
+    private final static Logger LOG = LogManager.getLogger(LeagueDAOImpl.class);
     private final static String SQL_FOR_ADD_LEAGUE = "INSERT INTO `league`(`event_category_id`, `league_name`) " +
             "VALUES(?, ?);";
     private static final String SQL_FOR_GET_LEAGUES_BY_CATEGORY = "SELECT `league_id` AS `id`, `league_name` AS `name` " +
@@ -27,7 +28,6 @@ public class LeagueDAOImpl implements LeagueDAO {
             "WHERE `event_category_id` = ?;";
 
 
-    private final static Logger LOG = LogManager.getLogger("LeagueDAOImpl");
     private static final LeagueDAOImpl instance = new LeagueDAOImpl();
     private static final ConnectionPool pool = ConnectionPool.getConnectionPool();
 

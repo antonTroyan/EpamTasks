@@ -2,8 +2,8 @@ package by.troyan.web.dao.implementation;
 
 import by.troyan.web.dao.MemberDAO;
 import by.troyan.web.dao.exception.DAOException;
-import by.troyan.web.entity.Member;
 import by.troyan.web.database.ConnectionPool;
+import by.troyan.web.entity.Member;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,6 +20,7 @@ import java.util.List;
  */
 
 public class MemberDAOImpl implements MemberDAO {
+    private final static Logger LOG = LogManager.getLogger(MemberDAOImpl.class);
     private static final String SQL_FOR_GET_MEMBER_NAME_BY_ID = "SELECT `member_name` " +
             "FROM `eventmember` " +
             "WHERE `member_id` = ?;";
@@ -36,7 +37,6 @@ public class MemberDAOImpl implements MemberDAO {
             "ON `eventmember`.`member_id` = `event_m2m_eventmember`.`member_id` " +
             "WHERE `event_m2m_eventmember`.`event_id` = ?;";
 
-    private final static Logger LOG = LogManager.getLogger("MemberDAOImpl");
     private static final MemberDAOImpl instance = new MemberDAOImpl();
     private static final ConnectionPool pool = ConnectionPool.getConnectionPool();
 

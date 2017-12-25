@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class ShowAddEventResultPageCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("ShowAddEventResultPageCommand");
+    private final static Logger LOG = LogManager.getLogger(ShowAddEventResultPageCommand.class);
     private MemberService memberService = ServiceFactory.getInstance().getMemberService();
 
     @Override

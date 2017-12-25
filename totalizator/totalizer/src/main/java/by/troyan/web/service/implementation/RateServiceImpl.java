@@ -14,8 +14,8 @@ import org.apache.logging.log4j.Logger;
 import java.math.BigDecimal;
 
 public class RateServiceImpl implements RateService {
+    private final static Logger LOG = LogManager.getLogger(RateServiceImpl.class);
     private static final RateServiceImpl instance = new RateServiceImpl();
-    private final static Logger LOG = LogManager.getLogger("RateServiceImpl");
 
     private UserDAO userDAO;
     private RateDAO rateDAO;

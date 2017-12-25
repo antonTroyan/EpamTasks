@@ -19,7 +19,7 @@ import java.util.List;
  */
 
 public class UserServiceImpl implements UserService {
-    private final static Logger LOG = LogManager.getLogger("UserServiceImpl");
+    private final static Logger LOG = LogManager.getLogger(UserServiceImpl.class);
     private static final UserServiceImpl instance = new UserServiceImpl();
     private UserDAO userDAO;
     private RateDAO rateDAO;
@@ -132,4 +132,5 @@ public class UserServiceImpl implements UserService {
             throw new ServiceException(exc);
         }
     }
+
 }

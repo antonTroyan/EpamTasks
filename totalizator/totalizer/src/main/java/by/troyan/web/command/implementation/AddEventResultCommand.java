@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class AddEventResultCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("AddEventResultCommand");
+    private final static Logger LOG = LogManager.getLogger(AddEventResultCommand.class);
     EventResultService eventResultService = ServiceFactory.getInstance().getEventResultService();
 
     @Override

@@ -2,8 +2,8 @@ package by.troyan.web.dao.implementation;
 
 import by.troyan.web.dao.CategoryDAO;
 import by.troyan.web.dao.exception.DAOException;
-import by.troyan.web.entity.Category;
 import by.troyan.web.database.ConnectionPool;
+import by.troyan.web.entity.Category;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -16,11 +16,11 @@ import java.util.List;
  */
 
 public class CategoryDAOImpl implements CategoryDAO {
+    private final static Logger LOG = LogManager.getLogger(CategoryDAOImpl.class);
     private static final String SQL_FOR_ADD_CATEGORY = "INSERT INTO `eventcategory` (`category_name`) VALUES (?);";
     private static final String SQL_FOR_GET_ALL_CATEGORIES = "SELECT * FROM `eventcategory`";
 
     private static final CategoryDAOImpl instance = new CategoryDAOImpl();
-    private final static Logger LOG = LogManager.getLogger("CategoryDAOImpl");
     private final ConnectionPool pool = ConnectionPool.getConnectionPool();
 
     private CategoryDAOImpl() {}

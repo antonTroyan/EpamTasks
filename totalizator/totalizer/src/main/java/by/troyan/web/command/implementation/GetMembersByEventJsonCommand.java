@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GetMembersByEventJsonCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("GetMembersByEventJsonCommand");
+    private final static Logger LOG = LogManager.getLogger(GetMembersByEventJsonCommand.class);
     private MemberService memberService = ServiceFactory.getInstance().getMemberService();
 
     @Override

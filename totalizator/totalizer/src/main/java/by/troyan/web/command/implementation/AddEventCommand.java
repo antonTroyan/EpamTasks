@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AddEventCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("AddEventCommand");
+    private final static Logger LOG = LogManager.getLogger(AddEventCommand.class);
 
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException,

@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class ShowAdminPageCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("ShowAdminPageCommand");
+    private final static Logger LOG = LogManager.getLogger(ShowAdminPageCommand.class);
     private UserService userService = ServiceFactory.getInstance().getUserService();
 
     @Override

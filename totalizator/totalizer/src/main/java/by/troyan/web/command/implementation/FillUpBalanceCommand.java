@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class FillUpBalanceCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("FillUpBalanceCommand");
+    private final static Logger LOG = LogManager.getLogger(FillUpBalanceCommand.class);
     private PaySystemService paySystemService = ServiceFactory.getInstance().getPaySystemService();
 
     @Override

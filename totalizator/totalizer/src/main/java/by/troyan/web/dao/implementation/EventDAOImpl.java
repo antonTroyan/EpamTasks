@@ -3,8 +3,8 @@ package by.troyan.web.dao.implementation;
 
 import by.troyan.web.dao.EventDAO;
 import by.troyan.web.dao.exception.DAOException;
-import by.troyan.web.entity.Event;
 import by.troyan.web.database.ConnectionPool;
+import by.troyan.web.entity.Event;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

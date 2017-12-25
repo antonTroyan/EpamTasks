@@ -12,7 +12,7 @@ import java.security.NoSuchAlgorithmException;
  */
 
 public class MD5Converter {
-    private final static Logger LOG = LogManager.getLogger("MD5Converter");
+    private final static Logger LOG = LogManager.getLogger(MD5Converter.class);
 
     public static String getHash(String string){
         MessageDigest messageDigest = null;

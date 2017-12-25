@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ChangeRoleCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("ChangeRoleCommand");
+    private final static Logger LOG = LogManager.getLogger(ChangeRoleCommand.class);
     private UserService userService = ServiceFactory.getInstance().getUserService();
 
     @Override

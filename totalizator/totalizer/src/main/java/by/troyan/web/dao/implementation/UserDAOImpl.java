@@ -2,9 +2,9 @@ package by.troyan.web.dao.implementation;
 
 import by.troyan.web.dao.UserDAO;
 import by.troyan.web.dao.exception.DAOException;
+import by.troyan.web.database.ConnectionPool;
 import by.troyan.web.entity.User;
 import by.troyan.web.exception.UserException;
-import by.troyan.web.database.ConnectionPool;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,8 +18,8 @@ import java.util.List;
  */
 
 public class UserDAOImpl implements UserDAO {
+    private final static Logger LOG = LogManager.getLogger(UserDAOImpl.class);
     private static final UserDAOImpl instance = new UserDAOImpl();
-    private final static Logger LOG = LogManager.getLogger("UserDAOImpl");
     private final ConnectionPool pool = ConnectionPool.getConnectionPool();
     private static final String SQL_FOR_GET_ALL_USERS = "SELECT * FROM `user`";
     private static final String SQL_FOR_CREATE_USER = "INSERT INTO `user`(`login`, `pass_hash`, `email`) VALUES (?, ?, ?);";
@@ -51,6 +51,8 @@ public class UserDAOImpl implements UserDAO {
     private static final String SQL_FOR_CHANGE_ROLE_FOR_USERS = "UPDATE `user` " +
             "SET `role` = ? " +
             "WHERE `user_id` in (&);";
+    private static final String SQL_FOR_DELETE_USERS = "DELETE FROM `user` " +
+            " WHERE `user_id`=(?)";
 
     private UserDAOImpl() {}
 

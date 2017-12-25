@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class WithdrawMoneyCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("WithdrawMoneyCommand");
+    private final static Logger LOG = LogManager.getLogger(WithdrawMoneyCommand.class);
     private PaySystemService paySystemService = ServiceFactory.getInstance().getPaySystemService();
 
     @Override

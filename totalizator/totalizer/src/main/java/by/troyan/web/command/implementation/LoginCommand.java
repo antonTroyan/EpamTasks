@@ -21,7 +21,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 public class LoginCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("LoginCommand");
+    private final static Logger LOG = LogManager.getLogger(LoginCommand.class);
 
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException,

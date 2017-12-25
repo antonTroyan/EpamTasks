@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class MakeRateCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("MakeRateCommand");
+    private final static Logger LOG = LogManager.getLogger(MakeRateCommand.class);
     private RateService rateService = ServiceFactory.getInstance().getRateService();
 
     @Override

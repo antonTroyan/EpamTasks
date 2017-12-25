@@ -25,8 +25,8 @@ import java.util.List;
  */
 
 public class EventServiceImpl implements EventService {
+    private final static Logger LOG = LogManager.getLogger(EventServiceImpl.class);
     private static final EventServiceImpl instance = new EventServiceImpl();
-    private final static Logger LOG = LogManager.getLogger("EventServiceImpl");
 
     private EventDAO eventDAO;
     private MemberDAO memberDAO;

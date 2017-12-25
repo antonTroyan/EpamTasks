@@ -2,9 +2,9 @@ package by.troyan.web.dao.implementation;
 
 import by.troyan.web.dao.OperationDAO;
 import by.troyan.web.dao.exception.DAOException;
+import by.troyan.web.database.ConnectionPool;
 import by.troyan.web.entity.Operation;
 import by.troyan.web.exception.OperationException;
-import by.troyan.web.database.ConnectionPool;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,6 +15,7 @@ import java.sql.*;
  */
 
 public class OperationDAOImpl implements OperationDAO {
+    private final static Logger LOG = LogManager.getLogger(OperationDAOImpl.class);
     private static final long ONE_DAY = 86_400_000;
     public static final String INPUT = "INPUT";
     public static final String OUTPUT = "OUTPUT";
@@ -27,7 +28,6 @@ public class OperationDAOImpl implements OperationDAO {
             "DESC " +
             "LIMIT 1;";
 
-    private final static Logger LOG = LogManager.getLogger("OperationDAOImpl");
     private static final OperationDAOImpl instance = new OperationDAOImpl();
     private final ConnectionPool pool = ConnectionPool.getConnectionPool();
 

@@ -8,6 +8,7 @@ package by.troyan.web.command;
 
 
 public enum CommandEnum {
+
     SHOW_MAIN_PAGE("showMainPage"),
     SHOW_ERROR_PAGE("showErrorPage"),
     SHOW_NEAREST_EVENTS_PAGE_COMMAND("showNearestEventsPage"),

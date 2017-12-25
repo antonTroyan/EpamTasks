@@ -19,7 +19,7 @@ import java.io.IOException;
 
 
 public class ShowEventPageCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("ShowEventPageCommand");
+    private final static Logger LOG = LogManager.getLogger(ShowEventPageCommand.class);
 
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException {

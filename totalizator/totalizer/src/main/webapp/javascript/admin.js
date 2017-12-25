@@ -1,6 +1,9 @@
 var idList = [];
 
 function ban(){
+
+    console.log("ban command");
+
     post("/main?command=ban", idList);
     setTimeout(function(){
         changeBanStatusOnFront(true, idList);

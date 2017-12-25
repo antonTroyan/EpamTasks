@@ -34,4 +34,5 @@ public interface UserDAO {
     void unbanUsers(List<Integer> idList) throws DAOException;
 
     void changeRoleForUsers(List<Integer> idList, String role) throws DAOException;
+
 }

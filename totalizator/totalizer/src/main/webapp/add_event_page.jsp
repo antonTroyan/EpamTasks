@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <link href="<c:url value="styles/styles.css" />" rel="stylesheet" />
     <link rel="stylesheet" href="<c:url value="styles/form.css" />" />
-    <script src="<c:url value="js/load_data.js" />"></script>
+    <script src="<c:url value="javascript/load_data.js" />"></script>
     <link rel="stylesheet" type="text/css" href="<c:url value="styles/jquery/jquery.datetimepicker.css" />"/>
     <title>Totalizator</title>
 </head>

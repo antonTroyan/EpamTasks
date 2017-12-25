@@ -7,7 +7,7 @@
     <link href="<c:url value="styles/styles.css" />" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="<c:url value="styles/form.css" />" />
-    <script src="<c:url value="js/validation.js" />"></script>
+    <script src="<c:url value="javascript/validation.js" />"></script>
     <title>Totalizator</title>
 </head>
 <body>

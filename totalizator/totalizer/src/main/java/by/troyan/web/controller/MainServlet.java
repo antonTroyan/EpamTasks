@@ -21,7 +21,7 @@ import java.io.IOException;
 
 public class MainServlet extends HttpServlet {
     private static final CommandFactory commandFactory = CommandFactory.getFactory();
-    private final static Logger LOG = LogManager.getLogger("MainServlet");
+    private final static Logger LOG = LogManager.getLogger(MainServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -31,6 +31,11 @@ public class MainServlet extends HttpServlet {
     private void processRequest(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ICommand command = null;
         String commandName = req.getParameter("command");
+
+
+        System.out.println(commandName + "command name");
+
+
         try {
             CommandEnum commandEnum = CommandEnum.getEnum(commandName);
             command = commandFactory.createCommand(commandEnum);

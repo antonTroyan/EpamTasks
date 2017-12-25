@@ -15,7 +15,7 @@ import java.io.IOException;
 
 public class AddCategoriesToRequestCommand implements ICommand {
 
-    private final static Logger LOG = LogManager.getLogger("AddCategoriesToRequestCommand");
+    private final static Logger LOG = LogManager.getLogger(AddCategoriesToRequestCommand.class);
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException,
             CommandException, UnauthorizedException {

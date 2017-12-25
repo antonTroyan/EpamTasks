@@ -2,8 +2,8 @@ package by.troyan.web.dao.implementation;
 
 import by.troyan.web.dao.RateDAO;
 import by.troyan.web.dao.exception.DAOException;
-import by.troyan.web.entity.Rate;
 import by.troyan.web.database.ConnectionPool;
+import by.troyan.web.entity.Rate;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,6 +21,7 @@ import static by.troyan.web.entity.Rate.*;
  */
 
 public class RateDAOImpl implements RateDAO {
+    private final static Logger LOG = LogManager.getLogger(RateDAOImpl.class);
     private static final String SQL_FOR_GET_FULL_MONEY_AMOUNT_FOR_EVENT = "SELECT sum(`money`) AS `money` " +
             "FROM `rate` " +
             "WHERE `event_id` = ?;";
@@ -57,7 +58,6 @@ public class RateDAOImpl implements RateDAO {
                 "VALUES(?, ?, ?, ?, ?, ?, ?, ?);");
     }
 
-    private final static Logger LOG = LogManager.getLogger("RateDAOImpl");
     private static final RateDAOImpl instance = new RateDAOImpl();
     private static final ConnectionPool pool = ConnectionPool.getConnectionPool();
 

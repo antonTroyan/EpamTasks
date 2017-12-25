@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class AddCategoryCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("AddCategoryCommand");
+    private final static Logger LOG = LogManager.getLogger(AddCategoryCommand.class);
     private final CategoryService categoryService = ServiceFactory.getInstance().getCategoryService();
 
     @Override

@@ -17,7 +17,7 @@ import java.util.List;
  */
 
 public class LeagueServiceImpl implements LeagueService {
-    private final static Logger LOG = LogManager.getLogger("LeagueServiceImpl");
+    private final static Logger LOG = LogManager.getLogger(LeagueServiceImpl.class);
     private static final LeagueServiceImpl instance = new LeagueServiceImpl();
     private LeagueDAO leagueDAO;
 

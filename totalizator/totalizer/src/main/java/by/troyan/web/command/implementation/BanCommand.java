@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BanCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("BanCommand");
+    private final static Logger LOG = LogManager.getLogger(BanCommand.class);
     private UserService userService = ServiceFactory.getInstance().getUserService();
 
     @Override

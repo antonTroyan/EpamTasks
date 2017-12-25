@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <link href="<c:url value="styles/styles.css" />" rel="stylesheet" />
     <link rel="stylesheet" href="<c:url value="styles/form.css" />" />
-    <script src="<c:url value="js/script_for_make_rate.js" />"></script>
+    <script src="<c:url value="javascript/script_for_make_rate.js" />"></script>
     <title>Totalizator</title>
 </head>
 <body>

@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GetMembersByLeagueJsonCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger("GetMembersByLeagueJsonCommand");
+    private final static Logger LOG = LogManager.getLogger(GetMembersByLeagueJsonCommand.class);
 
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException {

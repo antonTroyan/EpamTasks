@@ -15,8 +15,8 @@ import org.apache.logging.log4j.Logger;
  */
 
 public class CategoryServiceImpl implements CategoryService {
+    private final static Logger LOG = LogManager.getLogger(CategoryServiceImpl.class);
     private static final CategoryServiceImpl instance = new CategoryServiceImpl();
-    private final static Logger LOG = LogManager.getLogger("CategoryServiceImpl");
 
     private CategoryDAO categoryDAO;
 
