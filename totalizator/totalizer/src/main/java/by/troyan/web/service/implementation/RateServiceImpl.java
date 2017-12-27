@@ -24,7 +24,7 @@ public class RateServiceImpl implements RateService {
         return instance;
     }
 
-    RateServiceImpl(){
+    private RateServiceImpl(){
         rateDAO = DAOFactory.getFactory().getRateDAO();
         userDAO = DAOFactory.getFactory().getUserDAO();
     }

@@ -37,4 +37,8 @@ public interface UserDAO {
 
     void deleteUsers(List<Integer> idList) throws DAOException;
 
+    void markUserAsDebtor(int userId) throws DAOException;
+
+    void removeDebtorMark(int userId) throws DAOException;
+
 }

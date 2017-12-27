@@ -2,6 +2,7 @@ package by.troyan.web.entity;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Describe User. There are 3 roles. <p>
@@ -31,22 +32,25 @@ public class User {
     private String email;
     private BigDecimal balance;
     private Role role;
-    private boolean banned;
+    private boolean isBanned;
     private List<Rate> activeRates;
     private List<Rate> finishedRates;
+    private boolean isDebtor;
 
     public User() {
     }
 
-    public User(int userId, String login, String passHash, String email, BigDecimal balance, Role role, boolean banned) {
+    public User(int userId, String login, String passHash, String email, BigDecimal balance, Role role, boolean isBanned, boolean isDebtor) {
         this.userId = userId;
         this.login = login;
         this.passHash = passHash;
         this.email = email;
         this.balance = balance;
         this.role = role;
-        this.banned = banned;
+        this.isBanned = isBanned;
+        this.isDebtor = isDebtor;
     }
+
 
     public int getUserId() {
         return userId;
@@ -97,11 +101,11 @@ public class User {
     }
 
     public boolean isBanned() {
-        return banned;
+        return isBanned;
     }
 
     public void setBanned(boolean banned) {
-        this.banned = banned;
+        this.isBanned = banned;
     }
 
     public List<Rate> getActiveRates() {
@@ -120,36 +124,35 @@ public class User {
         this.finishedRates = finishedRates;
     }
 
+    public boolean isDebtor() {
+        return isDebtor;
+    }
+
+    public void setDebtor(boolean debtor) {
+        isDebtor = debtor;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
         User user = (User) o;
-
-        if (userId != user.userId) return false;
-        if (banned != user.banned) return false;
-        if (login != null ? !login.equals(user.login) : user.login != null) return false;
-        if (passHash != null ? !passHash.equals(user.passHash) : user.passHash != null) return false;
-        if (email != null ? !email.equals(user.email) : user.email != null) return false;
-        if (balance != null ? !balance.equals(user.balance) : user.balance != null) return false;
-        if (role != user.role) return false;
-        if (activeRates != null ? !activeRates.equals(user.activeRates) : user.activeRates != null) return false;
-        return finishedRates != null ? finishedRates.equals(user.finishedRates) : user.finishedRates == null;
+        return userId == user.userId &&
+                isBanned == user.isBanned &&
+                isDebtor == user.isDebtor &&
+                Objects.equals(login, user.login) &&
+                Objects.equals(passHash, user.passHash) &&
+                Objects.equals(email, user.email) &&
+                Objects.equals(balance, user.balance) &&
+                role == user.role &&
+                Objects.equals(activeRates, user.activeRates) &&
+                Objects.equals(finishedRates, user.finishedRates);
     }
 
     @Override
     public int hashCode() {
-        int result = userId;
-        result = 31 * result + (login != null ? login.hashCode() : 0);
-        result = 31 * result + (passHash != null ? passHash.hashCode() : 0);
-        result = 31 * result + (email != null ? email.hashCode() : 0);
-        result = 31 * result + (balance != null ? balance.hashCode() : 0);
-        result = 31 * result + (role != null ? role.hashCode() : 0);
-        result = 31 * result + (banned ? 1 : 0);
-        result = 31 * result + (activeRates != null ? activeRates.hashCode() : 0);
-        result = 31 * result + (finishedRates != null ? finishedRates.hashCode() : 0);
-        return result;
+
+        return Objects.hash(userId, login, passHash, email, balance, role, isBanned, activeRates, finishedRates, isDebtor);
     }
 
     @Override
@@ -161,9 +164,10 @@ public class User {
                 ", email='" + email + '\'' +
                 ", balance=" + balance +
                 ", role=" + role +
-                ", banned=" + banned +
+                ", isBanned=" + isBanned +
                 ", activeRates=" + activeRates +
                 ", finishedRates=" + finishedRates +
+                ", isDebtor=" + isDebtor +
                 '}';
     }
 }

@@ -24,7 +24,7 @@ public class CategoryServiceImpl implements CategoryService {
         return instance;
     }
 
-    CategoryServiceImpl(){
+    private CategoryServiceImpl(){
         categoryDAO = DAOFactory.getFactory().getCategoryDAO();
     }
 

@@ -36,7 +36,7 @@ public class EventServiceImpl implements EventService {
         return instance;
     }
 
-    EventServiceImpl(){
+    private EventServiceImpl(){
         eventDAO = DAOFactory.getFactory().getEventDAO();
         memberDAO = DAOFactory.getFactory().getMemberDAO();
         eventResultDAO = DAOFactory.getFactory().getEventResultDAO();

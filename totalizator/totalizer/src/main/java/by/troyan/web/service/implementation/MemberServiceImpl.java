@@ -26,7 +26,7 @@ public class MemberServiceImpl implements MemberService {
         return instance;
     }
 
-    MemberServiceImpl(){
+    private MemberServiceImpl(){
         memberDAO = DAOFactory.getFactory().getMemberDAO();
     }
 

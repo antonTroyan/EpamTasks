@@ -31,7 +31,7 @@
                                     <td><input type="checkbox" name="checkbox" id="${user.userId}" onchange="onCheckboxClick(this)"/></td>
                                     <td><p>${user.login}</p></td>
                                     <td><p id="role-p">${user.role}</p></td>
-                                    <td><p id="banned-p">${user.banned}</p></td>
+                                    <td><p id="isBanned-p">${user.isBanned}</p></td>
                                 </tr>
                             </c:forEach>
                         </table>

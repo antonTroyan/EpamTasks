@@ -28,6 +28,11 @@
                         </div>
                         <a class="balance-btn" href="<c:url value="main?command=showWithdrawMoneyPage"/>"><fmt:message bundle="${loc}" key="link.withdraw" /></a>
                         <a class="balance-btn" href="<c:url value="main?command=showFillUpBalancePage"/>"><fmt:message bundle="${loc}" key="link.fill-up" /></a>
+
+                        <a class="credit-btn" href="<c:url value="main?command=takeLoan"/>"><fmt:message bundle="${loc}" key="link.takeLoan" /></a>
+                        <a class="credit-btn" href="<c:url value="main?command=repayLoan"/>"><fmt:message bundle="${loc}" key="link.repayLoan" /></a>
+
+
                     </div>
                 </div>
                 <div class="active-rates-div">

@@ -29,7 +29,7 @@ public class PaySystemServiceImpl implements PaySystemService {
         return instance;
     }
 
-    PaySystemServiceImpl(){
+    private PaySystemServiceImpl(){
         operationDAO = DAOFactory.getFactory().getOperationDAO();
         userDAO = DAOFactory.getFactory().getUserDAO();
     }
@@ -112,5 +112,27 @@ public class PaySystemServiceImpl implements PaySystemService {
             throw new ServiceException(exc);
         }
         return operation;
+    }
+
+    @Override
+    public void takeLoan(String username) throws ServiceException, OperationException {
+   //     Operation operation = new Operation();
+        try{
+            userDAO.markUserAsDebtor(userDAO.getUserIdByLogin(username));
+        } catch (DAOException exc){
+            LOG.error(exc);
+            throw new ServiceException(exc);
+        }
+    }
+
+    @Override
+    public void repayLoan(String username) throws ServiceException, OperationException {
+        //     Operation operation = new Operation();
+        try{
+            userDAO.removeDebtorMark(userDAO.getUserIdByLogin(username));
+        } catch (DAOException exc){
+            LOG.error(exc);
+            throw new ServiceException(exc);
+        }
     }
 }

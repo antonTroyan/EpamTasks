@@ -47,7 +47,9 @@ public enum CommandEnum {
     BAN("ban"),
     UNBAN("unban"),
     CHANGE_ROLE("changeRole"),
-    DELETE_USER("deleteUser");
+    DELETE_USER("deleteUser"),
+    TAKE_LOAN("takeLoan"),
+    REPAY_LOAN("repayLoan");
 
 
     private String value;

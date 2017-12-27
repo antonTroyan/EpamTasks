@@ -12,4 +12,8 @@ public interface PaySystemService {
     Operation fillUpBalance(String username, String cardNumber, String validityDate, String cardCode, String amount) throws ServiceException, OperationException;
 
     Operation withdrawMoney(String username, String cardNumber, String validityDate, String amount) throws ServiceException, OperationException;
+
+    void takeLoan(String username) throws ServiceException, OperationException;
+
+    void repayLoan(String username) throws ServiceException, OperationException;
 }

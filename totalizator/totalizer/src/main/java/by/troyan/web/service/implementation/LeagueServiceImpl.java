@@ -25,7 +25,7 @@ public class LeagueServiceImpl implements LeagueService {
         return instance;
     }
 
-    LeagueServiceImpl(){
+    private LeagueServiceImpl(){
         leagueDAO = DAOFactory.getFactory().getLeagueDAO();
     }
 

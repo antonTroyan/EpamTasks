@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserService {
         return instance;
     }
 
-    UserServiceImpl(){
+    private UserServiceImpl(){
         userDAO = DAOFactory.getFactory().getUserDAO();
         rateDAO = DAOFactory.getFactory().getRateDAO();
     }

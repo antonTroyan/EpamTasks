@@ -60,6 +60,8 @@ public class CommandFactory {
         commands.put(CommandEnum.UNBAN, new UnbanCommand());
         commands.put(CommandEnum.CHANGE_ROLE, new ChangeRoleCommand());
         commands.put(CommandEnum.DELETE_USER, new DeleteUserCommand());
+        commands.put(CommandEnum.TAKE_LOAN, new TakeLoanCommand());
+        commands.put(CommandEnum.REPAY_LOAN, new RepayLoan());
     }
 
     public ICommand createCommand(CommandEnum command){

@@ -53,6 +53,13 @@ public class UserDAOImpl implements UserDAO {
             "WHERE `user_id` in (&);";
     private static final String SQL_FOR_DELETE_USERS = "DELETE FROM `user` " +
             " WHERE `user_id`=(?)";
+    private static final String SQL_FOR_MARK_USER_AS_DEBTOR = "UPDATE `user` " +
+            "SET `is_debtor` = true " +
+            "WHERE `user_id` = (?);";
+    private static final String SQL_FOR_REMOVE_DEBTOR_MARK = "UPDATE `user` " +
+            "SET `is_debtor` = false " +
+            "WHERE `user_id` = (?);";
+
 
     private UserDAOImpl() {}
 
@@ -505,6 +512,62 @@ public class UserDAOImpl implements UserDAO {
             connection = pool.getConnection();
             try {
                 statement = connection.prepareStatement(insertListToQuery(SQL_FOR_DELETE_USERS, idList));
+                statement.executeUpdate();
+            } catch (SQLException exc) {
+                LOG.error(exc);
+                throw new DAOException(exc);
+            } finally {
+                if(statement != null){
+                    statement.close();
+                }
+            }
+        } catch (SQLException exc){
+            LOG.error(exc);
+            throw new DAOException(exc);
+        } finally {
+            if(connection != null){
+                pool.returnConnectionToPool(connection);
+            }
+        }
+    }
+
+    @Override
+    public void markUserAsDebtor(int userId) throws DAOException {
+        Connection connection = null;
+        PreparedStatement statement = null;
+        try{
+            connection = pool.getConnection();
+            try {
+                statement = connection.prepareStatement(SQL_FOR_MARK_USER_AS_DEBTOR, userId);
+                statement.setInt(1, userId);
+                statement.executeUpdate();
+            } catch (SQLException exc) {
+                LOG.error(exc);
+                throw new DAOException(exc);
+            } finally {
+                if(statement != null){
+                    statement.close();
+                }
+            }
+        } catch (SQLException exc){
+            LOG.error(exc);
+            throw new DAOException(exc);
+        } finally {
+            if(connection != null){
+                pool.returnConnectionToPool(connection);
+            }
+        }
+    }
+
+    @Override
+    public void removeDebtorMark(int userId) throws DAOException {
+        Connection connection = null;
+        PreparedStatement statement = null;
+        try{
+            connection = pool.getConnection();
+            try {
+                statement = connection.prepareStatement(SQL_FOR_REMOVE_DEBTOR_MARK);
+                statement.setInt(1, userId);
                 statement.executeUpdate();
             } catch (SQLException exc) {
                 LOG.error(exc);
