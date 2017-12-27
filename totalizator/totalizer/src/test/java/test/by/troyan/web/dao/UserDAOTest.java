@@ -1,4 +1,4 @@
-package sport.totalizator.dao;
+package test.by.troyan.web.dao;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

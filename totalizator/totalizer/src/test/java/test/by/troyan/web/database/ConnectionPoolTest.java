@@ -1,4 +1,4 @@
-package sport.totalizator.db.jdbc;
+package test.by.troyan.web.database;
 
 
 import org.testng.Assert;
