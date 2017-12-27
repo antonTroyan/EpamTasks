@@ -19,18 +19,24 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+import static by.troyan.web.support.Constant.*;
+
+
 public class TakeLoanCommand implements ICommand {
     private final static Logger LOG = LogManager.getLogger(TakeLoanCommand.class);
     private PaySystemService paySystemService = ServiceFactory.getInstance().getPaySystemService();
 
+
     @Override
-    public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException {
+    public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException,
+            CommandException, UnauthorizedException {
         checkRoots(req, new User.Role[]{User.Role.MODERATOR, User.Role.ADMINISTRATOR, User.Role.USER});
         String username = "";
 
         try {
         username = (String)req.getSession().getAttribute("username");
-        paySystemService.fillUpBalance(username, "0000000000000000", "12/49", "000", "100");
+        paySystemService.fillUpBalance(username, enterpriseCardNumber, enterpriseCardValidityDate,
+                enterpriseCardCode, standardCreditAmount);
         paySystemService.takeLoan((String)req.getSession().getAttribute("username"));
 
         }  catch(ServiceException exc){
