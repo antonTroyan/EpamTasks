@@ -31,8 +31,6 @@
 
                         <a class="credit-btn" href="<c:url value="main?command=takeLoan"/>"><fmt:message bundle="${loc}" key="link.takeLoan" /></a>
                         <a class="credit-btn" href="<c:url value="main?command=repayLoan"/>"><fmt:message bundle="${loc}" key="link.repayLoan" /></a>
-
-
                     </div>
                 </div>
                 <div class="active-rates-div">

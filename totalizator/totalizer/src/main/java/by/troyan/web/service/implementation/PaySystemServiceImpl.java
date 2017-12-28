@@ -63,10 +63,6 @@ public class PaySystemServiceImpl implements PaySystemService {
         operation.setOperationType(OperationDAOImpl.INPUT);
         try{
             operation.setUserId(userDAO.getUserIdByLogin(username));
-            if(!operationDAO.canFillUpBalanceForUser(operation.getUserId())){
-                operationException.addErrorMessage("err.can-not-fill-up-because-time");
-                throw operationException;
-            }
             userDAO.fillUpBalanceForUser(operation.getUserId(), operation.getAmount());
             operationDAO.addOperation(operation);
         } catch (DAOException exc){
