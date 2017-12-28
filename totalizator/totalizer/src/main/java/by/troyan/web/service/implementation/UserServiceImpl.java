@@ -143,4 +143,15 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    @Override
+    public boolean checkIsDebtor(String login) throws ServiceException {
+        boolean isDebtor = false;
+        try {
+            isDebtor = userDAO.checkIsDebtor(userDAO.getUserIdByLogin(login));
+        } catch (DAOException exc) {
+            LOG.error(exc);
+            throw new ServiceException(exc);
+        }
+        return isDebtor;
+    }
 }

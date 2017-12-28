@@ -21,18 +21,90 @@
       <file leaf-file-name="personal_page.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/totalizer/src/main/webapp/personal_page.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="withdraw_money_page.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/totalizer/src/main/webapp/withdraw_money_page.jsp">
+      <file leaf-file-name="ShowPersonalPageCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/ShowPersonalPageCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+            <state relative-caret-position="272">
+              <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="657">
+              <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="147" column="31" lean-forward="false" selection-start-line="147" selection-start-column="31" selection-end-line="147" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/dao/UserDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1049">
+              <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/controller/MainServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="36" column="64" lean-forward="false" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/dao/implementation/UserDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1065">
+              <caret line="606" column="65" lean-forward="false" selection-start-line="606" selection-start-column="65" selection-end-line="606" selection-end-column="65" />
+              <folding>
+                <marker date="1514473549987" expanded="true" signature="829:849" ph="SELECT * FRO... user" />
+                <marker date="1514473549987" expanded="true" signature="907:973" ph="INSERT INTO `user`... " />
+                <marker date="1514473549987" expanded="true" signature="1038:1148" ph="SELECT `logi... user" />
+                <marker date="1514473549987" expanded="true" signature="1229:1374" ph="SELECT `logi... user" />
+                <marker date="1514473549987" expanded="true" signature="1442:1522" ph="SELECT `user... user" />
+                <marker date="1514473549987" expanded="true" signature="1594:1691" ph="UPDATE `user`... " />
+                <marker date="1514473549987" expanded="true" signature="1763:1860" ph="UPDATE `user`... " />
+                <marker date="1514473549987" expanded="true" signature="1918:2015" ph="SELECT `bala... user" />
+                <marker date="1514473549987" expanded="true" signature="2648:2740" ph="UPDATE `user`... " />
+                <marker date="1514473549987" expanded="true" signature="2806:2899" ph="UPDATE `user`... " />
+                <marker date="1514473549987" expanded="true" signature="2962:3045" ph="SELECT `is_d... user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PaySystemServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/PaySystemServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="123" column="68" lean-forward="false" selection-start-line="123" selection-start-column="68" selection-end-line="123" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -77,6 +149,7 @@
       <find>balance-btn</find>
       <find>checkbox</find>
       <find>up-because-time</find>
+      <find>isDebtor</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -100,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/ShowCategoryPageCommand.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/ShowEventPageCommand.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/UnbanCommand.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/WithdrawMoneyCommand.java" />
@@ -122,35 +194,36 @@
         <option value="$PROJECT_DIR$/totalizer/src/main/webapp/admin_page.jsp" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/DeleteUser.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/DeleteUserCommand.java" />
-        <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/UserService.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/webapp/javascript/admin.js" />
         <option value="$PROJECT_DIR$/totalizer/src/test/java/test/by/troyan/web/dao/SelectRequestTest.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/webapp/styles/personal-page.css" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/CommandEnum.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/FillUpBalanceCommand.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/RateServiceImpl.java" />
-        <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/MemberServiceImpl.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/LeagueServiceImpl.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/EventServiceImpl.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/EventResultServiceImpl.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/entity/User.java" />
-        <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/PaySystemService.java" />
-        <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/controller/MainServlet.java" />
-        <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/dao/implementation/UserDAOImpl.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/factory/CommandFactory.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/support/Constant.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/TakeLoanCommand.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/RepayLoan.java" />
-        <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/PaySystemServiceImpl.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/dao/OperationDAO.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/dao/implementation/OperationDAOImpl.java" />
-        <option value="$PROJECT_DIR$/totalizer/src/main/webapp/personal_page.jsp" />
         <option value="$PROJECT_DIR$/totalizer/src/main/resources/locale_be.properties" />
         <option value="$PROJECT_DIR$/totalizer/src/main/resources/locale_en.properties" />
         <option value="$PROJECT_DIR$/totalizer/src/main/resources/locale_ru.properties" />
+        <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/UserService.java" />
+        <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/ShowPersonalPageCommand.java" />
+        <option value="$PROJECT_DIR$/totalizer/src/main/webapp/personal_page.jsp" />
+        <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/dao/implementation/UserDAOImpl.java" />
+        <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/PaySystemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/controller/MainServlet.java" />
       </list>
     </option>
   </component>
@@ -190,7 +263,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1098" />
     <option name="y" value="148" />
     <option name="width" value="1400" />
@@ -263,7 +336,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="totalizator" type="b2602c69:ProjectViewProjectNode" />
@@ -294,7 +367,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="totalizator" type="b2602c69:ProjectViewProjectNode" />
@@ -302,42 +375,10 @@
               <item name="totalizer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="totalizator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="totalizator" type="462c0819:PsiDirectoryNode" />
-              <item name="totalizer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Resource Bundle 'locale'" type="a6c14932:ResourceBundleNode" />
-            </path>
-            <path>
-              <item name="totalizator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="totalizator" type="462c0819:PsiDirectoryNode" />
-              <item name="totalizer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="totalizator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="totalizator" type="462c0819:PsiDirectoryNode" />
-              <item name="totalizer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="totalizator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="totalizator" type="462c0819:PsiDirectoryNode" />
-              <item name="totalizer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="implementation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -889,7 +930,7 @@
       <workItem from="1514398496750" duration="389000" />
       <workItem from="1514399539069" duration="432000" />
       <workItem from="1514453594919" duration="131000" />
-      <workItem from="1514465280309" duration="2802000" />
+      <workItem from="1514465280309" duration="6555000" />
     </task>
     <servers />
   </component>
@@ -911,7 +952,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133745000" />
+    <option name="totallyTimeSpent" value="137498000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -923,8 +964,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="2578" height="1408" extended-state="7" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="2578" height="1408" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -932,7 +972,8 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821342" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875606" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11231015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="91" y="91" width="2378" height="1208" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11231015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32497978" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -951,7 +992,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="91" y="91" width="2378" height="1208" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -997,26 +1037,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/controller/MainServlet.java</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="17" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/LeagueServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/MemberServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -1035,20 +1060,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="28" column="67" lean-forward="false" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -1101,13 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1009">
-          <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/AddEventCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1360">
@@ -1126,14 +1130,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="29" column="68" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/controller/MainServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1169,13 +1165,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/dao/implementation/UserDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1111">
-          <caret line="541" column="44" lean-forward="false" selection-start-line="541" selection-start-column="44" selection-end-line="541" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1264,16 +1253,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/RepayLoan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="29" column="63" lean-forward="false" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/TakeLoanCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1294,14 +1273,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/PaySystemServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="64" column="68" lean-forward="false" selection-start-line="64" selection-start-column="68" selection-end-line="64" selection-end-column="68" />
           <folding />
         </state>
       </provider>
@@ -1348,14 +1319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/totalizer/src/main/webapp/personal_page.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/totalizer/src/main/resources/locale_be.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1391,8 +1354,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/totalizer/src/main/webapp/withdraw_money_page.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+        <state relative-caret-position="646">
+          <caret line="31" column="31" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="31" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/RepayLoan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="981">
+          <caret line="50" column="101" lean-forward="true" selection-start-line="50" selection-start-column="101" selection-end-line="50" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totalizer/src/main/webapp/personal_page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/ShowPersonalPageCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="147" column="31" lean-forward="false" selection-start-line="147" selection-start-column="31" selection-end-line="147" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/PaySystemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="123" column="68" lean-forward="false" selection-start-line="123" selection-start-column="68" selection-end-line="123" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/dao/implementation/UserDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="606" column="65" lean-forward="false" selection-start-line="606" selection-start-column="65" selection-end-line="606" selection-end-column="65" />
+          <folding>
+            <marker date="1514473549987" expanded="true" signature="829:849" ph="SELECT * FRO... user" />
+            <marker date="1514473549987" expanded="true" signature="907:973" ph="INSERT INTO `user`... " />
+            <marker date="1514473549987" expanded="true" signature="1038:1148" ph="SELECT `logi... user" />
+            <marker date="1514473549987" expanded="true" signature="1229:1374" ph="SELECT `logi... user" />
+            <marker date="1514473549987" expanded="true" signature="1442:1522" ph="SELECT `user... user" />
+            <marker date="1514473549987" expanded="true" signature="1594:1691" ph="UPDATE `user`... " />
+            <marker date="1514473549987" expanded="true" signature="1763:1860" ph="UPDATE `user`... " />
+            <marker date="1514473549987" expanded="true" signature="1918:2015" ph="SELECT `bala... user" />
+            <marker date="1514473549987" expanded="true" signature="2648:2740" ph="UPDATE `user`... " />
+            <marker date="1514473549987" expanded="true" signature="2806:2899" ph="UPDATE `user`... " />
+            <marker date="1514473549987" expanded="true" signature="2962:3045" ph="SELECT `is_d... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1049">
+          <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/controller/MainServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="36" column="64" lean-forward="false" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
           <folding />
         </state>
       </provider>

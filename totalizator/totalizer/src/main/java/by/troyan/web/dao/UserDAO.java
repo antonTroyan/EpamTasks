@@ -41,4 +41,5 @@ public interface UserDAO {
 
     void removeDebtorMark(int userId) throws DAOException;
 
+    boolean checkIsDebtor (int userId) throws DAOException;
 }

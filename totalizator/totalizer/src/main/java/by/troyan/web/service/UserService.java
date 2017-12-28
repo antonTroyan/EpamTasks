@@ -27,4 +27,6 @@ public interface UserService {
     void changeRoleForUsers(List<Integer> idList, String role) throws ServiceException;
 
     void deleteUsers(List<Integer> idList) throws ServiceException;
+
+    boolean checkIsDebtor(String login) throws  ServiceException;
 }

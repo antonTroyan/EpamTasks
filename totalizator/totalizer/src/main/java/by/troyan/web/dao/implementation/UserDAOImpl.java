@@ -59,6 +59,9 @@ public class UserDAOImpl implements UserDAO {
     private static final String SQL_FOR_REMOVE_DEBTOR_MARK = "UPDATE `user` " +
             "SET `is_debtor` = false " +
             "WHERE `user_id` = (?);";
+    private static final String SQL_FOR_CHECK_IS_DEBTOR = "SELECT `is_debtor`" +
+            "FROM `user` " +
+            "WHERE `user_id` = ?;";
 
 
     private UserDAOImpl() {}
@@ -585,5 +588,40 @@ public class UserDAOImpl implements UserDAO {
                 pool.returnConnectionToPool(connection);
             }
         }
+    }
+
+    @Override
+    public boolean checkIsDebtor(int userId) throws DAOException {
+        Connection connection = null;
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;
+        boolean isDebtor = false;
+
+        try{
+            connection = pool.getConnection();
+            try {
+                statement = connection.prepareStatement(SQL_FOR_CHECK_IS_DEBTOR);
+                statement.setInt(1, userId);
+                resultSet = statement.executeQuery();
+                while (resultSet.next()){
+                    isDebtor = resultSet.getBoolean("is_debtor");
+                }
+            } catch (SQLException exc) {
+                LOG.error(exc);
+                throw new DAOException(exc);
+            } finally {
+                if(statement != null){
+                    statement.close();
+                }
+            }
+        } catch (SQLException exc){
+            LOG.error(exc);
+            throw new DAOException(exc);
+        } finally {
+            if(connection != null){
+                pool.returnConnectionToPool(connection);
+            }
+        }
+        return isDebtor;
     }
 }

@@ -111,8 +111,7 @@ public class PaySystemServiceImpl implements PaySystemService {
     }
 
     @Override
-    public void takeLoan(String username) throws ServiceException, OperationException {
-   //     Operation operation = new Operation();
+    public void takeLoan(String username) throws ServiceException {
         try{
             userDAO.markUserAsDebtor(userDAO.getUserIdByLogin(username));
         } catch (DAOException exc){
@@ -122,8 +121,7 @@ public class PaySystemServiceImpl implements PaySystemService {
     }
 
     @Override
-    public void repayLoan(String username) throws ServiceException, OperationException {
-        //     Operation operation = new Operation();
+    public void repayLoan(String username) throws ServiceException {
         try{
             userDAO.removeDebtorMark(userDAO.getUserIdByLogin(username));
         } catch (DAOException exc){

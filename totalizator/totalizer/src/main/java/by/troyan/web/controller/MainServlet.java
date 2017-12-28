@@ -32,15 +32,9 @@ public class MainServlet extends HttpServlet {
         ICommand command = null;
         String commandName = req.getParameter("command");
 
-        System.out.println(commandName);
-        System.out.println((String)req.getParameter("name"));
-
         try {
             CommandEnum commandEnum = CommandEnum.getEnum(commandName);
             command = commandFactory.createCommand(commandEnum);
-
-            System.out.println(command);
-
             command.execute(req, resp);
         } catch (UnauthorizedException exc){
             LOG.error(exc);

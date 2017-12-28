@@ -22,9 +22,11 @@ public class ShowPersonalPageCommand implements ICommand {
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException {
         checkRoots(req, new User.Role[]{User.Role.MODERATOR, User.Role.USER, User.Role.ADMINISTRATOR});
         req.setAttribute("tab_classes", new String[] {"", "", "active", ""});
+
         CommandFactory.getFactory().createCommand(CommandEnum.ADD_CATEGORIES_TO_REQUEST).execute(req, resp);
         String login = (String) req.getSession().getAttribute("username");
         try {
+            req.setAttribute("isDebtor", userService.checkIsDebtor(login));
             req.setAttribute("user", userService.getFullUserInformationByLogin(login));
         }
         catch (ServiceException exc){
