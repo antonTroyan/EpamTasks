@@ -7,7 +7,7 @@ ul.pagination {
 ul.pagination li {display: inline;}
 
 ul.pagination li a.current-page {
-    background: #eba11a;
+    background: #94bfeb;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;

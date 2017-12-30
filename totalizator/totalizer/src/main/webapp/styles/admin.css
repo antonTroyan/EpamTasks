@@ -5,7 +5,7 @@
 }
 
 .user-table td {
-    border-top: 1px solid orange;
+    border-top: 1px solid #94bfeb;
 }
 
 .user-table td {
@@ -17,11 +17,11 @@
     width: 200px;
     color: white;
     margin-top: 10px;
-    background: #eba11a;
+    background: #94bfeb;
     border: 1px solid white;
     border-radius: 4px;
     transition: all 0.2s linear;
 }
 .admin-btn:hover {
-    background: #eb701a;
+    background: #94bfeb;
 }

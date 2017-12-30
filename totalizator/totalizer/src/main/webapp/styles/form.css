@@ -31,7 +31,7 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid #eba11a;
+    border: 1px solid #94bfeb;
     border-radius: 3px;
     margin: 2px;
     padding: 3px;
@@ -47,14 +47,14 @@ label {
     width: 100px;
     color: white;
     margin-top: 10px;
-    background: #eba11a;
+    background: #94bfeb;
     border: 1px solid white;
     border-radius: 4px;
     transition: all 0.2s linear;
 }
 
 .submit-btn:hover {
-    background: #eb701a;
+    background: #94bfeb;
 }
 
 .btn-container {
@@ -94,7 +94,7 @@ label {
     justify-content: center;
     flex-direction: column;
     font-size: 2em;
-    color: #eba11a;
+    color: #94bfeb;
 }
 
 .header-div p {

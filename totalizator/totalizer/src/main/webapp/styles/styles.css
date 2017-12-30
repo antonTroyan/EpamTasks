@@ -28,7 +28,7 @@ body {
 footer {
 	width: 1000px;
 	background-color: #4a4949;
-	color: #ffd132;
+	color: #94bfeb;
 	border-radius: 0px 0px 3px 3px;
 	display: flex;
 	justify-content: space-between;
@@ -61,7 +61,7 @@ nav {
 }
 
 header nav a {
-	color: #ffd132;
+	color: #94bfeb;
 	text-decoration: none;
 	margin-right: 10px;
 	padding: 0 15px 0 15px;
@@ -84,9 +84,9 @@ header nav a {
 }
 
 .search-btn {
-	color: #ffd132;
+	color: #94bfeb;
 	background-color: rgba(0,0,0,0);
-	border: 1px solid #ffd132;
+	border: 1px solid #94bfeb;
 	padding: 2px 7px;
 	border-radius: 3px;
 	transition: 0.3s linear;
@@ -94,7 +94,7 @@ header nav a {
 
 .search-btn:hover {
 	color: #4a4949;
-	background-color: #ffd132;
+	background-color: #94bfeb;
 	border: 1px solid rgba(0,0,0,0); 
 }
 
@@ -144,7 +144,7 @@ header nav a {
 }
 
 .left-menu nav b {
-	color: #eba11a;
+	color: #94bfeb;
 	margin-right: 10px;
 	padding: 0 10px 0 10px;
 	line-height: 50px;
@@ -164,8 +164,8 @@ header nav a {
 }
 
 .main-menu-item-container > .active > span{
-	border-top: 2px solid #eba11a;
-	border-bottom: 2px solid #eba11a;
+	border-top: 2px solid #94bfeb;
+	border-bottom: 2px solid #94bfeb;
 	padding: 5px 15px 5px 15px;
 }
 
@@ -176,8 +176,8 @@ header nav a {
 }
 
 .main-menu-item-container a:hover span{
-	border-top: 2px solid #eba11a;
-	border-bottom: 2px solid #eba11a;
+	border-top: 2px solid #94bfeb;
+	border-bottom: 2px solid #94bfeb;
 	padding: 5px 15px 5px 15px;
 }
 
@@ -198,8 +198,8 @@ header nav a {
 
 .admin-panel a{
 	background: rgba(0, 0, 0, 0);
-	border: 1px solid #eba11a;
-	color: #eba11a;
+	border: 1px solid #94bfeb;
+	color: #94bfeb;
 	text-decoration: none;
 	border-radius: 3px;
 	padding: 3px;
@@ -209,7 +209,7 @@ header nav a {
 
 .admin-panel a:hover {
 	color: #4a4949;
-	background-color: #eba11a;
+	background-color: #94bfeb;
 	border: 1px solid rgba(0,0,0,0);
 }
 
@@ -239,7 +239,7 @@ header nav a {
 }
 
 .event-btn {
-	background: linear-gradient(to bottom, #eba11a 0%, #eba11a 100%);
+	background: linear-gradient(to bottom, #94bfeb 0%, #94bfeb 100%);
 	border: none;
 	border-radius: 4px;
 	height: 30px;
@@ -248,11 +248,11 @@ header nav a {
 }
 
 .event-btn:hover {
-	background: linear-gradient(to bottom, #eba11a 0%, #eba11a 55%);
+	background: linear-gradient(to bottom, #94bfeb 0%, #94bfeb 55%);
 }
 
 .event-btn:active {
-	background: linear-gradient(to top, #eba11a 0%,#eba11a 100%);
+	background: linear-gradient(to top, #94bfeb 0%, #94bfeb 100%);
 }
 
 .event-date {
