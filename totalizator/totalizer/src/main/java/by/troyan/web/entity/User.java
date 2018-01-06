@@ -32,10 +32,10 @@ public class User {
     private String email;
     private BigDecimal balance;
     private Role role;
-    private boolean isBanned;
+    private boolean banned;
     private List<Rate> activeRates;
     private List<Rate> finishedRates;
-    private boolean isDebtor;
+    private boolean debtor;
 
     public User() {
     }
@@ -47,8 +47,8 @@ public class User {
         this.email = email;
         this.balance = balance;
         this.role = role;
-        this.isBanned = isBanned;
-        this.isDebtor = isDebtor;
+        this.banned = isBanned;
+        this.debtor = isDebtor;
     }
 
 
@@ -101,11 +101,11 @@ public class User {
     }
 
     public boolean isBanned() {
-        return isBanned;
+        return banned;
     }
 
     public void setBanned(boolean banned) {
-        isBanned = banned;
+        banned = banned;
     }
 
     public List<Rate> getActiveRates() {
@@ -125,11 +125,11 @@ public class User {
     }
 
     public boolean isDebtor() {
-        return isDebtor;
+        return debtor;
     }
 
     public void setDebtor(boolean debtor) {
-        isDebtor = debtor;
+        this.debtor = debtor;
     }
 
     @Override
@@ -138,8 +138,8 @@ public class User {
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
         return userId == user.userId &&
-                isBanned == user.isBanned &&
-                isDebtor == user.isDebtor &&
+                banned == user.banned &&
+                debtor == user.debtor &&
                 Objects.equals(login, user.login) &&
                 Objects.equals(passHash, user.passHash) &&
                 Objects.equals(email, user.email) &&
@@ -153,7 +153,7 @@ public class User {
     @Override
     public int hashCode() {
 
-        return Objects.hash(userId, login, passHash, email, balance, role, isBanned, activeRates, finishedRates, isDebtor);
+        return Objects.hash(userId, login, passHash, email, balance, role, banned, activeRates, finishedRates, debtor);
     }
 
 
@@ -166,10 +166,10 @@ public class User {
                 ", email='" + email + '\'' +
                 ", balance=" + balance +
                 ", role=" + role +
-                ", isBanned=" + isBanned +
+                ", isBanned=" + banned +
                 ", activeRates=" + activeRates +
                 ", finishedRates=" + finishedRates +
-                ", isDebtor=" + isDebtor +
+                ", debtor=" + debtor +
                 '}';
     }
 }

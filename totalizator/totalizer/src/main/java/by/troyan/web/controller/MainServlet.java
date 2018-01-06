@@ -43,9 +43,7 @@ public class MainServlet extends HttpServlet {
             req.getRequestDispatcher("error_page.jsp").forward(req, resp);
         } catch (Exception exc){
 
-
             exc.printStackTrace();
-
 
             LOG.error(exc);
             req.setAttribute("message", MessageLocalizer.getLocalizedForCurrentLocaleMessage("err.smth-error", req));
