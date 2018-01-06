@@ -28,7 +28,7 @@ public class AddEventCommand implements ICommand {
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException,
             CommandException, UnauthorizedException {
-        checkRoots(req, new User.Role[]{User.Role.MODERATOR});
+        checkRoots(req, new User.Role[]{User.Role.ADMINISTRATOR});
         EventService eventService = ServiceFactory.getInstance().getEventService();
         String name = req.getParameter("name");
         String leagueId = req.getParameter("league-id");

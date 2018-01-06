@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<c:if test="${sessionScope.role == 'MODERATOR'}">
+<c:if test="${sessionScope.role == 'ADMINISTRATOR'}">
     <div class="admin-panel">
         <a href="<c:url value="main?command=showAddEventPage" />"><fmt:message bundle="${loc}" key="link.addEvent" /></a>
         <a href="<c:url value="main?command=showAddCategoryPage" />"><fmt:message bundle="${loc}" key="link.addCategory" /></a>

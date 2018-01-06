@@ -26,7 +26,7 @@ public class MakeRateCommand implements ICommand {
 
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException {
-        checkRoots(req, new User.Role[]{User.Role.MODERATOR, User.Role.ADMINISTRATOR, User.Role.USER});
+        checkRoots(req, new User.Role[]{User.Role.ADMINISTRATOR, User.Role.BOOKMAKER, User.Role.USER});
         String type = req.getParameter("rate-type");
         String money = req.getParameter("money");
         String eventId = req.getParameter("event-id");

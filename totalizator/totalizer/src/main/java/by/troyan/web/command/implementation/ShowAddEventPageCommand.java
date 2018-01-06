@@ -15,7 +15,7 @@ import java.io.IOException;
 public class ShowAddEventPageCommand implements ICommand {
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException {
-        checkRoots(req, new User.Role[]{User.Role.MODERATOR});
+        checkRoots(req, new User.Role[]{User.Role.ADMINISTRATOR});
         CommandFactory.getFactory().createCommand(CommandEnum.ADD_CATEGORIES_TO_REQUEST).execute(req, resp);
         req.getRequestDispatcher("add_event_page.jsp").forward(req, resp);
     }

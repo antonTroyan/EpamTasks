@@ -26,7 +26,7 @@ public class AddEventResultCommand implements ICommand {
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException,
             CommandException, UnauthorizedException {
-        checkRoots(req, new User.Role[]{User.Role.MODERATOR});
+        checkRoots(req, new User.Role[]{User.Role.ADMINISTRATOR});
         String eventId = req.getParameter("event-id");
         String winnerId = req.getParameter("winner-id");
         String winnerScore = req.getParameter("winner-score");

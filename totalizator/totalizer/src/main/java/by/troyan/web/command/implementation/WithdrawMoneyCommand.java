@@ -25,7 +25,7 @@ public class WithdrawMoneyCommand implements ICommand {
 
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException {
-        checkRoots(req, new User.Role[]{User.Role.MODERATOR, User.Role.ADMINISTRATOR, User.Role.USER});
+        checkRoots(req, new User.Role[]{User.Role.ADMINISTRATOR, User.Role.BOOKMAKER, User.Role.USER});
         String cardNumber = req.getParameter("card-number");
         String validityDate = req.getParameter("validity-date");
         String amount = req.getParameter("amount");

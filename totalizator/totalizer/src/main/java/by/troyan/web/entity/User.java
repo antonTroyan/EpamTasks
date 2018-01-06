@@ -7,13 +7,13 @@ import java.util.Objects;
 /**
  * Describe User. There are 3 roles. <p>
  * USER could only check information and make rates <p>
- * MODERATOR could create new events and enter results
+ * ADMINISTRATOR could create new events and enter results
  * ADMINISTRATOR could change roles, ban people.
  */
 
 public class User {
     public static enum Role {
-        ADMINISTRATOR("ADMINISTRATOR"), USER("USER"), MODERATOR("MODERATOR");
+        ADMINISTRATOR("ADMINISTRATOR"), USER("USER"), BOOKMAKER("BOOKMAKER");
 
         private String value;
 

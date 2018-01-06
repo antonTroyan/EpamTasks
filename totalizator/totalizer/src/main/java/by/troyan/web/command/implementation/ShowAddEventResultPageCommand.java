@@ -23,7 +23,7 @@ public class ShowAddEventResultPageCommand implements ICommand {
 
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException {
-        checkRoots(req, new User.Role[]{User.Role.MODERATOR});
+        checkRoots(req, new User.Role[]{User.Role.ADMINISTRATOR});
         CommandFactory.getFactory().createCommand(CommandEnum.ADD_CATEGORIES_TO_REQUEST).execute(req, resp);
         String eventId = req.getParameter("eventId");
         if(eventId == null){
