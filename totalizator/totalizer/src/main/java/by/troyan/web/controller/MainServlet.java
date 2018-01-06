@@ -3,6 +3,7 @@ package by.troyan.web.controller;
 import by.troyan.web.command.CommandEnum;
 import by.troyan.web.command.ICommand;
 import by.troyan.web.command.factory.CommandFactory;
+import by.troyan.web.entity.User;
 import by.troyan.web.exception.UnauthorizedException;
 import by.troyan.web.support.MessageLocalizer;
 import org.apache.logging.log4j.LogManager;
@@ -41,6 +42,11 @@ public class MainServlet extends HttpServlet {
             req.setAttribute("message", exc.getMessage());
             req.getRequestDispatcher("error_page.jsp").forward(req, resp);
         } catch (Exception exc){
+
+
+            exc.printStackTrace();
+
+
             LOG.error(exc);
             req.setAttribute("message", MessageLocalizer.getLocalizedForCurrentLocaleMessage("err.smth-error", req));
             req.getRequestDispatcher("error_page.jsp").forward(req, resp);

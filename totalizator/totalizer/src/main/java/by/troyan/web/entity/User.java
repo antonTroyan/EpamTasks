@@ -105,7 +105,7 @@ public class User {
     }
 
     public void setBanned(boolean banned) {
-        this.isBanned = banned;
+        isBanned = banned;
     }
 
     public List<Rate> getActiveRates() {
@@ -147,6 +147,7 @@ public class User {
                 role == user.role &&
                 Objects.equals(activeRates, user.activeRates) &&
                 Objects.equals(finishedRates, user.finishedRates);
+
     }
 
     @Override
@@ -154,6 +155,7 @@ public class User {
 
         return Objects.hash(userId, login, passHash, email, balance, role, isBanned, activeRates, finishedRates, isDebtor);
     }
+
 
     @Override
     public String toString() {

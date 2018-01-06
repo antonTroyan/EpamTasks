@@ -90,6 +90,7 @@ public class UserDAOImpl implements UserDAO {
                 user.setRole(User.Role.valueOf(resultSet.getString("role").toUpperCase()));
                 user.setBalance(resultSet.getBigDecimal("balance"));
                 user.setBanned(resultSet.getBoolean("banned"));
+
                 result.add(user);
             }
         }
