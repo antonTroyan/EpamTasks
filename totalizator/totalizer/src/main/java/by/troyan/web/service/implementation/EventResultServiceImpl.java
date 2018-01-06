@@ -82,21 +82,21 @@ public class EventResultServiceImpl implements EventResultService {
             public void run() {
                 try {
                     BigDecimal fullMoneyAmount = rateDAO.getFullMoneyAmountForEvent(eventResult.getEventId());
-                    List<Rate> rateList = rateDAO.getRatesForEvent(eventResult.getEventId());
+                    List<Rate> allRateList = rateDAO.getRatesForEvent(eventResult.getEventId());
                     List<Rate> winRateList = new ArrayList<Rate>();
-                    for (Rate rate : rateList) {
+                    for (Rate rate : allRateList) {
                         if(checkWin(rate, eventResult)){
                             winRateList.add(rate);
                         }
                     }
                     BigDecimal moneyPerPerson = fullMoneyAmount.divide(BigDecimal.valueOf(winRateList.size()), 2, BigDecimal.ROUND_FLOOR);
-                    for(Rate rate : rateList){
+                    for(Rate rate : allRateList){
                         rate.setWin(BigDecimal.valueOf(0.0));
                     }
                     for(Rate rate : winRateList){
                         rate.setWin(moneyPerPerson);
                     }
-                    for(Rate rate : rateList){
+                    for(Rate rate : allRateList){
                         rateDAO.setWinForRate(rate);
                         userDAO.fillUpBalanceForUser(rate.getUserId(), rate.getWin());
                     }
