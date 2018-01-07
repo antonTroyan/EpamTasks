@@ -29,7 +29,7 @@
                     <c:if test="${sessionScope.role eq 'ADMINISTRATOR'}">
                         <c:if test="${event.canAddResult}">
                             <div class="event-result">
-                                <a class="add-result-link" href="<c:url value="main?command=showAddEventResultPage&eventId=${event.eventId}"/>"><fmt:message bundle="${loc}" key="link.addEventResult"/></a>
+                                <a class="add-result-link" href="<c:url value="main?command=fillRandomResult&eventId=${event.eventId}"/>"><fmt:message bundle="${loc}" key="link.addEventResult"/></a>
                             </div>
                         </c:if>
                     </c:if>

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/totalizer/EpamTotalizator.iml" filepath="$PROJECT_DIR$/totalizer/EpamTotalizator.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaTotalizator.iml" filepath="$PROJECT_DIR$/.idea/JavaTotalizator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/totalizer/sport.totalizator.iml" filepath="$PROJECT_DIR$/totalizer/sport.totalizator.iml" />
     </modules>
   </component>
 </project>

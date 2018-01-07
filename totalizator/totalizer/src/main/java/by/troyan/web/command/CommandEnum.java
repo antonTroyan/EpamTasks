@@ -49,7 +49,8 @@ public enum CommandEnum {
     CHANGE_ROLE("changeRole"),
     DELETE_USER("deleteUser"),
     TAKE_LOAN("takeLoan"),
-    REPAY_LOAN("repayLoan");
+    REPAY_LOAN("repayLoan"),
+    FILL_RANDOM_RESULT("fillRandomResult");
 
 
     private String value;

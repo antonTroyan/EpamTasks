@@ -47,8 +47,6 @@ public class CommandFactory {
         commands.put(CommandEnum.WITHDRAW_MONEY, new WithdrawMoneyCommand());
         commands.put(CommandEnum.GET_MEMBERS_BY_EVENT_JSON, new GetMembersByEventJsonCommand());
         commands.put(CommandEnum.MAKE_RATE, new MakeRateCommand());
-        commands.put(CommandEnum.SHOW_ADD_EVENT_RESULT_PAGE, new ShowAddEventResultPageCommand());
-        commands.put(CommandEnum.ADD_EVENT_RESULT, new AddEventResultCommand());
         commands.put(CommandEnum.SHOW_ADD_CATEGORY_PAGE, new ShowAddCategoryPageCommand());
         commands.put(CommandEnum.ADD_CATEGORY, new AddCategoryCommand());
         commands.put(CommandEnum.ADD_LEAGUE, new AddLeagueCommand());
@@ -62,6 +60,7 @@ public class CommandFactory {
         commands.put(CommandEnum.DELETE_USER, new DeleteUserCommand());
         commands.put(CommandEnum.TAKE_LOAN, new TakeLoanCommand());
         commands.put(CommandEnum.REPAY_LOAN, new RepayLoan());
+        commands.put(CommandEnum.FILL_RANDOM_RESULT, new FillRandomResult());
     }
 
     public ICommand createCommand(CommandEnum command){

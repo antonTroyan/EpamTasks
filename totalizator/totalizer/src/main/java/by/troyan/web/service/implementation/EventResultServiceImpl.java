@@ -1,9 +1,6 @@
 package by.troyan.web.service.implementation;
 
-import by.troyan.web.dao.EventDAO;
-import by.troyan.web.dao.EventResultDAO;
-import by.troyan.web.dao.RateDAO;
-import by.troyan.web.dao.UserDAO;
+import by.troyan.web.dao.*;
 import by.troyan.web.dao.exception.DAOException;
 import by.troyan.web.dao.factory.DAOFactory;
 import by.troyan.web.entity.EventResult;
@@ -17,6 +14,7 @@ import org.apache.logging.log4j.Logger;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * EventResultService implementation. Describe method works with EventResults.
@@ -53,15 +51,15 @@ public class EventResultServiceImpl implements EventResultService {
         }
     }
 
+
     @Override
-    public EventResult addEventResult(String eventId, String winnerId, String loserId, String winnerScore, String loserScore) throws ServiceException, EventResultException {
+    public EventResult addRandomResultToEvent(String eventId) throws ServiceException, EventResultException {
         EventResult eventResult = new EventResult();
         EventResultException eventResultException = new EventResultException(eventResult);
         eventResult.setEventId(checkInt(eventId, eventResultException, "err.event-id-is-invalid"));
-        eventResult.setWinnerId(checkInt(winnerId, eventResultException, "err.winner-id-is-invalid"));
-        eventResult.setWinnerScore(checkInt(winnerScore, eventResultException, "err.winner-score-is-invalid"));
-        eventResult.setLoserId(checkInt(loserId, eventResultException, "err.loser-id-is-invalid"));
-        eventResult.setLoserScore(checkInt(loserScore, eventResultException, "err.loser-score-is-invalid"));
+        eventResult.setWinnerScore(randomDetermineWinnerAndLooserScore()[0]);
+        eventResult.setLoserScore(randomDetermineWinnerAndLooserScore()[1]);
+
         if(eventResultException.getErrorMessageList().size() > 0){
             throw eventResultException;
         }
@@ -73,36 +71,48 @@ public class EventResultServiceImpl implements EventResultService {
             LOG.error(exc);
             throw new ServiceException(exc);
         }
+
+        System.out.println(eventResult);
+
         return eventResult;
     }
 
+    private int[] randomDetermineWinnerAndLooserScore (){
+        Random randomScore = new Random();
+        final int membersAmount = 2;
+        final int statisticMaxScore = 10;
+        int[] result = new int[membersAmount];
+
+        result[0] = randomScore.nextInt(statisticMaxScore);
+        result[1] = randomScore.nextInt(statisticMaxScore);
+
+        return result;
+    }
+
     private void distributePrize(EventResult eventResult){
-        (new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    BigDecimal fullMoneyAmount = rateDAO.getFullMoneyAmountForEvent(eventResult.getEventId());
-                    List<Rate> allRateList = rateDAO.getRatesForEvent(eventResult.getEventId());
-                    List<Rate> winRateList = new ArrayList<Rate>();
-                    for (Rate rate : allRateList) {
-                        if(checkWin(rate, eventResult)){
-                            winRateList.add(rate);
-                        }
+        (new Thread(() -> {
+            try {
+                BigDecimal fullMoneyAmount = rateDAO.getFullMoneyAmountForEvent(eventResult.getEventId());
+                List<Rate> allRateList = rateDAO.getRatesForEvent(eventResult.getEventId());
+                List<Rate> winRateList = new ArrayList<Rate>();
+                for (Rate rate : allRateList) {
+                    if(checkWin(rate, eventResult)){
+                        winRateList.add(rate);
                     }
-                    BigDecimal moneyPerPerson = fullMoneyAmount.divide(BigDecimal.valueOf(winRateList.size()), 2, BigDecimal.ROUND_FLOOR);
-                    for(Rate rate : allRateList){
-                        rate.setWin(BigDecimal.valueOf(0.0));
-                    }
-                    for(Rate rate : winRateList){
-                        rate.setWin(moneyPerPerson);
-                    }
-                    for(Rate rate : allRateList){
-                        rateDAO.setWinForRate(rate);
-                        userDAO.fillUpBalanceForUser(rate.getUserId(), rate.getWin());
-                    }
-                } catch (Exception exc){
-                    LOG.error(exc);
                 }
+                BigDecimal moneyPerPerson = fullMoneyAmount.divide(BigDecimal.valueOf(winRateList.size()), 2, BigDecimal.ROUND_FLOOR);
+                for(Rate rate : allRateList){
+                    rate.setWin(BigDecimal.valueOf(0.0));
+                }
+                for(Rate rate : winRateList){
+                    rate.setWin(moneyPerPerson);
+                }
+                for(Rate rate : allRateList){
+                    rateDAO.setWinForRate(rate);
+                    userDAO.fillUpBalanceForUser(rate.getUserId(), rate.getWin());
+                }
+            } catch (Exception exc){
+                LOG.error(exc);
             }
         })).run();
     }

@@ -19,21 +19,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class AddEventResultCommand implements ICommand {
-    private final static Logger LOG = LogManager.getLogger(AddEventResultCommand.class);
+public class FillRandomResult implements ICommand {
+    private final static Logger LOG = LogManager.getLogger(FillRandomResult.class);
     EventResultService eventResultService = ServiceFactory.getInstance().getEventResultService();
 
     @Override
-    public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException,
-            CommandException, UnauthorizedException {
+    public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException {
         checkRoots(req, new User.Role[]{User.Role.ADMINISTRATOR});
-        String eventId = req.getParameter("event-id");
-        String winnerId = req.getParameter("winner-id");
-        String winnerScore = req.getParameter("winner-score");
-        String loserId = req.getParameter("loser-id");
-        String loserScore = req.getParameter("loser-score");
+        String eventId = req.getParameter("eventId");
+
         try{
-            eventResultService.addEventResult(eventId, winnerId, loserId, winnerScore, loserScore);
+            eventResultService.addRandomResultToEvent(eventId);
         } catch (ServiceException exc){
             LOG.error(exc);
             throw new CommandException(exc);

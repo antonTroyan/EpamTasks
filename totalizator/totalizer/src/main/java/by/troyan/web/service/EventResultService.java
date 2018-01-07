@@ -9,6 +9,6 @@ import by.troyan.web.service.exception.ServiceException;
  */
 
 public interface EventResultService {
-    EventResult addEventResult(String eventId, String winnerId, String loserId, String winnerScore, String loserScore)
-            throws ServiceException, EventResultException;
+
+    EventResult addRandomResultToEvent (String eventId) throws ServiceException, EventResultException;
 }
