@@ -4,8 +4,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link href="<c:url value="styles/styles.css" />" rel="stylesheet" />
-    <link rel="stylesheet" href="<c:url value="styles/form.css" />" />
+    <link href="<c:url value="styles/styles.css" />" rel="stylesheet"/>
+    <link rel="stylesheet" href="<c:url value="styles/form.css" />"/>
     <title>Totalizator</title>
 </head>
 <body>
@@ -32,21 +32,26 @@
                         </c:if>
                         <div class="input-div">
                             <label><fmt:message bundle="${loc}" key="label.card-number"/></label>
-                            <input placeholder="XXXXXXXXXXXXXXXX" type="text" name="card-number" pattern="[0-9]{16}" required
+                            <input placeholder="XXXXXXXXXXXXXXXX" type="text" name="card-number" pattern="[0-9]{16}"
+                                   required
                                    value="<c:out value="${operation.cardNumber}"/>"/>
                         </div>
                         <div class="input-div">
                             <label><fmt:message bundle="${loc}" key="label.validity-period"/></label>
-                            <input placeholder="XX/XX" type="text" name="validity-date" pattern="[0-9]{2}/[0-9]{2}" required
+                            <input placeholder="XX/XX" type="text" name="validity-date" pattern="[0-9]{2}/[0-9]{2}"
+                                   required
                                    value="<c:out value="${operation.validityDate}"/>"/>
                         </div>
                         <div class="input-div">
                             <label><fmt:message bundle="${loc}" key="label.amount"/></label>
-                            <input placeholder="XXX.XX" type="text" name="amount" pattern="[0-9]{1,3}\.[0-9]{1,2}" required
+                            <input placeholder="XXX.XX" type="text" name="amount" pattern="[0-9]{1,3}\.[0-9]{1,2}"
+                                   required
                                    value="<c:out value="${operation.amount}"/>"/>
                         </div>
                         <div class="btn-container">
-                            <button class="register-btn" type="submit"><fmt:message bundle="${loc}" key="link.withdraw" /></button>
+                            <button class="register-btn" type="submit">
+                                <fmt:message bundle="${loc}" key="link.withdraw"/>
+                            </button>
                         </div>
                     </div>
                 </form>

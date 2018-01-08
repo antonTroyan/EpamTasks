@@ -34,7 +34,9 @@
                     <div class="input-div">
                         <label><fmt:message bundle="${loc}" key="label.category" /></label>
                         <select id="category-select" name="category-id" onchange="setLeaguesSelect()" required>
-                            <option value="0" selected><fmt:message bundle="${loc}" key="label.select-category" /></option>
+                            <option value="0" selected>
+                                <fmt:message bundle="${loc}" key="label.select-category" />
+                            </option>
                             <c:forEach var="category" items="${categories}">
                                 <option value="${category.id}">${category.name}</option>
                             </c:forEach>
@@ -56,7 +58,9 @@
                     </div>
 
                     <div class="btn-container">
-                        <button class="submit-btn" type="submit"><fmt:message bundle="${loc}" key="link.addMember"/></button>
+                        <button class="submit-btn" type="submit">
+                            <fmt:message bundle="${loc}" key="link.addMember"/>
+                        </button>
                     </div>
                 </form>
             </div>

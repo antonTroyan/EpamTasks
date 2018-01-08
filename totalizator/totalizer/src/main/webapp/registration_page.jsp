@@ -4,8 +4,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link href="<c:url value="styles/styles.css" />" rel="stylesheet" />
-    <link rel="stylesheet" href="<c:url value="styles/form.css" />" />
+    <link href="<c:url value="styles/styles.css" />" rel="stylesheet"/>
+    <link rel="stylesheet" href="<c:url value="styles/form.css" />"/>
     <script src="<c:url value="javascript/validation.js" />"></script>
     <title>Totalizator</title>
 </head>
@@ -27,21 +27,21 @@
                     </c:if>
                     <c:if test="${!empty error}">
                         <div class="error-div">
-                            ${error}
+                                ${error}
                         </div>
                     </c:if>
                     <div class="input-div">
                         <label><fmt:message bundle="${loc}" key="label.name"/> </label>
                         <input id="name-input" type="text" name="login" pattern="[a-zA-Z]{1}[a-zA-Z_0-9]{4,}" required
-                            value="<c:out value="${user.login}"/>"/>
+                               value="<c:out value="${user.login}"/>"/>
                     </div>
                     <div class="input-div">
-                        <label><fmt:message bundle="${loc}" key="label.password" /></label>
-                        <input id="pass-input" type="password" name="password" required />
+                        <label><fmt:message bundle="${loc}" key="label.password"/></label>
+                        <input id="pass-input" type="password" name="password" required/>
                     </div>
                     <div class="input-div">
-                        <label><fmt:message bundle="${loc}" key="label.confirm-password" /></label>
-                        <input id="pass-confirm-input" type="password" name="password-confirm" required />
+                        <label><fmt:message bundle="${loc}" key="label.confirm-password"/></label>
+                        <input id="pass-confirm-input" type="password" name="password-confirm" required/>
                     </div>
                     <div class="input-div">
                         <label>E-mail</label>
@@ -49,7 +49,9 @@
                                value="<c:out value="${user.email}"/>"/>
                     </div>
                     <div class="btn-container">
-                        <button class="register-btn" type="submit"><fmt:message bundle="${loc}" key="link.registration" /></button>
+                        <button class="register-btn" type="submit">
+                            <fmt:message bundle="${loc}" key="link.registration"/>
+                        </button>
                     </div>
                 </form>
             </div>

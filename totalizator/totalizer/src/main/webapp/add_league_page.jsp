@@ -46,7 +46,9 @@
                         <input type="text" name="name" required />
                     </div>
                     <div class="btn-container">
-                        <button class="submit-btn" type="submit"><fmt:message bundle="${loc}" key="link.addLeague"/></button>
+                        <button class="submit-btn" type="submit">
+                            <fmt:message bundle="${loc}" key="link.addLeague"/>
+                        </button>
                     </div>
                 </form>
             </div>

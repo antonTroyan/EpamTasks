@@ -36,7 +36,9 @@
                     </div>
 
                     <div class="btn-container">
-                        <button class="submit-btn" type="submit"><fmt:message bundle="${loc}" key="link.addCategory"/></button>
+                        <button class="submit-btn" type="submit">
+                            <fmt:message bundle="${loc}" key="link.addCategory"/>
+                        </button>
                     </div>
                 </form>
             </div>

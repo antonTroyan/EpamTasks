@@ -17,7 +17,8 @@
         <%@ include file="parts/left_menu.jsp" %>
         <div class="center-part">
             <div class="form" style="width: 600px;">
-                <form class="form" charset="UTF-8" method="post" action="main?command=showAdminPage" onsubmit="return false;">
+                <form class="form" charset="UTF-8" method="post" action="main?command=showAdminPage"
+                      onsubmit="return false;">
                     <div class="input-div">
                         <table class="user-table">
                             <thead>
@@ -28,7 +29,10 @@
                             </thead>
                             <c:forEach items="${users}" var="user">
                                 <tr>
-                                    <td><input type="checkbox" name="checkbox" id="${user.userId}" onchange="onCheckboxClick(this)"/></td>
+                                    <td>
+                                        <input type="checkbox" name="checkbox" id="${user.userId}"
+                                               onchange="onCheckboxClick(this)"/>
+                                    </td>
                                     <td><p>${user.login}</p></td>
                                     <td><p id="role-p">${user.role}</p></td>
                                     <td><p id="isBanned-p">${user.banned}</p></td>
@@ -37,7 +41,9 @@
                         </table>
                     </div>
                     <div class="input-div">
-                        <button class="admin-btn" onclick="changeRole()"><fmt:message bundle="${loc}" key="label.change-role-on" /></button>
+                        <button class="admin-btn" onclick="changeRole()">
+                            <fmt:message bundle="${loc}" key="label.change-role-on" />
+                        </button>
                         <select id="role" name="role">
                             <option selected value="USER">USER</option>
                             <option selected value="MODERATOR">MODERATOR</option>
@@ -45,11 +51,17 @@
                         </select>
                     </div>
                     <div class="input-div">
-                        <button class="admin-btn" onclick="ban()"><fmt:message bundle="${loc}" key="label.ban" /></button>
-                        <button class="admin-btn" onclick="unban()"><fmt:message bundle="${loc}" key="label.unban" /></button>
+                        <button class="admin-btn" onclick="ban()">
+                            <fmt:message bundle="${loc}" key="label.ban" />
+                        </button>
+                        <button class="admin-btn" onclick="unban()">
+                            <fmt:message bundle="${loc}" key="label.unban" />
+                        </button>
                     </div>
                     <div class="input-div">
-                        <button class="admin-btn" onclick="deleteUser()"><fmt:message bundle="${loc}" key="label.delete-user" /></button>
+                        <button class="admin-btn" onclick="deleteUser()">
+                            <fmt:message bundle="${loc}" key="label.delete-user" />
+                        </button>
                     </div>
                 </form>
             </div>

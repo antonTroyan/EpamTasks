@@ -34,15 +34,17 @@
                         </c:if>
                         <div class="input-div">
                             <label><fmt:message bundle="${loc}" key="label.name"/></label>
-                            <input id="name-input" type="text" name="login" pattern="[a-zA-Z]{1}[a-zA-Z_0-9]{4,}" required 
-                                value="<c:out value="${user.login}"/>"/>
+                            <input id="name-input" type="text" name="login" pattern="[a-zA-Z]{1}[a-zA-Z_0-9]{4,}"
+                                   required value="<c:out value="${user.login}"/>"/>
                         </div>
                         <div class="input-div">
                             <label><fmt:message bundle="${loc}" key="label.password"/></label>
                             <input id="pass-input" type="password" name="password" required />
                         </div>
                         <div class="btn-container">
-                            <button class="register-btn" type="submit"><fmt:message bundle="${loc}" key="link.login" /></button>
+                            <button class="register-btn" type="submit">
+                                <fmt:message bundle="${loc}" key="link.login" />
+                            </button>
                         </div>
                     </div>
                 </form>
