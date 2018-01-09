@@ -43,24 +43,6 @@ label {
     justify-content: center;
 }
 
-.submit-btn {
-    width: 100px;
-    color: white;
-    margin-top: 10px;
-    background: #94bfeb;
-    border: 1px solid white;
-    border-radius: 4px;
-    transition: all 0.2s linear;
-}
-
-.submit-btn:hover {
-    background: #94bfeb;
-}
-
-.btn-container {
-    display: flex;
-    justify-content: center;
-}
 
 .add-member-select-btn-div {
     display: flex;

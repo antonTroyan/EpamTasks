@@ -175,4 +175,21 @@ public class EventServiceImpl implements EventService {
             throw new ServiceException(exc);
         }
     }
+
+    @Override
+    public void setCoefficientToEvent(String eventId, String coefficient) throws ServiceException {
+        Event event = new Event();
+
+        try{
+            int eventIdInteger = Integer.parseInt(eventId);
+            eventDAO.getEventById(eventIdInteger);
+            event.setCoefficient(eventIdInteger);
+            eventDAO.setEventCoefficient(eventIdInteger, Double.parseDouble(coefficient));
+        } catch (DAOException exc){
+            LOG.error(exc);
+            throw new ServiceException(exc);
+        } catch (Exception exc){
+            LOG.error(exc);
+        }
+    }
 }

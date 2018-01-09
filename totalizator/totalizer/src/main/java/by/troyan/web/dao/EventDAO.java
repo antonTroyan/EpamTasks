@@ -24,4 +24,5 @@ public interface EventDAO {
 
     void finishEvent(int eventId) throws DAOException;
 
+    void setEventCoefficient(int eventId, double coefficient) throws DAOException;
 }

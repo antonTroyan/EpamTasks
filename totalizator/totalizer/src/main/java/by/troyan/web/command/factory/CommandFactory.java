@@ -42,7 +42,7 @@ public class CommandFactory {
         commands.put(CommandEnum.SHOW_MAKE_RATE_PAGE, new ShowMakeRatePageCommand());
         commands.put(CommandEnum.SHOW_PERSONAL_PAGE, new ShowPersonalPageCommand());
         commands.put(CommandEnum.SHOW_FILL_UP_BALANCE_PAGE, new ShowFillUpPageCommand());
-        commands.put(CommandEnum.SHOW_WITHDRAW_MONEY_PAGE, new ShowWithdrawMoneyPage());
+        commands.put(CommandEnum.SHOW_WITHDRAW_MONEY_PAGE, new ShowWithdrawMoneyPageCommand());
         commands.put(CommandEnum.FILL_UP_BALANCE, new FillUpBalanceCommand());
         commands.put(CommandEnum.WITHDRAW_MONEY, new WithdrawMoneyCommand());
         commands.put(CommandEnum.GET_MEMBERS_BY_EVENT_JSON, new GetMembersByEventJsonCommand());
@@ -59,8 +59,9 @@ public class CommandFactory {
         commands.put(CommandEnum.CHANGE_ROLE, new ChangeRoleCommand());
         commands.put(CommandEnum.DELETE_USER, new DeleteUserCommand());
         commands.put(CommandEnum.TAKE_LOAN, new TakeLoanCommand());
-        commands.put(CommandEnum.REPAY_LOAN, new RepayLoan());
-        commands.put(CommandEnum.FILL_RANDOM_RESULT, new FillRandomResult());
+        commands.put(CommandEnum.REPAY_LOAN, new RepayLoanCommand());
+        commands.put(CommandEnum.FILL_RANDOM_RESULT, new FillRandomResultCommand());
+        commands.put(CommandEnum.SET_COEFFICIENT, new SetCoefficientCommand());
     }
 
     public ICommand createCommand(CommandEnum command){

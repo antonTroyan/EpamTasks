@@ -55,7 +55,7 @@
                                value="<c:out value="${rate.sum}"/>"/>
                     </div>
                     <div class="btn-container">
-                        <button class="submit-btn" type="submit">
+                        <button class="button" type="submit">
                             <fmt:message bundle="${loc}" key="link.make-rate"/>
                         </button>
                     </div>

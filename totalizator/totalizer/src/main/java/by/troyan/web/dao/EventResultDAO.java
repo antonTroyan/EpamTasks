@@ -12,4 +12,5 @@ public interface EventResultDAO {
     EventResult addEventResult(EventResult eventResult) throws DAOException;
 
     EventResult getEventResultByEvent(int eventId) throws DAOException;
+
 }

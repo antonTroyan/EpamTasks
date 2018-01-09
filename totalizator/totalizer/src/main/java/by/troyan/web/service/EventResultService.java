@@ -11,4 +11,6 @@ import by.troyan.web.service.exception.ServiceException;
 public interface EventResultService {
 
     EventResult addRandomResultToEvent (String eventId) throws ServiceException, EventResultException;
+
+
 }

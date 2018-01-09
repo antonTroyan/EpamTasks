@@ -76,12 +76,44 @@ public class EventResultServiceImpl implements EventResultService {
         return eventResult;
     }
 
+
     private int randomDetermineScore(){
         Random randomScore = new Random();
         int result;
         result = randomScore.nextInt(statisticMaxScore);
         return result;
     }
+
+//    private void distributePrize(EventResult eventResult){
+//        (new Thread(() -> {
+//            try {
+//                BigDecimal fullMoneyAmount = rateDAO.getFullMoneyAmountForEvent(eventResult.getEventId());
+//                List<Rate> allRateList = rateDAO.getRatesForEvent(eventResult.getEventId());
+//                List<Rate> winRateList = new ArrayList<Rate>();
+//                for (Rate rate : allRateList) {
+//                    if(checkWin(rate, eventResult)){
+//                        winRateList.add(rate);
+//                    }
+//                }
+//                BigDecimal moneyPerPerson = fullMoneyAmount
+//                        .divide(BigDecimal.valueOf(winRateList.size()), 2, BigDecimal.ROUND_FLOOR);
+//
+//                for(Rate rate : allRateList){
+//                    rate.setWin(BigDecimal.valueOf(0.0));
+//                }
+//                for(Rate rate : winRateList){
+//                    rate.setWin(moneyPerPerson);
+//                }
+//                for(Rate rate : allRateList){
+//                    rateDAO.setWinForRate(rate);
+//                    userDAO.fillUpBalanceForUser(rate.getUserId(), rate.getWin());
+//                }
+//            } catch (Exception exc){
+//                LOG.error(exc);
+//            }
+//        })).run();
+//    }
+
 
     private void distributePrize(EventResult eventResult){
         (new Thread(() -> {
@@ -94,14 +126,16 @@ public class EventResultServiceImpl implements EventResultService {
                         winRateList.add(rate);
                     }
                 }
-                BigDecimal moneyPerPerson = fullMoneyAmount
-                        .divide(BigDecimal.valueOf(winRateList.size()), 2, BigDecimal.ROUND_FLOOR);
+
+                int coefficient = 5;
 
                 for(Rate rate : allRateList){
                     rate.setWin(BigDecimal.valueOf(0.0));
                 }
                 for(Rate rate : winRateList){
-                    rate.setWin(moneyPerPerson);
+                    BigDecimal rateSum = rate.getSum();
+                    BigDecimal prizeSum =rateSum.multiply(BigDecimal.valueOf(coefficient));
+                    rate.setWin(prizeSum);
                 }
                 for(Rate rate : allRateList){
                     rateDAO.setWinForRate(rate);

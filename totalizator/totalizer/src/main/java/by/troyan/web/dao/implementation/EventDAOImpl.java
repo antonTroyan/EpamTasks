@@ -63,6 +63,8 @@ public class EventDAOImpl implements EventDAO {
             "`live_translation_reference`, `event_start_date`) " +
             "VALUES (?, ?, ?, ?, ?);";
 
+    private static final  String SQL_FOR_SET_COEFFICIENT = "UPDATE `event` SET `coefficient`= ? WHERE `event_id`= ?";
+
     private final static Logger LOG = LogManager.getLogger("EventDAOImpl");
     private static final EventDAOImpl instance = new EventDAOImpl();
     private static final ConnectionPool pool = ConnectionPool.getConnectionPool();
@@ -277,4 +279,33 @@ public class EventDAOImpl implements EventDAO {
             }
         }
     }
+    @Override
+    public void setEventCoefficient(int eventId, double coefficient) throws DAOException {
+        Connection connection = null;
+        PreparedStatement statement = null;
+        try{
+            connection = pool.getConnection();
+            try {
+                statement = connection.prepareStatement(SQL_FOR_SET_COEFFICIENT);
+                statement.setDouble(1, coefficient);
+                statement.setInt(2, eventId);
+                statement.executeUpdate();
+            } catch (SQLException exc){
+                LOG.error(exc);
+                throw new DAOException(exc);
+            } finally {
+                if(statement != null){
+                    statement.close();
+                }
+            }
+        } catch (SQLException exc){
+            LOG.error(exc);
+            throw new DAOException(exc);
+        } finally {
+            if(connection != null){
+                pool.returnConnectionToPool(connection);
+            }
+        }
+    }
+
 }

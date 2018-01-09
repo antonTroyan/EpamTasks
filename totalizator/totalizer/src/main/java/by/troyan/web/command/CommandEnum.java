@@ -50,7 +50,8 @@ public enum CommandEnum {
     DELETE_USER("deleteUser"),
     TAKE_LOAN("takeLoan"),
     REPAY_LOAN("repayLoan"),
-    FILL_RANDOM_RESULT("fillRandomResult");
+    FILL_RANDOM_RESULT("fillRandomResult"),
+    SET_COEFFICIENT("setCoefficient");
 
 
     private String value;

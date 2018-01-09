@@ -26,20 +26,20 @@
                         <div class="balance-h4-div">
                             <h4>${user.balance}$</h4>
                         </div>
-                        <a class="balance-btn" href="<c:url value="main?command=showWithdrawMoneyPage"/>">
+                        <a class="button" href="<c:url value="main?command=showWithdrawMoneyPage"/>">
                             <fmt:message bundle="${loc}" key="link.withdraw"/>
                         </a>
-                        <a class="balance-btn" href="<c:url value="main?command=showFillUpBalancePage"/>">
+                        <a class="button" href="<c:url value="main?command=showFillUpBalancePage"/>">
                             <fmt:message bundle="${loc}" key="link.fill-up"/>
                         </a>
                         <c:if test="${isDebtor==true}">
-                            <a class="credit-btn" href="<c:url value="main?command=repayLoan"/>">
-                                <fmt:message bundle="${loc}" key="link.repayLoan"/>
+                            <a class="button" href="<c:url value="main?command=repayLoan"/>">
+                                <fmt:message bundle="${loc}" key="link.repay-loan"/>
                             </a>
                         </c:if>
                         <c:if test="${isDebtor==false}">
-                            <a class="credit-btn" href="<c:url value="main?command=takeLoan"/>">
-                                <fmt:message bundle="${loc}" key="link.takeLoan"/>
+                            <a class="button" href="<c:url value="main?command=takeLoan"/>">
+                                <fmt:message bundle="${loc}" key="link.take-loan"/>
                             </a>
                         </c:if>
                     </div>

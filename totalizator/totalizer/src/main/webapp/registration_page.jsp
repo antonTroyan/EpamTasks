@@ -49,7 +49,7 @@
                                value="<c:out value="${user.email}"/>"/>
                     </div>
                     <div class="btn-container">
-                        <button class="register-btn" type="submit">
+                        <button class="button" type="submit">
                             <fmt:message bundle="${loc}" key="link.registration"/>
                         </button>
                     </div>

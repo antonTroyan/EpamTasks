@@ -21,7 +21,7 @@ import java.io.IOException;
 
 import static by.troyan.web.support.Constant.*;
 
-public class RepayLoan implements ICommand {
+public class RepayLoanCommand implements ICommand {
     private final static Logger LOG = LogManager.getLogger(TakeLoanCommand.class);
     private PaySystemService paySystemService = ServiceFactory.getInstance().getPaySystemService();
 

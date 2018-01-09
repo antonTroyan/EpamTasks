@@ -2,6 +2,7 @@ package by.troyan.web.service;
 
 import by.troyan.web.entity.Event;
 import by.troyan.web.exception.EventException;
+import by.troyan.web.exception.EventResultException;
 import by.troyan.web.service.exception.ServiceException;
 import by.troyan.web.support.PaginationObject;
 
@@ -25,4 +26,6 @@ public interface EventService {
     Event addEvent(String name, String leagueId, String rateTypes, String liveTranslationLink,
                           String date, List<Integer> memberIds)
             throws ServiceException, EventException;
+
+    void setCoefficientToEvent(String eventId, String coefficient) throws ServiceException;
 }

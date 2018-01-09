@@ -13,15 +13,3 @@
     text-align: center;
 }
 
-.admin-btn {
-    width: 200px;
-    color: white;
-    margin-top: 10px;
-    background: #94bfeb;
-    border: 1px solid white;
-    border-radius: 4px;
-    transition: all 0.2s linear;
-}
-.admin-btn:hover {
-    background: #94bfeb;
-}

@@ -28,6 +28,7 @@ public class EventResultDAOImpl implements EventResultDAO {
             "VALUES(?, ?, ?, ?, ?)";
 
 
+
     private static final EventResultDAOImpl instance = new EventResultDAOImpl();
     private static final ConnectionPool pool = ConnectionPool.getConnectionPool();
 
@@ -118,5 +119,7 @@ public class EventResultDAOImpl implements EventResultDAO {
         }
         return eventResult;
     }
+
+
 
 }

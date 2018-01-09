@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <link href="<c:url value="styles/styles.css" />" rel="stylesheet"/>
     <link href="<c:url value="styles/event.css" />" rel="stylesheet"/>
+
+
     <title>Totalizator</title>
 </head>
 <body>
@@ -38,6 +40,33 @@
                         </c:if>
                     </c:if>
                 </div>
+
+                <c:if test="${sessionScope.role eq 'BOOKMAKER'}">
+                    <c:if test="${event.status eq 'POSTED'}">
+
+                        <c:if test="${event.coefficient != 0.0}">
+                            <p class="label">${event.coefficient}</p>
+                        </c:if>
+
+                        <p>${event.coefficient}</p>
+
+                        <c:if test="${event.coefficient == 0.0}">
+                        <form class="form" method="post" action="main?command=setCoefficient&eventId=${event.eventId}">
+                        <div class="input-div">
+                            <label><fmt:message bundle="${loc}" key="label.coefficient"/></label>
+                            <input name="coefficient" pattern="[0-9]{1,3}\.[0-9]{1,2}"/>
+                        </div>
+                        <div class="btn-container">
+                            <button class="button" type="submit" >
+                                <fmt:message bundle="${loc}" key="link.set-coefficient"/>
+                            </button>
+                        </div>
+                        </form>
+                        </c:if>
+
+                    </c:if>
+                </c:if>
+
                 <c:if test="${!empty event.liveTranslationLink}">
                     <div class="event-live">
                         <iframe width="640" height="480" src="${event.liveTranslationLink}" frameborder="0"

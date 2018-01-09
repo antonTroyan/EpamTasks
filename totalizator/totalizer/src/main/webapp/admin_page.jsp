@@ -41,25 +41,25 @@
                         </table>
                     </div>
                     <div class="input-div">
-                        <button class="admin-btn" onclick="changeRole()">
+                        <button class="button" onclick="changeRole()">
                             <fmt:message bundle="${loc}" key="label.change-role-on" />
                         </button>
                         <select id="role" name="role">
                             <option selected value="USER">USER</option>
-                            <option selected value="MODERATOR">MODERATOR</option>
+                            <option selected value="BOOKMAKER">BOOKMAKER</option>
                             <option selected value="ADMINISTRATOR">ADMINISTRATOR</option>
                         </select>
                     </div>
                     <div class="input-div">
-                        <button class="admin-btn" onclick="ban()">
+                        <button class="button" onclick="ban()">
                             <fmt:message bundle="${loc}" key="label.ban" />
                         </button>
-                        <button class="admin-btn" onclick="unban()">
+                        <button class="button" onclick="unban()">
                             <fmt:message bundle="${loc}" key="label.unban" />
                         </button>
                     </div>
                     <div class="input-div">
-                        <button class="admin-btn" onclick="deleteUser()">
+                        <button class="button" onclick="deleteUser()">
                             <fmt:message bundle="${loc}" key="label.delete-user" />
                         </button>
                     </div>
