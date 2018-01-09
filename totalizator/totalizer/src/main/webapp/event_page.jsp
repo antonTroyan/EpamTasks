@@ -81,13 +81,14 @@
                         </ul>
                     </c:forEach>
                 </div>
+                <div class="input-div">
                 <c:choose>
                     <c:when test="${!empty sessionScope.username}">
                         <c:if test="${event.canMakeRate}">
-                            <a class="make-rate-link"
-                               href="<c:url value="main?command=showMakeRatePage&eventId=${event.eventId}"/>">
+                            <button class="button"
+                                    href="<c:url value="main?command=showMakeRatePage&eventId=${event.eventId}"/>">
                                 <fmt:message bundle="${loc}" key="link.make-rate"/>
-                            </a>
+                            </button>
                         </c:if>
                     </c:when>
                     <c:when test="${empty sessionScope.username}">
@@ -96,7 +97,7 @@
                         </div>
                     </c:when>
                 </c:choose>
-
+                </div>
             </div>
         </div>
     </div>
