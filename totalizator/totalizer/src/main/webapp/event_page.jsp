@@ -45,10 +45,9 @@
                     <c:if test="${event.status eq 'POSTED'}">
 
                         <c:if test="${event.coefficient != 0.0}">
+                            <label><fmt:message bundle="${loc}" key="label.coefficient"/></label>
                             <p class="label">${event.coefficient}</p>
                         </c:if>
-
-                        <p>${event.coefficient}</p>
 
                         <c:if test="${event.coefficient == 0.0}">
                         <form class="form" method="post" action="main?command=setCoefficient&eventId=${event.eventId}">

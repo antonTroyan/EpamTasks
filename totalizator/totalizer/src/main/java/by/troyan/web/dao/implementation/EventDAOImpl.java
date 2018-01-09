@@ -54,7 +54,7 @@ public class EventDAOImpl implements EventDAO {
             "WHERE `event_status` = 'POSTED' " +
             "AND `event_start_date` > now();";
     private static final String SQL_FOR_GET_EVENT_BY_ID = "SELECT `event_id` AS `id`, `event_name`, `rate_types`, `event_status`, " +
-            "`live_translation_reference` AS `link`, `event_start_date` AS `date`, `league_name` " +
+            "`coefficient`, `live_translation_reference` AS `link`, `event_start_date` AS `date`, `league_name` " +
             "FROM `event` " +
             "LEFT JOIN `league` " +
             "ON `event`.`league_id` = `league`.`league_id` " +
@@ -178,6 +178,7 @@ public class EventDAOImpl implements EventDAO {
                         event.setEventTime(resultSet.getTime("date"));
                         event.setLiveTranslationLink(resultSet.getString("link"));
                         event.setStatus(resultSet.getString("event_status"));
+                        event.setCoefficient(resultSet.getDouble("coefficient"));
                     }
                 } catch (SQLException exc){
                     LOG.error(exc);

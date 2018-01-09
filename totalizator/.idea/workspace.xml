@@ -18,27 +18,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="EventDAOImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EventDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/dao/implementation/EventDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="56" column="13" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+            <state relative-caret-position="158">
+              <caret line="158" column="24" lean-forward="false" selection-start-line="158" selection-start-column="24" selection-end-line="158" selection-end-column="24" />
               <folding>
-                <marker date="1515517780691" expanded="true" signature="545:646" ph="UPDATE `event`... " />
-                <marker date="1515517780691" expanded="true" signature="2599:2937" ph="SELECT `even... event" />
-                <marker date="1515517780691" expanded="true" signature="2994:3161" ph="INSERT INTO `event`... " />
-                <marker date="1515517780691" expanded="true" signature="3226:3279" ph="UPDATE `totalizator_db_schema`.`event`... " />
-                <marker date="1515517780691" expanded="true" signature="3226:3281" ph="UPDATE `event`... " />
+                <marker date="1515518474285" expanded="true" signature="545:646" ph="UPDATE `event`... " />
+                <marker date="1515518474285" expanded="true" signature="2599:2952" ph="SELECT `even... event" />
+                <marker date="1515518474285" expanded="true" signature="3009:3176" ph="INSERT INTO `event`... " />
+                <marker date="1515518474285" expanded="true" signature="3241:3294" ph="UPDATE `totalizator_db_schema`.`event`... " />
+                <marker date="1515518474285" expanded="true" signature="3241:3296" ph="UPDATE `event`... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event_page.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="event_page.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/totalizer/src/main/webapp/event_page.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="249">
-              <caret line="50" column="51" lean-forward="true" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+              <caret line="49" column="31" lean-forward="true" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -57,8 +57,8 @@
       <file leaf-file-name="EventServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/EventServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="126" column="32" lean-forward="false" selection-start-line="126" selection-start-column="26" selection-end-line="126" selection-end-column="32" />
+            <state relative-caret-position="143">
+              <caret line="116" column="20" lean-forward="false" selection-start-line="116" selection-start-column="20" selection-end-line="116" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -177,8 +177,8 @@
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/EventResultServiceImpl.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/command/implementation/SetCoefficientCommand.java" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/EventServiceImpl.java" />
-        <option value="$PROJECT_DIR$/totalizer/src/main/webapp/event_page.jsp" />
         <option value="$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/dao/implementation/EventDAOImpl.java" />
+        <option value="$PROJECT_DIR$/totalizer/src/main/webapp/event_page.jsp" />
       </list>
     </option>
   </component>
@@ -888,7 +888,7 @@
       <workItem from="1515335230447" duration="918000" />
       <workItem from="1515417622005" duration="1419000" />
       <workItem from="1515419063092" duration="1721000" />
-      <workItem from="1515501009001" duration="17292000" />
+      <workItem from="1515501009001" duration="17731000" />
     </task>
     <servers />
   </component>
@@ -910,7 +910,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182049000" />
+    <option name="totallyTimeSpent" value="182488000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -934,7 +934,7 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="91" y="91" width="2378" height="1208" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11231015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32497978" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32497978" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20103917" sideWeight="0.49578822" order="0" side_tool="false" content_ui="combo" />
@@ -1405,33 +1405,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/totalizer/src/main/webapp/event_page.jsp">
+    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/dao/implementation/EventDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="50" column="51" lean-forward="true" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
-          <folding />
+        <state relative-caret-position="158">
+          <caret line="158" column="24" lean-forward="false" selection-start-line="158" selection-start-column="24" selection-end-line="158" selection-end-column="24" />
+          <folding>
+            <marker date="1515518474285" expanded="true" signature="545:646" ph="UPDATE `event`... " />
+            <marker date="1515518474285" expanded="true" signature="2599:2952" ph="SELECT `even... event" />
+            <marker date="1515518474285" expanded="true" signature="3009:3176" ph="INSERT INTO `event`... " />
+            <marker date="1515518474285" expanded="true" signature="3241:3294" ph="UPDATE `totalizator_db_schema`.`event`... " />
+            <marker date="1515518474285" expanded="true" signature="3241:3296" ph="UPDATE `event`... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/service/implementation/EventServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="126" column="32" lean-forward="false" selection-start-line="126" selection-start-column="26" selection-end-line="126" selection-end-column="32" />
+        <state relative-caret-position="143">
+          <caret line="116" column="20" lean-forward="false" selection-start-line="116" selection-start-column="20" selection-end-line="116" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/totalizer/src/main/java/by/troyan/web/dao/implementation/EventDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/totalizer/src/main/webapp/event_page.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="56" column="13" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-          <folding>
-            <marker date="1515517780691" expanded="true" signature="545:646" ph="UPDATE `event`... " />
-            <marker date="1515517780691" expanded="true" signature="2599:2937" ph="SELECT `even... event" />
-            <marker date="1515517780691" expanded="true" signature="2994:3161" ph="INSERT INTO `event`... " />
-            <marker date="1515517780691" expanded="true" signature="3226:3279" ph="UPDATE `totalizator_db_schema`.`event`... " />
-            <marker date="1515517780691" expanded="true" signature="3226:3281" ph="UPDATE `event`... " />
-          </folding>
+        <state relative-caret-position="249">
+          <caret line="49" column="31" lean-forward="true" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
