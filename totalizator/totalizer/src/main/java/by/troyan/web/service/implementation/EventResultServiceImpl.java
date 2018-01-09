@@ -23,6 +23,7 @@ import java.util.Random;
 public class EventResultServiceImpl implements EventResultService {
     private final static Logger LOG = LogManager.getLogger(EventResultServiceImpl.class);
     private static final EventResultServiceImpl instance = new EventResultServiceImpl();
+    private static final int statisticMaxScore = 10;
 
     EventResultDAO eventResultDAO;
     EventDAO eventDAO;
@@ -57,8 +58,8 @@ public class EventResultServiceImpl implements EventResultService {
         EventResult eventResult = new EventResult();
         EventResultException eventResultException = new EventResultException(eventResult);
         eventResult.setEventId(checkInt(eventId, eventResultException, "err.event-id-is-invalid"));
-        eventResult.setWinnerScore(randomDetermineWinnerAndLooserScore()[0]);
-        eventResult.setLoserScore(randomDetermineWinnerAndLooserScore()[1]);
+        eventResult.setWinnerScore(randomDetermineScore());
+        eventResult.setLoserScore(randomDetermineScore());
 
         if(eventResultException.getErrorMessageList().size() > 0){
             throw eventResultException;
@@ -72,20 +73,13 @@ public class EventResultServiceImpl implements EventResultService {
             throw new ServiceException(exc);
         }
 
-        System.out.println(eventResult);
-
         return eventResult;
     }
 
-    private int[] randomDetermineWinnerAndLooserScore (){
+    private int randomDetermineScore(){
         Random randomScore = new Random();
-        final int membersAmount = 2;
-        final int statisticMaxScore = 10;
-        int[] result = new int[membersAmount];
-
-        result[0] = randomScore.nextInt(statisticMaxScore);
-        result[1] = randomScore.nextInt(statisticMaxScore);
-
+        int result;
+        result = randomScore.nextInt(statisticMaxScore);
         return result;
     }
 
@@ -100,7 +94,9 @@ public class EventResultServiceImpl implements EventResultService {
                         winRateList.add(rate);
                     }
                 }
-                BigDecimal moneyPerPerson = fullMoneyAmount.divide(BigDecimal.valueOf(winRateList.size()), 2, BigDecimal.ROUND_FLOOR);
+                BigDecimal moneyPerPerson = fullMoneyAmount
+                        .divide(BigDecimal.valueOf(winRateList.size()), 2, BigDecimal.ROUND_FLOOR);
+
                 for(Rate rate : allRateList){
                     rate.setWin(BigDecimal.valueOf(0.0));
                 }
