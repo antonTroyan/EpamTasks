@@ -19,8 +19,8 @@ import java.io.IOException;
 
 public interface ICommand {
     default void checkRoots(HttpServletRequest req, User.Role[] needLevels)
-            throws ServletException, IOException, CommandException, UnauthorizedException {
-        if((needLevels.length == 0) || (needLevels == null)){
+            throws  UnauthorizedException {
+        if((needLevels == null) || (needLevels.length == 0)  ){
             return;
         }
         String currentLevel = (String) req.getSession().getAttribute("role");

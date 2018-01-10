@@ -21,7 +21,7 @@ import java.io.IOException;
 
 public class FillRandomResultCommand implements ICommand {
     private final static Logger LOG = LogManager.getLogger(FillRandomResultCommand.class);
-    EventResultService eventResultService = ServiceFactory.getInstance().getEventResultService();
+    private EventResultService eventResultService = ServiceFactory.getInstance().getEventResultService();
 
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException {

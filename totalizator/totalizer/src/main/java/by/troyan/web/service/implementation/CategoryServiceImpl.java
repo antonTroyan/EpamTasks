@@ -32,7 +32,7 @@ public class CategoryServiceImpl implements CategoryService {
     public Category addCategory(String name) throws ServiceException, CategoryException {
         Category category = new Category();
         CategoryException categoryException = new CategoryException(category);
-        if(name.isEmpty() || (name == null)){
+        if((name == null) || name.isEmpty()){
             categoryException.addMessage("err.name-is-invalid");
         }
         category.setName(name);

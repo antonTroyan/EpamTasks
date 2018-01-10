@@ -56,7 +56,7 @@ public enum CommandEnum {
 
     private String value;
 
-    private CommandEnum(String value){
+    CommandEnum(String value){
         this.value = value;
     }
 

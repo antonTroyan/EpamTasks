@@ -15,7 +15,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class GetMembersByEventJsonCommand implements ICommand {
@@ -25,7 +24,7 @@ public class GetMembersByEventJsonCommand implements ICommand {
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException {
         int eventId = Integer.parseInt(req.getParameter("eventId"));
-        List<Member> members = new ArrayList<Member>();
+        List<Member> members;
         try {
             members = memberService.getMembersByEvent(eventId);
         } catch (ServiceException exc){

@@ -27,7 +27,7 @@ public class AddLeagueCommand implements ICommand {
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException {
         checkRoots(req, new User.Role[]{User.Role.ADMINISTRATOR});
         try {
-            leagueService.addLeague((String)req.getParameter("name"), (String)req.getParameter("category-id"));
+            leagueService.addLeague(req.getParameter("name"), req.getParameter("category-id"));
         }
         catch(ServiceException exc){
             LOG.error(exc);

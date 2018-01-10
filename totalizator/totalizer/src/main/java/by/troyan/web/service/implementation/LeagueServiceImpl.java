@@ -43,7 +43,7 @@ public class LeagueServiceImpl implements LeagueService {
     public League addLeague(String name, String categoryId) throws ServiceException, LeagueException {
         League league = new League();
         LeagueException leagueException = new LeagueException(league);
-        if(name.isEmpty() || (name == null)){
+        if((name == null) || name.isEmpty()  ){
             leagueException.addMessage("err.name-is-invalid");
         }
         league.setName(name);

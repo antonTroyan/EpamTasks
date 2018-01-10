@@ -22,7 +22,7 @@ public class CommandFactory {
     private Map<CommandEnum, ICommand> commands;
 
     private CommandFactory(){
-        commands = new HashMap<CommandEnum, ICommand>();
+        commands = new HashMap<>();
         commands.put(CommandEnum.SHOW_MAIN_PAGE, new ShowMainPageCommand());
         commands.put(CommandEnum.SHOW_NEAREST_EVENTS_PAGE_COMMAND, new ShowNearestEventsPageCommand());
         commands.put(CommandEnum.SHOW_CATEGORY_PAGE, new ShowCategoryPageCommand());

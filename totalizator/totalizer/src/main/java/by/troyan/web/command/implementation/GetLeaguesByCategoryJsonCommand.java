@@ -14,7 +14,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class GetLeaguesByCategoryJsonCommand implements ICommand {
@@ -24,8 +23,8 @@ public class GetLeaguesByCategoryJsonCommand implements ICommand {
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException {
         LeagueService leagueService = ServiceFactory.getInstance().getLeagueService();
         int categoryId = Integer.parseInt(req.getParameter("categoryId"));
+        List<League> leagues;
 
-        List<League> leagues = new ArrayList<>();
         try {
             leagues = leagueService.getLeaguesByCategory(categoryId);
         } catch (ServiceException exc){

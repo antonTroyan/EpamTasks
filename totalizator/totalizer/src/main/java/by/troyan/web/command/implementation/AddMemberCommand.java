@@ -27,8 +27,8 @@ public class AddMemberCommand implements ICommand {
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, CommandException, UnauthorizedException {
         checkRoots(req, new User.Role[]{User.Role.ADMINISTRATOR});
         try {
-            memberService.addMember((String)req.getParameter("name"),
-                    (String)req.getParameter("category-id"), (String)req.getParameter("league-id"));
+            memberService.addMember(req.getParameter("name"),
+                    req.getParameter("category-id"), req.getParameter("league-id"));
         }
         catch(ServiceException exc){
             LOG.error(exc);

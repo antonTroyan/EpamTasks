@@ -33,7 +33,7 @@ public class CategoryDAOImpl implements CategoryDAO {
         Connection connection = null;
         Statement statement = null;
         ResultSet resultSet = null;
-        List<Category> result = new ArrayList<Category>();
+        List<Category> result = new ArrayList<>();
         try {
             connection = pool.getConnection();
             try {

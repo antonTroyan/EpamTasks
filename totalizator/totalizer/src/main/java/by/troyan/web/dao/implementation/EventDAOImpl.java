@@ -79,7 +79,7 @@ public class EventDAOImpl implements EventDAO {
         Connection connection = null;
         PreparedStatement statement = null;
         ResultSet resultSet = null;
-        List<Event> result = new ArrayList<Event>();
+        List<Event> result = new ArrayList<>();
 
         try {
             connection = pool.getConnection();

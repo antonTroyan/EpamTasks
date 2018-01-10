@@ -29,7 +29,7 @@ public class AddCategoryCommand implements ICommand {
             throws ServletException, IOException, CommandException, UnauthorizedException {
         checkRoots(req, new User.Role[]{User.Role.ADMINISTRATOR});
         try {
-            categoryService.addCategory((String)req.getParameter("name"));
+            categoryService.addCategory(req.getParameter("name"));
         }
         catch(ServiceException exc){
             LOG.error(exc);

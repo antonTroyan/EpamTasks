@@ -8,7 +8,10 @@ import by.troyan.web.exception.OperationException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Savepoint;
 
 /**
  * Operation DAO implementation. Class supporting all money operations.
@@ -32,7 +35,7 @@ public class OperationDAOImpl implements OperationDAO {
     }
 
     @Override
-    public Operation addOperation(Operation operation) throws DAOException, OperationException {
+    public Operation addOperation(Operation operation) throws DAOException {
         Connection connection = null;
         PreparedStatement statement = null;
         try{

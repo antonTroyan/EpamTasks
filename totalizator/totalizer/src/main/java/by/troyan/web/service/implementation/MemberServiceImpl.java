@@ -54,7 +54,7 @@ public class MemberServiceImpl implements MemberService {
     public Member addMember(String name, String categoryId, String leagueId) throws ServiceException, MemberException {
         Member member = new Member();
         MemberException memberException = new MemberException(member);
-        if(name.isEmpty() || (name == null)){
+        if((name == null) || name.isEmpty()){
             memberException.addMessage("err.name-is-invalid");
         }
         member.setName(name);

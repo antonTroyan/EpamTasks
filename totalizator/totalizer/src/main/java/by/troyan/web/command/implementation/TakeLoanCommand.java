@@ -31,7 +31,7 @@ public class TakeLoanCommand implements ICommand {
     public void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException,
             CommandException, UnauthorizedException {
         checkRoots(req, new User.Role[]{User.Role.ADMINISTRATOR, User.Role.BOOKMAKER, User.Role.USER});
-        String username = "";
+        String username;
 
         try {
         username = (String)req.getSession().getAttribute("username");

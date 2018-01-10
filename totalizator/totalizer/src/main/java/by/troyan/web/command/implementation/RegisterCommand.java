@@ -30,7 +30,7 @@ public class RegisterCommand implements ICommand {
         String password = req.getParameter("password");
         String confirmPassword = req.getParameter("password-confirm");
         String email = req.getParameter("email");
-        User user = null;
+        User user;
         try {
             user = userService.registerUser(login, password, confirmPassword, email);
         } catch (ServiceException exc){
