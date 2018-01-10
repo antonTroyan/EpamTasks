@@ -14,7 +14,7 @@ public class ServiceFactory {
         return instance;
     }
 
-    ServiceFactory(){}
+    private ServiceFactory(){}
 
     public UserService getUserService(){
         return UserServiceImpl.getInstance();
