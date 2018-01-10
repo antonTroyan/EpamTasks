@@ -85,10 +85,9 @@
                 <c:choose>
                     <c:when test="${!empty sessionScope.username}">
                         <c:if test="${event.canMakeRate}">
-                            <button class="button"
-                                    href="<c:url value="main?command=showMakeRatePage&eventId=${event.eventId}"/>">
+                            <a class="button" href="<c:url value="main?command=showMakeRatePage&eventId=${event.eventId}"/>">
                                 <fmt:message bundle="${loc}" key="link.make-rate"/>
-                            </button>
+                            </a>
                         </c:if>
                     </c:when>
                     <c:when test="${empty sessionScope.username}">

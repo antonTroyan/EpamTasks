@@ -3,7 +3,9 @@ package by.troyan.web.service.implementation;
 import by.troyan.web.dao.*;
 import by.troyan.web.dao.exception.DAOException;
 import by.troyan.web.dao.factory.DAOFactory;
+import by.troyan.web.entity.Event;
 import by.troyan.web.entity.EventResult;
+import by.troyan.web.entity.Member;
 import by.troyan.web.entity.Rate;
 import by.troyan.web.exception.EventResultException;
 import by.troyan.web.service.EventResultService;
@@ -23,12 +25,13 @@ import java.util.Random;
 public class EventResultServiceImpl implements EventResultService {
     private final static Logger LOG = LogManager.getLogger(EventResultServiceImpl.class);
     private static final EventResultServiceImpl instance = new EventResultServiceImpl();
-    private static final int statisticMaxScore = 10;
+    private static final int STATISTIC_MAX_SCORE = 10;
 
-    EventResultDAO eventResultDAO;
-    EventDAO eventDAO;
-    RateDAO rateDAO;
-    UserDAO userDAO;
+    private EventResultDAO eventResultDAO;
+    private EventDAO eventDAO;
+    private RateDAO rateDAO;
+    private UserDAO userDAO;
+    private MemberDAO memberDAO;
 
     public static EventResultService getInstance(){
         return instance;
@@ -39,6 +42,7 @@ public class EventResultServiceImpl implements EventResultService {
         eventDAO = DAOFactory.getFactory().getEventDAO();
         rateDAO = DAOFactory.getFactory().getRateDAO();
         userDAO = DAOFactory.getFactory().getUserDAO();
+        memberDAO = DAOFactory.getFactory().getMemberDAO();
     }
 
     private int checkInt(String stringValue, EventResultException eventResultException, String errorMessage){
@@ -57,9 +61,9 @@ public class EventResultServiceImpl implements EventResultService {
     public EventResult addRandomResultToEvent(String eventId) throws ServiceException, EventResultException {
         EventResult eventResult = new EventResult();
         EventResultException eventResultException = new EventResultException(eventResult);
-        eventResult.setEventId(checkInt(eventId, eventResultException, "err.event-id-is-invalid"));
-        eventResult.setWinnerScore(randomDetermineScore());
-        eventResult.setLoserScore(randomDetermineScore());
+        int eventIdInteger = checkInt(eventId, eventResultException, "err.event-id-is-invalid");
+        eventResult.setEventId(eventIdInteger);
+        eventResult = determineWinnerAndLooser(eventIdInteger, eventResult);
 
         if(eventResultException.getErrorMessageList().size() > 0){
             throw eventResultException;
@@ -80,8 +84,36 @@ public class EventResultServiceImpl implements EventResultService {
     private int randomDetermineScore(){
         Random randomScore = new Random();
         int result;
-        result = randomScore.nextInt(statisticMaxScore);
+        result = randomScore.nextInt(STATISTIC_MAX_SCORE);
         return result;
+    }
+
+    private EventResult determineWinnerAndLooser(int eventId, EventResult eventResult) throws ServiceException {
+
+        try {
+            List <Member> members = memberDAO.getMembersByEvent(eventId);
+
+            int firstResult = randomDetermineScore();
+            int secondResult = randomDetermineScore();
+
+            if (firstResult > secondResult) {
+                eventResult.setWinnerScore(firstResult);
+                eventResult.setLoserScore(secondResult);
+                eventResult.setWinnerId(members.get(0).getId());
+                eventResult.setLoserId(members.get(1).getId());
+            } else {
+                eventResult.setWinnerScore(secondResult);
+                eventResult.setLoserScore(firstResult);
+                eventResult.setWinnerId(members.get(1).getId());
+                eventResult.setLoserId(members.get(0).getId());
+            }
+
+        } catch (DAOException exc) {
+            LOG.error(exc);
+            throw new ServiceException(exc);
+        }
+
+        return eventResult;
     }
 
 //    private void distributePrize(EventResult eventResult){
@@ -116,19 +148,21 @@ public class EventResultServiceImpl implements EventResultService {
 
 
     private void distributePrize(EventResult eventResult){
+
         (new Thread(() -> {
             try {
-                BigDecimal fullMoneyAmount = rateDAO.getFullMoneyAmountForEvent(eventResult.getEventId());
                 List<Rate> allRateList = rateDAO.getRatesForEvent(eventResult.getEventId());
-                List<Rate> winRateList = new ArrayList<Rate>();
+                List<Rate> winRateList = new ArrayList<>();
+
+                int eventId = eventResult.getEventId();
+                Event event = eventDAO.getEventById(eventId);
+                double coefficient = event.getCoefficient();
+
                 for (Rate rate : allRateList) {
                     if(checkWin(rate, eventResult)){
                         winRateList.add(rate);
                     }
                 }
-
-                int coefficient = 5;
-
                 for(Rate rate : allRateList){
                     rate.setWin(BigDecimal.valueOf(0.0));
                 }
@@ -147,31 +181,20 @@ public class EventResultServiceImpl implements EventResultService {
         })).run();
     }
 
+
     private boolean checkWin(Rate rate, EventResult eventResult){
         switch (rate.getType()){
             case Rate.WIN:
-                if(eventResult.getWinnerId() == rate.getMember1Id()){
-                    return true;
-                }
-                return false;
+                return eventResult.getWinnerId() == rate.getMember1Id();
             case Rate.DRAW:
-                if(eventResult.getLoserScore() == eventResult.getWinnerScore()){
-                    return true;
-                }
-                return false;
+                return eventResult.getLoserScore() == eventResult.getWinnerScore();
             case Rate.EXACT_SCORE:
                 if(eventResult.getWinnerId() == rate.getMember1Id()){
-                    if((eventResult.getWinnerScore() == rate.getMember1Score()) &&
-                            (eventResult.getLoserScore() == rate.getMember2Score())){
-                        return true;
-                    }
-                    return false;
+                    return (eventResult.getWinnerScore() == rate.getMember1Score()) &&
+                            (eventResult.getLoserScore() == rate.getMember2Score());
                 } else{
-                    if((eventResult.getWinnerScore() == rate.getMember2Score()) &&
-                            (eventResult.getLoserScore() == rate.getMember1Score())){
-                        return true;
-                    }
-                    return false;
+                    return (eventResult.getWinnerScore() == rate.getMember2Score()) &&
+                            (eventResult.getLoserScore() == rate.getMember1Score());
                 }
         }
         return false;
