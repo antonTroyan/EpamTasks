@@ -2,7 +2,7 @@
 <candies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="candies"
          xsi:noNamespaceSchemaLocation="candy.xsd">
-    <name>The cow</name>
+    <name id="1">The cow</name>
     <energy>100</energy>
     <type>
         <type-name>Chocolate</type-name>
@@ -20,7 +20,7 @@
         <fats>15</fats>
         <carbohydrates>30</carbohydrates>
     </value>
-    <production>Roshen</production>
+    <production country="Russia">Roshen</production>
 
 
 </candies>
