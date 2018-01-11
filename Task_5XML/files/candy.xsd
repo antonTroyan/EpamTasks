@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="candies">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name"/>
+                <xs:element name="energy"/>
+                <xs:element name="type"/>
+                <xs:element name="ingredients"/>
+                <xs:element name="value"/>
+                <xs:element name="production"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="name" type="xs:string"/>
+    <xs:element name="energy" type="xs:integer"/>
+
+    <xs:element name="type">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="type-name" type="xs:string"/>
+                <xs:element name="have-filling" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="ingredients">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="water" type="xs:integer"/>
+                <xs:element name="sugar" type="xs:integer"/>
+                <xs:element name="fructose" type="xs:integer"/>
+                <xs:element name="chocolate-type" type="xs:integer" minOccurs="0"/>
+                <xs:element name="vanillin" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="value">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="proteins" type="xs:integer"/>
+                <xs:element name="fats" type="xs:integer"/>
+                <xs:element name="carbohydrates" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
+
+
+
+
