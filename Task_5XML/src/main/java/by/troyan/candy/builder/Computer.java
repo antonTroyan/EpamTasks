@@ -14,5 +14,14 @@ public class Computer {
     public void setManipulators(String manipulators) {
         this.manipulators = manipulators;
     }
+
+    @Override
+    public String toString() {
+        return "Computer{" +
+                "display='" + display + '\'' +
+                ", systemBlock='" + systemBlock + '\'' +
+                ", manipulators='" + manipulators + '\'' +
+                '}';
+    }
 }
 

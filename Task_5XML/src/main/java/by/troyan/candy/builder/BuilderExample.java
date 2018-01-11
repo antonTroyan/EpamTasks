@@ -9,5 +9,6 @@ public class BuilderExample {
         director.constructComputer();
 
         Computer computer = director.getComputer();
+        System.out.println(computer);
     }
 }
