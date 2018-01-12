@@ -1,0 +1,27 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:Revealed="http://www.university.net"
+        targetNamespace="http://www.university.net">
+
+    <element name="University">
+        <complexType>
+            <sequence>
+                <element name="faculty" type="Revealed:Faculty"/>
+                <element name="course" type="Revealed:Course"/>
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="Course">
+        <sequence>
+            <element name="login" type="string"/>
+            <element name="name" type="string"/>
+            <element name="telephone" type="string"/>
+        </sequence>
+    </complexType>
+    <simpleType name="Faculty">
+        <restriction base="string">
+            <enumeration value="FPMI"></enumeration>
+            <enumeration value="MMF"></enumeration>
+            <enumeration value="Geo"></enumeration>
+        </restriction>
+    </simpleType>
+</schema>
