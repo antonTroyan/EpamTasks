@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tns:candies xmlns:tns="http://www.troyan.com/Candies"
-             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="http://www.example.com/Candies candies.xsd ">
+
+<tr:candies xmlns:tr="http://www.troyan.ru/xml"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.troyan.ru/xml candies.xsd">
 
     <candy id="1">
-        <name>Cow</name>
+        <name>The Cow</name>
         <energy>150</energy>
-        <type>Chocolate with filling</type>
+        <type>Iris</type>
         <ingredients>
-            <water>10</water>
+            <water>125</water>
             <sugar>15</sugar>
-            <fructose>12</fructose>
-            <chocolate-type>White</chocolate-type>
-            <vanillin>32</vanillin>
         </ingredients>
-        <value>25</value>
+        <value>
+            <proteins>120</proteins>
+            <fats>16</fats>
+            <carbohydrates>15</carbohydrates>
+        </value>
         <production>Roshen</production>
     </candy>
 
-</tns:candies>
+
+    <candy id="2">
+        <name>The Mars</name>
+        <energy>150</energy>
+        <type>Chocolate with filling</type>
+        <ingredients>
+            <water>155</water>
+            <fructose>15</fructose>
+        </ingredients>
+        <value>
+            <proteins>120</proteins>
+            <fats>16</fats>
+            <carbohydrates>15</carbohydrates>
+        </value>
+        <production>Roshen</production>
+    </candy>
+
+</tr:candies>

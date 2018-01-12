@@ -1,0 +1,124 @@
+ERROR - 4 : 79 - cvc-elt.1: Cannot find the declaration of element 'tns:candies'.
+ERROR - 4 : 79 - cvc-elt.1: Cannot find the declaration of element 'tns:candies'.
+ERROR - 4 : 79 - cvc-elt.1: Cannot find the declaration of element 'tns:candies'.
+FATAL - 25 : 9 - The end-tag for element type "type" must end with a '>' delimiter.
+ERROR - 4 : 79 - cvc-elt.1: Cannot find the declaration of element 'tns:candies'.
+ERROR - 4 : 58 - cvc-elt.1: Cannot find the declaration of element 'tns:candies'.
+ERROR - 4 : 54 - s4s-elt-schema-ns: The namespace of element 'schema' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 6 : 48 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 6 : 48 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:string' as a QName: the prefix 'xs' is not declared.
+ERROR - 8 : 25 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 9 : 18 - s4s-elt-schema-ns: The namespace of element 'complexType' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 10 : 17 - s4s-elt-schema-ns: The namespace of element 'sequence' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 18 : 47 - s4s-elt-schema-ns: The namespace of element 'attribute' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 18 : 47 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'attribute'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:integer' as a QName: the prefix 'xs' is not declared.
+ERROR - 22 : 47 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 22 : 47 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:integer' as a QName: the prefix 'xs' is not declared.
+ERROR - 24 : 24 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 25 : 18 - s4s-elt-schema-ns: The namespace of element 'complexType' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 26 : 22 - s4s-elt-schema-ns: The namespace of element 'simpleContent' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 27 : 37 - s4s-elt-schema-ns: The namespace of element 'extension' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 27 : 37 - s4s-att-invalid-value: Invalid attribute value for 'base' in element 'extension'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:string' as a QName: the prefix 'xs' is not declared.
+ERROR - 27 : 37 - s4s-att-must-appear: Attribute 'base' must appear in element 'extension'.
+ERROR - 34 : 27 - s4s-elt-schema-ns: The namespace of element 'simpleType' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 35 : 35 - s4s-elt-schema-ns: The namespace of element 'restriction' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 35 : 35 - s4s-att-invalid-value: Invalid attribute value for 'base' in element 'restriction'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:string' as a QName: the prefix 'xs' is not declared.
+ERROR - 35 : 35 - src-simple-type.2.b: A <restriction> element was found that has neither a base [attribute] nor a <simpleType> element among its [children]. One is required.
+ERROR - 36 : 36 - s4s-elt-schema-ns: The namespace of element 'enumeration' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 37 : 33 - s4s-elt-schema-ns: The namespace of element 'enumeration' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 38 : 51 - s4s-elt-schema-ns: The namespace of element 'enumeration' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 39 : 54 - s4s-elt-schema-ns: The namespace of element 'enumeration' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 43 : 44 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 43 : 44 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:integer' as a QName: the prefix 'xs' is not declared.
+ERROR - 44 : 52 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 44 : 52 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:string' as a QName: the prefix 'xs' is not declared.
+ERROR - 45 : 42 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 45 : 42 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:string' as a QName: the prefix 'xs' is not declared.
+ERROR - 47 : 31 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 48 : 18 - s4s-elt-schema-ns: The namespace of element 'complexType' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 49 : 17 - s4s-elt-schema-ns: The namespace of element 'sequence' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 59 : 44 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 59 : 44 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:integer' as a QName: the prefix 'xs' is not declared.
+ERROR - 60 : 47 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 60 : 47 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:integer' as a QName: the prefix 'xs' is not declared.
+ERROR - 61 : 44 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 61 : 44 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:integer' as a QName: the prefix 'xs' is not declared.
+ERROR - 62 : 45 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 62 : 45 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:integer' as a QName: the prefix 'xs' is not declared.
+ERROR - 11 : 30 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 12 : 32 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 13 : 30 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 14 : 37 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 15 : 31 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 16 : 36 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 50 : 31 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 51 : 31 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 52 : 34 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 53 : 54 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 54 : 34 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 4 : 58 - cvc-elt.1: Cannot find the declaration of element 'tns:candies'.
+ERROR - 4 : 54 - s4s-elt-schema-ns: The namespace of element 'schema' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 6 : 48 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 6 : 48 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:string' as a QName: the prefix 'xs' is not declared.
+ERROR - 8 : 25 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 9 : 18 - s4s-elt-schema-ns: The namespace of element 'complexType' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 10 : 17 - s4s-elt-schema-ns: The namespace of element 'sequence' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 18 : 47 - s4s-elt-schema-ns: The namespace of element 'attribute' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 18 : 47 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'attribute'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:integer' as a QName: the prefix 'xs' is not declared.
+ERROR - 22 : 47 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 22 : 47 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:integer' as a QName: the prefix 'xs' is not declared.
+ERROR - 24 : 24 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 25 : 18 - s4s-elt-schema-ns: The namespace of element 'complexType' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 26 : 22 - s4s-elt-schema-ns: The namespace of element 'simpleContent' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 27 : 37 - s4s-elt-schema-ns: The namespace of element 'extension' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 27 : 37 - s4s-att-invalid-value: Invalid attribute value for 'base' in element 'extension'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:string' as a QName: the prefix 'xs' is not declared.
+ERROR - 27 : 37 - s4s-att-must-appear: Attribute 'base' must appear in element 'extension'.
+ERROR - 34 : 27 - s4s-elt-schema-ns: The namespace of element 'simpleType' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 35 : 35 - s4s-elt-schema-ns: The namespace of element 'restriction' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 35 : 35 - s4s-att-invalid-value: Invalid attribute value for 'base' in element 'restriction'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:string' as a QName: the prefix 'xs' is not declared.
+ERROR - 35 : 35 - src-simple-type.2.b: A <restriction> element was found that has neither a base [attribute] nor a <simpleType> element among its [children]. One is required.
+ERROR - 36 : 36 - s4s-elt-schema-ns: The namespace of element 'enumeration' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 37 : 33 - s4s-elt-schema-ns: The namespace of element 'enumeration' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 38 : 51 - s4s-elt-schema-ns: The namespace of element 'enumeration' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 39 : 54 - s4s-elt-schema-ns: The namespace of element 'enumeration' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 43 : 44 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 43 : 44 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:integer' as a QName: the prefix 'xs' is not declared.
+ERROR - 44 : 52 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 44 : 52 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:string' as a QName: the prefix 'xs' is not declared.
+ERROR - 45 : 42 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 45 : 42 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:string' as a QName: the prefix 'xs' is not declared.
+ERROR - 47 : 31 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 48 : 18 - s4s-elt-schema-ns: The namespace of element 'complexType' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 49 : 17 - s4s-elt-schema-ns: The namespace of element 'sequence' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 59 : 44 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 59 : 44 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:integer' as a QName: the prefix 'xs' is not declared.
+ERROR - 60 : 47 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 60 : 47 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:integer' as a QName: the prefix 'xs' is not declared.
+ERROR - 61 : 44 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 61 : 44 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:integer' as a QName: the prefix 'xs' is not declared.
+ERROR - 62 : 45 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 62 : 45 - s4s-att-invalid-value: Invalid attribute value for 'type' in element 'element'. Recorded reason: UndeclaredPrefix: Cannot resolve 'xs:integer' as a QName: the prefix 'xs' is not declared.
+ERROR - 11 : 30 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 12 : 32 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 13 : 30 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 14 : 37 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 15 : 31 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 16 : 36 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 50 : 31 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 51 : 31 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 52 : 34 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 53 : 54 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 54 : 34 - s4s-elt-schema-ns: The namespace of element 'element' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 4 : 58 - cvc-elt.1: Cannot find the declaration of element 'tns:candies'.
+ERROR - 4 : 58 - cvc-elt.1: Cannot find the declaration of element 'tns:candies'.
+ERROR - 4 : 58 - cvc-elt.1: Cannot find the declaration of element 'tns:candies'.
+FATAL - 18 : 9 - The end-tag for element type "value" must end with a '>' delimiter.
+ERROR - 3 : 58 - cvc-elt.1: Cannot find the declaration of element 'tns:candies'.
+ERROR - 3 : 58 - cvc-elt.1: Cannot find the declaration of element 'tns:candies'.
+ERROR - 3 : 58 - cvc-elt.1: Cannot find the declaration of element 'tns:candies'.
+ERROR - 3 : 58 - cvc-elt.1: Cannot find the declaration of element 'tns:candies'.
+ERROR - 3 : 58 - cvc-elt.1: Cannot find the declaration of element 'tns:candies'.
+ERROR - 6 : 19 - s4s-elt-character: Non-whitespace characters are not allowed in schema elements other than 'xs:appinfo' and 'xs:documentation'. Saw 'fsd'.
+ERROR - 4 : 54 - s4s-elt-schema-ns: The namespace of element 'schema' must be from the schema namespace, 'http://www.w3.org/2001/XMLSchema'.
+ERROR - 4 : 54 - TargetNamespace.1: Expecting namespace 'http://www.troyan.com/Candies', but the target namespace of the schema document is 'null'.
+ERROR - 4 : 79 - cvc-elt.1: Cannot find the declaration of element 'tns:candies'.
