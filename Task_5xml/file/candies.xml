@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:candies xmlns:tns="http://www.troyan.com/Candies"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.example.com/Candies candies.xsd ">
+
+    <candy id="1">
+        <name>Cow</name>
+        <energy>150</energy>
+        <type>Chocolate with filling</type>
+        <ingredients>
+            <water>10</water>
+            <sugar>15</sugar>
+            <fructose>12</fructose>
+            <chocolate-type>White</chocolate-type>
+            <vanillin>32</vanillin>
+        </ingredients>
+        <value>25</value>
+        <production>Roshen</production>
+    </candy>
+
+</tns:candies>

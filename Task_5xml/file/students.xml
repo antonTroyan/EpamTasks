@@ -2,6 +2,7 @@
 <tns:students xmlns:tns="http://www.example.com/Students"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="http://www.example.com/Students students.xsd ">
+
 <student login="mit" faculty="mmf">
         <name>Mitar Alex</name>
         <telephone>2456474</telephone>

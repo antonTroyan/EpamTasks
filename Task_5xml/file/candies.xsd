@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:schema attributeFormDefault="unqualified"
+           elementFormDefault="qualified"
+           xmlns:tns="http://www.troyan.com/Candies">
+
+  <element name="production" type="xs:string"/>
+
+  <element name="candy">
+    <complexType>
+      <sequence>
+        <element ref="name"/>
+        <element ref="energy"/>
+        <element ref="type"/>
+        <element ref="ingredients"/>
+        <element ref="value"/>
+        <element ref="production"/>
+      </sequence>
+      <attribute type="xs:string" name="id"/>
+    </complexType>
+  </element>
+
+  <element name="fructose" type="xs:string"/>
+
+  <element name="type">
+    <complexType>
+      <simpleContent>
+        <extension base="xs:string">
+          <attribute type="xs:string" name="type-name"/>
+        </extension>
+      </simpleContent>
+    </complexType>
+  </element>
+
+  <simpleType name="type">
+    <restriction base="xs:string">
+      <enumeration value="Caramel"></enumeration>
+      <enumeration value="Iris"></enumeration>
+      <enumeration value="Chocolate with filling"></enumeration>
+      <enumeration value="Chocolate without filling"></enumeration>
+    </restriction>
+  </simpleType>
+
+  <element name="water" type="xs:string"/>
+  <element name="chocolate-type" type="xs:string"/>
+  <element name="name" type="xs:string"/>
+
+  <element name="ingredients">
+    <complexType>
+      <sequence>
+        <element ref="water"/>
+        <element ref="sugar"/>
+        <element ref="fructose"/>
+        <element ref="chocolate-type" minOccurs="0"/>
+        <element ref="vanillin"/>
+      </sequence>
+    </complexType>
+  </element>
+
+  <element name="sugar" type="xs:string"/>
+  <element name="vanillin" type="xs:string"/>
+  <element name="value" type="xs:string"/>
+  <element name="energy" type="xs:string"/>
+
+</tns:schema>
