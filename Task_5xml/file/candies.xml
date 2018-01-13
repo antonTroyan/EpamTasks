@@ -17,7 +17,7 @@
             <fats>16</fats>
             <carbohydrates>15</carbohydrates>
         </value>
-        <production>Roshen</production>
+        <production>Аленкина Буренка</production>
     </candy>
 
 
@@ -34,7 +34,239 @@
             <fats>16</fats>
             <carbohydrates>15</carbohydrates>
         </value>
+        <production>Аленкина Буренка</production>
+    </candy>
+
+    <candy id="3">
+        <name>Shogotten</name>
+        <energy>150</energy>
+        <type>Chocolate with filling</type>
+        <ingredients>
+            <water>155</water>
+            <fructose>15</fructose>
+        </ingredients>
+        <value>
+            <proteins>12</proteins>
+            <fats>16</fats>
+            <carbohydrates>15</carbohydrates>
+        </value>
+        <production>Коммунарка</production>
+    </candy>
+
+    <candy id="4">
+        <name>The Mars</name>
+        <energy>150</energy>
+        <type>Chocolate with filling</type>
+        <ingredients>
+            <water>155</water>
+            <fructose>15</fructose>
+        </ingredients>
+        <value>
+            <proteins>120</proteins>
+            <fats>16</fats>
+            <carbohydrates>15</carbohydrates>
+        </value>
+        <production>Kit Kat</production>
+    </candy>
+
+    <candy id="5">
+        <name>Bounty</name>
+        <energy>1500</energy>
+        <type>Chocolate with filling</type>
+        <ingredients>
+            <water>16</water>
+            <fructose>15</fructose>
+        </ingredients>
+        <value>
+            <proteins>120</proteins>
+            <fats>16</fats>
+            <carbohydrates>15</carbohydrates>
+        </value>
+        <production>Kit Kat</production>
+    </candy>
+
+
+    <candy id="6">
+        <name>The Mars</name>
+        <energy>150</energy>
+        <type>Chocolate with filling</type>
+        <ingredients>
+            <water>155</water>
+            <fructose>15</fructose>
+        </ingredients>
+        <value>
+            <proteins>120</proteins>
+            <fats>16</fats>
+            <carbohydrates>15</carbohydrates>
+        </value>
+        <production>Meller</production>
+    </candy>
+
+    <candy id="7">
+        <name>The Mars</name>
+        <energy>150</energy>
+        <type>Chocolate with filling</type>
+        <ingredients>
+            <water>155</water>
+            <fructose>15</fructose>
+        </ingredients>
+        <value>
+            <proteins>120</proteins>
+            <fats>16</fats>
+            <carbohydrates>15</carbohydrates>
+        </value>
+        <production>Meller</production>
+    </candy>
+
+
+    <candy id="8">
+        <name>The Mars</name>
+        <energy>150</energy>
+        <type>Chocolate with filling</type>
+        <ingredients>
+            <water>155</water>
+            <fructose>15</fructose>
+        </ingredients>
+        <value>
+            <proteins>120</proteins>
+            <fats>16</fats>
+            <carbohydrates>15</carbohydrates>
+        </value>
+        <production>Ferrero</production>
+    </candy>
+
+
+    <candy id="9">
+        <name>The Mars</name>
+        <energy>150</energy>
+        <type>Chocolate with filling</type>
+        <ingredients>
+            <water>155</water>
+            <fructose>15</fructose>
+        </ingredients>
+        <value>
+            <proteins>120</proteins>
+            <fats>16</fats>
+            <carbohydrates>15</carbohydrates>
+        </value>
+        <production>Ferrero</production>
+    </candy>
+
+
+    <candy id="10">
+        <name>The Mars</name>
+        <energy>150</energy>
+        <type>Chocolate with filling</type>
+        <ingredients>
+            <water>155</water>
+            <fructose>15</fructose>
+        </ingredients>
+        <value>
+            <proteins>120</proteins>
+            <fats>16</fats>
+            <carbohydrates>15</carbohydrates>
+        </value>
+        <production>Bonsticks</production>
+    </candy>
+
+
+    <candy id="11">
+        <name>The Mars</name>
+        <energy>150</energy>
+        <type>Chocolate with filling</type>
+        <ingredients>
+            <water>155</water>
+            <fructose>15</fructose>
+        </ingredients>
+        <value>
+            <proteins>120</proteins>
+            <fats>16</fats>
+            <carbohydrates>15</carbohydrates>
+        </value>
         <production>Roshen</production>
+    </candy>
+
+
+    <candy id="12">
+        <name>The Mars</name>
+        <energy>150</energy>
+        <type>Chocolate with filling</type>
+        <ingredients>
+            <water>155</water>
+            <fructose>15</fructose>
+        </ingredients>
+        <value>
+            <proteins>120</proteins>
+            <fats>16</fats>
+            <carbohydrates>15</carbohydrates>
+        </value>
+        <production>Ameri</production>
+    </candy>
+
+
+    <candy id="13">
+        <name>The Mars</name>
+        <energy>150</energy>
+        <type>Chocolate with filling</type>
+        <ingredients>
+            <water>155</water>
+            <fructose>15</fructose>
+        </ingredients>
+        <value>
+            <proteins>120</proteins>
+            <fats>16</fats>
+            <carbohydrates>15</carbohydrates>
+        </value>
+        <production>Roshen</production>
+    </candy>
+
+
+    <candy id="14">
+        <name>The Mars</name>
+        <energy>150</energy>
+        <type>Chocolate with filling</type>
+        <ingredients>
+            <water>155</water>
+            <fructose>15</fructose>
+        </ingredients>
+        <value>
+            <proteins>120</proteins>
+            <fats>16</fats>
+            <carbohydrates>15</carbohydrates>
+        </value>
+        <production>Ameri</production>
+    </candy>
+
+    <candy id="14">
+        <name>The Mars</name>
+        <energy>150</energy>
+        <type>Chocolate with filling</type>
+        <ingredients>
+            <water>155</water>
+            <fructose>15</fructose>
+        </ingredients>
+        <value>
+            <proteins>120</proteins>
+            <fats>16</fats>
+            <carbohydrates>15</carbohydrates>
+        </value>
+        <production>Alpen Gold</production>
+    </candy>
+
+    <candy id="15">
+        <name>The Mars</name>
+        <energy>150</energy>
+        <type>Chocolate with filling</type>
+        <ingredients>
+            <water>155</water>
+            <fructose>15</fructose>
+        </ingredients>
+        <value>
+            <proteins>120</proteins>
+            <fats>16</fats>
+            <carbohydrates>15</carbohydrates>
+        </value>
+        <production>Alpen Gold</production>
     </candy>
 
 </tr:candies>

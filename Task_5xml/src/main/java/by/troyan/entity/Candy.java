@@ -1,4 +1,4 @@
-package by.troyan;
+package by.troyan.entity;
 import javax.xml.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
@@ -102,7 +102,6 @@ public class Candy {
 
     @Override
     public boolean equals(Object o) {
-
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Candy candy = (Candy) o;
@@ -117,7 +116,6 @@ public class Candy {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(id, name, energy, type, ingredients, value, production);
     }
 

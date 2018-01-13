@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema"
-        targetNamespace="http://www.example.com/Students"
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.com/Students"
         xmlns:tns="http://www.example.com/Students">
     <element name="students">
         <complexType>
             <sequence>
-                <element name="student" type="tns:Student" maxOccurs="unbounded"/>
+                <element name="student" type="tns:Student" minOccurs="1" maxOccurs="unbounded"/>
             </sequence>
         </complexType>
     </element>

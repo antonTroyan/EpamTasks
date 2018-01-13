@@ -1,8 +1,8 @@
-package by.troyan;
+package by.troyan.entity;
 
 import javax.xml.bind.annotation.XmlEnumValue;
 
- enum CandyValue {
+ public enum CandyValue {
 
     @XmlEnumValue(value = "Proteins")
     PROTEINS,

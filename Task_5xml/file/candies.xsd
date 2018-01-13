@@ -13,15 +13,27 @@
 
     <xsd:complexType name="candy">
         <xsd:sequence>
-            <xsd:element name="name" type="xsd:string"/>
-            <xsd:element name="energy" type="xsd:decimal"/>
+            <xsd:element name="name" type="tns:name"/>
+            <xsd:element name="energy" type="tns:energy"/>
             <xsd:element name="type" type="tns:type" />
             <xsd:element name="ingredients" type="tns:ingredients"/>
             <xsd:element name="value" type="tns:value"/>
             <xsd:element name="production" type="xsd:string"/>
         </xsd:sequence>
-        <xsd:attribute name="id" use="required"/>
+        <xsd:attribute name="id" use="required" default="0"/>
     </xsd:complexType>
+
+    <xsd:simpleType name="name">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="/[^a-zA-Z0-9\-]{3,15}/"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="energy">
+        <xsd:restriction base="xsd:integer">
+            <xsd:maxInclusive value="10000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
 
     <xsd:simpleType name="type">
         <xsd:restriction base="xsd:string">
@@ -34,7 +46,7 @@
 
     <xsd:complexType name="ingredients" >
         <xsd:sequence>
-            <xsd:element name="water" type="xsd:integer" minOccurs="0"/>
+            <xsd:element name="water" type="xsd:integer" minOccurs="0" />
             <xsd:element name="sugar" type="xsd:integer" minOccurs="0"/>
             <xsd:element name="fructose" type="xsd:integer" minOccurs="0"/>
             <xsd:element name="chocolate-type"  type="xsd:string" minOccurs="0"/>
