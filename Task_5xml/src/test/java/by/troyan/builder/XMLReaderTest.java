@@ -1,13 +1,33 @@
 package by.troyan.builder;
 
+import by.troyan.entity.Candy;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 import static org.testng.Assert.*;
 
 public class XMLReaderTest {
 
-    @Test
-    public void testGetListOfCandiesByCertainParser() throws Exception {
+    XMLReader xmlReader = new XMLReader();
+    String filename = "file/candies.xml";
 
+    @Test
+    public void testGetListOfCandiesByCertainParserDOM() throws Exception {
+        List<Candy> candyList = xmlReader.getListOfCandiesByCertainParser(1, filename);
+        Assert.assertNotEquals(candyList, null);
+    }
+
+    @Test
+    public void testGetListOfCandiesByCertainParserSAX() throws Exception {
+        List<Candy> candyList = xmlReader.getListOfCandiesByCertainParser(2, filename);
+        Assert.assertNotEquals(candyList, null);
+    }
+
+    @Test
+    public void testGetListOfCandiesByCertainParserSTAX() throws Exception {
+        List<Candy> candyList = xmlReader.getListOfCandiesByCertainParser(3, filename);
+        Assert.assertNotEquals(candyList, null);
     }
 }

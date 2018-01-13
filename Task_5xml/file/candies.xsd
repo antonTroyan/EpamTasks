@@ -13,14 +13,14 @@
 
     <xsd:complexType name="candy">
         <xsd:sequence>
-            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="name" type="xsd:ID"/>
             <xsd:element name="energy" type="tns:energy"/>
             <xsd:element name="type" type="tns:type" />
             <xsd:element name="ingredients" type="tns:ingredients"/>
             <xsd:element name="value" type="tns:value"/>
             <xsd:element name="production" type="xsd:string"/>
         </xsd:sequence>
-        <xsd:attribute name="id" use="required" default="0"/>
+        <xsd:attribute name="id" type="xsd:integer" use="required" default="0"/>
     </xsd:complexType>
 
 
