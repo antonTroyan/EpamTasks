@@ -14,7 +14,6 @@ public class Director {
         this.xmlParserBuilder = xmlParserBuilder;
     }
 
-
     public org.jdom2.Document getDocument(String filename) throws JDOMException, ParserConfigurationException,
             XMLStreamException, SAXException, IOException {
         return xmlParserBuilder.getDocument(filename);

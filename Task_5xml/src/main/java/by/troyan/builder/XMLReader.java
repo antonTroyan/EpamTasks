@@ -16,79 +16,19 @@ import java.util.Map;
 
 public class XMLReader {
 
-    public List<Candy> getListOfCandiesByCertainParser (int parser, String filename){
+    public List<Candy> getListOfCandiesByCertainParser (int parserID, String filename){
         Director director = new Director();
-        XMLParserBuilder builder = null;
-        switch(parser){
-            case 1: builder = new DOMParserBuilder();
-            break;
-            case 2: builder = new SAXParserBuilder();
-            break;
-            case 3: builder = new STAXParserBuilder();
-            break;
-            default: builder = new DOMParserBuilder();
-        }
-
+        XMLParserBuilder parserBuilder = createParserByID(parserID);
 
         List<Candy> candies = null;
-
         try {
-            director.setXMLParserBuilder(builder);
+            director.setXMLParserBuilder(parserBuilder);
             org.jdom2.Document jdomDocument = director.getDocument(filename);
             Element root = jdomDocument.getRootElement();
-            List<Element> candiesListElements = root.getChildren("Student");
+            List<Element> candiesListElements = root.getChildren("Candy");
             candies = new ArrayList<>();
             for (Element candyElement : candiesListElements) {
-                Candy candy = new Candy();
-
-                candy.setId(Integer.parseInt(candyElement.getAttributeValue("id")));
-                candy.setName(candyElement.getChildText("name"));
-                candy.setEnergy(Integer.parseInt(candyElement.getChildText("energy")));
-
-                List<CandyType> type = new ArrayList<>();
-                switch (candyElement.getChildText("type")){
-                    case "Caramel": type.add(CandyType.CARAMEL);
-                        break;
-                    case "Iris": type.add(CandyType.IRIS);
-                        break;
-                    case "Chocolate with filling": type.add(CandyType.CHOCOLATE_WITH_FILLING);
-                        break;
-                    case "Chocolate without filling": type.add(CandyType.CHOCOLATE_WITHOUT_FILLING);
-                        break;
-                }
-                candy.setType(type);
-
-                Map<String, Integer> ingredients = new HashMap<>();
-                switch (candyElement.getChildText("ingredients")){
-                    case "water": ingredients.put("water",
-                            Integer.parseInt(candyElement.getChildText("water")));
-                        break;
-                    case "sugar": ingredients.put("sugar",
-                            Integer.parseInt(candyElement.getChildText("sugar")));
-                        break;
-                    case "fructose": ingredients.put("fructose",
-                            Integer.parseInt(candyElement.getChildText("fructose")));
-                        break;
-                    case "chocolate-type": ingredients.put("chocolate-type",
-                            Integer.parseInt(candyElement.getChildText("chocolate-type")));
-                        break;
-                    case "vanilin": ingredients.put("vanilin",
-                            Integer.parseInt(candyElement.getChildText("vanilin")));
-                        break;
-                }
-                candy.setIngredients(ingredients);
-
-                List<CandyValue> value = new ArrayList<>();
-                switch (candyElement.getChildText("value")){
-                    case "proteins": value.add(CandyValue.PROTEINS);
-                        break;
-                    case "fats": value.add(CandyValue.FATS);
-                        break;
-                    case "carbohydrates": value.add(CandyValue.CARBOHYDRATES);
-                        break;
-                }
-                candy.setValue(value);
-                candy.setProduction(candyElement.getChildText("production"));
+                Candy candy = createCandy(candyElement);
                 candies.add(candy);
             }
 
@@ -96,6 +36,90 @@ public class XMLReader {
             e.printStackTrace();
         }
       return candies;
+    }
+
+
+    private XMLParserBuilder createParserByID (int parserID){
+        XMLParserBuilder result = null;
+
+        final int DOM_PARSER_ID = 1;
+        final int SAX_PARSER_ID = 2;
+        final int STAX_PARSER_ID = 3;
+
+        switch(parserID){
+            case DOM_PARSER_ID: result = new DOMParserBuilder();
+                break;
+            case SAX_PARSER_ID: result = new SAXParserBuilder();
+                break;
+            case STAX_PARSER_ID: result = new STAXParserBuilder();
+                break;
+            default: result = new DOMParserBuilder();
+        }
+        return  result;
+    }
+
+    private Candy createCandy(Element candyElement){
+        Candy result = new Candy();
+
+        result.setId(Integer.parseInt(candyElement.getAttributeValue("id")));
+        result.setName(candyElement.getChildText("name"));
+        result.setEnergy(Integer.parseInt(candyElement.getChildText("energy")));
+
+        List<CandyType> type = new ArrayList<>();
+        switch (candyElement.getChildText("type")){
+            case "Caramel": type.add(CandyType.CARAMEL);
+                break;
+            case "Iris": type.add(CandyType.IRIS);
+                break;
+            case "Chocolate with filling": type.add(CandyType.CHOCOLATE_WITH_FILLING);
+                break;
+            case "Chocolate without filling": type.add(CandyType.CHOCOLATE_WITHOUT_FILLING);
+                break;
+        }
+        result.setType(type);
+
+        result.setIngredients(createIngredientsList(candyElement.getChildText("ingredients"), candyElement));
+        result.setValue(createCandyValueList(candyElement.getChildText("value")));
+        result.setProduction(candyElement.getChildText("production"));
+
+        return result;
+    }
+
+
+    private Map<String, Integer> createIngredientsList (String value, Element candyElement){
+        Map<String, Integer> result = new HashMap<>();
+        switch (value){
+            case "water": result.put("water",
+                    Integer.parseInt(candyElement.getChildText("water")));
+                break;
+            case "sugar": result.put("sugar",
+                    Integer.parseInt(candyElement.getChildText("sugar")));
+                break;
+            case "fructose": result.put("fructose",
+                    Integer.parseInt(candyElement.getChildText("fructose")));
+                break;
+            case "chocolate-type": result.put("chocolate-type",
+                    Integer.parseInt(candyElement.getChildText("chocolate-type")));
+                break;
+            case "vanilin": result.put("vanilin",
+                    Integer.parseInt(candyElement.getChildText("vanilin")));
+                break;
+        }
+        return result;
+    }
+
+
+    private List<CandyValue> createCandyValueList (String value){
+        List<CandyValue> result = new ArrayList<>();
+        switch (value){
+            case "proteins": result.add(CandyValue.PROTEINS);
+                break;
+            case "fats": result.add(CandyValue.FATS);
+                break;
+            case "carbohydrates": result.add(CandyValue.CARBOHYDRATES);
+                break;
+        }
+        return result;
     }
     }
 
