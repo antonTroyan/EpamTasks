@@ -1,5 +1,8 @@
 package by.troyan.entity;
-import javax.xml.bind.annotation.*;
+
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
