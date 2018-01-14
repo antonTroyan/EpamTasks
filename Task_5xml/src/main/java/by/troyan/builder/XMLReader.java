@@ -69,34 +69,51 @@ public class XMLReader {
     private Candy createCandy(Element candyElement) {
         Candy result = new Candy();
 
-        result.setId(Integer.parseInt(candyElement.getAttributeValue("id")));
-        result.setName(candyElement.getChildText("name"));
-        result.setEnergy(Integer.parseInt(candyElement.getChildText("energy")));
+        int id = Integer.parseInt(candyElement.getAttributeValue("id"));
+        result.setId(id);
 
-        List<CandyType> type = new ArrayList<>();
-        switch (candyElement.getChildText("type")) {
-            case "Caramel":
-                type.add(CandyType.CARAMEL);
-                break;
-            case "Iris":
-                type.add(CandyType.IRIS);
-                break;
-            case "Chocolate with filling":
-                type.add(CandyType.CHOCOLATE_WITH_FILLING);
-                break;
-            case "Chocolate without filling":
-                type.add(CandyType.CHOCOLATE_WITHOUT_FILLING);
-                break;
-        }
-        result.setType(type);
+        String name = candyElement.getChildText("name");
+        result.setName(name);
 
-        result.setIngredients(createIngredientsList(candyElement.getChildText("ingredients"), candyElement));
-        result.setValue(createCandyValueList(candyElement.getChildText("value")));
-        result.setProduction(candyElement.getChildText("production"));
+        int energy = Integer.parseInt(candyElement.getChildText("energy"));
+        result.setEnergy(energy);
+
+        String type = candyElement.getChildText("type");
+        List<CandyType> typeList = createCandyTypeList(type);
+        result.setType(typeList);
+
+        String ingredient = candyElement.getChildText("ingredients");
+        Map <String, Integer> ingredientsList = createIngredientsList(ingredient, candyElement);
+        result.setIngredients(ingredientsList);
+
+        List <CandyValue> valueList = createCandyValueList(candyElement.getChildText("value"));
+        result.setValue(valueList);
+
+        String production = candyElement.getChildText("production");
+        result.setProduction(production);
 
         return result;
     }
 
+
+    private List<CandyType> createCandyTypeList (String type){
+        List<CandyType> result = new ArrayList<>();
+        switch (type) {
+            case "Caramel":
+                result.add(CandyType.CARAMEL);
+                break;
+            case "Iris":
+                result.add(CandyType.IRIS);
+                break;
+            case "Chocolate with filling":
+                result.add(CandyType.CHOCOLATE_WITH_FILLING);
+                break;
+            case "Chocolate without filling":
+                result.add(CandyType.CHOCOLATE_WITHOUT_FILLING);
+                break;
+        }
+        return result;
+    }
 
     private Map<String, Integer> createIngredientsList(String value, Element candyElement) {
         Map<String, Integer> result = new HashMap<>();

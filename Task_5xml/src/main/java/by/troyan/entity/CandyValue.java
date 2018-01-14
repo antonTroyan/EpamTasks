@@ -11,8 +11,6 @@ import javax.xml.bind.annotation.XmlEnumValue;
     FATS,
 
     @XmlEnumValue(value = "Carbohydrates")
-    CARBOHYDRATES;
-
-    public int value;
+    CARBOHYDRATES
 
 }

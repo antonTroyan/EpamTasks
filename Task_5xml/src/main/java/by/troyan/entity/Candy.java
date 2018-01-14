@@ -22,16 +22,6 @@ public class Candy {
     public Candy() {
     }
 
-    public Candy(int id, String name, int energy, List<CandyType> type, Map<String,
-            Integer> ingredients, List<CandyValue> value, String production) {
-        this.id = id;
-        this.name = name;
-        this.energy = energy;
-        this.type = type;
-        this.ingredients = ingredients;
-        this.value = value;
-        this.production = production;
-    }
 
     @XmlAttribute
     public int getId() {
