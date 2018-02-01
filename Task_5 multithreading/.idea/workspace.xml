@@ -2,18 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce644f1e-1e17-4c84-8503-0441cc4aeb7f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../Task_5xml/src/main/resources/log4j2.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/logs/error.log" afterPath="$PROJECT_DIR$/logs/error.log" />
       <change beforePath="$PROJECT_DIR$/multithreading.iml" afterPath="$PROJECT_DIR$/multithreading.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/troyan/multithreding/Test.java" afterPath="$PROJECT_DIR$/src/main/java/by/troyan/multithreding/Test.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/troyan/multithreding/initialize/Initializer.java" afterPath="$PROJECT_DIR$/src/main/java/by/troyan/multithreding/initialize/Initializer.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/troyan/multithreding/Test.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/troyan/multithreding/entity/Bus.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/troyan/multithreding/entity/BusStop.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/troyan/multithreding/entity/Passenger.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/troyan/multithreding/entity/Route$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/troyan/multithreding/entity/Route.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/troyan/multithreding/initialize/Initializer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/troyan/multithreding/initialize/Parser.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../Task_5XML/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_5XML/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Task_5XML/Task_5XML.iml" afterPath="$PROJECT_DIR$/../Task_5XML/Task_5XML.iml" />
-      <change beforePath="$PROJECT_DIR$/../Task_5XML/pom.xml" afterPath="$PROJECT_DIR$/../Task_5XML/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/../Task_5xml/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../Task_5xml/file/candies.xsd" afterPath="$PROJECT_DIR$/../Task_5xml/file/candies.xsd" />
-      <change beforePath="$PROJECT_DIR$/../Task_5xml/src/main/java/by/troyan/builder/XMLReader.java" afterPath="$PROJECT_DIR$/../Task_5xml/src/main/java/by/troyan/builder/XMLReader.java" />
-      <change beforePath="$PROJECT_DIR$/../Task_5xml/src/main/java/by/troyan/builder/implementation/SAXParserBuilder.java" afterPath="$PROJECT_DIR$/../Task_5xml/src/main/java/by/troyan/builder/implementation/SAXParserBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/../Task_5xml/src/main/java/by/troyan/builder/implementation/STAXParserBuilder.java" afterPath="$PROJECT_DIR$/../Task_5xml/src/main/java/by/troyan/builder/implementation/STAXParserBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/../Task_5xml/src/main/java/by/troyan/entity/Candy.java" afterPath="$PROJECT_DIR$/../Task_5xml/src/main/java/by/troyan/entity/Candy.java" />
+      <change beforePath="$PROJECT_DIR$/../Task_5xml/target/classes/by/troyan/builder/XMLReader.class" afterPath="$PROJECT_DIR$/../Task_5xml/target/classes/by/troyan/builder/XMLReader.class" />
+      <change beforePath="$PROJECT_DIR$/../Task_5xml/target/classes/by/troyan/entity/Candy.class" afterPath="$PROJECT_DIR$/../Task_5xml/target/classes/by/troyan/entity/Candy.class" />
+      <change beforePath="$PROJECT_DIR$/../Task_5xml/target/classes/by/troyan/entity/CandyValue.class" afterPath="$PROJECT_DIR$/../Task_5xml/target/classes/by/troyan/entity/CandyValue.class" />
+      <change beforePath="$PROJECT_DIR$/../Task_5xml/target/test-classes/by/troyan/builder/XMLReaderTest.class" afterPath="$PROJECT_DIR$/../Task_5xml/target/test-classes/by/troyan/builder/XMLReaderTest.class" />
+      <change beforePath="$PROJECT_DIR$/../totalizator/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../totalizator/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,101 +35,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Bus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entity/Bus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j2.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="26" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/initialize/Parser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Initializer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/initialize/Initializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Passenger.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entity/Passenger.java">
+      <file leaf-file-name="log4j2.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1870">
-              <caret line="55" column="73" lean-forward="false" selection-start-line="55" selection-start-column="73" selection-end-line="55" selection-end-column="73" />
-              <folding>
-                <element signature="e#152#153#0" expanded="true" />
-                <element signature="e#184#185#0" expanded="true" />
-                <element signature="e#1149#1150#0" expanded="true" />
-                <element signature="e#1217#1218#0" expanded="true" />
-                <element signature="e#1686#1687#0" expanded="true" />
-                <element signature="e#1779#1780#0" expanded="true" />
-                <element signature="e#1825#1826#0" expanded="true" />
-                <element signature="e#1852#1853#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BusStop.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entity/BusStop.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2413#2414#0" expanded="true" />
-                <element signature="e#2447#2448#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,15 +65,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Route.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entity/Route.java">
+      <file leaf-file-name="Parser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/initialize/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+            <state relative-caret-position="340">
+              <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#297#298#0" expanded="true" />
-                <element signature="e#334#335#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -210,12 +138,13 @@
         <option value="$PROJECT_DIR$/src/main/java/by/troyan/multithreding/BusStop.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entities/Route.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/troyan/multithreding/initialize/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/troyan/multithreding/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/troyan/multithreding/initialize/Parser.java" />
         <option value="$PROJECT_DIR$/data/initial.txt" />
         <option value="$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entity/Bus.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entity/BusStop.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entity/Passenger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/troyan/multithreding/Test.java" />
+        <option value="$PROJECT_DIR$/logs/error.log" />
         <option value="$PROJECT_DIR$/src/main/java/by/troyan/multithreding/initialize/Initializer.java" />
       </list>
     </option>
@@ -257,7 +186,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,6 +197,11 @@
               <item name="Task_5 multithreading" type="b2602c69:ProjectViewProjectNode" />
               <item name="Task_5 multithreading" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Task_5 multithreading" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Task_5 multithreading" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Task_5 multithreading" type="b2602c69:ProjectViewProjectNode" />
@@ -331,17 +264,19 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Task_4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -604,11 +539,12 @@
       <workItem from="1513607672033" duration="104000" />
       <workItem from="1515863549335" duration="381000" />
       <workItem from="1515865512794" duration="12000" />
+      <workItem from="1516621249958" duration="559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72520000" />
+    <option name="totallyTimeSpent" value="73079000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -621,17 +557,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1408" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902184" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902184" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902184" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20983213" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21223022" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -639,7 +577,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39983845" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -660,18 +597,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entity/BusStop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2413#2414#0" expanded="true" />
-            <element signature="e#2447#2448#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entity/Passenger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
@@ -741,6 +666,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2413#2414#0" expanded="true" />
             <element signature="e#2447#2448#0" expanded="true" />
+            <element signature="method#equals#0;class#BusStop#0" expanded="false" />
+            <element signature="method#hashCode#0;class#BusStop#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -796,6 +723,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2413#2414#0" expanded="true" />
             <element signature="e#2447#2448#0" expanded="true" />
+            <element signature="method#equals#0;class#BusStop#0" expanded="false" />
+            <element signature="method#hashCode#0;class#BusStop#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -906,47 +835,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/initial.txt">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="601">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="38" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entity/Bus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/initialize/Initializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        <state relative-caret-position="193">
+          <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entity/Route.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entity/BusStop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        <state relative-caret-position="2856">
+          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#2413#2414#0" expanded="true" />
+            <element signature="e#2447#2448#0" expanded="true" />
+            <element signature="method#equals#0;class#BusStop#0" expanded="false" />
+            <element signature="method#hashCode#0;class#BusStop#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entity/Passenger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
+        <state relative-caret-position="1111">
           <caret line="55" column="73" lean-forward="false" selection-start-line="55" selection-start-column="73" selection-end-line="55" selection-end-column="73" />
           <folding>
             <element signature="e#152#153#0" expanded="true" />
@@ -961,51 +884,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entity/BusStop.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entity/Route.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2413#2414#0" expanded="true" />
-            <element signature="e#2447#2448#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/entity/Bus.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="26" selection-end-column="21" />
+        <state relative-caret-position="238">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/initialize/Parser.java">
+    <entry file="file://$PROJECT_DIR$/logs/error.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/initial.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/initialize/Initializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/troyan/multithreding/initialize/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

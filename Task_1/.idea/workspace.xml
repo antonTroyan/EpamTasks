@@ -2,15 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="147e29f8-8836-4365-a1bd-678a21bfbc31" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/action/TextWorkerTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/calculating/counter/ClientTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Task_4/target/test-classes/by/troyan/task4/calculating/counter/ClientTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/target/test-classes/by/troyan/task4/action/ParametersTextFillerTest.class" afterPath="$PROJECT_DIR$/../Task_4/target/test-classes/by/troyan/task4/action/ParametersTextFillerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/target/test-classes/by/troyan/task4/action/TextTreeCreatorTest.class" afterPath="$PROJECT_DIR$/../Task_4/target/test-classes/by/troyan/task4/action/TextTreeCreatorTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_3/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_4/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/action/ParametersTextFillerTest.java" afterPath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/action/ParametersTextFillerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/action/TextTreeCreatorTest.java" afterPath="$PROJECT_DIR$/../Task_4/src/test/java/by/troyan/task4/action/TextTreeCreatorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/Test.class" afterPath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/entity/Bus.class" afterPath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/entity/Bus.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/entity/BusStop.class" afterPath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/entity/BusStop.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/entity/Passenger.class" afterPath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/entity/Passenger.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/entity/Route$1.class" afterPath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/entity/Route$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/entity/Route.class" afterPath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/entity/Route.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/initialize/Initializer.class" afterPath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/initialize/Initializer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/initialize/Parser.class" afterPath="$PROJECT_DIR$/../Task_5 multithreading/target/classes/by/troyan/multithreding/initialize/Parser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5xml/target/classes/by/troyan/builder/XMLReader.class" afterPath="$PROJECT_DIR$/../Task_5xml/target/classes/by/troyan/builder/XMLReader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5xml/target/classes/by/troyan/entity/Candy.class" afterPath="$PROJECT_DIR$/../Task_5xml/target/classes/by/troyan/entity/Candy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5xml/target/classes/by/troyan/entity/CandyValue.class" afterPath="$PROJECT_DIR$/../Task_5xml/target/classes/by/troyan/entity/CandyValue.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5xml/target/test-classes/by/troyan/builder/XMLReaderTest.class" afterPath="$PROJECT_DIR$/../Task_5xml/target/test-classes/by/troyan/builder/XMLReaderTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/troyan/epam/task1/creator/EntityCreator.java" afterPath="$PROJECT_DIR$/src/by/troyan/epam/task1/creator/EntityCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../Task_5 multithreading/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_5 multithreading/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/logs/error.log" afterPath="$PROJECT_DIR$/../Task_5 multithreading/logs/error.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/multithreading.iml" afterPath="$PROJECT_DIR$/../Task_5 multithreading/multithreading.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/pom.xml" afterPath="$PROJECT_DIR$/../Task_5 multithreading/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/Test.java" afterPath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/initialize/Initializer.java" afterPath="$PROJECT_DIR$/../Task_5 multithreading/src/main/java/by/troyan/multithreding/initialize/Initializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task_5XML/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task_5XML/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../totalizator/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../totalizator/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +47,7 @@
       <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/entity/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="256">
               <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
               <folding />
             </state>
@@ -43,7 +57,7 @@
       <file leaf-file-name="Triangle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/entity/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="96">
               <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="19" />
               <folding />
             </state>
@@ -53,18 +67,18 @@
       <file leaf-file-name="TriangleParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/parser/TriangleParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="320">
+              <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShapesException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/exception/ShapesException.java">
+      <file leaf-file-name="FileIsEmptyException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/exception/FileIsEmptyException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="64">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -73,19 +87,42 @@
       <file leaf-file-name="Validator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/validator/Validator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
-              <caret line="49" column="47" lean-forward="false" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="52" />
+            <state relative-caret-position="1280">
+              <caret line="47" column="23" lean-forward="false" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileDataDownloader.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ShapesException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/exception/ShapesException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileDataDownloader.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/trianglereader/FileDataDownloader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            <state relative-caret-position="512">
+              <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileNotExistExeption.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/exception/FileNotExistExeption.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+              <folding>
+                <element signature="e#560#561#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,39 +130,22 @@
       <file leaf-file-name="Triangles.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/action/Triangles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="7" column="61" lean-forward="false" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+            <state relative-caret-position="96">
+              <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrianglesTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/by/troyan/epam/task1/action/TrianglesTest.java">
+      <file leaf-file-name="EntityCreator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/creator/EntityCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="17" column="75" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidatorTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/by/troyan/epam/task1/validator/ValidatorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="50" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="13" column="64" lean-forward="false" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
-              <folding />
+            <state relative-caret-position="1152">
+              <caret line="48" column="41" lean-forward="false" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+              <folding>
+                <element signature="e#859#860#0" expanded="true" />
+                <element signature="e#899#900#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -198,10 +218,10 @@
         <option value="$PROJECT_DIR$/logs/error.log" />
         <option value="$PROJECT_DIR$/src/test/by/troyan/epam/task1/validator/ValidatorTest.java" />
         <option value="$PROJECT_DIR$/src/test/by/troyan/epam/task1/action/TrianglesTest.java" />
-        <option value="$PROJECT_DIR$/src/by/troyan/epam/task1/creator/EntityCreator.java" />
         <option value="$PROJECT_DIR$/src/by/troyan/epam/task1/entity/Point.java" />
         <option value="$PROJECT_DIR$/src/by/troyan/epam/task1/trianglereader/FileDataDownloader.java" />
         <option value="$PROJECT_DIR$/src/by/troyan/epam/task1/validator/Validator.java" />
+        <option value="$PROJECT_DIR$/src/by/troyan/epam/task1/creator/EntityCreator.java" />
       </list>
     </option>
   </component>
@@ -235,9 +255,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -305,30 +322,13 @@
               <item name="task1" type="462c0819:PsiDirectoryNode" />
               <item name="validator" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Task_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Task_1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="task1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Task_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Task_1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="task1" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Task_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Task_1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="task1" type="462c0819:PsiDirectoryNode" />
-              <item name="validator" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -709,7 +709,6 @@
     <frame x="-9" y="-9" width="2578" height="1408" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -718,14 +717,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10391687" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10390625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2693523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -733,6 +731,8 @@
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -840,27 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/exception/FileIsEmptyException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/exception/FileNotExistExeption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/exception/NoFileNameException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -869,86 +848,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/creator/EntityCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="47" column="23" lean-forward="false" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
-          <folding>
-            <element signature="method#fillTriangleList#0;class#EntityCreator#0" expanded="false" />
-            <element signature="method#fillPointList#0;class#EntityCreator#0" expanded="false" />
-            <element signature="e#1927#1928#0" expanded="true" />
-            <element signature="e#1973#1974#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/entity/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/entity/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/exception/ShapesException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/parser/TriangleParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/validator/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="49" column="47" lean-forward="false" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/action/Triangles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="7" column="61" lean-forward="false" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="320">
           <caret line="13" column="64" lean-forward="false" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/trianglereader/FileDataDownloader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/by/troyan/epam/task1/action/TrianglesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
+        <state relative-caret-position="416">
           <caret line="17" column="75" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="75" />
           <folding />
         </state>
@@ -956,8 +866,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/by/troyan/epam/task1/validator/ValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
+        <state relative-caret-position="728">
           <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="50" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/exception/NoFileNameException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/validator/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1280">
+          <caret line="47" column="23" lean-forward="false" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/exception/ShapesException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/entity/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/action/Triangles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/creator/EntityCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="48" column="41" lean-forward="false" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+          <folding>
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/entity/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/exception/FileIsEmptyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/exception/FileNotExistExeption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/parser/TriangleParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/troyan/epam/task1/trianglereader/FileDataDownloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
           <folding />
         </state>
       </provider>

@@ -12,11 +12,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class EntityCreator {
     private static Logger log = LogManager.getLogger("EntityCreator");
-    private static ArrayList<Triangle> triangleList = new ArrayList<>();
-    private static ArrayList<Point> pointList = new ArrayList<>();
+    private static List<Triangle> triangleList = new ArrayList<>();
+    private static List<Point> pointList = new ArrayList<>();
     private String filename;
 
     public EntityCreator(String filename) {
@@ -26,22 +27,30 @@ public class EntityCreator {
     public void fillTriangleList () throws FileIsEmptyException, NoFileNameException, FileNotExistExeption {
         fillPointList();
         for (int i = 0; i < 3; ){
-            Triangle t = new Triangle(pointList.get(i++),pointList.get(i++),pointList.get(i++));
-            triangleList.add(t);
-            log.info("Triangle was created " + t);
+            Point pointA = pointList.get(i++);
+            Point pointB = pointList.get(i++);
+            Point pointC = pointList.get(i++);
+            Triangle createdTriangle = new Triangle(pointA,pointB,pointC);
+
+            triangleList.add(createdTriangle);
+            log.info("Triangle was created " + createdTriangle);
         }
     }
 
     public void fillPointList () throws FileIsEmptyException, NoFileNameException, FileNotExistExeption {
         FileDataDownloader fileDataDownloader = new FileDataDownloader();
         TriangleParser triangleParser = new TriangleParser();
-        ArrayList <Integer> dataArray = triangleParser.parse(fileDataDownloader
+
+        List <Integer> dataArray = triangleParser.parse(fileDataDownloader
                                                       .readLines(filename), " ");
 
-        for (int i = 0; i < dataArray.size(); i++){
-            Point p = new Point(dataArray.get(i),dataArray.get(++i));
-            pointList.add(p);
-            log.info("Point was created " + p);
+        for (int counter = 0; counter < dataArray.size(); counter++){
+            int xCoordinate = dataArray.get(counter);
+            int yCoordinate = dataArray.get(counter);
+            Point point = new Point(xCoordinate,dataArray.get(yCoordinate));
+
+            pointList.add(point);
+            log.info("Point was created " + point);
         }
     }
 

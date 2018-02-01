@@ -4,12 +4,14 @@ import by.troyan.multithreding.entity.Bus;
 import by.troyan.multithreding.entity.BusStop;
 import by.troyan.multithreding.entity.Passenger;
 import by.troyan.multithreding.entity.Route;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.ReentrantLock;
-
 
 public class Initializer {
     private List<Bus> buses;
